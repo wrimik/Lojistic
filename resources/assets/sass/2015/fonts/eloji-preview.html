@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>eloji glyphs preview</title>
+
+    <style>
+      /* Page Styles */
+
+      * {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: #fff;
+        color: #444;
+        font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      a,
+      a:visited {
+        color: #888;
+        text-decoration: underline;
+      }
+      a:hover,
+      a:focus { color: #000; }
+
+      header {
+        border-bottom: 2px solid #ddd;
+        margin-bottom: 20px;
+        overflow: hidden;
+        padding: 20px 0;
+      }
+
+      header h1 {
+        color: #888;
+        float: left;
+        font-size: 36px;
+        font-weight: 300;
+      }
+
+      header a {
+        float: right;
+        font-size: 14px;
+      }
+
+      .container {
+        margin: 0 auto;
+        max-width: 1200px;
+        min-width: 960px;
+        padding: 0 40px;
+        width: 90%;
+      }
+
+      .glyph {
+        border-bottom: 1px dotted #ccc;
+        padding: 10px 0 20px;
+        margin-bottom: 20px;
+      }
+
+      .preview-glyphs { vertical-align: bottom; }
+
+      .preview-scale {
+        color: #888;
+        font-size: 12px;
+        margin-top: 5px;
+      }
+
+      .step {
+        display: inline-block;
+        line-height: 1;
+        position: relative;
+        width: 10%;
+      }
+
+      .step .letters,
+      .step i {
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -ms-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s;
+      }
+
+      .step:hover .letters { opacity: 1; }
+      .step:hover i { opacity: .3; }
+
+      .letters {
+        opacity: .3;
+        position: absolute;
+      }
+
+      .characters-off .letters { display: none; }
+      .characters-off .step:hover i { opacity: 1; }
+
+      
+      .size-12 { font-size: 12px; }
+      
+      .size-14 { font-size: 14px; }
+      
+      .size-16 { font-size: 16px; }
+      
+      .size-18 { font-size: 18px; }
+      
+      .size-21 { font-size: 21px; }
+      
+      .size-24 { font-size: 24px; }
+      
+      .size-36 { font-size: 36px; }
+      
+      .size-48 { font-size: 48px; }
+      
+      .size-60 { font-size: 60px; }
+      
+      .size-72 { font-size: 72px; }
+      
+
+      .usage { margin-top: 10px; }
+
+      .usage input {
+        font-family: monospace;
+        margin-right: 3px;
+        padding: 2px 5px;
+        text-align: center;
+      }
+
+      .usage .point { width: 150px; }
+
+      .usage .class { width: 250px; }
+
+      footer {
+        color: #888;
+        font-size: 12px;
+        padding: 20px 0;
+      }
+
+      /* Icon Font: eloji */
+
+      @font-face {
+  font-family: "eloji";
+  src: url("eloji-old/eloji_7604a2ba6b1a3a0ccd8b5bd1d2968ae2.eot?") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "eloji";
+  src: url("data:application/x-font-woff;charset=utf-8;base64,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") format("woff"),
+       url("eloji-old/eloji_7604a2ba6b1a3a0ccd8b5bd1d2968ae2.ttf") format("truetype"),
+       url("eloji-old/eloji_7604a2ba6b1a3a0ccd8b5bd1d2968ae2.svg#eloji") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "eloji";
+    src: url("eloji-old/eloji_7604a2ba6b1a3a0ccd8b5bd1d2968ae2.svg#eloji") format("svg");
+  }
+}
+
+      [data-icon]:before { content: attr(data-icon); }
+
+      [data-icon]:before,
+      .eloji-analysis:before,
+      .eloji-audit:before,
+      .eloji-bigrig:before,
+      .eloji-blog:before,
+      .eloji-boat:before,
+      .eloji-box-open:before,
+      .eloji-box-open-alt:before,
+      .eloji-calc:before,
+      .eloji-calc-compare:before,
+      .eloji-calc-insurance:before,
+      .eloji-calc-rates:before,
+      .eloji-cart:before,
+      .eloji-caution:before,
+      .eloji-check:before,
+      .eloji-checklist:before,
+      .eloji-chillin:before,
+      .eloji-circular:before,
+      .eloji-cloud:before,
+      .eloji-cloud-computing:before,
+      .eloji-data:before,
+      .eloji-data-management:before,
+      .eloji-dim:before,
+      .eloji-download:before,
+      .eloji-email:before,
+      .eloji-excel:before,
+      .eloji-facebook:before,
+      .eloji-freight:before,
+      .eloji-freight-rates:before,
+      .eloji-freight-rates-alt:before,
+      .eloji-fuel-empty:before,
+      .eloji-fuel-full:before,
+      .eloji-gl-coding:before,
+      .eloji-google-plus:before,
+      .eloji-gpi-history:before,
+      .eloji-greater-good:before,
+      .eloji-halo:before,
+      .eloji-handshake:before,
+      .eloji-happy-mac:before,
+      .eloji-hi:before,
+      .eloji-insurance:before,
+      .eloji-intelliship:before,
+      .eloji-linkedin:before,
+      .eloji-logistics:before,
+      .eloji-money-bag:before,
+      .eloji-mouse:before,
+      .eloji-negotiation:before,
+      .eloji-network:before,
+      .eloji-news:before,
+      .eloji-noggin:before,
+      .eloji-paper-audit:before,
+      .eloji-paper-sign:before,
+      .eloji-payment:before,
+      .eloji-payment-alt:before,
+      .eloji-phone:before,
+      .eloji-phone-alt:before,
+      .eloji-pie-chart:before,
+      .eloji-piggybank:before,
+      .eloji-piggybank-alt:before,
+      .eloji-pin:before,
+      .eloji-plane:before,
+      .eloji-rain:before,
+      .eloji-ready-pay:before,
+      .eloji-reporting:before,
+      .eloji-schedule:before,
+      .eloji-spot-quote:before,
+      .eloji-starburst:before,
+      .eloji-traffic:before,
+      .eloji-train:before,
+      .eloji-twitter:before,
+      .eloji-water:before {
+        display: inline-block;
+        font-family: "eloji";
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        line-height: 1;
+        text-decoration: inherit;
+        text-rendering: optimizeLegibility;
+        text-transform: none;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-smoothing: antialiased;
+      }
+
+      .eloji-analysis:before { content: "\f104"; }
+      .eloji-audit:before { content: "\f100"; }
+      .eloji-bigrig:before { content: "\f105"; }
+      .eloji-blog:before { content: "\f106"; }
+      .eloji-boat:before { content: "\f107"; }
+      .eloji-box-open:before { content: "\f108"; }
+      .eloji-box-open-alt:before { content: "\f109"; }
+      .eloji-calc:before { content: "\f10a"; }
+      .eloji-calc-compare:before { content: "\f10b"; }
+      .eloji-calc-insurance:before { content: "\f10c"; }
+      .eloji-calc-rates:before { content: "\f10d"; }
+      .eloji-cart:before { content: "\f10e"; }
+      .eloji-caution:before { content: "\f10f"; }
+      .eloji-check:before { content: "\f110"; }
+      .eloji-checklist:before { content: "\f111"; }
+      .eloji-chillin:before { content: "\f112"; }
+      .eloji-circular:before { content: "\f144"; }
+      .eloji-cloud:before { content: "\f113"; }
+      .eloji-cloud-computing:before { content: "\f114"; }
+      .eloji-data:before { content: "\f115"; }
+      .eloji-data-management:before { content: "\f116"; }
+      .eloji-dim:before { content: "\f117"; }
+      .eloji-download:before { content: "\f118"; }
+      .eloji-email:before { content: "\f119"; }
+      .eloji-excel:before { content: "\f145"; }
+      .eloji-facebook:before { content: "\f11a"; }
+      .eloji-freight:before { content: "\f101"; }
+      .eloji-freight-rates:before { content: "\f11b"; }
+      .eloji-freight-rates-alt:before { content: "\f148"; }
+      .eloji-fuel-empty:before { content: "\f11c"; }
+      .eloji-fuel-full:before { content: "\f11d"; }
+      .eloji-gl-coding:before { content: "\f11e"; }
+      .eloji-google-plus:before { content: "\f11f"; }
+      .eloji-gpi-history:before { content: "\f120"; }
+      .eloji-greater-good:before { content: "\f121"; }
+      .eloji-halo:before { content: "\f122"; }
+      .eloji-handshake:before { content: "\f123"; }
+      .eloji-happy-mac:before { content: "\f124"; }
+      .eloji-hi:before { content: "\f125"; }
+      .eloji-insurance:before { content: "\f102"; }
+      .eloji-intelliship:before { content: "\f126"; }
+      .eloji-linkedin:before { content: "\f127"; }
+      .eloji-logistics:before { content: "\f128"; }
+      .eloji-money-bag:before { content: "\f129"; }
+      .eloji-mouse:before { content: "\f12a"; }
+      .eloji-negotiation:before { content: "\f103"; }
+      .eloji-network:before { content: "\f12b"; }
+      .eloji-news:before { content: "\f143"; }
+      .eloji-noggin:before { content: "\f12c"; }
+      .eloji-paper-audit:before { content: "\f12e"; }
+      .eloji-paper-sign:before { content: "\f12f"; }
+      .eloji-payment:before { content: "\f130"; }
+      .eloji-payment-alt:before { content: "\f131"; }
+      .eloji-phone:before { content: "\f132"; }
+      .eloji-phone-alt:before { content: "\f133"; }
+      .eloji-pie-chart:before { content: "\f134"; }
+      .eloji-piggybank:before { content: "\f135"; }
+      .eloji-piggybank-alt:before { content: "\f136"; }
+      .eloji-pin:before { content: "\f141"; }
+      .eloji-plane:before { content: "\f137"; }
+      .eloji-rain:before { content: "\f138"; }
+      .eloji-ready-pay:before { content: "\f139"; }
+      .eloji-reporting:before { content: "\f13a"; }
+      .eloji-schedule:before { content: "\f13b"; }
+      .eloji-spot-quote:before { content: "\f13c"; }
+      .eloji-starburst:before { content: "\f147"; }
+      .eloji-traffic:before { content: "\f13e"; }
+      .eloji-train:before { content: "\f13f"; }
+      .eloji-twitter:before { content: "\f140"; }
+      .eloji-water:before { content: "\f142"; }
+    </style>
+
+    <!--[if lte IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <script>
+      function toggleCharacters() {
+        var body = document.getElementsByTagName('body')[0];
+        body.className = body.className === 'characters-off' ? '' : 'characters-off';
+      }
+    </script>
+  </head>
+
+  <body class="characters-off">
+    <div id="page" class="container">
+      <header>
+        <h1>eloji contains 70 glyphs:</h1>
+        <a onclick="toggleCharacters(); return false;" href="#">Toggle Preview Characters</a>
+      </header>
+
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-analysis" class="eloji-analysis"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-analysis" class="eloji-analysis"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-analysis" class="eloji-analysis"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-analysis" class="eloji-analysis"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-analysis" class="eloji-analysis"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-analysis" class="eloji-analysis"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-analysis" class="eloji-analysis"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-analysis" class="eloji-analysis"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-analysis" class="eloji-analysis"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-analysis" class="eloji-analysis"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-analysis" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf104;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-audit" class="eloji-audit"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-audit" class="eloji-audit"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-audit" class="eloji-audit"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-audit" class="eloji-audit"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-audit" class="eloji-audit"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-audit" class="eloji-audit"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-audit" class="eloji-audit"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-audit" class="eloji-audit"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-audit" class="eloji-audit"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-audit" class="eloji-audit"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-audit" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf100;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-bigrig" class="eloji-bigrig"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-bigrig" class="eloji-bigrig"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-bigrig" class="eloji-bigrig"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-bigrig" class="eloji-bigrig"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-bigrig" class="eloji-bigrig"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-bigrig" class="eloji-bigrig"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-bigrig" class="eloji-bigrig"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-bigrig" class="eloji-bigrig"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-bigrig" class="eloji-bigrig"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-bigrig" class="eloji-bigrig"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-bigrig" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf105;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-blog" class="eloji-blog"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-blog" class="eloji-blog"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-blog" class="eloji-blog"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-blog" class="eloji-blog"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-blog" class="eloji-blog"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-blog" class="eloji-blog"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-blog" class="eloji-blog"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-blog" class="eloji-blog"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-blog" class="eloji-blog"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-blog" class="eloji-blog"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-blog" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf106;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-boat" class="eloji-boat"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-boat" class="eloji-boat"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-boat" class="eloji-boat"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-boat" class="eloji-boat"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-boat" class="eloji-boat"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-boat" class="eloji-boat"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-boat" class="eloji-boat"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-boat" class="eloji-boat"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-boat" class="eloji-boat"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-boat" class="eloji-boat"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-boat" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf107;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-box-open" class="eloji-box-open"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-box-open" class="eloji-box-open"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-box-open" class="eloji-box-open"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-box-open" class="eloji-box-open"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-box-open" class="eloji-box-open"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-box-open" class="eloji-box-open"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-box-open" class="eloji-box-open"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-box-open" class="eloji-box-open"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-box-open" class="eloji-box-open"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-box-open" class="eloji-box-open"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-box-open" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf108;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-box-open-alt" class="eloji-box-open-alt"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-box-open-alt" class="eloji-box-open-alt"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-box-open-alt" class="eloji-box-open-alt"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-box-open-alt" class="eloji-box-open-alt"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-box-open-alt" class="eloji-box-open-alt"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-box-open-alt" class="eloji-box-open-alt"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-box-open-alt" class="eloji-box-open-alt"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-box-open-alt" class="eloji-box-open-alt"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-box-open-alt" class="eloji-box-open-alt"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-box-open-alt" class="eloji-box-open-alt"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-box-open-alt" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf109;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-calc" class="eloji-calc"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-calc" class="eloji-calc"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-calc" class="eloji-calc"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-calc" class="eloji-calc"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-calc" class="eloji-calc"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-calc" class="eloji-calc"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-calc" class="eloji-calc"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-calc" class="eloji-calc"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-calc" class="eloji-calc"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-calc" class="eloji-calc"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-calc" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf10a;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-calc-compare" class="eloji-calc-compare"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-calc-compare" class="eloji-calc-compare"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-calc-compare" class="eloji-calc-compare"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-calc-compare" class="eloji-calc-compare"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-calc-compare" class="eloji-calc-compare"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-calc-compare" class="eloji-calc-compare"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-calc-compare" class="eloji-calc-compare"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-calc-compare" class="eloji-calc-compare"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-calc-compare" class="eloji-calc-compare"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-calc-compare" class="eloji-calc-compare"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-calc-compare" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf10b;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-calc-insurance" class="eloji-calc-insurance"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-calc-insurance" class="eloji-calc-insurance"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-calc-insurance" class="eloji-calc-insurance"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-calc-insurance" class="eloji-calc-insurance"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-calc-insurance" class="eloji-calc-insurance"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-calc-insurance" class="eloji-calc-insurance"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-calc-insurance" class="eloji-calc-insurance"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-calc-insurance" class="eloji-calc-insurance"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-calc-insurance" class="eloji-calc-insurance"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-calc-insurance" class="eloji-calc-insurance"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-calc-insurance" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf10c;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-calc-rates" class="eloji-calc-rates"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-calc-rates" class="eloji-calc-rates"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-calc-rates" class="eloji-calc-rates"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-calc-rates" class="eloji-calc-rates"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-calc-rates" class="eloji-calc-rates"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-calc-rates" class="eloji-calc-rates"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-calc-rates" class="eloji-calc-rates"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-calc-rates" class="eloji-calc-rates"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-calc-rates" class="eloji-calc-rates"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-calc-rates" class="eloji-calc-rates"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-calc-rates" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf10d;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-cart" class="eloji-cart"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-cart" class="eloji-cart"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-cart" class="eloji-cart"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-cart" class="eloji-cart"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-cart" class="eloji-cart"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-cart" class="eloji-cart"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-cart" class="eloji-cart"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-cart" class="eloji-cart"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-cart" class="eloji-cart"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-cart" class="eloji-cart"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-cart" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf10e;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-caution" class="eloji-caution"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-caution" class="eloji-caution"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-caution" class="eloji-caution"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-caution" class="eloji-caution"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-caution" class="eloji-caution"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-caution" class="eloji-caution"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-caution" class="eloji-caution"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-caution" class="eloji-caution"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-caution" class="eloji-caution"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-caution" class="eloji-caution"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-caution" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf10f;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-check" class="eloji-check"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-check" class="eloji-check"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-check" class="eloji-check"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-check" class="eloji-check"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-check" class="eloji-check"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-check" class="eloji-check"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-check" class="eloji-check"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-check" class="eloji-check"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-check" class="eloji-check"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-check" class="eloji-check"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-check" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf110;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-checklist" class="eloji-checklist"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-checklist" class="eloji-checklist"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-checklist" class="eloji-checklist"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-checklist" class="eloji-checklist"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-checklist" class="eloji-checklist"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-checklist" class="eloji-checklist"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-checklist" class="eloji-checklist"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-checklist" class="eloji-checklist"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-checklist" class="eloji-checklist"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-checklist" class="eloji-checklist"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-checklist" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf111;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-chillin" class="eloji-chillin"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-chillin" class="eloji-chillin"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-chillin" class="eloji-chillin"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-chillin" class="eloji-chillin"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-chillin" class="eloji-chillin"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-chillin" class="eloji-chillin"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-chillin" class="eloji-chillin"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-chillin" class="eloji-chillin"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-chillin" class="eloji-chillin"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-chillin" class="eloji-chillin"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-chillin" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf112;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-circular" class="eloji-circular"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-circular" class="eloji-circular"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-circular" class="eloji-circular"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-circular" class="eloji-circular"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-circular" class="eloji-circular"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-circular" class="eloji-circular"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-circular" class="eloji-circular"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-circular" class="eloji-circular"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-circular" class="eloji-circular"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-circular" class="eloji-circular"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-circular" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf144;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-cloud" class="eloji-cloud"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-cloud" class="eloji-cloud"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-cloud" class="eloji-cloud"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-cloud" class="eloji-cloud"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-cloud" class="eloji-cloud"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-cloud" class="eloji-cloud"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-cloud" class="eloji-cloud"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-cloud" class="eloji-cloud"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-cloud" class="eloji-cloud"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-cloud" class="eloji-cloud"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-cloud" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf113;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-cloud-computing" class="eloji-cloud-computing"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-cloud-computing" class="eloji-cloud-computing"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-cloud-computing" class="eloji-cloud-computing"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-cloud-computing" class="eloji-cloud-computing"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-cloud-computing" class="eloji-cloud-computing"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-cloud-computing" class="eloji-cloud-computing"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-cloud-computing" class="eloji-cloud-computing"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-cloud-computing" class="eloji-cloud-computing"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-cloud-computing" class="eloji-cloud-computing"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-cloud-computing" class="eloji-cloud-computing"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-cloud-computing" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf114;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-data" class="eloji-data"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-data" class="eloji-data"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-data" class="eloji-data"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-data" class="eloji-data"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-data" class="eloji-data"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-data" class="eloji-data"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-data" class="eloji-data"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-data" class="eloji-data"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-data" class="eloji-data"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-data" class="eloji-data"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-data" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf115;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-data-management" class="eloji-data-management"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-data-management" class="eloji-data-management"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-data-management" class="eloji-data-management"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-data-management" class="eloji-data-management"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-data-management" class="eloji-data-management"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-data-management" class="eloji-data-management"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-data-management" class="eloji-data-management"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-data-management" class="eloji-data-management"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-data-management" class="eloji-data-management"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-data-management" class="eloji-data-management"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-data-management" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf116;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-dim" class="eloji-dim"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-dim" class="eloji-dim"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-dim" class="eloji-dim"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-dim" class="eloji-dim"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-dim" class="eloji-dim"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-dim" class="eloji-dim"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-dim" class="eloji-dim"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-dim" class="eloji-dim"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-dim" class="eloji-dim"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-dim" class="eloji-dim"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-dim" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf117;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-download" class="eloji-download"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-download" class="eloji-download"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-download" class="eloji-download"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-download" class="eloji-download"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-download" class="eloji-download"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-download" class="eloji-download"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-download" class="eloji-download"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-download" class="eloji-download"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-download" class="eloji-download"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-download" class="eloji-download"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-download" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf118;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-email" class="eloji-email"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-email" class="eloji-email"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-email" class="eloji-email"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-email" class="eloji-email"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-email" class="eloji-email"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-email" class="eloji-email"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-email" class="eloji-email"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-email" class="eloji-email"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-email" class="eloji-email"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-email" class="eloji-email"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-email" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf119;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-excel" class="eloji-excel"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-excel" class="eloji-excel"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-excel" class="eloji-excel"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-excel" class="eloji-excel"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-excel" class="eloji-excel"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-excel" class="eloji-excel"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-excel" class="eloji-excel"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-excel" class="eloji-excel"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-excel" class="eloji-excel"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-excel" class="eloji-excel"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-excel" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf145;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-facebook" class="eloji-facebook"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-facebook" class="eloji-facebook"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-facebook" class="eloji-facebook"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-facebook" class="eloji-facebook"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-facebook" class="eloji-facebook"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-facebook" class="eloji-facebook"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-facebook" class="eloji-facebook"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-facebook" class="eloji-facebook"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-facebook" class="eloji-facebook"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-facebook" class="eloji-facebook"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-facebook" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf11a;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-freight" class="eloji-freight"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-freight" class="eloji-freight"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-freight" class="eloji-freight"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-freight" class="eloji-freight"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-freight" class="eloji-freight"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-freight" class="eloji-freight"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-freight" class="eloji-freight"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-freight" class="eloji-freight"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-freight" class="eloji-freight"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-freight" class="eloji-freight"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-freight" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf101;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-freight-rates" class="eloji-freight-rates"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-freight-rates" class="eloji-freight-rates"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-freight-rates" class="eloji-freight-rates"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-freight-rates" class="eloji-freight-rates"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-freight-rates" class="eloji-freight-rates"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-freight-rates" class="eloji-freight-rates"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-freight-rates" class="eloji-freight-rates"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-freight-rates" class="eloji-freight-rates"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-freight-rates" class="eloji-freight-rates"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-freight-rates" class="eloji-freight-rates"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-freight-rates" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf11b;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-freight-rates-alt" class="eloji-freight-rates-alt"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-freight-rates-alt" class="eloji-freight-rates-alt"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-freight-rates-alt" class="eloji-freight-rates-alt"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-freight-rates-alt" class="eloji-freight-rates-alt"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-freight-rates-alt" class="eloji-freight-rates-alt"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-freight-rates-alt" class="eloji-freight-rates-alt"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-freight-rates-alt" class="eloji-freight-rates-alt"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-freight-rates-alt" class="eloji-freight-rates-alt"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-freight-rates-alt" class="eloji-freight-rates-alt"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-freight-rates-alt" class="eloji-freight-rates-alt"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-freight-rates-alt" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf148;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-fuel-empty" class="eloji-fuel-empty"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-fuel-empty" class="eloji-fuel-empty"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-fuel-empty" class="eloji-fuel-empty"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-fuel-empty" class="eloji-fuel-empty"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-fuel-empty" class="eloji-fuel-empty"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-fuel-empty" class="eloji-fuel-empty"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-fuel-empty" class="eloji-fuel-empty"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-fuel-empty" class="eloji-fuel-empty"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-fuel-empty" class="eloji-fuel-empty"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-fuel-empty" class="eloji-fuel-empty"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-fuel-empty" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf11c;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-fuel-full" class="eloji-fuel-full"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-fuel-full" class="eloji-fuel-full"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-fuel-full" class="eloji-fuel-full"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-fuel-full" class="eloji-fuel-full"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-fuel-full" class="eloji-fuel-full"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-fuel-full" class="eloji-fuel-full"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-fuel-full" class="eloji-fuel-full"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-fuel-full" class="eloji-fuel-full"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-fuel-full" class="eloji-fuel-full"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-fuel-full" class="eloji-fuel-full"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-fuel-full" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf11d;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-gl-coding" class="eloji-gl-coding"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-gl-coding" class="eloji-gl-coding"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-gl-coding" class="eloji-gl-coding"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-gl-coding" class="eloji-gl-coding"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-gl-coding" class="eloji-gl-coding"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-gl-coding" class="eloji-gl-coding"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-gl-coding" class="eloji-gl-coding"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-gl-coding" class="eloji-gl-coding"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-gl-coding" class="eloji-gl-coding"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-gl-coding" class="eloji-gl-coding"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-gl-coding" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf11e;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-google-plus" class="eloji-google-plus"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-google-plus" class="eloji-google-plus"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-google-plus" class="eloji-google-plus"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-google-plus" class="eloji-google-plus"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-google-plus" class="eloji-google-plus"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-google-plus" class="eloji-google-plus"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-google-plus" class="eloji-google-plus"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-google-plus" class="eloji-google-plus"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-google-plus" class="eloji-google-plus"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-google-plus" class="eloji-google-plus"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-google-plus" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf11f;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-gpi-history" class="eloji-gpi-history"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-gpi-history" class="eloji-gpi-history"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-gpi-history" class="eloji-gpi-history"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-gpi-history" class="eloji-gpi-history"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-gpi-history" class="eloji-gpi-history"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-gpi-history" class="eloji-gpi-history"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-gpi-history" class="eloji-gpi-history"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-gpi-history" class="eloji-gpi-history"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-gpi-history" class="eloji-gpi-history"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-gpi-history" class="eloji-gpi-history"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-gpi-history" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf120;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-greater-good" class="eloji-greater-good"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-greater-good" class="eloji-greater-good"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-greater-good" class="eloji-greater-good"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-greater-good" class="eloji-greater-good"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-greater-good" class="eloji-greater-good"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-greater-good" class="eloji-greater-good"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-greater-good" class="eloji-greater-good"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-greater-good" class="eloji-greater-good"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-greater-good" class="eloji-greater-good"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-greater-good" class="eloji-greater-good"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-greater-good" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf121;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-halo" class="eloji-halo"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-halo" class="eloji-halo"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-halo" class="eloji-halo"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-halo" class="eloji-halo"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-halo" class="eloji-halo"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-halo" class="eloji-halo"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-halo" class="eloji-halo"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-halo" class="eloji-halo"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-halo" class="eloji-halo"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-halo" class="eloji-halo"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-halo" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf122;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-handshake" class="eloji-handshake"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-handshake" class="eloji-handshake"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-handshake" class="eloji-handshake"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-handshake" class="eloji-handshake"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-handshake" class="eloji-handshake"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-handshake" class="eloji-handshake"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-handshake" class="eloji-handshake"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-handshake" class="eloji-handshake"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-handshake" class="eloji-handshake"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-handshake" class="eloji-handshake"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-handshake" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf123;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-happy-mac" class="eloji-happy-mac"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-happy-mac" class="eloji-happy-mac"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-happy-mac" class="eloji-happy-mac"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-happy-mac" class="eloji-happy-mac"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-happy-mac" class="eloji-happy-mac"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-happy-mac" class="eloji-happy-mac"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-happy-mac" class="eloji-happy-mac"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-happy-mac" class="eloji-happy-mac"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-happy-mac" class="eloji-happy-mac"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-happy-mac" class="eloji-happy-mac"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-happy-mac" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf124;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-hi" class="eloji-hi"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-hi" class="eloji-hi"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-hi" class="eloji-hi"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-hi" class="eloji-hi"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-hi" class="eloji-hi"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-hi" class="eloji-hi"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-hi" class="eloji-hi"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-hi" class="eloji-hi"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-hi" class="eloji-hi"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-hi" class="eloji-hi"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-hi" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf125;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-insurance" class="eloji-insurance"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-insurance" class="eloji-insurance"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-insurance" class="eloji-insurance"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-insurance" class="eloji-insurance"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-insurance" class="eloji-insurance"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-insurance" class="eloji-insurance"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-insurance" class="eloji-insurance"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-insurance" class="eloji-insurance"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-insurance" class="eloji-insurance"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-insurance" class="eloji-insurance"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-insurance" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf102;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-intelliship" class="eloji-intelliship"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-intelliship" class="eloji-intelliship"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-intelliship" class="eloji-intelliship"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-intelliship" class="eloji-intelliship"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-intelliship" class="eloji-intelliship"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-intelliship" class="eloji-intelliship"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-intelliship" class="eloji-intelliship"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-intelliship" class="eloji-intelliship"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-intelliship" class="eloji-intelliship"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-intelliship" class="eloji-intelliship"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-intelliship" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf126;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-linkedin" class="eloji-linkedin"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-linkedin" class="eloji-linkedin"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-linkedin" class="eloji-linkedin"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-linkedin" class="eloji-linkedin"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-linkedin" class="eloji-linkedin"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-linkedin" class="eloji-linkedin"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-linkedin" class="eloji-linkedin"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-linkedin" class="eloji-linkedin"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-linkedin" class="eloji-linkedin"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-linkedin" class="eloji-linkedin"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-linkedin" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf127;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-logistics" class="eloji-logistics"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-logistics" class="eloji-logistics"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-logistics" class="eloji-logistics"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-logistics" class="eloji-logistics"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-logistics" class="eloji-logistics"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-logistics" class="eloji-logistics"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-logistics" class="eloji-logistics"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-logistics" class="eloji-logistics"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-logistics" class="eloji-logistics"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-logistics" class="eloji-logistics"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-logistics" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf128;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-money-bag" class="eloji-money-bag"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-money-bag" class="eloji-money-bag"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-money-bag" class="eloji-money-bag"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-money-bag" class="eloji-money-bag"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-money-bag" class="eloji-money-bag"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-money-bag" class="eloji-money-bag"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-money-bag" class="eloji-money-bag"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-money-bag" class="eloji-money-bag"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-money-bag" class="eloji-money-bag"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-money-bag" class="eloji-money-bag"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-money-bag" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf129;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-mouse" class="eloji-mouse"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-mouse" class="eloji-mouse"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-mouse" class="eloji-mouse"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-mouse" class="eloji-mouse"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-mouse" class="eloji-mouse"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-mouse" class="eloji-mouse"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-mouse" class="eloji-mouse"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-mouse" class="eloji-mouse"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-mouse" class="eloji-mouse"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-mouse" class="eloji-mouse"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-mouse" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf12a;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-negotiation" class="eloji-negotiation"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-negotiation" class="eloji-negotiation"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-negotiation" class="eloji-negotiation"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-negotiation" class="eloji-negotiation"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-negotiation" class="eloji-negotiation"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-negotiation" class="eloji-negotiation"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-negotiation" class="eloji-negotiation"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-negotiation" class="eloji-negotiation"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-negotiation" class="eloji-negotiation"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-negotiation" class="eloji-negotiation"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-negotiation" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf103;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-network" class="eloji-network"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-network" class="eloji-network"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-network" class="eloji-network"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-network" class="eloji-network"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-network" class="eloji-network"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-network" class="eloji-network"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-network" class="eloji-network"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-network" class="eloji-network"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-network" class="eloji-network"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-network" class="eloji-network"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-network" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf12b;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-news" class="eloji-news"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-news" class="eloji-news"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-news" class="eloji-news"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-news" class="eloji-news"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-news" class="eloji-news"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-news" class="eloji-news"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-news" class="eloji-news"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-news" class="eloji-news"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-news" class="eloji-news"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-news" class="eloji-news"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-news" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf143;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-noggin" class="eloji-noggin"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-noggin" class="eloji-noggin"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-noggin" class="eloji-noggin"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-noggin" class="eloji-noggin"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-noggin" class="eloji-noggin"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-noggin" class="eloji-noggin"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-noggin" class="eloji-noggin"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-noggin" class="eloji-noggin"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-noggin" class="eloji-noggin"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-noggin" class="eloji-noggin"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-noggin" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf12c;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-paper-audit" class="eloji-paper-audit"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-paper-audit" class="eloji-paper-audit"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-paper-audit" class="eloji-paper-audit"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-paper-audit" class="eloji-paper-audit"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-paper-audit" class="eloji-paper-audit"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-paper-audit" class="eloji-paper-audit"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-paper-audit" class="eloji-paper-audit"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-paper-audit" class="eloji-paper-audit"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-paper-audit" class="eloji-paper-audit"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-paper-audit" class="eloji-paper-audit"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-paper-audit" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf12e;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-paper-sign" class="eloji-paper-sign"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-paper-sign" class="eloji-paper-sign"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-paper-sign" class="eloji-paper-sign"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-paper-sign" class="eloji-paper-sign"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-paper-sign" class="eloji-paper-sign"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-paper-sign" class="eloji-paper-sign"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-paper-sign" class="eloji-paper-sign"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-paper-sign" class="eloji-paper-sign"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-paper-sign" class="eloji-paper-sign"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-paper-sign" class="eloji-paper-sign"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-paper-sign" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf12f;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-payment" class="eloji-payment"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-payment" class="eloji-payment"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-payment" class="eloji-payment"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-payment" class="eloji-payment"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-payment" class="eloji-payment"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-payment" class="eloji-payment"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-payment" class="eloji-payment"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-payment" class="eloji-payment"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-payment" class="eloji-payment"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-payment" class="eloji-payment"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-payment" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf130;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-payment-alt" class="eloji-payment-alt"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-payment-alt" class="eloji-payment-alt"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-payment-alt" class="eloji-payment-alt"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-payment-alt" class="eloji-payment-alt"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-payment-alt" class="eloji-payment-alt"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-payment-alt" class="eloji-payment-alt"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-payment-alt" class="eloji-payment-alt"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-payment-alt" class="eloji-payment-alt"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-payment-alt" class="eloji-payment-alt"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-payment-alt" class="eloji-payment-alt"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-payment-alt" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf131;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-phone" class="eloji-phone"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-phone" class="eloji-phone"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-phone" class="eloji-phone"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-phone" class="eloji-phone"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-phone" class="eloji-phone"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-phone" class="eloji-phone"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-phone" class="eloji-phone"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-phone" class="eloji-phone"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-phone" class="eloji-phone"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-phone" class="eloji-phone"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-phone" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf132;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-phone-alt" class="eloji-phone-alt"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-phone-alt" class="eloji-phone-alt"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-phone-alt" class="eloji-phone-alt"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-phone-alt" class="eloji-phone-alt"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-phone-alt" class="eloji-phone-alt"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-phone-alt" class="eloji-phone-alt"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-phone-alt" class="eloji-phone-alt"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-phone-alt" class="eloji-phone-alt"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-phone-alt" class="eloji-phone-alt"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-phone-alt" class="eloji-phone-alt"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-phone-alt" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf133;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-pie-chart" class="eloji-pie-chart"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-pie-chart" class="eloji-pie-chart"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-pie-chart" class="eloji-pie-chart"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-pie-chart" class="eloji-pie-chart"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-pie-chart" class="eloji-pie-chart"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-pie-chart" class="eloji-pie-chart"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-pie-chart" class="eloji-pie-chart"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-pie-chart" class="eloji-pie-chart"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-pie-chart" class="eloji-pie-chart"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-pie-chart" class="eloji-pie-chart"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-pie-chart" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf134;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-piggybank" class="eloji-piggybank"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-piggybank" class="eloji-piggybank"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-piggybank" class="eloji-piggybank"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-piggybank" class="eloji-piggybank"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-piggybank" class="eloji-piggybank"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-piggybank" class="eloji-piggybank"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-piggybank" class="eloji-piggybank"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-piggybank" class="eloji-piggybank"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-piggybank" class="eloji-piggybank"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-piggybank" class="eloji-piggybank"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-piggybank" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf135;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-piggybank-alt" class="eloji-piggybank-alt"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-piggybank-alt" class="eloji-piggybank-alt"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-piggybank-alt" class="eloji-piggybank-alt"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-piggybank-alt" class="eloji-piggybank-alt"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-piggybank-alt" class="eloji-piggybank-alt"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-piggybank-alt" class="eloji-piggybank-alt"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-piggybank-alt" class="eloji-piggybank-alt"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-piggybank-alt" class="eloji-piggybank-alt"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-piggybank-alt" class="eloji-piggybank-alt"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-piggybank-alt" class="eloji-piggybank-alt"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-piggybank-alt" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf136;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-pin" class="eloji-pin"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-pin" class="eloji-pin"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-pin" class="eloji-pin"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-pin" class="eloji-pin"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-pin" class="eloji-pin"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-pin" class="eloji-pin"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-pin" class="eloji-pin"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-pin" class="eloji-pin"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-pin" class="eloji-pin"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-pin" class="eloji-pin"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-pin" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf141;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-plane" class="eloji-plane"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-plane" class="eloji-plane"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-plane" class="eloji-plane"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-plane" class="eloji-plane"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-plane" class="eloji-plane"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-plane" class="eloji-plane"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-plane" class="eloji-plane"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-plane" class="eloji-plane"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-plane" class="eloji-plane"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-plane" class="eloji-plane"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-plane" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf137;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-rain" class="eloji-rain"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-rain" class="eloji-rain"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-rain" class="eloji-rain"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-rain" class="eloji-rain"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-rain" class="eloji-rain"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-rain" class="eloji-rain"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-rain" class="eloji-rain"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-rain" class="eloji-rain"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-rain" class="eloji-rain"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-rain" class="eloji-rain"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-rain" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf138;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-ready-pay" class="eloji-ready-pay"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-ready-pay" class="eloji-ready-pay"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-ready-pay" class="eloji-ready-pay"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-ready-pay" class="eloji-ready-pay"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-ready-pay" class="eloji-ready-pay"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-ready-pay" class="eloji-ready-pay"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-ready-pay" class="eloji-ready-pay"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-ready-pay" class="eloji-ready-pay"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-ready-pay" class="eloji-ready-pay"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-ready-pay" class="eloji-ready-pay"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-ready-pay" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf139;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-reporting" class="eloji-reporting"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-reporting" class="eloji-reporting"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-reporting" class="eloji-reporting"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-reporting" class="eloji-reporting"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-reporting" class="eloji-reporting"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-reporting" class="eloji-reporting"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-reporting" class="eloji-reporting"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-reporting" class="eloji-reporting"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-reporting" class="eloji-reporting"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-reporting" class="eloji-reporting"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-reporting" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf13a;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-schedule" class="eloji-schedule"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-schedule" class="eloji-schedule"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-schedule" class="eloji-schedule"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-schedule" class="eloji-schedule"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-schedule" class="eloji-schedule"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-schedule" class="eloji-schedule"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-schedule" class="eloji-schedule"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-schedule" class="eloji-schedule"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-schedule" class="eloji-schedule"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-schedule" class="eloji-schedule"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-schedule" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf13b;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-spot-quote" class="eloji-spot-quote"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-spot-quote" class="eloji-spot-quote"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-spot-quote" class="eloji-spot-quote"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-spot-quote" class="eloji-spot-quote"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-spot-quote" class="eloji-spot-quote"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-spot-quote" class="eloji-spot-quote"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-spot-quote" class="eloji-spot-quote"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-spot-quote" class="eloji-spot-quote"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-spot-quote" class="eloji-spot-quote"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-spot-quote" class="eloji-spot-quote"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-spot-quote" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf13c;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-starburst" class="eloji-starburst"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-starburst" class="eloji-starburst"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-starburst" class="eloji-starburst"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-starburst" class="eloji-starburst"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-starburst" class="eloji-starburst"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-starburst" class="eloji-starburst"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-starburst" class="eloji-starburst"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-starburst" class="eloji-starburst"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-starburst" class="eloji-starburst"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-starburst" class="eloji-starburst"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-starburst" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf147;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-traffic" class="eloji-traffic"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-traffic" class="eloji-traffic"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-traffic" class="eloji-traffic"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-traffic" class="eloji-traffic"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-traffic" class="eloji-traffic"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-traffic" class="eloji-traffic"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-traffic" class="eloji-traffic"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-traffic" class="eloji-traffic"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-traffic" class="eloji-traffic"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-traffic" class="eloji-traffic"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-traffic" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf13e;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-train" class="eloji-train"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-train" class="eloji-train"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-train" class="eloji-train"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-train" class="eloji-train"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-train" class="eloji-train"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-train" class="eloji-train"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-train" class="eloji-train"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-train" class="eloji-train"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-train" class="eloji-train"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-train" class="eloji-train"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-train" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf13f;" />
+        </div>
+      </div>
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-twitter" class="eloji-twitter"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-twitter" class="eloji-twitter"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-twitter" class="eloji-twitter"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-twitter" class="eloji-twitter"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-twitter" class="eloji-twitter"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-twitter" class="eloji-twitter"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-twitter" class="eloji-twitter"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-twitter" class="eloji-twitter"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-twitter" class="eloji-twitter"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-twitter" class="eloji-twitter"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-twitter" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf140;" />
+        </div>
+      </div>
+
+
+
+      
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-water" class="eloji-water"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-water" class="eloji-water"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-water" class="eloji-water"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-water" class="eloji-water"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-water" class="eloji-water"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-water" class="eloji-water"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-water" class="eloji-water"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-water" class="eloji-water"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-water" class="eloji-water"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-water" class="eloji-water"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-water" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf142;" />
+        </div>
+      </div>
+<!--added october 26th 2015 @jppope -->
+
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-twitter" class="eloji-computer"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-computer" class="eloji-computer"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-computer" class="eloji-computer"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-computer" class="eloji-computer"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-computer" class="eloji-computer"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-computer" class="eloji-computer"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-computer" class="eloji-computer"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-computer" class="eloji-computer"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-computer" class="eloji-computer"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-computer" class="eloji-computer"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-computer" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf140;" />
+        </div>
+      </div>
+
+
+
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-lightning" class="eloji-lightning"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-lightning" class="eloji-lightning"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-lightning" class="eloji-lightning"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-lightning" class="eloji-lightning"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-lightning" class="eloji-lightning"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-lightning" class="eloji-lightning"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-lightning" class="eloji-lightning"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-lightning" class="eloji-lightning"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-lightning" class="eloji-lightning"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-lightning" class="eloji-lightning"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-lightning" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf140;" />
+        </div>
+      </div>
+
+
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-shipments" class="eloji-shipments"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-shipments" class="eloji-shipments"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-shipments" class="eloji-shipments"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-shipments" class="eloji-shipments"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-shipments" class="eloji-shipments"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-shipments" class="eloji-shipments"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-shipments" class="eloji-shipments"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-shipments" class="eloji-shipments"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-shipments" class="eloji-shipments"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-shipments" class="eloji-shipments"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-shipments" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf140;" />
+        </div>
+      </div>
+
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-truckload-full" class="eloji-truckload-full"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-truckload-full" class="eloji-truckload-full"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-truckload-full" class="eloji-truckload-full"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-truckload-full" class="eloji-truckload-full"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-truckload-full" class="eloji-truckload-full"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-truckload-full" class="eloji-truckload-full"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-truckload-full" class="eloji-truckload-full"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-truckload-full" class="eloji-truckload-full"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-truckload-full" class="eloji-truckload-full"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-truckload-full" class="eloji-truckload-full"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-truckload-full" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf140;" />
+        </div>
+      </div>
+
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-truckload-ltl" class="eloji-truckload-ltl"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-truckload-ltl" class="eloji-truckload-ltl"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-truckload-ltl" class="eloji-truckload-ltl"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-truckload-ltl" class="eloji-truckload-ltl"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-truckload-ltl" class="eloji-truckload-ltl"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-truckload-ltl" class="eloji-truckload-ltl"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-truckload-ltl" class="eloji-truckload-ltl"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-truckload-ltl" class="eloji-truckload-ltl"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-truckload-ltl" class="eloji-truckload-ltl"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-truckload-ltl" class="eloji-truckload-ltl"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-truckload-ltl" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf140;" />
+        </div>
+      </div>
+
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-truckload-small" class="eloji-truckload-small"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-truckload-small" class="eloji-truckload-small"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-truckload-small" class="eloji-truckload-small"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-truckload-small" class="eloji-truckload-small"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-truckload-small" class="eloji-truckload-small"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-truckload-small" class="eloji-truckload-small"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-truckload-small" class="eloji-truckload-small"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-truckload-small" class="eloji-truckload-small"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-truckload-small" class="eloji-truckload-small"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-truckload-small" class="eloji-truckload-small"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-truckload-small" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf140;" />
+        </div>
+      </div>
+
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-visibility" class="eloji-visibility"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-visibility" class="eloji-visibility"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-visibility" class="eloji-visibility"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-visibility" class="eloji-visibility"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-visibility" class="eloji-visibility"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-visibility" class="eloji-visibility"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-visibility" class="eloji-visibility"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-visibility" class="eloji-visibility"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-visibility" class="eloji-visibility"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-visibility" class="eloji-visibility"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-visibility" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf140;" />
+        </div>
+      </div>
+
+      <div class="glyph">
+        <div class="preview-glyphs">
+          <span class="step size-12"><span class="letters">Pp</span><i id="eloji-visibility-copy" class="eloji-visibility-copy"></i></span><span class="step size-14"><span class="letters">Pp</span><i id="eloji-visibility-copy" class="eloji-visibility-copy"></i></span><span class="step size-16"><span class="letters">Pp</span><i id="eloji-visibility-copy" class="eloji-visibility-copy"></i></span><span class="step size-18"><span class="letters">Pp</span><i id="eloji-visibility-copy" class="eloji-visibility-copy"></i></span><span class="step size-21"><span class="letters">Pp</span><i id="eloji-visibility-copy" class="eloji-visibility-copy"></i></span><span class="step size-24"><span class="letters">Pp</span><i id="eloji-visibility-copy" class="eloji-visibility-copy"></i></span><span class="step size-36"><span class="letters">Pp</span><i id="eloji-visibility-copy" class="eloji-visibility-copy"></i></span><span class="step size-48"><span class="letters">Pp</span><i id="eloji-visibility-copy" class="eloji-visibility-copy"></i></span><span class="step size-60"><span class="letters">Pp</span><i id="eloji-visibility-copy" class="eloji-visibility-copy"></i></span><span class="step size-72"><span class="letters">Pp</span><i id="eloji-visibility-copy" class="eloji-visibility-copy"></i></span>
+        </div>
+        <div class="preview-scale">
+          <span class="step">12</span><span class="step">14</span><span class="step">16</span><span class="step">18</span><span class="step">21</span><span class="step">24</span><span class="step">36</span><span class="step">48</span><span class="step">60</span><span class="step">72</span>
+        </div>
+        <div class="usage">
+          <input class="class" type="text" readonly="readonly" onClick="this.select();" value=".eloji-visibility-copy" />
+          <input class="point" type="text" readonly="readonly" onClick="this.select();" value="&amp;#xf140;" />
+        </div>
+      </div>
+
+
+
+      <footer>
+        Made with love using <a href="http://fontcustom.com">Font Custom</a>.
+      </footer>
+    </div>
+  </body>
+</html>

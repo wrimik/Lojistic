@@ -1,0 +1,21 @@
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+
+.card{
+  background: #fff none repeat scroll 0 0;
+  border-radius: 3px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  overflow: visible;
+  float:left;
+  clear:none;
+  margin: 0 16px 16px 0;
+  position:relative;
+  &.navy-card{
+    box-shadow:none;
+    border:1px solid $navy;
+  }
+  .card-content{
+    padding: 15px;
+    overflow: auto;
+  }
+}

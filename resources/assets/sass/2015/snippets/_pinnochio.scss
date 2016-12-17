@@ -1,0 +1,23 @@
+@import  '../inc/_mixins.scss';
+.peetnochio{
+  width: 170px;
+  position: relative;
+  height: 145px;
+  z-index:99;
+  overflow: visible;
+  img{
+    position: absolute;
+  }
+  .peetnochio-nose{
+    @include transition(width 1s);
+    width: 29px;
+    border: 1px solid #000;
+    position: absolute;
+    height: 12px;
+    overflow: visible;
+    background: #fff;
+    top: 95px;
+    left: 122px;
+    border-radius: 20px;
+  }
+}

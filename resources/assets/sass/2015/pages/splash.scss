@@ -1,0 +1,261 @@
+@import '../inc/vars';
+@import '../inc/mixins';
+
+#video-container{
+  width:100%;
+  overflow:visible;
+  height:auto;
+  position:relative;
+}
+#video{
+  width:100%;
+  height:auto;
+}
+
+#timeline{
+  position: relative;
+  width: 85%;
+  float: none;
+  clear: both;
+  height: 100px;
+  margin: 0px auto 25px;
+  max-width: 850px;
+  > div {
+    height: 33px;
+    > div{
+      position:absolute;
+    }
+  }
+  span {
+    display: block;
+    float: left;
+    font-weight: bold;
+    color:$navy;
+    margin: 0 0 0 0;
+    &:nth-child(3){
+      float:right;
+    }
+  }
+  .tldot{
+    width:30px;
+    height:30px;
+    background-color:$navy;
+    border-radius:30px;
+    -moz-border-radius:30px;
+    -webkit-border-radius:30px;
+    -o-border-radius:30px;
+    top:0;
+    &:nth-child(3){
+      right:0;
+    }
+  }
+  .tlline{
+    width:100%;
+    border-bottom:1px solid $navy;
+    top:15px;
+  }
+}
+
+
+#video-caption {
+  color: #FFF;
+  font-size: 34px;
+  left: 10%;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0px 0px 3px #000;
+  top: 50%;
+  width: 80%;
+  margin-top: -221px;
+  line-height:1.4em;
+  @media(max-width:1060px){
+    font-size:30px;
+  }
+  @media(max-width:950px){
+    font-size:23px;
+    margin-top: -181px;
+  }
+  @media(max-width:730px){
+    display:none;
+  }
+  span{
+    font-weight: normal;
+  }
+}
+#toggle-caption{
+  cursor: pointer;
+  font-size: 18px;
+  top: -14px;
+  position: relative;
+  &:hover{
+    color:#900;
+  }
+}
+#video-controls{
+  position: absolute;
+  right: 58px;
+  top: 30px;
+  width:47px;
+  @media(max-width:$smNavBreakpoint){
+    top:40px;
+  }
+  @media(max-width:500px){
+    width:30px;
+  }
+  @media(max-width:450px){
+    display:none;
+  }
+  #mute{
+    background-image: url("/images/splash/audio.png");
+    width: 48px;
+    height: 48px;
+    float: right;
+    clear: both;
+    opacity:0.8;
+    &.muted{
+      opacity:0.4;
+    }
+  }
+  #full-screen{
+    background-image: url("/images/splash/full-screen.png");
+    margin: 15px 6px 0px 0px;
+    float: right;
+    clear: both;
+    opacity:0.4;
+    @media(max-width:500px){
+      margin:-5px 3px 0px 0px;
+    }
+  }
+  > div{
+    background-size:100%;
+    background-repeat:no-repeat;
+    max-width:100%;
+    width: 100%;
+    height: 47px;
+    @media(max-width:500px){
+      width:30px;
+    }
+  }
+  > div:hover{
+    cursor: pointer;
+    opaicty:1;
+  }
+}
+
+
+.service {
+  clear: none;
+  color: #fff;
+  float: left;
+  height: 400px;
+  text-align: center;
+  width: 33.3333%;
+  overflow:hidden;
+  @media(max-width:$xsMax){
+    width:100%;
+  }
+  .product-title {
+    font-size: 23px;
+    position:relative;
+    top:35%;
+    @include transition(top 1s);
+  }
+  .product-icon{
+    line-height:50px;
+    opacity:0;
+    top:0;
+    position: relative;
+    @include transition(top 1s, opacity 1s);
+    p{
+      padding:0 15px;
+      line-height:normal;
+    }
+  }
+  hr{
+    width:0;
+    margin-top:10px;
+    @include transition(width 1s);
+  }
+  &:hover, &.mob-on-stage.on-stage{
+    .product-title{
+      top:13%;
+    }
+    .product-icon{
+      display: block;
+      opacity: 1;
+      top: 6%;
+    }
+    hr{
+      width:40%
+    }
+  }
+}
+
+#services{
+  float:none;
+  clear:both;
+  padding:0;
+  margin:0;
+  overflow:auto;
+}
+
+
+#toolbelt {
+  text-align: center;
+  font-size: 14px;
+  overflow: auto;
+  font-weight: $fontSemibold;
+  > div:nth-child(1){
+    margin-left:8%;
+  }
+  @media(max-width: $smMax){
+    > div:nth-child(3){
+      margin-left:8%;
+    }
+  }
+
+  > div:nth-child(odd){
+    @media(max-width:767px){
+      float:left;
+      clear:left;
+    }
+  }
+  > div:nth-child(even){
+    @media(max-width:767px){
+      float:right;
+      clear:right;
+      margin-right: 8%;
+    }
+  }
+  > div{
+    padding:0 0 55px;
+    > a:nth-child(1){
+      display:block;
+      max-width: 225px;
+      padding:55px 0;
+      background-color:#F2F2F2;
+      margin: 0 auto 25px;
+      cursor: pointer;
+      &:hover{
+        opacity:0.9;
+      }
+    }
+  }
+
+  > div:nth-child(odd) > a:nth-child(1){
+    background-color:#E6E7E8;
+  }
+  > div:nth-child(5){
+    @media(max-width:767px){
+      margin: 0px auto 25px;
+      float: none;
+      clear: both;
+    }
+  }
+}
+#toolbelt a,
+#toolbelt a:hover{
+  cursor: text;
+  color:$navy;
+  text-decoration:none;
+}

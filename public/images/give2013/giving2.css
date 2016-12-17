@@ -1,0 +1,375 @@
+html,body{
+    padding:0;
+    margin:0;
+    font-family:Georgia, "Times New Roman", Times, serif;
+}
+b,h1,h2,h3,h4,h5{
+    /*font-family:"ProximaNova-Semibold", Tahoma, Helvetica, Arial, sans-serif;*/
+}
+h1,h2,h3,h4,h5{
+    text-align: center;
+    color:#164260;
+    /*font-family:"ProximaNova-Semibold", Tahoma, Helvetica, Arial, sans-serif;*/
+}
+a{
+    text-decoration:underline;
+    color:#3391d1;
+}
+p {
+    font-size:17px;
+    line-height:22px;
+}
+div{
+    float:left;
+    clear:none;
+    width:auto;
+    height:auto;
+    overflow:auto;
+}
+#header{
+    width:100%;
+    padding:15px 0 12px;
+    font-size:18px;
+    color:#fff;
+    background-color:#58595B;
+    font-family:"ProximaNova-Regular", Tahoma, Helvetica, Arial, sans-serif; 
+}
+#header b{
+    font-family:"ProximaNova-Semibold", Tahoma, Helvetica, Arial, sans-serif;
+}
+#header div{
+    max-width:1000px;
+    margin:0 auto;
+    float:none;
+}
+#header span{
+    padding-top:18px;
+    display:block;
+    float:left;
+}
+#header div span:nth-child(3){
+    float:right;
+    text-align: right;
+}
+
+#header img{
+    float: left;
+    padding-right:40px;
+    border:0;
+    position:relative;
+    z-index: 50;
+}
+#give_now {
+    line-height: 45px;
+    margin-top: -140px;
+    overflow: hidden;
+    position: relative;
+    right: 80px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#header a{
+    border:0;
+}
+#pageframe{
+    margin:0 auto;
+    float:none;
+    clear:both;
+    width:100%;
+    max-width:1000px;
+}
+#banner{
+    width:100%;
+    max-height:400px;
+    height:auto;
+    margin:0;
+    overflow:hidden;
+}
+#banner img{
+    width:100%;
+    padding:0;
+    margin:0;
+}
+#goal {
+    background: none repeat scroll 0 0 #D1D3D4;
+    clear: both;
+    float: none;
+    padding: 30px;
+    width: auto;
+    margin-bottom:60px;
+}
+#total{
+    font-size:44px;
+    text-align:center;
+    color:#3A3B3D;
+    font-weight:bold;
+}
+#total span {
+    clear: both;
+    color: #ED1C24;
+    display: block;
+    float: left;
+    font-size: 65px;
+    font-weight: bold;
+    height: 45px;
+    line-height: 0;
+    overflow: auto;
+    padding-top: 16px;
+}
+#total span i {
+    font-size: 49px;
+    font-style: normal;
+}
+#total b {
+    clear: both;
+    display: block;
+    float: left;
+    font-size: 21px;
+}
+#progress {
+    clear: none;
+    float: right;
+    width: 68%;
+    padding-top:11px;
+}
+#icons{
+    margin-bottom:10px;
+    overflow: hidden;
+}
+#icons, #bar {
+    clear: both;
+    float: none;
+    height: 30px;
+    width: 100%;
+}
+
+#bar{
+    background-color:#fff;
+    height: 50px;
+}
+#bar div{
+    padding-top:10px;
+    height: 40px;
+    float:left;
+    clear:none;
+    text-align: center;
+    color:#fff;
+    font-size:13px;
+    line-height: 16px;
+    max-width: 50%;
+}
+#collected{
+    background-color:#ED1C24;
+}
+#matched{
+    background-color:#468a40;
+}
+.icon {
+  background-image: url("families.png");
+  background-repeat: no-repeat;
+  background-size: 95% auto;
+  height: 23px;
+  margin: 5px 0 0 16px;
+  width: 27px;
+  background-position:0 1px;
+}
+.icon:nth-child(1){
+    margin-left:0;
+}
+.matched{
+    background-position:0 -21px;
+}
+.donated {
+    background-position: 0 -44px;
+}
+#markers, #markers  table {
+    float: none;
+    width: 100%;    
+    padding-top: 5px;
+}
+#markers table td{
+    width:33.3%
+}
+#markers table td:nth-child(2){
+    text-align: center;
+    font-weight:bold;
+    font-size: 19px;
+    color:#000;
+}
+#markers table td:nth-child(3){
+    text-align: right;
+}
+#content{
+}
+#content p{
+    text-align: center;
+    font-size:26px;
+    color:#333;
+    line-height:45px;
+    padding-bottom:30px;
+}
+ h2{
+    color:#ED1C24;
+    font-size:40px;
+    width:100%;
+    text-align: center;
+}
+h2 span{
+    display:block;
+    width:35%;
+    height:28px;
+    border-bottom:1px solid #000;
+    float:right;
+}
+ h2 span:nth-child(1){
+    float:left;
+}
+#method span{
+    width:17%;
+}
+#matching {
+    background: none repeat scroll 0 0 #EFEFEF;
+    border: 1px solid #AAAAAA;
+    clear: both;
+    float: none;
+    margin: 0 auto 20px;
+    text-align: center;
+    width: 90%;
+}
+#matching span {
+    color: #ED1C24;
+    font-size: 100px;
+    font-style: italic;
+    font-weight: bold;
+    line-height: normal;
+    text-shadow: 3px 3px #FFFFFF;
+}
+#matching div {
+    clear: both;
+    background: #666666;
+    color:#fff;
+    font-size:18px;
+    float: none;
+    padding: 5px 0;
+    text-align: center;
+}
+#matching p {
+    margin-bottom: 10px;
+    padding-bottom: 0;
+}
+#content p.lj{
+    text-align: left;
+    font-size:20px;
+}
+#form{
+    width:100%;
+    float:none;
+    clear:both;
+    background-color:#444;
+}
+#toggle {
+    background: none repeat scroll 0 0 #444;
+    clear: both;
+    color: #FFFFFF;
+    float: none;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    cursor:pointer;
+}
+#toggle div{
+    padding:22px 0 10px;
+    text-align: center;
+    width:50%;
+}
+#toggle div:hover{
+    opacity:0.7;
+}
+#toggle div.selected:hover{
+    opacity:1;
+}
+#toggle div:nth-child(2){
+    background:#999;
+}
+#form table{
+    margin:0 auto;
+    float:none;
+    padding-top:40px;
+    padding-bottom:35px;
+    width: 60%;
+    font-size:21px;
+    color:#fff;
+}
+#form table tr td:nth-child(1){
+    width:29%;
+    text-align: right;
+    padding-right:10px;
+}
+#form table i{
+    font-size:14px;
+}
+input, select {
+    border: medium none;
+    border-radius: 10px;
+    float: right;
+    font-size: 21px;
+    height: 31px;
+    margin: 10px 0;
+    padding: 6px 0 5px 10px;
+    width: 93%;
+}
+select{    
+    height: 42px;
+    padding: 8px 5px 5px;
+}
+button , .button{
+    background: none repeat scroll 0 0 #39B54A;
+    border: medium none;
+    border-radius: 10px;
+    clear: none;
+    color: #FFFFFF;
+    float: right;
+    font-size: 18px;
+    height: 45px;
+    width: 250px;
+    border:2px solid #444444;
+    cursor:pointer;
+}
+button:hover, .button:hover {
+    background-color:#6ddf66;
+    border-color:#fff;
+}
+#footer {
+    background: none repeat scroll 0 0 #CCCCCC;
+    clear: both;
+    float: none;
+    padding: 35px;
+}
+.bank {
+    display:none;
+}
+#form b {
+    color: #FF0000;
+}
+#social {
+    clear: both;
+    float: none;
+    text-align: center;
+    width: 500px;
+    margin:0 auto;
+}
+a.button {
+    line-height: 44px;
+    text-decoration: none;
+}
+#social td {
+    padding: 0 20px;
+}
+#social a.button{
+    background-color:#3976b5;
+    border-color:#1a4877;
+}
+#social a.button:hover{
+    background-color:#5b97d4;
+    border-color:#fff;
+}

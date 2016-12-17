@@ -1,0 +1,111 @@
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+.btn{
+  white-space: normal;
+  word-wrap: normal;
+  cursor: pointer;
+  @include transition(background-color 1s, color 1s, border-color 1s);
+}
+.btn-lg{
+  width: 100%;
+  .inline{
+    display:inline-block;
+  }
+}
+.btn-lg-xs{
+  @media(max-width:$xsMax){
+    width:100%;
+    display:block;
+    margin:25px 0;
+    font-size:18px;
+    padding-top:9px;
+  }
+}
+.btn-md{
+  width: auto;
+  font-size: 20px;
+  padding: 10px 25px 6px;
+  margin: 9px;
+}
+.btn-center{
+  float:none;
+  clear:both;
+  margin-left:auto;
+  margin-right:auto;
+}
+.btn-lightBlue {
+  background-color:$accentLightBlue;
+  border: none;
+  color:white;
+  &:hover{
+    color:$silver;
+  }
+}
+.btn-white{
+  border:none;
+  background:#fff;
+  color:$lightBlue;
+  &:hover{
+    color:$navy;
+  }
+}
+.btn-download {
+  font-size: 110%;
+  //font-family: $fontBold;
+  padding:10px 25px 10px 15px;
+  border:none;
+  text-decoration: none;
+  cursor: pointer;
+  display:inline-block;
+  margin:10px;
+
+  img {
+    display:inline-block;
+  }
+
+  &.excel-download {
+    background-color: #4da74a;
+    color:#ffffff;
+  }
+}
+.btn-ghost{
+  background-color: rgba(255, 255, 255, 0.52);
+  border-color: #fff;
+  color: #fff;
+  &:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: #fff;
+  }
+}
+.btn-ghost-blue{
+   background-color: transparent;
+   border-color: $brightBlue;
+   color: $brightBlue;
+   &:hover{
+     background-color: rgba(255, 255, 255, 0.8);
+     border-color: #fff;
+   }
+ }
+.btn-ghost-yellow{
+  background-color: transparent;
+  border-color: $y2020;
+  color: $y2020;
+  &:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: #fff;
+  }
+}
+.btn-thick{
+  width: 100%;
+  padding:25px;
+  font-size: 110%;
+  text-transform: uppercase;
+}
+.button-wrap{
+ margin: 0px 55px 0px 55px;
+}
+.tan-spacing-one{
+  @media screen and (max-width:560px) {  margin-top: 80px;  }
+  @media screen and (min-width: 560px){  margin-top: 60px;  }
+}
+

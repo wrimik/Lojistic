@@ -1,0 +1,21 @@
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+ul.checklist {
+  padding-left:0;
+  text-indent:2px;
+  list-style: none;
+  list-style-position:outside;
+  & > li{
+    border-left:0;
+    border-left:24px solid $flatBlue;
+  }
+  li:before {
+    color: #fff;
+    left: 21px;
+    position: absolute;
+    vertical-align: middle;
+  }
+}
+.brightBlue ul.checklist > li{
+  border-left-color:#565656;
+}

@@ -1,0 +1,12 @@
+<option value="2016%20-%20Daily%20Rates">2016 - Daily Rates</option>
+<option value="2015%20-%20Standard%20List">2015 - Standard List</option>
+<option value="2015%20-%20Daily%20Rates">2015 - Daily Rates</option>
+<option value="2014%20-%20Standard%20List">2014 - Standard List</option>
+<option value="2014%20-%20Daily%20Rates">2014 - Daily Rates</option>
+<option value="2013%20-%20Standard%20List">2013 - Standard List</option>
+<option value="2013%20-%20Daily%20Rates">2013 - Daily Rates</option>
+<option value="2012%20-%20Standard%20List">2012 - Standard List</option>
+<option value="2012%20-%20Daily%20Rates">2012 - Daily Rates</option>
+<option value="2011">2011</option>
+<option value="2010">2010</option>
+<option value="2009">2009</option>

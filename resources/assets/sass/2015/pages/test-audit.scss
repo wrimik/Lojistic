@@ -1,0 +1,342 @@
+@import '../inc/vars';
+@import '../inc/mixins';
+
+
+.result-total{
+  width:235px;
+  .card-content{
+    position:relative;
+    background: #fff;
+    z-index: 10;
+    & > div{
+      padding:0;
+    }
+    & > div:nth-child(1){
+      height:65px;
+      padding:0 0 15px 0;
+    }
+  }
+}
+
+.info{
+  border: 1px solid #eee;
+  border-radius: 30px;
+  color: #19e;
+  cursor: pointer;
+  display: block;
+  font-family: Times New Roman,serif;
+  font-size: 15px;
+  font-style: italic;
+  position: absolute;
+  right: 15px;
+  text-align: center;
+  top: 15px;
+  width: 20px;
+  z-index: 12;
+  &:hover{
+    color:#fff;
+    background:#19e;
+  }
+}
+
+
+.tab{
+  padding-top:35px;
+}
+
+//    Upload Progress Circle    //
+
+$acAniDir: 1s;
+$circle-size: 220px;
+$circle-background: $silver;
+$circle-color: $brightBlue;
+$inset-size: 190px;
+$inset-color: $silver;
+$transition-length: 1s;
+$doneGreen: #8dee8d;
+$shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+
+.radial-progress {
+  margin: 50px auto;
+  float: none;
+  clear: both;
+  width: $circle-size;
+  height: $circle-size;
+  background-color: $circle-background;
+  border-radius: 50%;
+  .circle {
+    .mask, .fill, .shadow {
+      width: $circle-size;
+      height: $circle-size;
+      position: absolute;
+      border-radius: 50%;
+    }
+    .shadow {
+      box-shadow: $shadow inset;
+    }
+    .mask, .fill {
+      -webkit-backface-visibility: hidden;
+//      transition: -webkit-transform $transition-length;
+//      transition: -ms-transform $transition-length;
+//      transition: transform $transition-length;
+    }
+    .mask {
+      clip: rect(0px, $circle-size, $circle-size, $circle-size/2);
+      .fill {
+        clip: rect(0px, $circle-size/2, $circle-size, 0px);
+        @include transition(background 2s);
+        background: $circle-color;
+      }
+      &.done .fill {
+        @include transition(background 2s);
+        background: $silver;
+      }
+      &.bad .fill {
+        background: $red;
+      }
+    }
+  }
+  .inset {
+    width: $inset-size;
+    height: $inset-size;
+    position: absolute;
+    margin-left: ($circle-size - $inset-size)/2;
+    margin-top: ($circle-size - $inset-size)/2;
+    background-color: $inset-color;
+    border-radius: 50%;
+    box-shadow: $shadow;
+    &.done{
+      cursor: pointer;
+      &:active{
+        position: relative;
+        top: 17px;
+      }
+      &:hover{
+        box-shadow:0 0 11px 7px #00c651;
+      }
+    }
+    .ac {
+      background: $circle-color;
+      position: absolute;
+    }
+    #ac-1 {
+      @include border-radius(3px);
+      width: 28px;
+      height: 80px;
+      top: 60px;
+      left: 50%;
+      margin-left: -13px;
+    }
+    #ac-2, #ac-3 {
+      margin-left: -25px;
+      transform: rotate(45deg);
+      @include border-radius(0px 3px 3px 3px);
+      background: $circle-color;
+      width: 22px;
+      height: 64px;
+      top: 40px;
+      left: 50%;
+    }
+    #ac-2 {
+      margin-left: 5px;
+      transform: rotate(135deg);
+      @include border-radius(3px 0 3px 0px);
+    }
+    &.done:hover{
+      @include transition(box-shadow 1s);
+//      #ac-2{
+//        @include transition(background-color 2s);
+//      }
+      #ac-3{
+        @include transition(all 1s);
+      }
+    }
+    &.bad #ac-1 {
+      //hide this one
+      height: 0;
+      top: 120px;
+      background: $green;
+    }
+    &.done #ac-1 {
+      background: #00c651;
+      border-radius: 200px;
+      height: 125px;
+      left: 46px;
+      top: 32px;
+      width: 125px;
+    }
+    &.done #ac-2 {
+      background: $silver;
+      border-radius: 200px;
+      height: 90px;
+      left: 46px;
+      top: 49px;
+      transform: rotate(0deg);
+      width: 90px;
+    }
+    &.done #ac-3 {
+      background: #00c651;
+      border-radius: 10px;
+      box-shadow: 0 0 0 10px $silver;
+      box-sizing: content-box;
+      height: 77px;
+      left: 109px;
+      top: 20px;
+      transform: rotate(0deg);
+      width: 21px;
+    }
+    &.bad #ac-2 {
+      background: #f00;
+      border-radius: 3px;
+      height: 118px;
+      margin-left: -14px;
+      top: 40px;
+      width: 28px;
+    }
+    &.bad #ac-3 {
+      background: #f00;
+      border-radius: 3px;
+      height: 118px;
+      left: 50%;
+      margin-left: -14px;
+      top: 40px;
+      width: 28px;
+    }
+  }
+  &:hover{
+    .inset.done #ac-1,
+    .inset.done #ac-3{
+      outline:5px rgba(0, 198, 81, .7);
+    }
+  }
+}
+
+
+// Audit Share
+#audit-share{
+  &.pending{
+    bottom:-100px;
+  }
+  border-radius: 3px;
+  box-shadow: 0 0 4px #eee;
+  bottom: 4px;
+  position: fixed;
+  right: 3px;
+  background: #fff;
+  border:1px solid #dedede;
+  border-top: 2px solid $flatBlue;
+  padding: 20px;
+  width: 274px;
+  z-index: 11;
+  &.after{
+    right:-254px;
+    background:$flatBlue;
+    &:hover{
+      cursor: pointer;
+      background:lighten($flatBlue, 10);
+      right:-234px;
+    }
+    .close{
+      display:none;
+    }
+    .open{
+      display:block;
+    }
+  }
+  .close{
+    display:block;
+    position: absolute;
+    right: 8px;
+    top: 4px;
+  }
+  .open{
+    display:block;
+    color: #fff;
+    left: 2px;
+    position: absolute;
+    top: 40%;
+  }
+}
+// End Audit Share
+
+#invoice-csv, .prototype{
+  display:none;
+}
+.card.audit-details {
+  width: 90%;
+  .form-control{
+    display: inline-block;
+    float: left;
+    margin-right: 17px;
+    width: auto;
+  }
+  .details{
+    clear: both;
+    float: none;
+    max-height: 295px;
+    overflow-y: scroll;
+    padding-top: 25px;
+    &:not(:first-of-type){
+    display:none;
+    }
+    &:nth-child(1){
+      display:block;
+    }
+    .detail {
+      clear: none;
+      float: left;
+      padding: 4px 3px;
+      width: auto;
+      & > div{
+        background: #efefef none repeat scroll 0 0;
+        clear: none;
+        float: left;
+        padding: 7px 14px;
+        &:nth-child(1){
+          border-right: 1px solid #fff;
+          text-align: right;
+          width: 65px;
+        }
+        &:nth-child(2) {
+          text-align: left;
+          width: 180px;
+        }
+      }
+    }
+  }
+}
+#charges-chart{
+  min-width:100%;
+  min-height:400px;
+}
+.tab:not(:first-child), .upload-messages > div, .ups-instructions, .fedex-instructions, #ups-progress-meter{
+  display:none;
+}
+.upload-progress-title{
+  text-transform: capitalize;
+  height:75px;
+}
+.billing-center-preview{
+  border-right:1px solid #e9e9e9;
+}
+.details-title{
+  line-height: 36px;
+}
+.card.audit-stats{
+  width: 90%;
+}
+.result-total {
+  @media(max-width:530px){
+    float:none;
+    margin:0 auto 16px auto;
+  }
+}
+@media(max-width:431px){
+  .tab-controls .btn-lg{
+    font-size:13px;
+    padding:7px 10px;
+  }
+}
+#ups-billing-systems, #ups-help{
+  overflow: auto;
+}

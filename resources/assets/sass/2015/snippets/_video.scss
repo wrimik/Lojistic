@@ -1,0 +1,42 @@
+.video-section{
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  position:relative;
+  video {
+    opacity: 0.2;
+    position: absolute;
+    z-index: 0;
+    &.bottom-right{
+      bottom:0;
+      right:0;
+    }
+  }
+}
+#cin-beach{
+  @media(min-width:1400px){
+    height: auto;
+    right: 0;
+    width: auto;
+  }
+  @media(min-width:1000px) and (max-width:1400px){
+    width:135%;
+    right: 0;
+  }
+  @media(min-width:885px) and (max-width:1000px){
+    height: 100%;
+    left: -209px;
+    width: auto;
+  }
+  @media(min-width:650px) and (max-width:885px){
+    height: 100%;
+    left: -320px;
+    width: auto;
+  }
+  @media(max-width:650px){
+    top: 60px;
+  }
+  @media(max-width:650px){
+   display:none;
+  }
+}

@@ -1,0 +1,218 @@
+
+/*importing the font faces for holiday giving program*/
+@font-face {
+    font-family: 'bebas_neuethin';
+    src: url('bebasneue_thin-webfont.eot');
+    src: url('bebasneue_thin-webfont.eot?#iefix') format('embedded-opentype'),
+    url('bebasneue_thin-webfont.woff2') format('woff2'),
+    url('bebasneue_thin-webfont.woff') format('woff'),
+    url('bebasneue_thin-webfont.ttf') format('truetype'),
+    url('bebasneue_thin-webfont.svg#bebas_neuethin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bebas_neue_regularregular';
+    src: url('bebasneue_regular-webfont.eot');
+    src: url('bebasneue_regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('bebasneue_regular-webfont.woff2') format('woff2'),
+    url('bebasneue_regular-webfont.woff') format('woff'),
+    url('bebasneue_regular-webfont.ttf') format('truetype'),
+    url('bebasneue_regular-webfont.svg#bebas_neue_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bebas_neuelight';
+    src: url('bebasneue_light-webfont.eot');
+    src: url('bebasneue_light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('bebasneue_light-webfont.woff2') format('woff2'),
+    url('bebasneue_light-webfont.woff') format('woff'),
+    url('bebasneue_light-webfont.ttf') format('truetype'),
+    url('bebasneue_light-webfont.svg#bebas_neuelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bebas_neuebook';
+    src: url('bebasneue_book-webfont.eot');
+    src: url('bebasneue_book-webfont.eot?#iefix') format('embedded-opentype'),
+    url('bebasneue_book-webfont.woff2') format('woff2'),
+    url('bebasneue_book-webfont.woff') format('woff'),
+    url('bebasneue_book-webfont.ttf') format('truetype'),
+    url('bebasneue_book-webfont.svg#bebas_neuebook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'bebas_neuebold';
+    src: url('bebasneue_bold-webfont.eot');
+    src: url('bebasneue_bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('bebasneue_bold-webfont.woff2') format('woff2'),
+    url('bebasneue_bold-webfont.woff') format('woff'),
+    url('bebasneue_bold-webfont.ttf') format('truetype'),
+    url('bebasneue_bold-webfont.svg#bebas_neuebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sign_painter';
+    src: url("SignPainter.otf") format("opentype");
+}
+/*====================
+    Begin styles
+=====================*/
+.Hark-the-Herald{
+    background-color:#ece4c9;
+}
+
+/*====================
+    Typography
+=====================*/
+.christmas-font{
+    font-family: 'bebas_neue_regularregular', serif !important;
+}
+.christmas{
+    font-family: 'sign_painter', cursive !important;
+}
+.christmas-title{
+    font-family: 'sign_painter', cursive !important;
+    font-size: 8rem;
+}
+.christmas-subtitle{
+    padding-left:5px;
+    padding-right:5px;
+}
+.christmas-paypal{
+    font-family: 'bebas_neue_regularregular', serif !important;
+    font-size: 3.5rem;
+    height:100%;
+    width:100%;
+    padding:20px;
+    border:none;
+    background-color:transparent;
+}
+h4.cst{ font-size: 3.5rem;}
+@media screen and (max-width:1105px ){
+    .christmas-title{font-size: 7rem; margin-top:57px;}
+    .christmas-subtitle{ margin-top:0px;}
+    h4.cst{ font-size: 3rem;}
+}
+@media screen and (max-width:981px  ){
+    .christmas-title{font-size: 6rem; margin-top:52px;}
+    .christmas-subtitle{margin-top:0px;}
+    h4.cst{ font-size: 2.5rem;}
+}
+@media screen and (max-width:855px  ){
+    .christmas-title{font-size: 5.2rem; margin-top:57px;}
+    .christmas-subtitle{margin-top:0px;}
+    h4.cst{ font-size: 2rem;}
+}
+.explanation-title{
+    margin-top:-50px;
+    padding-bottom:0px !important;
+    font-family: 'sign_painter', cursive !important;
+    font-size: 8rem;
+
+}
+.the-bonus-title{
+    margin-top:-50px;
+    padding-bottom: 0px !important;
+    font-family: 'sign_painter', cursive !important;
+    font-size: 8rem;
+}
+.the-bonus-inner-title{
+    margin-top:-50px;
+    padding-bottom: 0px !important;
+    font-family: 'bebas_neue_regularregular', serif !important;
+    font-size: 10rem !important;
+}
+/*====================
+      Various
+=====================*/
+/* progress bar */
+.progress-key-xs{
+    margin-left:12%;
+}
+@media screen and (max-width:1130px ){
+    .hide-eleven-thirty{
+        display: none;
+    }
+}
+
+/*=====================================
+* Tis the season section
+ =====================================*/
+.xmas-oval{
+    display: inline-block;
+    width:100px;
+    height:50px;
+    border: dashed 2px #e7606c;
+    -moz-border-radius: 100px / 50px;
+    -webkit-border-radius: 100px / 50px;
+    border-radius: 100px / 50px;
+}
+.on-both-sides{
+    padding:20px 0px 20px 0px;
+    border-top: dashed 2px #e7606c;
+    border-bottom: dashed 2px #e7606c;
+}
+
+/*====================
+   Progress Section
+=====================*/
+.facts-box{
+    margin-top:90px;
+    padding: 30px;
+    background-color:whitesmoke;
+}
+.holiday-rule{
+    max-width: 200px;
+    margin:0px auto;
+    padding:0px;
+    border-top: dashed 2px #e7606c;
+}
+.holiday-explaination{
+    position:relative;
+    display:block;
+    margin:50px auto;
+    padding:0px;
+    border-top: dashed 2px #e7606c;
+}
+.holiday-explaination-last{
+    margin-bottom:0px;
+}
+.explaination-span{
+    background-color:white;
+}
+.the-bonus{
+    width:100%;
+    height:100%;
+    margin-top:11px;
+    border: dashed 2px white;
+}
+.the-bonus-inner{
+    padding-bottom:20px;
+}
+.the-bonus-span{
+    padding-left:20px;
+    padding-right:20px;
+    background-color:#e7606c;
+}
+.one-hundred-margin{
+    margin:10px;
+}
+.form-container{
+    padding: 60px 40px;
+    background-color:#e7606c;
+}
+.cc-form-tab{
+    border-bottom: #ece4c9 solid 1px;
+}
+.progress-indicator{
+    opacity:1;
+}
+.pre-donation-form{
+    margin-bottom:100px;
+}

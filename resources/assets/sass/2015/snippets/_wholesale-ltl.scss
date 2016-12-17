@@ -1,0 +1,37 @@
+@import '../inc/vars';
+@import '../inc/mixins';
+
+.ltl-title{
+  @media(max-width:$xsMax){
+    padding-bottom:15px;
+    margin-bottom:15px;
+    h3{
+      margin-top:0;
+    }
+  }
+}
+.tools-title{
+  margin-top:25px;
+  font-size: 14px;
+  margin-bottom: -6px;
+}
+.closing-section{
+  margin-top:50px;
+  margin-bottom:50px;
+}
+.calc-hover:hover{
+  background-color:$flatTeal;
+}
+.col-center {
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+}
+.social-spacing{
+  margin-top:10px;
+}
+
+.social-hover:hover{
+  opacity: 0.7;
+}
+

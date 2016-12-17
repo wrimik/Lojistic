@@ -1,0 +1,8 @@
+.postit{
+  overflow:auto;
+  margin-bottom:25px;
+  border-bottom:1px solid #d0d1d5;
+}
+section.white .postit > div:nth-child(2) {
+  background-color: #fafafa;
+}

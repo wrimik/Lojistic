@@ -1,0 +1,22 @@
+.video-title{
+  @media(max-width:$smNavBreakpoint){
+    padding-top:160px;
+  }
+}
+.video-group{
+  overflow:auto;
+  iframe{
+    min-height:240px;
+    @media(max-width:$xsMax){
+      min-height:200px;
+      margin-bottom:-13px;
+    }
+  }
+  @media(max-width:$xsMax){
+    border-bottom:10px solid $navy;
+    border-top:1px solid $white;
+  }
+  .video-desc{
+    min-height:240px;
+  }
+}

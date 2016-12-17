@@ -1,0 +1,127 @@
+.slider{
+    width: 100%;
+    height: auto;
+    float: none;
+    clear: both;
+    border: 5px solid #d0d1d6;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    max-width: 972px;
+    margin: 0 auto;
+    div{
+       position:absolute;
+       width:100%;
+       height:100%;
+       background-repeat: no-repeat;
+       &:nth-child(1){
+           z-index:50;
+       }
+       &:nth-child(2){
+           z-index:40;
+       }
+    }
+    .ui-resizable-e {
+        background-color: #d0d1d6;
+        max-width: 5px;
+        right: 0px;
+        overflow: visible;
+        .slider-handle {
+            z-index: 60;
+            margin-left: -22px;
+            position: absolute;
+            bottom: 20px;
+            cursor: ew-resize;
+        }
+    }
+}
+
+.slider{
+    .s-a{
+        max-width:100%;
+        background-image:url('../images/splash/slider-source.jpg');
+        width:50%;
+    }
+    .s-b{
+        background-image:url('../images/splash/slider-lojistic.jpg');
+    }
+}
+
+.ui-resizable-s,
+.ui-resizable-se{
+    display:none;
+}
+
+
+#team{
+    max-width: 1050px;
+    margin: 0 auto;
+    .slider{
+        margin-bottom:25px;
+    }
+}
+
+#luke{
+    .s-a{
+        background-image:url('../images/splash/then/luke.jpg');
+    }
+    .s-b{
+        background-image:url('../images/splash/now/luke.jpg');
+    }
+}
+#jared{
+    .s-a{
+        background-image:url('../images/splash/then/jared.jpg');
+    }
+    .s-b{
+        background-image:url('../images/splash/now/jared.jpg');
+    }
+}
+#rich{
+    .s-a{
+        background-image:url('../images/splash/then/rich.jpg');
+    }
+    .s-b{
+        background-image:url('../images/splash/now/rich.jpg');
+    }
+}
+#salik{
+    .s-a{
+        background-image:url('../images/splash/then/salik.jpg');
+    }
+    .s-b{
+        background-image:url('../images/splash/now/salik.jpg');
+    }
+}
+#steve{
+    .s-a{
+        background-image:url('../images/splash/then/steve.jpg');
+    }
+    .s-b{
+        background-image:url('../images/splash/now/steve.jpg');
+    }
+}
+#tan{
+    .s-a{
+        background-image:url('../images/splash/then/tan.jpg');
+    }
+    .s-b{
+        background-image:url('../images/splash/now/tan.jpg');
+    }
+}
+#bryan{
+    .s-a{
+        background-image:url('../images/splash/then/bryan.jpg');
+    }
+    .s-b{
+        background-image:url('../images/splash/now/bryan.jpg');
+    }
+}
+#laura{
+    .s-a{
+        background-image:url('../images/splash/then/laura.jpg');
+    }
+    .s-b{
+        background-image:url('../images/splash/now/laura.jpg');
+    }
+}

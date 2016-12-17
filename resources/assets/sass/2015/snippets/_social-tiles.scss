@@ -1,0 +1,22 @@
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+
+.social-tiles a{
+  color: #FFF;
+  background-color: #6096C3;
+  padding:10px 15px;
+  margin: 0px 14px 15px 0;
+  font-size: 28px;
+  display: block;
+  float: left;
+  clear: none;
+  border-radius:3px;
+  &:nth-child(1){
+    margin-left:0;
+  }
+  &:hover{
+    text-decoration: none;
+    text-shadow: 2px 2px 3px darken($flatBlue, 10%);
+    background-image: linear-gradient(lighten($flatBlue, 5%), $flatBlue 40px);
+  }
+}

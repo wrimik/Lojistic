@@ -1,0 +1,7 @@
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+.split-img{
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: left 100% top 50%;
+}

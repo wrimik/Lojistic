@@ -1,0 +1,24 @@
+/* flat colors */
+
+/* Bright Colors */
+
+/* layout colors */
+
+/* new colors*/
+
+/* product colors*/
+
+/* sizes */
+
+/* fonts */
+
+.wp-img {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 799px) {
+  .wp-img {
+    margin-bottom: 200px;
+    margin-top: -100px;
+  }
+}

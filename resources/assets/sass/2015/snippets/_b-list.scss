@@ -1,0 +1,52 @@
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+
+#b-list{
+  position:relative;
+  .b-list-highlight{
+    @media(max-width:$xsMax){
+      padding:25px;
+      border-bottom:1px solid #d0d1d6;
+    }
+  }
+  .navy-border-sides{
+    @media(min-width:$smMin){
+      border-left:1px solid $navy;
+      border-right:1px solid $navy;
+    }
+  }
+  .widowspeak{
+    left: 50%;
+    margin-left: -20px;
+    margin-top: -1px;
+    position: absolute;
+    top: 0;
+  }
+  .c-list-highlight {
+    border: 1px solid #00344b;
+    clear: none;
+    float: left;
+    margin-top: 12px;
+    padding: 20px 5px;
+    text-align: center;
+    width: 46%;
+    @media(max-width:563px){
+      width:100%;
+    }
+    b{
+        clear: none;
+        display: inline-block;
+        float: left;
+        line-height: 24px;
+        width: 50%;
+      @media(max-width:1037px){
+        padding-bottom: 13px;
+        width: 100%;
+      }
+    }
+    a.btn {
+      position: relative;
+      top: 5px;
+    }
+  }
+}

@@ -1,0 +1,131 @@
+
+
+#ac-controls {
+  @media(min-width: $smMin) {
+    padding-right: 50px;
+  }
+  label {
+    width: 100%;
+    span {
+      display: block;
+      &.pull-right {
+        float: right;
+        text-align: right;
+      }
+    }
+  }
+}
+
+#audit-calc {
+  margin-top: 25px;
+  border-radius: 5px;
+  &.pending {
+    background: #aaa;
+    padding-top: 25px;
+    position: relative;
+    #ac-you {
+      diplay: none;
+    }
+    * {
+      opacity: 0.4;
+    }
+    #ac-pending {
+      display: block;
+      width: 360px;
+      border-radius: 2px;
+      opacity: 1;
+      background: #888;
+      color: #fff;
+      text-align: center;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      margin-left: -180px;
+      font-size: 18px;
+      padding: 10px 0;
+    }
+  }
+  #ac-pending {
+    display: none;
+  }
+  #ac-chart {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    table {
+      width: 100%;
+      color: #333;
+      font-size: 18px;
+      @media(max-width: $xsMax) {
+        font-size: 13px;
+      }
+      tr:nth-child(2) td:nth-child(2) {
+        font-size: 24px;
+        background-color: #f2dede;
+        color: #fff;
+        border-left:3px solid #900;
+        color:#900;
+        padding: 13px 0 8px;
+      }
+      td {
+        &:nth-child(1) {
+          text-align: left;
+        }
+        &:nth-child(2) {
+          text-align: center;
+        }
+        &:nth-child(3) {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+#ac-you {
+  position: absolute;
+  top: 65px;
+  left: 45%;
+  div {
+    background: #900;
+    &:nth-child(1) {
+      border-radius: 10px;
+      text-align: center;
+      color: #fff;
+      font-size: 17px;
+      padding: 5px 10px 3px
+    }
+    &:nth-child(2) {
+      width: 3px;
+      height: 268px;
+      margin: 0 auto;
+      float: none;
+      clear: both;
+    }
+  }
+}
+
+#ac-results{
+  padding-top:75px;
+}
+#ac-start-saving{
+  display:none;
+}
+#audit-calc #ac-chart table tr:nth-child(2) td:nth-child(2) {
+  background-color: #f2dede;
+  border-left: 3px solid #900;
+  color: #900;
+  font-size: 24px;
+  padding: 13px 0 8px;
+}
+
+#request-large-audit-after{
+  display:none;
+  strike{
+    color:#900;
+  }
+  i{
+    color: $flatSeafoam;
+  }
+}

@@ -1,0 +1,15 @@
+section{
+  padding:100px 0;
+  margin:0;
+  &.sm-banner{
+    padding:25px 0;
+    margin:0;
+    //@media(max-width:950px){
+    //  padding-top:105px;
+    //}
+  }
+  &.md-banner{
+    padding:50px 0;
+    margin:0;
+  }
+}

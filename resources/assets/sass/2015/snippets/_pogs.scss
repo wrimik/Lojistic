@@ -1,0 +1,53 @@
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+.pog-container{
+  outline:none;
+  a{
+    outline:none;
+    .pog{
+      display: block;
+      margin: 0 auto;
+      width: 160px;
+      height: 160px;
+      .pog-img, .pog-desc{
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border: 6px solid #fff;
+        width: 160px;
+        height: 160px;
+        border-radius: 100%;
+        box-shadow: 0 0 5px #333;
+        overflow:hidden;
+        .eloji {
+          position: relative;
+          top: 36px;
+        }
+      }
+      .pog-desc{
+        height: 160px;
+        width:160px;
+        padding: 0 10px;
+        background-color:$flatGrey;
+        font-size: 13px;
+        line-height: normal;
+        z-index: 15;
+        span{
+          color:#fff;
+          display: table-cell;
+          height: 160px;
+          width: 160px;
+          vertical-align: middle;
+        }
+      }
+    }
+    .pog-title{
+      width: 100%;
+      display: block;
+      float: none;
+      clear: both;
+      padding-top: 15px;
+      font-size: 19px;
+      line-height:37px;
+    }
+  }
+}

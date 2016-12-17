@@ -1,0 +1,9 @@
+@import '../inc/vars';
+.fakeLink{
+  color:$flatBlue;
+  text-decoration:underline;
+  &:hover{
+    cursor: pointer;
+    color:lighten($flatBlue, 15);
+  }
+}

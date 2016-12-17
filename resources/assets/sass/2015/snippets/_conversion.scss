@@ -1,0 +1,120 @@
+@import '../inc/vars';
+@import '../inc/mixins';
+
+$break: 1000px;
+
+.minimal-navigation {
+  margin-top: 22.5px;
+  border-bottom:1px solid #d0d1d6;
+  .minimal-nav-right {
+    padding: 11px 0;
+  }
+}
+.minimal-title {
+  margin-bottom: 30px;
+}
+section.minimal-form-body {
+  padding: 100px 0 180px;
+  overflow:hidden;
+  .container {
+    h2 {
+      text-align: left;
+    }
+  }
+}
+section.conversion-form-small-padding {
+  padding: 98px 0 100px;
+  overflow:hidden;
+  .container {
+    h2 {
+      text-align: left;
+    }
+  }
+  @media screen and (max-width:904px) and (min-width:800px) {
+    padding: 100px 0 10px;
+    .container{
+      .checklist-margin{
+        font-size: 1em;
+      }
+    }
+  }
+  @media screen and (max-width:1055px) and (min-width:800px) {
+    .container{
+      .checklist-margin{
+        font-size: 1em;
+      }
+    }
+  }
+}
+.featurette-border {
+  margin: 0px auto;
+  max-height: 600px;
+}
+.featurette {
+  //nothing here
+}
+.featurette-body {
+  padding:0px 10% 20px;
+}
+.featurette-title {
+  margin: 0px !important;
+  padding: 20px 0px 20px 0px;
+}
+.minimal-sticky-footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  padding: 30px;
+}
+.form-triangle-adjustment {
+  margin-top: 0px !important;
+}
+// featurette alt
+.featurette-alt-border {
+  margin: 0px auto;
+  max-height: 750px;
+  max-width: 450px;
+}
+.featurette-alt-body {
+  padding: 7% 10% 8% 10%;
+}
+.arrow-placement{
+  position:absolute;
+  margin-left: -230px;
+  margin-top: -50px;
+  z-index: 200px !important;
+}
+.arrow-content {
+  margin-left: -250px;
+  margin-bottom: -30px;
+}
+//arrow alt
+.arrow-alt-placement {
+  position: absolute;
+  margin-left: -240px;
+  margin-top: -40px;
+}
+.arrow-alt-content {
+  margin-left: -250px;
+  margin-bottom: -30px;
+}
+.checklist-container-margin {
+  margin-bottom: 100px;
+}
+@media only screen and (max-width: 580px) {
+  .checklist-container-margin {
+    margin-bottom: 100px;
+    text-align: center;
+  }
+}
+.checklist-margin {
+  margin-top: 8px;
+}
+.checklist-margin-sm{
+  margin-top:4px;
+}
+.checklist-margin-md{
+  margin-top:14px;
+}
+

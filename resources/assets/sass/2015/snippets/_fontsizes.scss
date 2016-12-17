@@ -1,0 +1,28 @@
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+//create .fs8 for font size 8px
+//increments by 4 starting @ 8. so: 8, 12, 16, 20, 24, 28, 32, 36
+$fs: 8;
+$fsSelector: 'body .fs-';
+@while $fs < 125 {
+    #{$fsSelector}#{$fs} { font-size: $fs + px}
+    $fs: $fs + 4;
+}
+$fs: 125;
+@while $fs < 1000 {
+    #{$fsSelector}#{$fs} { font-size: $fs + px}
+    $fs: $fs + 25;
+}
+
+.fw-reg{
+  font-family: $fontReg;
+}
+.fw-semi{
+  font-family: $fontSemibold;
+}
+.fw-thin{
+  font-family: $fontLight;
+}
+.fw-bold{
+  font-family: $fontBold;
+}

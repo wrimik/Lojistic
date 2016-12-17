@@ -1,0 +1,550 @@
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+#header {
+  margin-bottom: 0;
+  overflow:visible;
+  height:auto;
+  z-index:100;
+  min-height:197px;
+  @media(max-width:950px){
+    position:fixed;
+  }
+  *{
+    overflow:visible;
+  }
+  & > div > div{
+    width: 97%;
+    max-width: $pageMax;
+  }
+  #social-nav{
+//    background:$navy;  TODO: uncomment this after everything is moved to new css
+    background:#164260;
+    color:#fff;
+    height: 35px;
+    overflow: hidden;
+    @media(max-width:950px){
+      display:none;
+    }
+    div{
+      height: 35px;
+      margin: 0px auto;
+    }
+    span {
+      display: block;
+      float: left;
+      font-size:13px;
+      font-weight: bold;
+      padding-top: 11px;
+    }
+    a {
+      border-right: 1px solid #4f7188;
+      clear: none;
+      color: #4f7188;
+      display: block;
+      float: right;
+      height: 37px;
+      line-height: 36px;
+      opacity: 0.8;
+      padding: 0 13px;
+      text-decoration: none;
+      box-sizing:content-box;
+      &:hover {
+        opacity: 1;
+        background-color: #4f7188;
+        color: #fff;
+      }
+      &:last-child {
+        border-left: 1px solid #4f7188;
+      }/* end #social-nav a*/
+    }
+    #nav_blog {
+      display: none;
+    }
+    #google_plus {
+      background: url("/images/social_google_plus.png") no-repeat 15px 12px;
+      width: 15px;
+    }
+    #linked_in {
+      background: url("/images/social_linkedin.png") no-repeat 15px 12px;
+      width: 16px;
+    }
+    #twitter {
+      background: url("/images/social_twitter.png") no-repeat 15px 12px;
+      width: 13px;
+    }
+    #facebook {
+      background: url("/images/social_facebook.png") no-repeat 15px 12px;
+      width: 8px;
+    }
+    #sc_blog {
+      background: url("/images/social_blog.png") no-repeat 15px 12px;
+      width: 51px;
+    }
+    #source_reports {
+      background: url("/images/source_reports.png") no-repeat 15px 12px;
+      border-left: 1px solid #4f7188;
+      width: 66px;
+    }
+    #intelliship_login {
+      background: url("/images/intelliship_login.png") no-repeat 15px 12px;
+      width: 50px;
+    }
+  }/* end #social-nav*/
+  #company-nav {
+    background: none repeat scroll 0 0 white;
+    clear: both;
+    float: none;
+    height: 92px;
+    overflow: visible;
+    width: 100%;
+    & > div{
+      max-width:$pageMax;
+      margin:0 auto;
+    }
+    @media(max-width:1000px){
+      padding-right:15px;
+    }
+    &.tucked-nav{
+      box-shadow: 0 9px 10px -5px #a8a8a8;
+      position: fixed;
+      top:-17px;
+      z-index: 99;
+    }
+    a {
+      clear: none;
+      float: left;
+      box-sizing:content-box;
+      color:$lightBlue;
+    }
+  }/*end header > company nav*/
+  &.scroll-nav{ /* #header.scroll-nav */
+    overflow:visible;
+    min-height:70px;
+    #company-links {
+      margin-right: 35px;
+    }
+    #company-nav {
+      height: 82px;
+    }
+    @media(max-width:700px) {
+      #company-links{
+        margin: 0 auto;
+      }
+      #company-nav{
+        &.tucked-nav {
+          height: auto;
+          padding-bottom: 15px;
+        }
+        & > div {
+          float: none;
+          height: auto;
+          margin: 0 auto;
+          max-width: $pageMax;
+          width: 100%;
+          overflow:visible;
+        }
+      }
+    }
+  }
+} /* end #header */
+
+#lojistic-logo {
+  margin: 21px 0 0;
+  @media(max-width:1020px){
+    padding-left:25px;
+  }
+}
+.scroll-nav #lojistic-logo{
+  display:none;
+}
+#company-links {
+  clear: none;
+  float: right;
+  height: 35px;
+  padding-top: 32px;
+}
+.nav_parent {
+  border-right: 1px solid #e6e7e8;
+  clear: none;
+  float: left;
+  font-size: 13px;
+  height: auto;
+  overflow: visible;
+  width: auto;
+  padding-top:1px;
+}
+.nav_parent:last-child {
+  border-right: medium none;
+}
+.nav_parent a {
+  clear: none;
+  color: #767e81;
+  display: block;
+  float: left;
+  padding: 8px;
+  text-decoration: none;
+  font-family:ProximaNova-Regular;
+  width: auto;
+}
+.nav_parent:hover {
+  text-decoration: underline;
+}
+.nav_child {
+  background: #ffffff;
+  display: none;
+  margin-top: 25px;
+  padding-top: 18px;
+  position: absolute;
+  width: 195px;
+  z-index: 100;
+}
+.nav_parent:hover .nav_child {
+  display: block;
+}
+.nav_child a {
+  padding-left: 19px;
+  width: 168px;
+}
+.nav_child a:hover {
+  background-color: #f8f8f8;
+}
+.nav_parent:last-child a {
+  padding-right: 0;
+}
+
+
+#product-nav{
+  background:#f4f4f4;
+  border-top:1px solid #e6e7e8;
+  border-bottom:1px solid #e6e7e8;
+  width:100%;
+  margin:0 auto;
+  position:relative;
+  z-index:95;
+}
+#product-nav > div{
+  width:100%;
+  max-width:1000px;
+  float:none;
+  clear:both;
+  margin:0 auto;
+  overflow:hidden;
+}
+#product-nav > div > div {
+  width:100%;
+  max-width: $pageMax;
+  display: table;
+  height: 68px;
+  overflow: hidden;
+  position: relative;
+  table-layout: fixed;
+  @media(max-width:1000px){
+    width:97%;
+    margin:0 auto;
+  }
+}
+#product-nav div#product-links {
+  clear: none;
+  float: right;
+  position: absolute;
+  width: 100%;
+}
+@media(max-width:950px){
+  #product-nav div#product-links{
+    display:none;
+  }
+  #logo-small{
+    padding-left:15px;
+  }
+
+  #company-nav{
+    display:none;
+  }
+}
+#header #product-nav #hamburger{
+  min-width:72px;
+  @media(max-width:$xsMax){
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index:350;
+  }
+  @media(min-width:950px){
+      display:none;
+  }
+}
+#header.scroll-nav #product-nav #hamburger{
+  display:block;
+}
+.scroll-nav #product-nav {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+.scroll-nav{
+  div#product-links{
+    padding-right:14px;
+  }
+}
+#product-links > a {
+  font-family:$fontSemibold;
+  box-sizing: border-box;
+  clear: none;
+  color: #2a516b;
+  display: table-cell;
+  float: left;
+  height: 66px;
+  line-height: 13px;
+  padding: 19px 10px 0;
+  position: relative;
+  text-align: center;
+  width: 14.28%;
+  font-size:11px;
+}
+#product-links a:hover{
+  text-decoration:none;
+}
+#product-nav div a span {
+  background: none repeat scroll 0 0 #333;
+  clear: both;
+  display: block;
+  float: none;
+  height: 2px;
+  position: relative;
+  top: 7px;
+  width: 100%;
+}
+#product-links #nav_parcel {
+  padding-left: 0;
+}
+#product-links #nav_checklist {
+  padding-right: 0;
+}
+
+#product-links #nav_parcel span {
+  background-color: #164260;
+}
+#product-links #nav_neg span {
+  background-color: #767e81;
+}
+#product-links #nav_fmi span {
+  background-color: #e18c4b;
+}
+#product-links #nav_ins span {
+  background-color: $ins;
+}
+#product-links #nav_ship span {
+  background-color: #a4c93f;
+}
+#product-links #nav_trac span {
+  background-color: #b8bcbd;
+}
+#product-links #nav_checklist span {
+  background-color: #164260;
+}
+#product-nav #hamburger{
+  width:0;
+  float:right;
+  clear:none;
+  overflow:hidden;
+  position:absolute;
+  right:0;
+  cursor: pointer;
+  height:69px;
+}
+#product-nav #hamburger:hover{
+  background:#fff;
+}
+#logo-small {
+  clear: none;
+  display: block;
+  float: left;
+  overflow: visible;
+  top:-100px;
+  padding-top: 12px;
+  width: 290px;
+  position:absolute;
+  svg {
+    clear: none;
+    float: left;
+    position: relative;
+    max-width: 160px;
+    top: -5px;
+  }
+  b {
+    clear: none;
+    color: #999;
+    display: block;
+    float: right;
+    line-height: 0;
+    top: 37px;
+    position: relative;
+    margin: 0;
+    right: -19px;
+    position: absolute;
+    font-family:ProximaNova-Regular;
+    font-weight:normal;
+    font-size: 13px;
+    @media(max-width:430px){
+      display:none;
+    }
+    img {
+      display: block;
+      float: left;
+      padding: 0px 0px 0px 0px;
+      position: relative;
+      top: -8px;
+      width: 13px;
+      box-sizing: content-box;
+      margin-right: 5px;
+    }
+  }
+}
+#hamburger img {
+  float: right;
+  margin: 22px auto;
+  width: 30px;
+  display: block;
+  float: none;
+}
+#lojistic-logo img{
+  max-width:243px;
+}
+#sn-overlay{
+  width:100%;
+  height:100%;
+  position:fixed;
+  background:#000;
+  opacity:0.0;
+  z-index: 90;
+  cursor: pointer;
+  display:none;
+}
+
+#side-nav{
+  background: none repeat scroll 0 0 #fff;
+  box-shadow: 1px 0 5px #000;
+  height: 100%;
+  left: 0;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  width: 270px;
+  z-index: 300;
+  display:none;
+  & svg {
+    clear: both;
+    display: block;
+    float: none;
+    margin: 20px auto;
+    max-width: 80%;
+    width: 80%;
+  }
+  & > div {
+    clear: both;
+    float: none;
+  }
+  div {
+    span{
+      display:block;
+      float:left;
+      clear:none;
+      width:0;
+      height:0;
+      position: relative;
+      top: 4px;
+      margin-right:10px;
+      border-style:solid;
+      border-color:transparent;
+      border-left-color:#124361;
+      border-width:8px 0 8px 8px;
+      transition:All 0.2s ease-in-out;
+      -webkit-transition:All 0.2s ease-in-out;
+      -moz-transition:All 0.2s ease-in-out;
+      -o-transition:All 0.2s ease-in-out;
+      transform: rotate(0deg);
+      -webkit-transform:  rotate(0deg);
+      -moz-transform:  rotate(0deg);
+      -o-transform:  rotate(0deg);
+      -ms-transform:  rotate(0deg);
+    }
+    &.open span{
+      transform:  rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -moz-transform:  rotate(90deg);
+      -o-transform:  rotate(90deg);
+      -ms-transform: rotate(90deg);
+      position:relative;
+    }
+    div:nth-child(1) {
+      background: none repeat scroll 0 0 #fff;
+      color: #124361;
+      cursor: pointer;
+      font-size: 20px;
+      padding: 13px 20px 10px;
+      border-bottom: 1px solid #f8f8f8;
+    }
+     a {
+      border-bottom: 1px solid #b6b6b6;
+      clear: both;
+      color: #fff;
+      display: block;
+      float: none;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 14px 37px 11px;
+    }
+  }
+  .sn-links{
+    background: #c0c0c0;
+    float:none;
+    clear:both;
+    padding:0;
+    height:0;
+    overflow:hidden;
+  }
+}
+
+
+// Hamburger Animation
+#hamburger-stripes{
+  width: 40px;
+  height: 45px;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+  span{
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: #888;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    @include transform(rotate(0deg));
+    @include transition(.25s ease-in-out);
+    &:nth-child(1){  top: 7px; }
+    &:nth-child(2){  top: 20px; }
+    &:nth-child(3){  top: 20px; }
+    &:nth-child(4){  top: 33px; }
+  }
+}
+.clicked{
+  #hamburger-stripes{
+    span{
+      &:nth-child(1), &:nth-child(4){
+        opacity: 0;
+        top: 20px;
+        width:0;
+        left:50%;
+      }
+      &:nth-child(2){
+        @include transform(rotate(45deg));
+      }
+      &:nth-child(3){
+        @include transform(rotate(-45deg));
+      }
+    }
+  }
+}

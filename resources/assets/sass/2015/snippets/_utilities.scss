@@ -1,0 +1,91 @@
+/* utilities are classes that could be used for a variety of tasks. Things like taking padding out or testing layouts*/
+
+@import '../inc/vars';
+@import '../inc/mixins';
+
+/* centered columns */
+@media(max-width:768px){
+  .col-centered{
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+/* Flex Video */
+/* this was stolen from Foundation */
+/* cause y'know foundation is effing awesome */
+.flex-video {
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 57.25%;
+  height: 0;
+  margin-bottom: 16px;
+  overflow: hidden;  }
+.flex-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;}
+
+
+/* Shadows */
+.card-shadow{
+  box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+}
+
+/* vue.js utilities */
+[v-cloak] {
+  display: none;
+}
+
+/* no border */
+.nb{
+  border:0px !important;
+}
+/* no margin */
+.nm{
+  margin:0 !important;
+}
+
+
+/* button utilities */
+.hover-color-opacity:hover{
+  opacity:.7;
+  transition: opacity 0.5s ease;
+}
+.hover-color-silver:hover{
+  background-color: $silver;
+  transition: background-color 0.5s ease;
+}
+.hover-color-flatBlue:hover{
+  background-color:$flatBlue;
+  transition: background-color 0.5s ease;
+}
+.hover-color-brightBlue:hover{
+  background-color: $brightBlue;
+  transition: background-color 0.5s ease;
+}
+.hover-color-green:hover{
+  background-color:green;
+  transition: background-color 0.5s ease;
+}
+
+/*==========================
+ padding & spacing utilities
+ ==========================*/
+.small-padding{
+   padding: 20px 0 100px 0px;
+   @media(max-width:950px){
+     padding: 20px 0 40px 0px;
+     overflow:hidden;
+   }
+ }
+
+.medium-padding{
+  padding: 100px 0 100px 0px;
+  @media(max-width:950px){
+    padding: 20px 0 40px 0px;
+    overflow:hidden;
+  }
+}

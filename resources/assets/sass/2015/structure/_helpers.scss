@@ -1,0 +1,139 @@
+/**
+*   This is for random little reusable formatting bits
+*/
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+
+// fallback defaults
+h2{ color:$navy; }
+a{ color:$lightBlue; }
+
+section, div, .btn, hr{
+  &.navy{       background-color:$navy; color:$white;}
+  &.brightBlue{   background-color:$brightBlue;  color:$white; a:not(.btn),h1,h2,h3,h4,p{ color:$white;} }
+  &.accentDarkBlue{   background-color:$accentDarkBlue;  }
+  &.accentLightBlue{   background-color:$accentLightBlue;  }
+  &.paleBlue{   background-color:$paleBlue;  }
+  &.flatBlue{   background-color:$flatBlue;  color:$white; a:not(.btn),h1,h2,h3,h4,p{ color:$white;} }
+  &.flatCream{  background-color:$flatCream; color: $flatCoral;}
+  &.flatCoral{  background-color:$flatCoral;  color:$white;}
+  &.flatGrey{   background-color:$flatGrey;  color:$white; a:not(.btn),h1,h2,h3,h4,p{ color:$white;} }
+  &.flatBlack{  background-color:$flatBlack;  color:$white; a:not(.btn),h1,h2,h3,h4,p{ color:$white;} }
+  &.y2020{      background-color:$y2020;  color:$white; a:not(.btn),h1,h2,h3,h4,p{ color:$white;} }
+  &.white{      background-color:$white; color:$defaultTextColor; a:not(.btn),h1,h2,h3,h4,p{ color:$defaultTextColor;}}
+  &.paleBlue{   background-color:$paleBlue;}
+  &.silver{     background-color:$silver; color:$defaultTextColor;}
+  &.green{      background-color:$green;  color:$white;}
+  &.red{        background-color:$red;  color:$white;}
+  &.orange{     background-color:$orange;  color:$white;}
+  &.flatPurple{     background-color:$flatPurple;   color:$white;}
+  &.flatTan{     background-color:$flatTan;   color:$white;}
+  &.flatSeafoam{     background-color:$flatSeafoam;  color:$white; }
+  &.flatYellow{     background-color:$flatYellow;  color:$white; }
+  &.lightGrey{  background-color:$lightGrey; color:white;}
+  &.christmasRed{  background-color:$christmasRed; color:white;}
+  &.christmasTan{ backaground-color:$christmasTan; color:$christmasRed;}
+}
+
+// color combos
+body p, body b, body span, body h1, body h2, body h3, body h4, body i, body a:not(.btn), article small{
+  &.navy{       color:$navy;}
+  &.brightBlue{   color:$brightBlue;}
+  &.flatBlue{   color:$flatBlue;}
+  &.flatCream{  color:$flatCream;}
+  &.flatCoral{  color:$flatCoral;}
+  &.flatGrey{   color:$flatGrey;}
+  &.flatBlack{   color:$flatBlack;}
+  &.white{      color:$white;}
+  &.lightBlue{  color:$lightBlue;}
+  &.paleBlue{   color:$paleBlue;}
+  &.silver{     color:$silver;}
+  &.green{      color:$green;}
+  &.flatSeafoam{      color:$flatSeafoam;}
+  &.red{        color:$red;}
+  &.orange{     color:$orange;}
+  &.lightGrey{ color:$lightGrey;}
+  &.christmasRed{ color:$christmasRed;}
+  &.christmasTan{ color:$christmasTan;}
+  &.flatYellow{  color: $flatYellow;}
+  &.y2020{color:$y2020;}
+}
+
+hr{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display:block;
+  float:none;
+  clear:both;
+  border:none;
+  height: 1px;
+  background-color: #e9e9e9;
+  &.slim{
+    margin-top:25px;
+    margin-bottom:25px;
+  }
+  &.white{
+    background-color:#fff;
+  }
+}
+span{
+  line-height: normal;
+}
+ul.ul {
+  padding-left: 0;
+  li{
+    font-size: 15px;
+    padding: 12px 5px 7px 14px;
+    background: #f8f8f8;
+    margin-left: 0;
+    line-height: 1.8em;
+    list-style: outside none none;
+    border-left: 4px solid $navy;
+    margin-bottom: 5px;
+    &.scrollTo{
+      cursor: pointer;
+      text-decoration: underline;
+      text-decoration-color:lighten($flatBlue, 30);
+      color:$flatBlue;
+      &:hover{
+        color:lighten($flatBlue, 10);
+      }
+    }
+  }
+  &.slim li{
+    padding:0 0 0 14px;
+  }
+}
+.silver ul.ul li{
+  background-color:#fff;
+}
+.row{
+  padding:25px 0;
+  &:nth-child(1){
+    padding-top:0;
+  }
+  @media screen and (max-width: $xsMax){
+    & {padding:0;}
+  }
+}
+.np, section.np{
+  padding:0;
+}
+.np-lg{ @media (min-width: $mdMax) {padding:0; } }
+.np-md{ @media (min-width: $mdMin) and (max-width: $mdMax) {padding:0; } }
+.np-sm{ @media (min-width: $smMin) and (max-width: $smMax) {padding:0; } }
+.np-xs{ @media (max-width: $xsMax) {  padding:0;  }  }
+.nm{  margin:0; }
+.nm-t{  margin-top:0; }
+.nm-r{  margin-right:0; }
+.nm-b{  margin-bottom:0; }
+.nm-l{  margin-left:0; }
+.font-bold{font-family: $fontReg}
+.font-bolder{font-family: $fontSemibold}
+.font-boldest{font-family: $fontBold}
+.xs-text-center{ @media(max-width:$xsMax){text-align:center}}
+.sm-text-center{ @media(max-width:$smMax){text-align:center}}
+.md-text-center{ @media(max-width:$mdMax){text-align:center}}
+.lg-text-center{ @media(min-width:$lgMin){text-align:center}}
+.nb{ border:none; }
+.eloji{ line-height:0;}

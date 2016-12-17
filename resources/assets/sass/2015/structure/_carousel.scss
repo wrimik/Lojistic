@@ -1,0 +1,27 @@
+.carousel .carousel-control{
+  top:0;
+  height:200px;
+  background-image:none;
+  i{
+    position:relative;
+    margin:-50px 30px 0;
+    opacity:0.4;
+    top:50%;
+    display:block;
+  }
+}
+.carousel-caption{
+  top:0;
+  height:auto;
+  overflow:auto;
+}
+.item{
+  height:290px;
+  overflow:visible;
+}
+.carousel-caption, .carousel-caption div{
+  overflow:visible;
+}
+.carousel-inner{
+  padding-bottom:60px;
+}

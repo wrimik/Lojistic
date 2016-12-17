@@ -1,0 +1,169 @@
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+// Legacy CSS, please make this not suck
+#pricing-icons a{
+  max-width:100%;
+  margin:0 auto;
+  display:block;
+}
+@media(max-width:485px){
+  #pricing-icons{
+    display:none;
+  }
+}
+#Pricing1 {
+  background: url("/images/price/1.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: block;
+  height: 140px;
+  width: 140px;
+}
+#Pricing1:hover {
+  background-position: 0 -140px;
+}
+#Pricing1 span {
+  position: absolute;
+  top: -999em;
+}
+#Pricing2 {
+  background: url("/images/price/2.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: block;
+  height: 140px;
+  width: 140px;
+}
+#Pricing2:hover {
+  background-position: 0 -140px;
+}
+#Pricing2 span {
+  position: absolute;
+  top: -999em;
+}
+#Pricing3 {
+  background: url("/images/price/3.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: block;
+  height: 140px;
+  width: 140px;
+}
+#Pricing3:hover {
+  background-position: 0 -140px;
+}
+#Pricing3 span {
+  position: absolute;
+  top: -999em;
+}
+#Pricing4 {
+  background: url("/images/price/4.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: block;
+  height: 140px;
+  width: 140px;
+}
+#Pricing4:hover {
+  background-position: 0 -140px;
+}
+#Pricing4 span {
+  position: absolute;
+  top: -999em;
+}
+#Pricing5 {
+  background: url("/images/price/5.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: block;
+  height: 140px;
+  width: 140px;
+}
+#Pricing5:hover {
+  background-position: 0 -140px;
+}
+#Pricing5 span {
+  position: absolute;
+  top: -999em;
+}
+#Pricing6 {
+  background: url("/images/price/6.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: block;
+  height: 140px;
+  width: 140px;
+}
+#Pricing6:hover {
+  background-position: 0 -140px;
+}
+#Pricing6 span {
+  position: absolute;
+  top: -999em;
+}
+#Pricing7 {
+  background: url("/images/price/7.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: block;
+  height: 140px;
+  width: 140px;
+}
+#Pricing7:hover {
+  background-position: 0 -140px;
+}
+#Pricing7 span {
+  position: absolute;
+  top: -999em;
+}
+#Pricing8 {
+  background: url("/images/price/8.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: block;
+  height: 140px;
+  width: 140px;
+}
+#Pricing8:hover {
+  background-position: 0 -140px;
+}
+#Pricing8 span {
+  position: absolute;
+  top: -999em;
+}
+#Pricing9 {
+  background: url("/images/price/9.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: block;
+  height: 140px;
+  width: 140px;
+}
+#Pricing9:hover {
+  background-position: 0 -140px;
+}
+#Pricing9 span {
+  position: absolute;
+  top: -999em;
+}
+#Pricing10 {
+  background: url("/images/price/10.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: block;
+  height: 140px;
+  width: 140px;
+}
+#Pricing10:hover {
+  background-position: 0 -140px;
+}
+#Pricing10 span {
+  position: absolute;
+  top: -999em;
+}
+#Pricing11 {
+  background: url("/images/price/11.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: block;
+  height: 140px;
+  width: 140px;
+}
+#Pricing11:hover {
+  background-position: 0 -140px;
+}
+#Pricing11 span {
+  position: absolute;
+  top: -999em;
+}
+#Pricing12 {
+  background: url("/images/price/12.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+  display: block;
+  height: 140px;
+  width: 140px;
+}
+#Pricing12:hover {
+  background-position: 0 -140px;
+}
+#Pricing12 span {
+  position: absolute;
+  top: -999em;
+}

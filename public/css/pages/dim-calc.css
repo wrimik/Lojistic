@@ -1,0 +1,250 @@
+/* flat colors */
+
+/* Bright Colors */
+
+/* layout colors */
+
+/* new colors*/
+
+/* product colors*/
+
+/* sizes */
+
+/* fonts */
+
+#advanced {
+  float: none;
+  clear: both;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  overflow: hidden;
+}
+
+#advanced #toggle-advanced {
+  margin-left: 30px;
+  margin-right: 30px;
+  position: relative;
+  z-index: 10;
+}
+
+#advanced .advanced {
+  /*background: lighten($navy, 80);
+    border: 1.5px solid $navy;*/
+  border-radius: 6px;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  top: -20px;
+  z-index: 0;
+  transition: padding-top 1s, padding-bottom 1s, height 1s;
+}
+
+#advanced .advanced.showing {
+  height: 115px;
+  padding-bottom: 26px;
+  /*padding-left: 15px;*/
+  /*this is the spot thats causing the problems*/
+  padding-top: 22px;
+}
+
+@media (max-width: 799px) {
+  #advanced .advanced.showing {
+    height: 155px;
+  }
+}
+
+#advanced .advanced .form-control {
+  max-width: 68%;
+  float: left;
+  clear: none;
+  margin-right: 5px;
+}
+
+@media (max-width: 649px) {
+  #calc-group-2 {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  #calc-group-2 {
+    margin: 0 auto;
+    float: none;
+    clear: both;
+    width: 95%;
+  }
+}
+
+/*#dim-calc .col-xs-4 .row:nth-child(2) {
+    margin-top: 34px;
+}*/
+
+#dim-results {
+  display: none;
+}
+
+#dim-results .navy {
+  position: relative;
+}
+
+#dim-results #res-summary {
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+#dim-results #res-summary > div {
+  padding: 0;
+}
+
+#dim-results #zone-toggle {
+  width: 100%;
+  height: auto;
+  padding: 10px 0px 8px;
+  color: #FFF;
+  font-size: 27px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: .06em;
+  line-height: 2em;
+}
+
+#dim-results #zone-toggle select {
+  color: #000;
+  display: inline;
+  margin-left: 10px;
+  width: 120px;
+  padding-top: 7px;
+  font-size: 18px;
+}
+
+#dim-results #charts b {
+  font-size: 24px;
+  color: #00344b;
+  display: block;
+  float: none;
+  clear: both;
+}
+
+#dim-results #charts .chart {
+  width: 100%;
+  height: 200px;
+  padding: 30px 0;
+  overflow: auto;
+  box-sizing: content-box;
+  margin: 15px 0 0 20px;
+  overflow: hidden;
+}
+
+.res {
+  position: relative;
+  text-align: center;
+}
+
+.res .res-title {
+  color: #FFF;
+  padding: 9px 0px;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.res .res-content {
+  font-size: 22px;
+  padding: 29px 0px;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+@media (max-width: 400px) {
+  .res .res-content {
+    font-size: 15px;
+  }
+}
+
+.res .res-content img {
+  display: block;
+  padding: 12px 0px 0px;
+  width: 33px;
+  position: absolute;
+  left: 50%;
+  margin-left: -15.5px;
+}
+
+@media (max-width: 649px) {
+  .res .res-content img {
+    padding: 5px 0px 0px;
+  }
+}
+
+.res.blue .res-title {
+  background-color: #4285f4;
+  text-shadow: 1px 1px 1px #154faf;
+}
+
+.res.blue .res-content {
+  background-color: #d9e7fd;
+  color: #4285f4;
+}
+
+.res.grey .res-title {
+  background-color: #aeafb3;
+  text-shadow: 1px 1px 1px #919191;
+}
+
+.res.grey .res-content {
+  background-color: #eaeaea;
+  color: #000;
+}
+
+.res.red .res-title {
+  background-color: #db4437;
+  text-shadow: 1px 1px 1px #a51d11;
+}
+
+.res.red .res-content {
+  background-color: #f8dad7;
+  color: #db4437;
+}
+
+#no-results {
+  display: none;
+}
+
+#no-results .alert {
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  width: 420px;
+  margin: 0 auto 55px;
+  text-shadow: none;
+}
+
+.samples div {
+  padding: 0;
+}
+
+#slap {
+  text-align: left;
+  font-size: 26px;
+  line-height: 3;
+  color: #FFF;
+  overflow: auto;
+  background-image: url("/images/slap.png");
+  background-repeat: no-repeat;
+  background-position: right 30px bottom 0px;
+  background-size: 65% auto;
+  font-family: ProximaNova-Light;
+}
+
+#slap b {
+  font-family: ProximaNova-Semibold;
+}
+
+.dim-calc-button-alignment {
+  margin-right: 6rem;
+}
+
+#calculate-dims {
+  margin-left: 20px;
+}

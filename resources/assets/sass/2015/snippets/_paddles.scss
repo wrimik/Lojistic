@@ -1,0 +1,48 @@
+@import '../inc/vars';
+
+.paddle {
+  width: 100%;
+  float: left;
+  clear: none;
+  overflow: visible;
+  text-align: center;
+  line-height: 1.45;
+
+  .paddle-body {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: $silver;
+    padding:15px 0 25px 0;
+
+    i.eloji {
+      display:block;
+      font-size: 120px;
+      margin:35px auto 40px;
+    }
+  }
+
+  .paddle-footer {
+    background-color: $silver;
+    width:70px;
+    border-radius: 0 0 50% 50%;
+    line-height:1em;
+    padding:10px 0px 10px 0px;
+    clear: both;
+    float: none;
+    margin: 0 auto 0;
+    top:-25px;
+    position:relative;
+
+    i.eloji {
+      font-size: 40px;
+    }
+  }
+
+  @media (max-width: 649px) {
+    .paddle-footer{
+      display:none;
+    }
+    margin: 15px 0;
+  }
+
+}

@@ -1,0 +1,7 @@
+<option value="Ground">Ground</option>
+<option value="3 Day Select">3 Day Select</option>
+<option value="2nd Day Air">2nd Day Air</option>
+<option value="2nd Day Air A.M.">2nd Day Air A.M.</option>
+<option value="Next Day Air Saver">Next Day Air Saver</option>
+<option value="Next Day Air">Next Day Air</option>
+<option value="Next Day Air Early A.M.">Next Day Air Early A.M.</option>

@@ -1,0 +1,209 @@
+@import '../inc/vars';
+@import '../inc/mixins';
+
+#advanced{
+  float:none;
+  clear:both;
+  padding-top:25px;
+  padding-bottom:25px;
+  overflow:hidden;
+
+  #toggle-advanced{
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+    z-index: 10;
+  }
+  .advanced{
+    /*background: lighten($navy, 80);
+    border: 1.5px solid $navy;*/
+    border-radius:6px;
+    height:0;
+    padding:0;
+    overflow: hidden;
+    position: relative;
+    top: -20px;
+    z-index: 0;
+    @include transition(padding-top 1s, padding-bottom 1s, height 1s);
+    &.showing{
+      height:115px;
+      padding-bottom: 26px;
+      /*padding-left: 15px;*//*this is the spot thats causing the problems*/
+      padding-top: 22px;
+      @media(max-width: $smMax){
+        height:155px;
+      }
+    }
+    .form-control{
+      max-width:68%;
+      float:left;
+      clear:none;
+      margin-right:5px;
+    }
+  }
+}
+#calc-group-1{
+}
+#calc-group-2{
+  @media(max-width:$xsMax){
+    padding-top:50px
+  }
+  @media(max-width:450px){
+    margin: 0 auto;
+    float: none;
+    clear: both;
+    width: 95%;
+  }
+}
+/*#dim-calc .col-xs-4 .row:nth-child(2) {
+    margin-top: 34px;
+}*/
+
+#dim-results{
+  display:none;
+  .navy{
+    position:relative;
+  }
+  #res-summary{
+    margin-bottom:50px;
+    padding:0;
+    & > div{
+      padding:0;
+    }
+  }
+  #zone-toggle{
+    width: 100%;
+    height: auto;
+    padding: 10px 0px 8px;
+    color: #FFF;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: .06em;
+    line-height: 2em;
+    select{
+      color: #000;
+      display: inline;
+      margin-left: 10px;
+      width: 120px;
+      padding-top: 7px;
+      font-size: 18px;
+    }
+  }
+  #charts{
+    b{
+      font-size:24px;
+      color:$navy;
+      display:block;
+      float:none;
+      clear:both;
+    }
+    .chart{
+      width: 100%;
+      height: 200px;
+      padding: 30px 0;
+      overflow: auto;
+      box-sizing: content-box;
+      margin:15px 0 0 20px;
+      overflow:hidden;
+    }
+  }
+}
+
+.res{
+  position:relative;
+  text-align:center;
+  .res-title{
+    color: #FFF;
+    padding: 9px 0px;
+    line-height: 16px;
+    font-size: 14px;
+  }
+  .res-content{
+    font-size: 22px;
+    padding: 29px 0px;
+    margin-bottom: 18px;
+    font-weight: bold;
+    @media(max-width:400px){
+      font-size:15px;
+    }
+    img {
+      display: block;
+      padding: 12px 0px 0px;
+      width: 33px;
+      position: absolute;
+      left: 50%;
+      margin-left: -15.5px;
+      @media(max-width:$xsMax){
+        padding:5px 0px 0px;
+      }
+    }
+  }
+  &.blue{
+    .res-title{
+      background-color:#4285f4;
+      text-shadow:1px 1px 1px #154faf;
+    }
+    .res-content{
+      background-color:#d9e7fd;
+      color:#4285f4;
+    }
+  }
+  &.grey{
+    .res-title{
+      background-color:#aeafb3;
+      text-shadow:1px 1px 1px #919191;
+    }
+    .res-content{
+      background-color:#eaeaea;
+      color:#000;
+    }
+  }
+  &.red{
+    .res-title{
+      background-color:#db4437;
+      text-shadow:1px 1px 1px #a51d11;
+    }
+    .res-content{
+      background-color:#f8dad7;
+      color:#db4437;
+    }
+  }
+}
+#no-results{
+  display:none;
+  .alert{
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    width: 420px;
+    margin: 0 auto 55px;
+    text-shadow: none;
+  }
+}
+.samples div{
+  padding:0;
+}
+#slap{
+  text-align: left;
+  font-size: 26px;
+  line-height: 3;
+  color: #FFF;
+  overflow: auto;
+  background-image: url("/images/slap.png");
+  background-repeat: no-repeat;
+  background-position: right 30px bottom 0px;
+  background-size: 65% auto;
+  font-family: ProximaNova-Light;
+  b{
+    font-family:ProximaNova-Semibold;
+  }
+}
+
+.dim-calc-button-alignment{
+  margin-right:6rem;
+}
+#calculate-dims{
+  margin-left:20px;
+}

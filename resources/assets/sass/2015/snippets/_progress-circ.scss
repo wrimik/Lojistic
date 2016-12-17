@@ -1,0 +1,13 @@
+.progress-circ {
+  position: relative;
+  span {
+    display: block;
+    font-size: 40px;
+    left: 50%;
+    margin-left: -85px;
+    position: absolute;
+    text-align: center;
+    top: 80px;
+    width: 170px;
+  }
+}

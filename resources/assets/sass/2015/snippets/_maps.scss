@@ -1,0 +1,15 @@
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+section.map{
+  padding:0;
+//  line-height:0;
+  h2{
+    padding-bottom:25px;
+  }
+  iframe{
+    padding:0;
+    margin:0;
+    display:block;
+    pointer-events: none; //weird - this disables zooming (instead of scrolling) by killing mouse events on maps
+  }
+}

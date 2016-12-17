@@ -1,0 +1,6 @@
+@import '../inc/_mixins.scss';
+
+.text-vc{
+  opacity:0;
+  @include transition(opacity .5s);
+}

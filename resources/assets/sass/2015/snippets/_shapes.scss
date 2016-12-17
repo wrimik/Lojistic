@@ -1,0 +1,39 @@
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+$sizes: 10, 15, 20, 30, 50, 75, 80, 90, 100, 120, 125, 140, 150, 200, 400;
+//arrow directions  (direction pointing, border that's colored, border that is 0px)"
+$directions: (up, bottom, top), (down, top, bottom), (left, right, left), (right, left, right);
+@each $size in $sizes {
+  .circ-#{$size} {
+    width: $size+px;
+    height: $size+px;
+    border-radius: $size+px;
+  }
+  .square-#{$size}{
+    width: $size+px;
+    height: $size+px;
+    margin-right:$size+px;
+  }
+  // .tri.tri-20.navy(style=border-top-color:blue)
+  .tri-#{$size}{
+    border-width: $size+px;
+  }
+}
+
+.circ{
+  margin:0 auto;
+  display:block;
+}
+.square{
+  display:inline-block;
+}
+html body .tri{
+  width:0;
+  height:0;
+  margin:0 auto;
+  float:none;
+  clear:both;
+  border-style:solid;
+  border-color:transparent;
+  background-color:transparent;
+}

@@ -1,0 +1,20 @@
+.seesaw{
+   padding: 0px 0px 80px 0px;
+ }
+// smooth transition => yes I should learn the "sass way"
+@media screen and (max-width: 900px ) and (min-width: 800px ){
+  .seesaw{
+    padding: 100px 0px 80px 0px;
+  }
+}
+@media screen and (max-width: 1060px ) and (min-width: 900px ){
+  .seesaw{
+    padding: 50px 0px 80px 0px;
+  }
+}
+@media screen and (max-width: 1100px ) and (min-width: 1060px ){
+  .seesaw{
+    padding: 50px 0px 60px 0px;
+  }
+}
+

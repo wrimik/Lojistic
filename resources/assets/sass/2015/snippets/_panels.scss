@@ -1,0 +1,14 @@
+@import "../inc/vars";
+@import "../inc/mixins";
+.panel-trim{ //top trim color
+  border-radius: 5px 5px 0 0;
+  height: 3px;
+  width: 100%;
+}
+.panel{
+  box-shadow:0 0px 2px rgba(0, 0, 0, 0.2);
+}
+.form-panel{
+  margin: 0 auto;
+  max-width: 460px;
+}

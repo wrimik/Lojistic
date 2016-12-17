@@ -1,0 +1,42 @@
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+//page banners
+section.banner{
+  padding:30px;
+  //@media(max-width:950px){
+  //  padding-top:105px;
+  //}
+  .container{
+    max-width:$pageMax;
+    position:relative;
+    @media(min-width:$smMin){
+      div:nth-child(2){
+        position:absolute;
+        height:100%;
+        margin-left:25%;
+      }
+      h1{
+        color:#fff;
+        position:absolute;
+        top:50%;
+        margin-top:-25px;
+        height:25px;
+        font-size:40px;
+        span{
+          font-size:30px;
+        }
+      }
+    }
+    @media(max-width:$xsMax){
+      img{
+        margin:0 auto;
+      }
+      h1{
+        text-align: center;
+      }
+      .eloji {
+        display:none;
+      }
+    }
+  }
+}//end page banners

@@ -1,0 +1,32 @@
+@import 'inc/vars';
+@import 'inc/mixins';
+@import 'structure/header';
+@import 'structure/sidenav';
+@import 'structure/banners';
+@import 'structure/footer';
+@import 'structure/convert';
+@import 'structure/articles';
+@import 'structure/sections';
+@import 'structure/helpers';
+@import 'structure/interview';
+@import 'structure/text';
+@import 'structure/carousel';
+@import 'structure/tables';
+
+
+
+/* nav */
+body{
+  margin:0;
+  padding:0;
+  overflow:auto;
+  font-family: $fontReg;
+  color:$defaultTextColor;
+  &.small-nav{
+    @media(min-width:950px){
+      padding-top:127px;
+    }
+  }
+} /* end body */
+
+

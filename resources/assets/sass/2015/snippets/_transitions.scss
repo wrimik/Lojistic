@@ -1,0 +1,5 @@
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+.transition, .transition-on-show{
+  @include transition(all 1s)
+}

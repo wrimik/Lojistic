@@ -1,0 +1,19 @@
+@import '../inc/vars';
+.flag{
+  overflow:auto;
+  @media(max-width:$smMax){
+    margin-bottom:20px;
+  }
+  > div:nth-child(1){
+    min-height:12px;
+  }
+  > div:nth-child(2){
+    background-color: $silver;
+    border-bottom:1px solid $flatGrey;
+  }
+}
+.silver .flag{
+  > div:nth-child(2){
+    background-color: $white;
+  }
+}

@@ -1,0 +1,239 @@
+@import '../inc/vars';
+
+.parcel-header {
+  width:100%;
+  background: url('/images/parcel/parcel_header.jpg') no-repeat;
+  background-size: cover;
+  text-shadow: 4px 4px 5px black;
+  margin-bottom: 20px;
+  a {
+    color:#ffffff;
+  }
+}
+.parcel-footer {
+  width:100%;
+  text-shadow: 4px 4px 5px black;
+  position: relative;
+  h1 {
+    position:relative;
+    text-align: center;
+    top: -150px;
+    @media (max-width: $xsMax) {
+      position:absolute;
+      top:0;
+      margin:0;
+    }
+  }
+}
+#parcel-modal {
+  .video-wrapper {
+    padding-top: 30px;
+  }
+  video {
+    max-width: 100%;
+  }
+}
+//Masonry Grid Vars
+$columns: 4;
+$columnWidth: 100%/$columns;
+$margin-bottom: 10px;
+$height: 250px;
+$transition-speed: .5s;
+
+.parcel-grid {
+  max-width:1040px;
+  width:100%;
+  margin:auto;
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .text-box {
+    padding:20px 30px 20px 30px;
+    font-size:18px;
+    color: #6a7177;
+    height: 100%;
+    min-height: ($height*2) + $margin-bottom;
+    h3 {
+      margin-bottom:35px;
+    }
+  }
+  .image-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    height:100%;
+    max-height:$height;
+  }
+  .grid-item--height {
+    height: $height;
+  }
+  .grid-sizer,
+  .grid-item { width:$columnWidth; max-height: $height;}
+  .grid-item { margin-bottom: 10px; padding: 0 5px;}
+  //Double Widths for mobile
+  @media(max-width: $xsMax) {
+    .grid-sizer,
+    .grid-item { width:$columnWidth*2; }
+  }
+  .full-width {
+    width:100%;
+  }
+  .full-height {
+    @media(min-width: $smMin) {
+      height:100%;
+    }
+    @media(max-width: $xsMax) {
+      width:100%;
+    }
+  }
+  @for $i from 2 through $columns {
+    img.grid-item--height#{$i} {
+      height: ($height*$i) + ($margin-bottom*($i - 1));
+      width: 250px;
+    }
+    .grid-item--height#{$i} {
+      max-height: ($height*$i) + ($margin-bottom*($i - 1));
+      &.no-height-xs {
+        max-height:none;
+      }
+        .image-container {
+          max-height: ($height*$i) + ($margin-bottom*($i - 1));
+        }
+    }
+    .grid-item--width#{$i} {
+      max-width: 100%;
+      width: $columnWidth*$i;
+    }
+    //Double Widths for mobile
+    @media(max-width: $xsMax) {
+      .grid-item--width#{$i} {
+        width: $columnWidth*$i*2;
+      }
+      img.grid-item--height#{$i} {
+        height:inherit;
+      }
+      .grid-item--height#{$i} {
+        height: inherit;
+      }
+    }
+  }
+  a.no-decoration {
+    text-decoration: none;
+    color:inherit;
+  }
+  .social {
+    @media (max-width: $xsMax) {
+      width:44vw;
+      height:44vw;
+      font-size:100px;
+      line-height:175px;
+    }
+    font-size: 125px;
+    transition: all $transition-speed;
+    line-height: 250px;
+    height:250px;
+    &.youtube {
+      color: #fff;
+      background: #CD332D;
+      &:after {
+        content: '#watchabox';
+      }
+    }
+    &.twitter {
+      color: #fff;
+      background: #2AA8E0;
+      &:after {
+        content: '#followabox';
+      }
+    }
+    &.facebook {
+      color: #fff;
+      background: #3B5999;
+      &:after {
+        content: '#friendabox';
+      }
+    }
+    &.instagram {
+      color: #fff;
+      background: #32669A;
+      &:after {
+        content: '#stalkabox';
+      }
+    }
+    &:after {
+      font-size: 0;
+      display: block;
+      line-height: 0;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      transition: all $transition-speed;
+    }
+    &:hover {
+      font-size:50px;
+      padding-top:30px;
+      @media (max-width: $xsMax) {
+        line-height:75px;
+      }
+      @media (min-width: $smMin) {
+        line-height:125px;
+      }
+      &:after {
+        font-size:35px;
+      }
+      @media (max-width: $xsMax) {
+        &:after {
+          font-size:20px;
+        }
+      }
+    }
+  }
+  .overlay {
+    .overlay-card {
+      display: block;
+      position: absolute;
+      z-index: 20;
+      background: rgba(0, 0, 0, 0.6);
+      color:#ffffff;
+      font-size: 32px;
+      line-height:250px;
+      text-align: center;
+      overflow: hidden;
+      transition: all 0.75s;
+      padding-top:0;
+      top: 0;
+      bottom: 0;
+      height: 0;
+      width:100%;
+    }
+    &:hover .overlay-card {
+      height:100%;
+    }
+  }
+}
+#parcel-video {
+  width:100%;
+  height:100%;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 100;
+  margin:auto;
+  display:none;
+  .lightbox-content {
+    top:10%;
+    position: relative;
+    width: 70%;
+    left: 15%;
+    video {
+      width:100%;
+    }
+  }
+  &.show {
+    display:block;
+  }
+}

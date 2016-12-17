@@ -1,0 +1,44 @@
+$cardColor: #164260;
+
+  #roller{
+    margin-top:8px;
+  }
+  .video-section-spacing{
+    margin-top:50px;
+    margin-bottom: 50px;
+    @media(max-width:950px){
+      margin-top: 0px;
+      margin-bottom:-50px;
+    }
+  }
+  .video-spacing{
+    margin:20px 20px 20px 20px;
+    @media(max-width:768px){
+        float: none;
+        margin: 20px auto;
+    }
+  }
+  .video-spacing-sidebar{
+    margin:0px 0px 28px 0px;
+  }
+  .main-video-area{
+    background-color:$paleBlue;
+    border: 4px $paleBlue solid;
+    box-shadow: 0 2px 5px 1px rgba(0,0,0,0.2);
+    margin-bottom:16px;
+    padding-bottom:56px;
+  }
+  .video-card {
+    box-sizing: border-box;
+    width: 260px;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    h1.card-title {
+      box-sizing: border-box;
+    }
+  }
+  .call-to-action-video{
+    height:150px;
+  }
+
+

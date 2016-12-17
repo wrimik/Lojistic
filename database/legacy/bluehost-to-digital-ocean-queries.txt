@@ -1,0 +1,25 @@
+#log in to mysql via shell, create database, grant access to your user:
+mysql -u root -p
+create database lojistic_lojistic;
+grant all privileges on lojistic_lojistic.* to 'root'@'localhost' identified by 'secret';
+
+#exit mysql
+exit
+
+#import data from {application}/database/legacy/loj.sql
+mysql -u root -p lojistic_lojistic < loj.sql
+
+#once complete,  log in to mysql again. Change "loj" to your database name
+mysql -u root -p
+use loj;
+create table loj.wp_commentmeta select * from lojistic_lojistic.wp_commentmeta;
+create table loj.wp_comments select * from lojistic_lojistic.wp_comments;
+create table loj.wp_links select * from lojistic_lojistic.wp_links;
+create table loj.wp_options select * from lojistic_lojistic.wp_options;
+create table loj.wp_postmeta select * from lojistic_lojistic.wp_postmeta;
+create table loj.wp_posts select * from lojistic_lojistic.wp_posts;
+create table loj.wp_term_relationships select * from lojistic_lojistic.wp_term_relationships;
+create table loj.wp_term_taxonomy select * from lojistic_lojistic.wp_term_taxonomy;
+create table loj.wp_terms select * from lojistic_lojistic.wp_terms;
+create table loj.wp_usermeta select * from lojistic_lojistic.wp_usermeta;
+create table loj.wp_users select * from lojistic_lojistic.wp_users;

@@ -1,0 +1,9 @@
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+.wp-img{
+  margin-bottom: 20px;
+  @media(max-width:$smMax) {
+    margin-bottom: 200px;
+    margin-top:-100px;
+  }
+}

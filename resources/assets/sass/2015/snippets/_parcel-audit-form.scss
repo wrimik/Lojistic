@@ -1,0 +1,10 @@
+@import '../inc/vars';
+@import '../inc/mixins';
+
+.parcel-audit-specific-widows{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -20px !important;
+  margin-top: -1px;
+}

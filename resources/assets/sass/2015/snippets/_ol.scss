@@ -1,0 +1,53 @@
+
+ol.square-list{
+  counter-reset: li; /* Initiate a counter */
+  list-style: none; /* Remove default numbering */
+  *list-style: decimal; /* Keep using default numbering for IE6/7 */
+  padding: 0;
+  margin-bottom: 4em;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+ol ol.square-list{
+  margin: 0 0 0 2em; /* Add some left margin for inner lists */
+}
+.square-list li{
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em 3em;
+  *padding: .4em;
+  margin: .9em 0;
+  background: white;
+  color: #444;
+  text-decoration: none;
+  transition: all .3s ease-out;
+  @media screen and (max-width:575px) and (min-width:0px){
+    padding: .4em .4em .4em 1em;
+  }
+}
+.small-numbers{
+  display: none;
+  @media screen and (max-width:575px) and (min-width:0px){
+    display:inline;
+  }
+}
+.square-list li:before{
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: $y2020;
+  height: 2.6em;
+  width: 3em;
+  line-height: 2em;
+  border: .3em solid $y2020;
+  text-align: center;
+  font-weight: bold;
+  transition: all .3s ease-out;
+  color:$navy;
+  @media screen and (max-width:575px) and (min-width:0px){
+    display:none;
+  }
+}
+

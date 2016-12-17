@@ -1,0 +1,54 @@
+@import '../inc/vars';
+.product-card{
+  &[data-href] {
+    cursor: pointer;
+  }
+  &:hover{
+    background-color: $silver;
+  }
+  padding: 15px 0;
+  display:block;
+  .eloji {
+    color: $navy;
+    float:left;
+    width:20%;
+    margin-left:15px;
+  }
+  .card-content{
+    display:inline-block;
+    position: relative;
+    vertical-align: top;
+    padding-left:20px;
+    width:70%;
+    .card-header {
+      text-align: left;
+      font-size: 28px;
+      padding:0;
+    }
+    .card-description {
+      font-size: 18px;
+      margin:0;
+    }
+  }
+
+  @media screen and (max-width:$smMax) {
+    text-align: center;
+    .eloji {
+      display:block;
+      width:100%;
+      padding-bottom: 10px;
+      margin:0;
+    }
+
+    .card-content{
+      width:100%;
+      .card-header{
+        text-align: center;
+      }
+      .card-description{
+        text-align: center;
+        padding-top: 10px;
+      }
+    }
+  }
+}

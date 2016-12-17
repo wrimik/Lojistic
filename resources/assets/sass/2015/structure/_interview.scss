@@ -1,0 +1,124 @@
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+
+$interviewHeight: 850px;
+.interview {
+  height: auto;
+  min-height: $interviewHeight;
+  overflow: hidden;
+  padding: 0;
+  background-color: $silver;
+  @media(min-width: $smMin) {
+    & > div {
+      position:relative;
+      min-height: $interviewHeight;
+      &:nth-child(1){
+        z-index: 11;
+      }
+      &:nth-child(1){
+        z-index: 9;
+      }
+    }
+  }
+  .interview-title {
+    clear: both;
+    float: right;
+    padding-right: 15px;
+    padding-top: 55px;
+    text-align: center;
+    max-width: 245px;
+    & > div:not(#title-0){
+      display:none;
+    }
+    &.tall-title{
+      min-height:1000px;
+      @media(max-width: $smMax){
+        min-height:auto;
+      }
+    }
+    //@media(min-width:$smMin) and (max-width:$smNavBreakpoint){
+    //  padding-top:105px;
+    //}
+    @media(max-width:650px){
+      padding: 100px 0 44px;
+      max-width: 100%;
+      width: 100%;
+    }
+    @media(min-width:651px) and  (max-width:838px){
+      min-height:1280px;
+    }
+  }
+  .steps {
+    @media(min-width:$smMin) and (max-width:$smNavBreakpoint){
+      padding-top:50px;
+    }
+    @media(max-width:$xsMax){
+      clear: both;
+      float: none;
+      padding: 0 0 25px;
+      width: 100%;
+      overflow:auto;
+    }
+//    position: relative;
+    .step {
+//      position: absolute
+      display: none; //hide all but the first one
+      padding-left: 50px;
+      padding-top: 55px;
+      max-width: 690px;
+      @media(max-width:$smNavBreakpoint){
+        padding-left:0;
+        width:95%;
+        margin:0 auto;
+      }
+      &.results{
+        max-width:100%;
+      }
+      &:nth-child(1) {
+        display: block;
+      }
+      h2 {
+        margin-bottom: 35px;
+      }
+      .panel-body {
+        padding: 5px 35px 22px;
+      }
+      .step-controls {
+        width: 100%;
+        line-height:64px;
+        .btn {
+          display: inline-block;
+          width: auto;
+          position:relative;
+          &:nth-child(1){
+            z-index: 5;
+          }
+          @media(min-width:$smMin){
+            &:nth-child(n+2) {
+              z-index: 4;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.panel-heading{
+  padding-top: 8px;
+}
+.instructions{
+  display:none;
+}
+.showing{
+  display:block;
+}
+.convert{
+  display:none;
+}
+@media(min-width:$smMin) and (max-width:1250px){
+  .step.results{
+    max-width: 100%;
+    min-height: 620px;
+    overflow-x: scroll;
+  }
+}

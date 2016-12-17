@@ -1,0 +1,39 @@
+/* flat colors */
+
+/* Bright Colors */
+
+/* layout colors */
+
+/* new colors*/
+
+/* product colors*/
+
+/* sizes */
+
+/* fonts */
+
+.footer-2020 {
+  background-image: url("../../../images/2020/footer.jpg");
+  background-size: cover;
+  backgorund-position: bottom right;
+}
+
+iframe {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  float: none;
+}
+
+#form {
+  padding: 20px 45px 35px;
+  border-radius: 10px;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 649px) {
+  body .container #share-2020 h2.flatGrey {
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+  }
+}

@@ -1,0 +1,8 @@
+<option value="Ground">Ground</option>
+<option value="Home Delivery">Home Delivery</option>
+<option value="Express Saver">Express Saver</option>
+<option value="2 Day">2 Day</option>
+<option value="2 Day A.M.">2 Day A.M.</option>
+<option value="Standard Overnight">Standard Overnight</option>
+<option value="Priority Overnight">Priority Overnight</option>
+<option value="First Overnight">First Overnight</option>

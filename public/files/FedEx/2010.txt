@@ -1,0 +1,6 @@
+<option value="Ground">Ground</option>
+<option value="Express Saver (3 Day)">Express Saver (3 Day)</option>
+<option value="2 Day Air">2 Day Air</option>
+<option value="Standard Overnight">Standard Overnight</option>
+<option value="Priority Overnight">Priority Overnight</option>
+<option value="First Overnight">First Overnight</option>

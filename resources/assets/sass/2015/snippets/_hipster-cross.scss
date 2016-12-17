@@ -1,0 +1,18 @@
+.hipster-cross {
+  background: #fff;
+  height: 240px;
+  left: 50%;
+  position: absolute;
+  top: 65px;
+  width: 1px;
+}
+.hipster-cross::before{
+  background: #fff;
+  content: " ";
+  height: 1px;
+  left: 50%;
+  margin-left: -120px;
+  position: absolute;
+  top: 120px;
+  width: 240px;
+}

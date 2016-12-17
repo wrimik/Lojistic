@@ -1,0 +1,19 @@
+@import '../inc/vars';
+@import '../inc/mixins';
+
+.door-hanger{
+  margin:5px 0;
+  .dh-title{
+    margin-bottom: -4px;
+    padding:13px !important;
+    line-height:1.25;
+  }
+  .dh-body{
+    overflow:auto;
+    background:$silver;
+    padding:40px 25px;
+  }
+  .dh-content{
+    padding-top:35px;
+  }
+}

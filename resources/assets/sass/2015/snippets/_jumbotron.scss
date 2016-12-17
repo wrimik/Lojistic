@@ -1,0 +1,99 @@
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+
+body section.utah {
+  background-color: #00344b;
+  h1 {
+    padding-bottom: 0;
+    font-weight: bold;
+  }
+  h3 {
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+  p, h1, h1 small, h3, span {
+    text-shadow: 0 0 4px #000;
+    color: #fff;
+  }
+  video {
+    bottom: -180px;
+    min-height: 100%;
+    position: absolute;
+    right: -330px;
+    width: auto;
+    z-index: 10;
+    opacity: 0.1;
+    @media(max-width: $xsMax) {
+      display: none;
+    }
+    @media(min-width: 1590px) {
+      bottom: -30px;
+      right: 0;
+      width: 100%;
+    }
+  }
+  @media(max-width:$smMax){
+    padding-top:40px;
+  }
+  @media(max-width: $xsMax) {
+    //same as novideo
+    background-image: none;
+    .btn-lg-xs{
+      margin: 0 auto 0;
+      width: 93%;
+    }
+  }
+  .container {
+    height: auto;
+    position: relative;
+    z-index: 30;
+  }
+}
+
+.showcase { // utah blue version
+  display: block;
+  overflow: hidden;
+  padding: 35px 0;
+  position: relative;
+  .showcase-highlight {
+    @media(max-width: $smMax) {
+      margin: 15px 0;
+      padding: 15px 15px 31px;
+      p{
+        font-size: 20px;
+        line-height: normal;
+        padding: 20px 0;
+      }
+    }
+    @media(max-width:$xsMax){
+      border: 1px solid #fff;
+    }
+  }
+  @media(min-width: 810px) {
+    padding: 65px 0;
+    h1 {
+      font-size: 68px;
+    }
+  }
+  @media(max-width: 810px) {
+    padding: 125px 0;
+    h1 {
+      font-size: 50px;
+    }
+    .btn.btn-ghost {
+      width: 38%
+    }
+  }
+  @media(max-width: 550px) {
+    padding: 100px 0;
+    h1 {
+      font-size: 38px;
+    }
+    p {
+      font-size: 25px;
+    }
+    .btn.btn-ghost {
+      width: 90%
+    }
+  }
+}

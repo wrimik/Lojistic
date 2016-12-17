@@ -1,0 +1,21 @@
+
+.social-bar{
+  height: auto;
+  overflow: auto;
+  padding: 15px;
+  margin-top: -9px;
+  .social-share-button{
+    margin-left:0;
+    width:100%;
+    border: none;
+    border-radius: 0px !important;
+    cursor: pointer;
+    padding: 6px;
+    color: white;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 2px 3px 0 rgba(0,0,0,0.2);
+    }
+  }
+}

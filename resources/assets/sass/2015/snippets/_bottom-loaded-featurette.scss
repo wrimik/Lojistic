@@ -1,0 +1,66 @@
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+
+//Positioning
+//Box model
+//Typographic
+//Visual
+//other
+
+.bl-featurette-container{
+  position:relative;
+  outline:none;
+  height: 370px;
+  border: $brightBlue solid 2px;
+  width: 100%;
+  text-decoration: none;
+  margin: 20px auto;
+  overflow: hidden;
+
+  .bl-featurette-title{
+      width: 100%;
+      display: block;
+      float: none;
+      clear: both;
+      padding-top: 15px;
+      font-size: 19px;
+      line-height:37px;
+    }
+  .blf-title{
+    line-height: 26px;
+  }
+   a {
+       text-decoration: none;
+       &:hover { text-decoration: none; }
+       body.firefox & { font-weight: normal; }
+     }
+  .bl-featurette-img{
+    margin: 30px auto;
+    padding: 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    overflow:hidden;
+  }
+  .blf-content{
+    width: 80%;
+    margin: 30px auto;
+    text-decoration: none;
+    & p {
+      font-size: 14px;
+    }
+  }
+  .bottom-title{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    border: $brightBlue solid 2px;
+  }
+
+
+}
+
+
+
+
+

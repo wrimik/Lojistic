@@ -1,0 +1,5 @@
+$fs:10;
+@while $fs < 100 {
+  .p-#{$fs} { padding: $fs + px}
+  $fs: $fs + 5;
+}

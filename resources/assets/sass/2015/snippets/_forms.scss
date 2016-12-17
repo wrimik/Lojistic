@@ -1,0 +1,296 @@
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+
+form .row {
+  padding-bottom: 0;
+}
+label {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1;
+}
+
+select {
+  height: 34px;
+  border: 1px solid #c6c6c6;
+  color: #6f6f6f;
+  font-size: 16px;
+  line-height: 1em;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.form-group {
+  label + .fa {
+    left: 0;
+    top: 0;
+    margin-left: -1px;
+    position: absolute;
+    color: $navy;
+    display: none;
+    font-size: 13px;
+  }
+  &:hover label + .fa {
+    display: block;
+  }
+  &.form-group-tab {
+    background-color: #f4f4f4;
+    border-left: 1px solid #e6e7e8;
+    border-right: 1px solid #e6e7e8;
+    border-top: 1px solid #e6e7e8;
+    top: 16px;
+    padding: 4px 10px 0 10px;
+    position: relative;
+    height: 100%;
+    margin-bottom: 0;
+    @include border-radius(6px 6px 0px 0px);
+
+    label input:checked + small {
+      line-height: 4.2;
+    }
+  }
+}
+
+.weight-break-section {
+  padding-top: 10px;
+  margin: 0;
+  background-color: #f4f4f4;
+  border-left: 1px solid #e6e7e8;
+  border-right: 1px solid #e6e7e8;
+  border-bottom: 1px solid #e6e7e8;
+  @include border-radius(0px 6px 6px 6px);
+  @media(max-width: 992px) {
+    @include border-radius(6px 6px 6px 6px)
+  }
+  h4 {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: 15px;
+    color: $navy;
+  }
+  label {
+    padding-top: 7px;
+  }
+}
+
+//Calculator Forms (Add calculator class to form to use)
+form.calculator {
+  margin-bottom: 60px;
+  line-height: 1em;
+
+  label {
+    white-space: nowrap;
+    &.disabled {
+      color: #c6cccf;
+    }
+    small {
+      font-size: 65%;
+      color: #9ca2a5;
+    }
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select, textarea {
+    border: 1px solid #c6c6c6;
+    color: #6f6f6f;
+    font-size: 15px;
+    line-height: 1em;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    &:not(.form-control) {
+      @include border-radius(5px);
+    }
+  }
+
+  .comparison-section {
+    margin-top: 25px;
+    border: 1px solid #dae0e3;
+    padding: 5px;
+    display: table;
+    width: 100%;
+    .comparison-label {
+      display: table-cell;
+      vertical-align: middle;
+      height: 100%;
+      text-align: center;
+      padding: 0 10px;
+      font-size: 2em;
+      width: 0;
+    }
+    .comparison-form {
+      padding: 15px 35px 0 35px;
+      width: 100%;
+      @media(max-device-width: $xsMax), (max-width: $xsMax) {
+        padding: 15px 10px 0 15px;
+      }
+    }
+    & + .contact-form {
+      padding: 25px 45px 0 85px;
+      @media(max-device-width: $xsMax), (max-width: $xsMax) {
+        padding: 25px 0 0 0;
+      }
+    }
+  }
+  .form-break {
+    color: $flatGrey;
+    font-size: .8em;
+    padding-left: 5px;
+    hr {
+      width: 90%;
+      display: inline-block;
+      position: relative;
+      margin: 0 0 5px 0;
+      border-top: 1px solid $flatGrey;
+    }
+  }
+  .tooltip {
+    .tooltip-inner {
+      background-color: $navy;
+      @include border-radius(4px 4px 0px 0px);
+      width: 250px;
+      max-width: 250px;
+    }
+    .tooltip-arrow-down {
+      @include border-radius(0px 0px 4px 4px);
+      display: block;
+      color: $silver;
+      background-color: $navy;
+      text-align: center;
+      width: 250px;
+    }
+  }
+  input[type=submit] {
+    font-weight: bold;
+    font-size: 28px;
+    @media (max-width: $smMax), (max-device-width: $smMax) {
+      font-size: 22px;
+    }
+  }
+}
+
+#calc-results .row {
+  padding: 0;
+  line-height: 1.5;
+  & label {
+    line-height: 1;
+  }
+}
+
+.bug-required {
+  border-color: $flatCoral;
+  background-color: #ffecec;
+}
+
+.confirm-required {
+  border-color: $flatSeafoam;
+  background-color: #ecfffe;
+}
+
+.form-section-toggle {
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.form-section {
+  overflow: auto;
+  border: 1px solid #d0d1d6;
+  border-top: none;
+  .form-section-content {
+    background: #fafafa none repeat scroll 0 0;
+    border-radius: 0 0 4px 4px;
+    display: block;
+    height: auto;
+    padding: 10px 20px;
+    @include transition(height 1s, overflow 1s);
+    &.hidden {
+      display: none;
+      padding: 0;
+      height: 0;
+      overflow: hidden;
+    }
+  }
+}
+
+.expanded-content {
+  .form-control {
+    border-bottom-right-radius: 0;
+  }
+  .input-group-addon {
+    border-bottom-left-radius: 0;
+    &:last-child {
+      border-bottom-right-radius: 0;
+    }
+  }
+}
+
+.form-control::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #cfd1d2;
+}
+.form-control:-moz-placeholder { /* older Firefox*/
+  font-size:14px;
+  color: #cfd1d2;
+}
+.form-control::-moz-placeholder { /* Firefox 19+ */
+  font-size: 14px;
+  color: #cfd1d2;
+}
+.form-control:-ms-input-placeholder {
+  font-size: 14px;
+  color: #cfd1d2;
+}
+
+//for checkmark transition
+//input.validate {
+//  background-position: right -20px center;
+//  background-image: url("/images/check.png");
+//  background-size: 17px auto;
+//  background-repeat: no-repeat;
+//  @include transition(background-position 1s);
+//  &.valid {
+//    @include transition(background-position 1s);
+//    background-image: url("/images/check.png");
+//    background-position: right 15px center;
+//  }
+//}
+
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border: 1px solid #D6E9C6;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border: 1px solid #EED3D7;
+}
+
+.parsley-errors-list {
+  margin: 2px 0 3px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  opacity: 0;
+
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}

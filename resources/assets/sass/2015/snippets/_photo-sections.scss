@@ -1,0 +1,9 @@
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+
+// non homepage stuff
+.road {
+  background-position: center center;
+  background-size: cover;
+  background-image: url("/images/splash/road.jpg");
+}

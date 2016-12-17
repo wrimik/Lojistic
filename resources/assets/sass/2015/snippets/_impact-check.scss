@@ -1,0 +1,24 @@
+.impact-check{
+  position:relative;
+}
+.impact-circle{
+  position: absolute;
+  z-index: 10;
+  margin-top:-50px;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+.impact-body{
+  margin-top: 50px;
+  padding-top: 75px;
+  padding-bottom:25px;
+}
+.impact-body ul{
+  margin:0;
+}
+.impact-body ul li{
+  list-style-type: none;
+  text-align: center;
+}

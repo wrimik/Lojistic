@@ -1,0 +1,18 @@
+.boximg{
+  border:1px solid #d0d1d6;
+  box-shadow:0 0 2px #ddd;
+  margin-bottom:25px;
+  display:block;
+}
+.inline{
+  display:inline;
+}
+img{ //makes most images responsive
+  display:block;
+  max-width:100%;
+  margin:0 auto;
+}
+img.fixed-size{
+  max-width:none;
+  display:inline-block;
+}

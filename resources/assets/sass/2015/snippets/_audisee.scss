@@ -1,0 +1,89 @@
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+
+@media(min-width: 800px) {
+  .banner-title {
+    margin-top: 20px !important;
+  }
+  h4.banner-text{
+    font-size: 15px !important;
+  }
+}
+@media(min-width: 950px){
+  .banner-title{
+    margin-top:26px !important;
+  }
+}
+.audisee-banner-alignment{
+  margin-top:30px;
+}
+.banner-button{
+  margin-top:10px;
+}
+.social-circle{
+  width: 75px;
+  height: 75px;
+  padding: 15px;
+  border-radius: 100%;
+  margin:0 auto;
+  &:hover {
+    background-color: $accentDarkBlue !important;
+  }
+}
+.md-social-circle{
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  color: $brightBlue;
+  border-radius: 100%;
+  border: 2px solid $brightBlue;
+
+}
+.lg-social-circle{
+  width: 206px;
+  height: 206px;
+  padding: 2px 4px 0px 0px;
+  color: $brightBlue;
+  border-radius: 100%;
+  border: 2px solid $brightBlue;
+}
+.audit-items{
+  font-size:14px !important;
+  font-weight:700 !important;
+}
+.huge-card{
+  overflow: hidden;
+}
+.huge-card-header{
+  padding: 30px;
+}
+.huge-card-content{
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+.huge-card-item{
+  padding:10px;
+  width: 106%;
+  margin-left: -15px;
+  border-bottom: white 4px solid;
+}
+.audisee-list li{
+  padding: 0px;
+  margin-left: 10px !important;
+  margin-bottom: 5px;
+  border-left: none !important;
+  font-size: 18px !important;
+  line-height: .5em !important;
+  background: $silver !important;
+  list-style-type: square !important;
+}
+
+.video-tour-text{
+  margin-top:18%;
+  @media screen and (max-width: 1030px) {
+    margin-top:10%;
+  }
+  @media screen and (max-width: 1000px) {
+    margin-top:0;
+  }
+}

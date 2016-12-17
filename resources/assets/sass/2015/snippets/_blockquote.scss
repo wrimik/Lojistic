@@ -1,0 +1,26 @@
+@import '../inc/vars';
+blockquote {
+  background: $silver;
+  border-left: 16px solid $flatBlue;
+  border-right: 3px solid $flatBlue;
+  margin:35px 0;
+  padding: 24px;
+  quotes: "\201C""\201D";
+  &:before {
+    color: darken($silver, 10);
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+  q {
+    display: inline;
+  }
+  cite{
+    display: block;
+    float: none;
+    clear: both;
+    text-align: right;
+  }
+}

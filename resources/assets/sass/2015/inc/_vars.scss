@@ -1,0 +1,87 @@
+/* flat colors */
+$flatBlue:      #6096c3;
+$flatCream:     #fcf5cb; //Cash Rules Everything Around Me (C.R.E.A.M.) get the money, dolla dolla bill, y'all.
+$flatWhite:     #fff;    //just regular white, I guess...
+$flatCoral:     #d6603c;
+$flatGrey:      #898989;
+$flatBlack:     #333333;
+$flatPurple:    #B97FB9;
+$flatTan:       #C2B193;
+$flatSeafoam:   #13828c;
+$flatTeal:      #01838F;
+$flatYellow:    #D9D467;
+
+/* Bright Colors */
+$brightBlue: #009ff2;
+$accentLightBlue:#45bbf6;
+$accentDarkBlue:#007dcb;
+$blue: $accentDarkBlue;
+
+/* layout colors */
+$white:         #fff;
+$lightBlue:     #6096C3;
+$paleBlue:      #E3F2FD;
+$silver:        #f4f4f4;
+$darkSilver:    #e9e9ea;
+$navy:          #00344b;
+$buttons:       #F6921E;
+$buttonsHover:  #f5a548;
+$green:         #00c651;
+$red:           #EB1C24;
+$orange:        #F6921E;
+
+/* new colors*/
+$lightGrey: #b8bcbd;
+$christmasRed: #e7606c;
+$christmasTan: #ECE4C9;
+
+/* product colors*/
+$audit:       #00344b;
+$neg:         #767e81;
+$freight:     #e48b56;
+$ins:         #005a99;
+$int:         #1daf6e;
+$halo:        #bfc3c4;
+$savings:     #3f7e9d;
+$y2020:       #EED119;
+$header:      #174160;
+$brightBlue:  #19e;
+
+$listColors: (brightBlue, $brightBlue),
+        (navy, $navy),
+        (paleBlue, $paleBlue),
+        (flatBlue, $flatBlue),
+        (flatCream, $flatCream),
+        (flatWhite, $flatCream),
+        (flatCoral, $flatCoral),
+        (flatBlack, $flatBlack),
+        (flatPurple, $flatPurple),
+        (flatTan, $flatTan),
+        (flatSeafoam, $flatSeafoam),
+        (flatYellow, $flatYellow),
+        (flatGrey, $flatGrey),
+        (accentLightBlue, $accentLightBlue),
+        (accentDarkBlue, $accentDarkBlue),
+        (christmasRed, $christmasRed),
+        (christmasTan, $christmasTan),
+        (y2020,$y2020); //list for iterations
+
+
+/* sizes */
+//$pageMax: 1100px;
+$pageMax:   1200px;
+$xsMax:     649px;
+$smMin:     650px;
+$smMax:     799px;
+$mdMin:     800px;
+$mdMax:     999px;
+$lgMin:     1000px;
+
+$smNavBreakpoint: 950px;
+
+/* fonts */
+$fontReg:           'ProximaNova-Regular';
+$fontBold:          'ProximaNova-Bold';
+$fontSemibold:      'ProximaNova-Semibold';
+$fontLight:         'ProximaNova-Light';
+$defaultTextColor:  #333;

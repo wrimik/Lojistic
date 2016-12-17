@@ -1,0 +1,33 @@
+@import '../inc/_vars.scss';
+@import '../inc/_mixins.scss';
+.progress-meter{
+  width: 100%;
+  padding: 6px;
+  background: #fff;
+  border-radius: 15px;
+  margin-bottom:10px;
+  .progress-indicator{
+    @include transition(width 1s);
+    width:0;
+    height: 14px;
+    opacity:1;
+    background: $accentLightBlue;
+    border-radius: 10px;
+  }
+}
+
+.progress-meter-christmas{
+  width: 100%;
+  padding: 6px;
+  background: #fff;
+  border-radius: 15px;
+  margin-bottom:10px;
+  .progress-indicator-christmas{
+    @include transition(width 1s);
+    width:0;
+    height: 14px;
+    opacity:1;
+    background: $accentLightBlue;
+    border-radius: 10px;
+  }
+}

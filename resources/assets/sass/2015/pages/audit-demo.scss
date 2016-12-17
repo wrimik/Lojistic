@@ -1,0 +1,638 @@
+@import '../inc/vars';
+@import '../inc/mixins';
+
+$acAniDir: .5s;
+//arrow animation diration
+$disDir: 1s;
+
+.step2, .step3{
+  display:none;
+}
+
+.stripe > .steps {
+  padding: 55px 0px;
+  float: none;
+  clear: both;
+  overflow: auto;
+  height: auto;
+  border-bottom: 1px solid $green;
+  &:nth-child(3) {
+    border-bottom: 0;
+  }
+  @media(max-width: 766px) {
+    text-align: center;
+  }
+  h2 {
+    font-size: 29px;
+  }
+  p, ol {
+    font-size: 21px;
+    color: $green;
+    line-height: 28px;
+    @media(max-width: 768) {
+      list-style: none;
+    }
+  }
+  .icon {
+    background: $green;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    line-height: 53px;
+    border-radius: 50px;
+    position: relative;
+    margin-top: 50%;
+    overflow: visible;
+  }
+  div {
+    overflow: visible;
+  }
+  .step-img {
+    float: none;
+    clear: both;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.stripe {
+  position: relative;
+  overflow: visible; // for widowspeak
+}
+
+.upload {
+  border: none;
+  position: relative;
+  & > div {
+    padding: 50px;
+    &:nth-child(1) {
+      position: absolute;
+      height: 100%;
+      @media(max-width: 768px) {
+        display: none;
+      }
+    }
+    img {
+      margin: 0 auto;
+      float: none;
+      display: block;
+    }
+  }
+}
+
+input[type=file] {
+  display: none;
+}
+
+#diamond {
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-left-color: $navy;
+  position: absolute;
+  left: 0px;
+  margin-top: -17px;
+  @media(max-width: 768px) {
+    display: none;
+  }
+}
+
+.upload form {
+  margin: 0 auto;
+  max-width: 380px;
+}
+
+body .steps .arrow {
+  font-weight: bold;
+  margin: 25px 0 0 0;
+  @media(max-width(768px)) {
+    float: left;
+    clear: both;
+  }
+}
+
+#progressbox {
+  border: 1px solid #0099CC;
+  padding: 1px;
+  position: relative;
+  width: 400px;
+  border-radius: 3px;
+  margin: 10px;
+  display: none;
+  text-align: left;
+}
+
+#progressbar {
+  height: 20px;
+  border-radius: 3px;
+  background-color: #003333;
+  width: 1%;
+}
+
+#statustxt {
+  top: 3px;
+  left: 50%;
+  position: absolute;
+  display: inline-block;
+  color: #000000;
+}
+
+#uploading-overlay {
+  @include transition(top $disDir, height $disDir, padding $disDir, display 1s);
+  @include transition-delay(top 1, height 1.5, padding 0);
+  display: none;
+  background: #02334D;
+  position: fixed;
+  top: -1000px;
+  width: 100%;
+  height: 0;
+  overflow: auto;
+  z-index: 90;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  padding: 0;
+  &.active {
+    top: 0;
+    height: 100%;
+    display: block;
+  }
+  &.dismissed {
+    padding: 40px 0 0 0;
+    top: -1000px;
+    height: 0;
+  }
+  & > div {
+    margin: 0 auto 50px;
+    max-width: 90%;
+    padding-top: 120px;
+    max-height: 100%;
+    line-height: 40px;
+  }
+  #uploading-content {
+    @include transition(height $acAniDir);
+    height: 100px;
+    overflow: hidden;
+    &.done, &.bad {
+      height: 0;
+    }
+  }
+  #upload-complete {
+    max-width: 90%;
+    margin: 0 auto;
+    width: 740px;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    @include transition(height $acAniDir, padding $acAniDir);
+    @include transition-delay(height $acAniDir, padding $acAniDir);
+    &.done {
+      height: 500px;
+      padding-bottom: 100px;
+    }
+    img {
+      margin-bottom: 20px;
+    }
+    & > div {
+      border: 1px solid #fff;
+      padding: 33px 0;
+      line-height: 30px;
+    }
+    & > #run-audit {
+      width: 370px;
+      margin: 35px auto 0;
+      padding: 35px 0;
+      background: #00C853;
+      border: none;
+      border-bottom: 4px solid #008e3b;
+      border-radius: 4px;
+      max-width: 80%;
+      &:hover {
+        background-image: linear-gradient(#00f365 10px, #00C853);
+        background-image: -moz-linear-gradient(#00f365 10px, #00C853);
+        cursor: pointer;
+      }
+      &:active {
+        padding-bottom: 37px;
+        border-bottom-width: 2px;
+      }
+    }
+  }
+  #upload-error {
+    height: 0;
+    overflow: hidden;
+    &.bad {
+      height: auto;
+    }
+    .error{
+      display:none;
+    }
+  }
+}
+
+.gears {
+  width: 77px;
+  margin: 0 auto 25px;
+  height: 27px;
+  position: relative;
+  .gear {
+    position: absolute;
+    &:nth-child(1) {
+      top: 8px;
+      left: 8px;
+    }
+    &:nth-child(2) {
+      top: -5px;
+      left: 38px;
+    }
+  }
+}
+
+#run-audit:hover .gears .gear,
+.running .gears .gear {
+  &:nth-child(1) {
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+  }
+  &:nth-child(2) {
+    -webkit-animation: unspin 4s linear infinite;
+    -moz-animation: unspin 4s linear infinite;
+    animation: unspin 4s linear infinite;
+  }
+}
+
+.radial-progress {
+  $circle-size: 220px;
+  $circle-background: #56778C;
+  $circle-color: #fff;
+  $inset-size: 190px;
+  $inset-color: $navy;
+  $transition-length: 1s;
+  $shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+  margin: 50px auto;
+  float: none;
+  clear: both;
+  width: $circle-size;
+  height: $circle-size;
+  background-color: $circle-background;
+  border-radius: 50%;
+  .circle {
+    .mask, .fill, .shadow {
+      width: $circle-size;
+      height: $circle-size;
+      position: absolute;
+      border-radius: 50%;
+    }
+    .shadow {
+      box-shadow: $shadow inset;
+    }
+    .mask, .fill {
+      -webkit-backface-visibility: hidden;
+      transition: -webkit-transform $transition-length;
+      transition: -ms-transform $transition-length;
+      transition: transform $transition-length;
+    }
+    .mask {
+      clip: rect(0px, $circle-size, $circle-size, $circle-size/2);
+      .fill {
+        clip: rect(0px, $circle-size/2, $circle-size, 0px);
+        @include transition(background 2s);
+
+        background: $circle-color;
+      }
+      &.done .fill {
+        background: $green;
+      }
+      &.bad .fill {
+        background: $red;
+      }
+    }
+  }
+  .inset {
+    width: $inset-size;
+    height: $inset-size;
+    position: absolute;
+    margin-left: ($circle-size - $inset-size)/2;
+    margin-top: ($circle-size - $inset-size)/2;
+    background-color: $inset-color;
+    border-radius: 50%;
+    box-shadow: $shadow;
+    .ac {
+      @include transition(width $acAniDir, top $acAniDir, height $acAniDir, background $acAniDir, margin-left $acAniDir);
+      background: $circle-color;
+      position: absolute;
+    }
+    #ac-1 {
+      @include border-radius(3px);
+      width: 28px;
+      height: 80px;
+      top: 60px;
+      left: 50%;
+      margin-left: -13px;
+    }
+    #ac-2, #ac-3 {
+      margin-left: -25px;
+      transform: rotate(45deg);
+      @include border-radius(0px 3px 3px 3px);
+      background: $circle-color;
+      width: 22px;
+      height: 64px;
+      top: 40px;
+      left: 50%;
+    }
+    #ac-2 {
+      margin-left: 5px;
+      transform: rotate(135deg);
+      @include border-radius(3px 0 3px 0px);
+    }
+    &.done #ac-1, &.bad #ac-1 {
+      //hide this one
+      height: 0;
+      top: 120px;
+      background: $green;
+    }
+    &.done #ac-2 {
+      height: 61px;
+      margin-left: -33px;
+      top: 80px;
+      width: 27px;
+      background: $green;
+      @include border-radius(3px 3px 3px 3px);
+    }
+    &.done #ac-3 {
+      margin-left: 8px;
+      background: $green;
+      height: 81px;
+      width: 27px;
+      top: 53px;
+      @include border-radius(3px 3px 3px 3px);
+    }
+    &.bad #ac-2 {
+      background: #f00;
+      border-radius: 3px;
+      height: 118px;
+      margin-left: -14px;
+      top: 40px;
+      width: 28px;
+    }
+    &.bad #ac-3 {
+      background: #f00;
+      border-radius: 3px;
+      height: 118px;
+      left: 50%;
+      margin-left: -14px;
+      top: 40px;
+      width: 28px;
+    }
+  }
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes unspin {
+  100% {
+    -moz-transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes unspin {
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@keyframes unspin {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+
+.audit-result{
+  .headings{
+    background:$flatGrey;
+    overflow:auto;
+    text-align: center;
+    color:#fff;
+    font-size:14px;
+    text-transform: uppercase;
+    div{
+      float:left;
+      clear:none;
+      &:nth-child(1){
+        width:40%;
+      }
+      &:nth-child(2){
+        width:60%;
+      }
+    }
+  }
+  .rows{
+    & > div{
+      font-size:13px;
+      font-family: $fontLight;
+      width:100%;
+      div{
+        float:left;
+        clear:none;
+        font-size:14px;
+        padding:3px 5px;
+        border-bottom:1px solid #d0d1d6;
+        &:nth-child(1){
+          width:40%;
+          text-align:right;
+        }
+        &:nth-child(2){
+          width:60%;
+          text-align:right;
+        }
+      }
+    }
+  }
+
+}
+
+
+#audit-results.running {
+  #audit-progress-bar div {
+    width: 100%;
+  }
+}
+
+#audit-results.done {
+  .done-hide {
+    display: none;
+  }
+  .done-show {
+    display: block;
+  }
+  .message-done {
+    text-align: center;
+    display: block;
+    font-size: 29px;
+    padding: 0 0 22px;
+  }
+}
+
+.audit-totals {
+  color: $navy;
+}
+
+.at-title {
+  font-size: 16px;
+  text-align: center;
+  padding: 8px 0px 5px;
+  margin-top: 30px;
+  color: #fff;
+}
+
+body .at-content {
+  text-align: center;
+  font-size: 28px;
+  height: 60px;
+  padding: 20px 0;
+  color: $navy;
+  font-family: 'Inconsolata';
+  .widowspeak {
+    top: 122px;
+  }
+}
+
+body .pale-blue.at-content {
+  color: $red;
+  padding: 20px 20px 20px 0;
+}
+
+.at-ps {
+  text-align: center;
+  padding: 24px 0px 12px;
+  font-size: 15px;
+}
+
+.eq {
+  margin: 35px auto;
+  float: none;
+  display: block;
+}
+
+svg rect:nth-child(2) {
+  display: none;
+}
+
+#total-records, #total-invoice {
+  width: 100%;
+  height: 400px;
+}
+
+#audit-disclaimer {
+  text-align: center;
+  line-height: 30px;
+  font-size: 17px;
+  color: #333;
+  padding-top: 19px;
+  a {
+    color: $green;
+  }
+}
+
+.result-table {
+  margin-top: 65px;
+  .rt-title-bar div {
+    padding: 12px 20px 7px;
+    height: 39px;
+    font-size: 16px;
+    &.rt-expand {
+      text-align: center;
+      &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+    }
+  }
+  .rt-table {
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+    border-color: #f3f3f3;
+    float: none;
+    clear: both;
+    td {
+      padding: 8px 18px;
+    }
+    thead {
+      background: #F3F3F3;
+      color: $navy;
+      th {
+        padding: 7px 20px;
+      }
+    }
+  }
+}
+
+#submit-btn {
+  display: none;
+}
+#audit-share{
+  &.pending{
+    bottom:-100px;
+  }
+  border-radius: 3px;
+  box-shadow: 0 0 4px #eee;
+  bottom: 4px;
+  position: fixed;
+  right: 3px;
+  background: #fff;
+  border:1px solid #dedede;
+  border-top: 2px solid $flatBlue;
+  padding: 20px;
+  width: 274px;
+  z-index: 11;
+  &.after{
+    right:-254px;
+    background:$flatBlue;
+    &:hover{
+      cursor: pointer;
+      background:lighten($flatBlue, 10);
+    }
+    .close{
+      display:none;
+    }
+    .open{
+      display:block;
+    }
+  }
+  .close{
+    display:block;
+    position: absolute;
+    right: 8px;
+    top: 4px;
+  }
+  .open{
+    display:block;
+    color: #fff;
+    left: 2px;
+    position: absolute;
+    top: 40%;
+  }
+}

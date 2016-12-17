@@ -1,0 +1,39 @@
+@extends('layouts.flat')
+@section('meta')
+    @include('layouts.inc.flat-meta', [
+        'title' => 'Freight Trade And Shipping History - Lojistic',
+        'description' => 'Read our article "Freight Trade And Shipping History".',
+        'keywords' => '',
+    ])
+@overwrite
+@section('content')
+    <section class="white">
+        <div class="container">
+            <article>
+                <h2>Freight Trade and Shipping History</h2>  <p>The act of trading, or bartering, involves exchanging one thing for another. For instance, one person may trade a treasured baseball card in his collection for one he likes even more. The people in a bartering transaction must be satisfied with what they will receive in return for what they give.</p>  <p>Trading and bartering can be traced back to ancient societies. For example, in ancient China people traded silk for various goods and services. There is even a famous trade route known as the ‘Silk Road.&rsquo; Trade was alive and well in ancient Greece with the help of some sturdy cargo ships. Greece prospered as a result of its trading activities with other countries. In short, before the concept of money was introduced, many ancient societies traded and bartered to fulfill their basic needs.</p>  <p>When it came to delivering goods, the ancient Greeks discovered the benefits of shipping by sea. They would load their goods into cargo ships and trade in places around the Mediterranean, as well as in the far East. Romans also used trading ships to import and export items. They traded with people in Spain and in the Middle East. Some of the items they traded for were silk, leather, olive oil, and silver.</p>  <p>Trading in ancient civilizations was also done on the roads. The ‘Silk Road&rsquo; is one significant example. It was a 7000 mile long route that passed through several Chinese cities, Persia, the northern part of India, and central Asia. Of course, silk was traded along this route as well as other items such as gold, plants, and even exotic animals.</p>  <p>Another famous trade route is the Amber Road. This first century trade route went from Europe to Asia. It earned its name from the precious raw material of amber that was traded along the route. There are famous rivers that played an important role in trade. For instance, the Mississippi River was used in the fur trade to Louisiana and other areas along its shores. Steamboats also transported large amounts of freight on the Mississippi River. The Ohio River was another notable trade route. Steamboats carried food, raw materials, and other freight to the southern states via the Ohio River.</p>  <p>There are dozens of different types of cargo found in the history of trade and shipping. In many ancient societies, raw materials, spices, fur, plants, tools, weapons, and precious metals were traded among citizens. In today&rsquo;s world, all types of items are bought, sold, and shipped. Food, machines, clothing, tools, cars, and medicines are just a few examples of shipments traveling around the world. New technology has made it possible to ship almost any item in a safe and timely fashion. Furthermore, technology allows people to track a package all the way to its destination.</p>  <p>People barter and trade today just as they did in ancient societies. Trading can be done with anything from baseball cards to items of children&rsquo;s clothing. If the two people involved in the trade are in agreement, then a trade is successful! Trading can also take place in the realm of services. For instance, two neighbors with children can trade babysitting services. Instead of paying someone for babysitting services, the neighbors take turns watching one another&rsquo;s children in a balanced way. Bartering is especially common during times when growth in the economy is lagging. It&rsquo;s not uncommon for a person to work out a trade with a professional. For example, a plumber in need of dental work may trade his services for the services of a dentist. This is an ideal situation when each party is in great need of the other&rsquo;s services. Everyday people are finding new ways to get the basic items or services they need without involving money in the transaction.  </p>  <p>Today, goods are delivered over the road with the help of trucks. Depending on its size, a truck can ship anything from cars to small packages. Railroads also played a part in the history of shipping. In the nineteenth century the transcontinental railroad shipped goods across the United States in a matter of days. This was a safer and more efficient alternative to shipping goods by horse and wagon. Large amounts of goods of all types could be shipped by train in a relatively small amount of time. With the invention of planes in the early twentieth century, items were soon shipped by air. Cargo planes can deliver goods to their destination in a fast, efficient way. When an item is shipped by air, there is no rough terrain to tackle!</p>
+            <div class="whitepaperpromo2">
+                <p>For further information on freight trade and shipping history, please visit:</p>
+                <ul class="accessorial-charges checkmarks ul">
+                    <li><a href="http://www.fi.edu/pieces/knox/barter.htm" target="_blank">An Explanation of Bartering</a></li>  
+                    <li><a href="http://cgee.hamline.edu/rivers/Resources/Voices/transportation1.htm" target="_blank">Shipping by River</a></li>  
+                    <li><a href="http://www.ssc.wisc.edu/globalization_and_the_race_for_resources/pdf/Figure%207.4.pdf" target="_blank">A Timeline of Shipping History</a> (PDF)</li>  
+                    <li><a href="http://xroads.virginia.edu/%7EHYPER/DETOC/transport/railroad.html" target="_blank">People and Goods Traveling by Rail</a></li>  
+                    <li><a href="http://rivers.hanover.edu/steamboat2011/history.php" target="_blank">History of the Steamboat</a></li>  
+                    <li><a href="http://www.universityofcalifornia.edu/news/article/4455" target="_blank">Ancient Trade</a></li>  
+                    <li><a href="http://www.jcu.edu/faculty/nietupski/rl251/projects/n_silk_road/trade/main.htm" target="_blank">The Silk Road Trade Route</a></li>  
+                    <li><a href="http://ed101.bu.edu/StudentDoc/Archives/ED101sp07/barborek/silkroad.htm" target="_blank">Facts about the Silk Road</a></li>  
+                    <li><a href="http://www.countyhistory.com/history/006.htm" target="_blank">Information on the Fur Trade</a></li>  
+                    <li><a href="http://education.iupui.edu/webquests/flying/index.htm" target="_blank">Web Quest on Planes that Deliver Goods</a></li>  
+                    <li><a href="http://americanhistory.si.edu/onthemove/exhibition/exhibition_16_5.html" target="_blank">A Look at Trucking History</a></li>  
+                    <li><a href="http://keep2.sjfc.edu/class/bnapoli/msti431/dap6056/msti431/pca/research.htm" target="_blank">History of the Erie Canal</a></li>  
+                    <li><a href="http://www.siue.edu/%7Elsnell/erie.htm" target="_blank">Facts on the Erie Canal</a></li>  
+                    <li><a href="http://www.sccs.swarthmore.edu/users/08/ajb/tmve/wiki100k/docs/Amber_Road.html" target="_blank">The Amber Road</a></li>  
+                    <li><a href="http://www.maine.gov/mdot/freight/railroading-history.php" target="_blank">Significant Points in Railroad History</a></li>
+                </ul>
+            </div>
+            <p>
+            <p>Written by <a href="/about-the-author-tyler-glassman" rel="author">Tyler Glassman</a></p>
+            </article>
+        </div>
+    </section>
+@stop

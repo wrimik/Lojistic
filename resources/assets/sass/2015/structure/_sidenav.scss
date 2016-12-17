@@ -1,0 +1,129 @@
+/**
+* side nav for tablets
+*/
+
+#side-nav {
+  position:relative;
+  .menu {
+    background: none repeat scroll 0 0 #fff;
+    box-shadow: 1px 0 5px #000;
+    height: 100%;
+    left: 0;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    width: 270px;
+    z-index: 202;
+    @include transition(left .5s);
+    & svg {
+      clear: both;
+      display: block;
+      float: none;
+      margin: 20px auto;
+      max-width: 80%;
+      width: 80%;
+    }
+    & > div {
+      clear: both;
+      float: none;
+      height:53px;
+      min-height: 53px;
+      overflow: hidden;
+    }
+    & > div.open {
+      height: auto;
+      overflow: auto;
+    }
+    div {
+      span {
+        display: block;
+        float: left;
+        clear: none;
+        width: 0;
+        height: 0;
+        position: relative;
+        top: 4px;
+        margin-right: 10px;
+        border-style: solid;
+        border-color: transparent;
+        border-left-color: #124361;
+        border-width: 8px 0 8px 8px;
+        @include transition(All 0.2s ease-in-out);
+        transform: rotate(0deg);
+      }
+      &.open span {
+        @include transform(rotate(90deg));
+        position: relative;
+      }
+      .sn-toggle {
+        background: none repeat scroll 0 0 #fff;
+        color: #124361;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 13px 20px 10px;
+        border-bottom: 1px solid #f8f8f8;
+      }
+      a {
+        border-bottom: 1px solid #b6b6b6;
+        clear: both;
+        color: #fff;
+        display: block;
+        float: none;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 14px 37px 11px;
+      }
+    }
+    .sn-links {
+      background: #c0c0c0;
+      float: none;
+      clear: both;
+      padding: 0;
+      height: auto;
+      overflow: hidden;
+    }
+  }
+  &.closed .menu{
+    left:-275px;
+  }
+  &.open .menu {
+    left:0;
+    display: block;
+  }
+  &.top .menu {
+    //menuMode
+    display: none;
+  }
+}
+
+#sn-overlay {
+  @include transition(opacity .5s);
+  display: block;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width:0;//zero to get the div out of the way
+  height:0;//of firebug inspector
+  z-index: 3;
+  background-color:#000;
+  &.top {
+    //menuState, menuMode
+    display: none;
+  }
+}
+.open > #sn-overlay{
+  opacity:0.6;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+}
+
+@media(min-width: 998px) {
+  #sn-overlay,
+  #side-nav,
+  #sn-overlay.open,
+  #side-nav.open,
+  {
+    display: none;
+  }
+}

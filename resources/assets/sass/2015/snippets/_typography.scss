@@ -1,0 +1,81 @@
+//covering our typography
+
+.uppercase{
+  text-transform: uppercase;
+}
+.lowercase{
+  text-transform: lowercase;
+}
+
+/*=====================
+ all the h3 typography
+ =====================*/
+h1.american{
+  font-family: 'ProximaNova-BoldIt', sans-serif;
+  font-size: 3em;
+}
+h1.card-title, button {
+  font-family: 'ProximaNova-Regular', sans-serif;
+  transition: all 0.3s ease-in-out;
+  margin: 0px 0px 0px 0px;
+  font-weight:800;
+}
+.four-oh-four{
+  font-weight:800 !important;
+  font-size: 2em;
+}
+
+/*=====================
+ all the h2 typography
+ =====================*/
+h2{
+
+}
+
+/*=====================
+ all the h3 typography
+ =====================*/
+h3{
+
+}
+
+/*=====================
+ all the h4 typography
+ =====================*/
+h4{
+
+}
+h4.card-title {
+  width: 100%;
+  max-width:280px;
+  font-size: 12px;
+  background-color: $paleBlue;
+  color: white;
+  line-height: 150%;
+  border-radius: 3px 3px 0 0;
+  padding:10px;
+  text-decoration: capa;
+  margin: 0px 0px 0px 0px
+}
+
+/*=====================
+ all the h5 typography
+ =====================*/
+h5{
+
+}
+
+/*=====================
+ all the h6 typography
+ =====================*/
+h6{
+
+}
+
+
+/*=====================
+ font-styles
+======================*/
+.sign {
+  font-family: 'sign_painter'
+}
