@@ -29,7 +29,7 @@
 
                 <br/>
                 <p>
-                    <a href="https://plus.google.com/u/0/108627736862856648908/about" rel="me" target="blank">Google+</a>
+                    <a rel="nofollow" href="https://plus.google.com/u/0/108627736862856648908/about" rel="me" target="blank">Google+</a>
                 </p>
             </article>
         </div>

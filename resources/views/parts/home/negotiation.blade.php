@@ -17,7 +17,7 @@
                 </a>
             </p>
 
-            <a class="btn btn-success" href="/carrier-contract-negotiation">
+            <a class="btn btn-success" rel="nofollow" href="/carrier-contract-negotiation">
                 LEARN MORE ABOUT NEGOTIATION
             </a>
         </div>
@@ -26,7 +26,7 @@
             <i class="eloji eloji-negotiation flatGrey fs-200"></i>
             <br/>
             <br/>
-            <a class="btn btn-success btn-lg visible-xs" href="/carrier-contract-negotiation">
+            <a class="btn btn-success btn-lg visible-xs" rel="nofollow" href="/carrier-contract-negotiation">
                 LEARN MORE ABOUT NEGOTIATION
             </a>
         </div>
@@ -53,7 +53,7 @@
             </p>
 
             <p>
-                <a class="btn btn-success" href="/carrier-contract-negotiation">CONTINUE</a>
+                <a class="btn btn-success" rel="nofollow" href="/carrier-contract-negotiation">CONTINUE</a>
             </p>
         </div>
     </div>

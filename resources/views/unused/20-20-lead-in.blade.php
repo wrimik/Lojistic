@@ -20,7 +20,7 @@
                 </span>
             <br/>
             <br/>
-            <a href="/20-20" class="btn y2020 btn-lg">LEARN MORE</a>
+            <a rel="nofollow" href="/20-20" class="btn y2020 btn-lg">LEARN MORE</a>
         </div>
     </div>
 </section>

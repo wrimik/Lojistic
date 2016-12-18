@@ -45,10 +45,10 @@
                     roads for troop transportation and Union Corp engineers built bridges and laid the tracks for
                     trains used in the military.</p>
                 <ul class="ul">
-                    <li><a href="http://www.pbs.org/civilwar/war/" target="_blank">The Civil War</a></li>
-                    <li><a href="http://www.english.illinois.edu/maps/civilwar/about.htm" target="_blank">About the
+                    <li><a rel="nofollow" href="http://www.pbs.org/civilwar/war/" target="_blank">The Civil War</a></li>
+                    <li><a rel="nofollow" href="http://www.english.illinois.edu/maps/civilwar/about.htm" target="_blank">About the
                             American Civil War</a></li>
-                    <li><a href="http://www.blair-murrah.org/CivilWarTransport.php" target="_blank">The American
+                    <li><a rel="nofollow" href="http://www.blair-murrah.org/CivilWarTransport.php" target="_blank">The American
                             Civil War: Innovations in Transportation</a></li>
                 </ul>
                 <hr/>
@@ -63,11 +63,11 @@
                     transport large numbers of supplies and troops efficiently and quickly. The wounded were also
                     transported by the very first motorized ambulances during this war.</p>
                 <ul class="ul">
-                    <li><a href="http://xroads.virginia.edu/%7Ema03/holmgren/ppie/wwi.html" target="_blank">World
+                    <li><a rel="nofollow" href="http://xroads.virginia.edu/%7Ema03/holmgren/ppie/wwi.html" target="_blank">World
                             War I</a></li>
-                    <li><a href="http://iws.collin.edu/kwilkison/Resources%20for%20Students/WWI.htm"
+                    <li><a rel="nofollow" href="http://iws.collin.edu/kwilkison/Resources%20for%20Students/WWI.htm"
                            target="_blank">Background to the War Nobody Won</a></li>
-                    <li><a href="http://www.is.wayne.edu/mnissani/WWI/encarta.htm" target="_blank">World War I:
+                    <li><a rel="nofollow" href="http://www.is.wayne.edu/mnissani/WWI/encarta.htm" target="_blank">World War I:
                             Land, Navel, and Aerial Warfare</a></li>
                 </ul>
                 <hr/>
@@ -82,11 +82,11 @@
                     and locomotives. Raw material used for making ammunition, tanks, and airplanes were also
                     transported with merchant ships.</p>
                 <ul class="ul">
-                    <li><a href="http://library.duke.edu/digitalcollections/adaccess_war/" target="_blank">World War
+                    <li><a rel="nofollow" href="http://library.duke.edu/digitalcollections/adaccess_war/" target="_blank">World War
                             II CollectionDigital</a></li>
-                    <li><a href="http://www.ushmm.org/wlc/en/article.php?ModuleId=10007314" target="_blank">World
+                    <li><a rel="nofollow" href="http://www.ushmm.org/wlc/en/article.php?ModuleId=10007314" target="_blank">World
                             War II: In Depth</a></li>
-                    <li><a href="http://www.history.com/topics/world-war-ii" target="_blank">History Channel: World
+                    <li><a rel="nofollow" href="http://www.history.com/topics/world-war-ii" target="_blank">History Channel: World
                             War II</a></li>
                 </ul>
                 <hr/>
@@ -101,13 +101,13 @@
                     ship military aid to South Vietnam during the 1950s and the early 1960s. Equipment and personnel
                     being transported to war zones was done mostly by military air transport.</p>
                 <ul class="ul">
-                    <li><a href="http://www.mrfa.org/vnstats.htm" target="_blank">Vietnam War Statistics</a></li>
-                    <li><a href="http://www.rationalrevolution.net/war/american_involvement_in_vietnam.htm"
+                    <li><a rel="nofollow" href="http://www.mrfa.org/vnstats.htm" target="_blank">Vietnam War Statistics</a></li>
+                    <li><a rel="nofollow" href="http://www.rationalrevolution.net/war/american_involvement_in_vietnam.htm"
                            target="_blank">The American Involvement in Vietnam</a></li>
-                    <li><a href="http://grambo.us/atav/history.htm" target="_blank">History of Army Transportation
+                    <li><a rel="nofollow" href="http://grambo.us/atav/history.htm" target="_blank">History of Army Transportation
                             Units in Vietnam</a></li>
                 </ul>
-                <p>Written by <a href="/about-the-author-tyler-glassman" rel="author">Tyler Glassman</a></p>
+                <p>Written by <a rel="nofollow" href="/about-the-author-tyler-glassman" rel="author">Tyler Glassman</a></p>
             </article>
         </div>
     </section>

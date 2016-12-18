@@ -14,25 +14,25 @@
             <div class="whitepaperpromo2">
                 <p>For further information on freight trade and shipping history, please visit:</p>
                 <ul class="accessorial-charges checkmarks ul">
-                    <li><a href="http://www.fi.edu/pieces/knox/barter.htm" target="_blank">An Explanation of Bartering</a></li>  
-                    <li><a href="http://cgee.hamline.edu/rivers/Resources/Voices/transportation1.htm" target="_blank">Shipping by River</a></li>  
-                    <li><a href="http://www.ssc.wisc.edu/globalization_and_the_race_for_resources/pdf/Figure%207.4.pdf" target="_blank">A Timeline of Shipping History</a> (PDF)</li>  
-                    <li><a href="http://xroads.virginia.edu/%7EHYPER/DETOC/transport/railroad.html" target="_blank">People and Goods Traveling by Rail</a></li>  
-                    <li><a href="http://rivers.hanover.edu/steamboat2011/history.php" target="_blank">History of the Steamboat</a></li>  
-                    <li><a href="http://www.universityofcalifornia.edu/news/article/4455" target="_blank">Ancient Trade</a></li>  
-                    <li><a href="http://www.jcu.edu/faculty/nietupski/rl251/projects/n_silk_road/trade/main.htm" target="_blank">The Silk Road Trade Route</a></li>  
-                    <li><a href="http://ed101.bu.edu/StudentDoc/Archives/ED101sp07/barborek/silkroad.htm" target="_blank">Facts about the Silk Road</a></li>  
-                    <li><a href="http://www.countyhistory.com/history/006.htm" target="_blank">Information on the Fur Trade</a></li>  
-                    <li><a href="http://education.iupui.edu/webquests/flying/index.htm" target="_blank">Web Quest on Planes that Deliver Goods</a></li>  
-                    <li><a href="http://americanhistory.si.edu/onthemove/exhibition/exhibition_16_5.html" target="_blank">A Look at Trucking History</a></li>  
-                    <li><a href="http://keep2.sjfc.edu/class/bnapoli/msti431/dap6056/msti431/pca/research.htm" target="_blank">History of the Erie Canal</a></li>  
-                    <li><a href="http://www.siue.edu/%7Elsnell/erie.htm" target="_blank">Facts on the Erie Canal</a></li>  
-                    <li><a href="http://www.sccs.swarthmore.edu/users/08/ajb/tmve/wiki100k/docs/Amber_Road.html" target="_blank">The Amber Road</a></li>  
-                    <li><a href="http://www.maine.gov/mdot/freight/railroading-history.php" target="_blank">Significant Points in Railroad History</a></li>
+                    <li><a rel="nofollow" href="http://www.fi.edu/pieces/knox/barter.htm" target="_blank">An Explanation of Bartering</a></li>
+                    <li><a rel="nofollow" href="http://cgee.hamline.edu/rivers/Resources/Voices/transportation1.htm" target="_blank">Shipping by River</a></li>
+                    <li><a rel="nofollow" href="http://www.ssc.wisc.edu/globalization_and_the_race_for_resources/pdf/Figure%207.4.pdf" target="_blank">A Timeline of Shipping History</a> (PDF)</li>
+                    <li><a rel="nofollow" href="http://xroads.virginia.edu/%7EHYPER/DETOC/transport/railroad.html" target="_blank">People and Goods Traveling by Rail</a></li>
+                    <li><a rel="nofollow" href="http://rivers.hanover.edu/steamboat2011/history.php" target="_blank">History of the Steamboat</a></li>
+                    <li><a rel="nofollow" href="http://www.universityofcalifornia.edu/news/article/4455" target="_blank">Ancient Trade</a></li>
+                    <li><a rel="nofollow" href="http://www.jcu.edu/faculty/nietupski/rl251/projects/n_silk_road/trade/main.htm" target="_blank">The Silk Road Trade Route</a></li>
+                    <li><a rel="nofollow" href="http://ed101.bu.edu/StudentDoc/Archives/ED101sp07/barborek/silkroad.htm" target="_blank">Facts about the Silk Road</a></li>
+                    <li><a rel="nofollow" href="http://www.countyhistory.com/history/006.htm" target="_blank">Information on the Fur Trade</a></li>
+                    <li><a rel="nofollow" href="http://education.iupui.edu/webquests/flying/index.htm" target="_blank">Web Quest on Planes that Deliver Goods</a></li>
+                    <li><a rel="nofollow" href="http://americanhistory.si.edu/onthemove/exhibition/exhibition_16_5.html" target="_blank">A Look at Trucking History</a></li>
+                    <li><a rel="nofollow" href="http://keep2.sjfc.edu/class/bnapoli/msti431/dap6056/msti431/pca/research.htm" target="_blank">History of the Erie Canal</a></li>
+                    <li><a rel="nofollow" href="http://www.siue.edu/%7Elsnell/erie.htm" target="_blank">Facts on the Erie Canal</a></li>
+                    <li><a rel="nofollow" href="http://www.sccs.swarthmore.edu/users/08/ajb/tmve/wiki100k/docs/Amber_Road.html" target="_blank">The Amber Road</a></li>
+                    <li><a rel="nofollow" href="http://www.maine.gov/mdot/freight/railroading-history.php" target="_blank">Significant Points in Railroad History</a></li>
                 </ul>
             </div>
             <p>
-            <p>Written by <a href="/about-the-author-tyler-glassman" rel="author">Tyler Glassman</a></p>
+            <p>Written by <a rel="nofollow" href="/about-the-author-tyler-glassman" rel="author">Tyler Glassman</a></p>
             </article>
         </div>
     </section>

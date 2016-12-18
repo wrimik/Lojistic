@@ -7,7 +7,7 @@
                     Welcome! <br>
                     <small>Click The Blue Button Below To Download Your File</small>
                 </h1>
-                <a target="_blank" download href="/your-accounts/download/?l={{ $l }}" class="btn btn-success btn-md flatBlue download">
+                <a target="_blank" download rel="nofollow" href="/your-accounts/download/?l={{ $l }}" class="btn btn-success btn-md flatBlue download">
                     <i class="eloji eloji-download"></i>
                     DOWNLOAD
                 </a>

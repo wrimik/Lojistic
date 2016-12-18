@@ -14,11 +14,11 @@
             <small>Download Informative White Papers</small></h1>
 
             <div class="col-sm-4 text-center">
-                <a href="/5-secrets-ups-and-fedex-dont-want-you-to-know">
+                <a rel="nofollow" href="/5-secrets-ups-and-fedex-dont-want-you-to-know">
                     <img src="/images/5-Secrets-UPS-&-FedEx-Dont-Want-You-to-Know-Final.png" alt="5 Secrets UPS & FedEx Don't Want You To Know"/>
                 </a><br/>
                 <div class="col-sm-10 col-sm-offset-1">
-                <a class="btn btn-lg brightBlue hover-color-opacity uppercase" href="/5-secrets-ups-and-fedex-dont-want-you-to-know">
+                <a class="btn btn-lg brightBlue hover-color-opacity uppercase" rel="nofollow" href="/5-secrets-ups-and-fedex-dont-want-you-to-know">
                     5 Secrets Report
                 </a>
                 </div>
@@ -27,22 +27,22 @@
             </div>
 
             <div class="col-sm-4 text-center">
-                <a href="/general-price-increase">
+                <a rel="nofollow" href="/general-price-increase">
                     <img src="/images/UPS-Fedex-General-Price-Increase-History.png" alt="UPS & FedEx General Price Increases"/>
                 </a><br/>
                 <div class="col-sm-10 col-sm-offset-1">
-                <a class="btn btn-lg brightBlue hover-color-opacity uppercase" href="/general-price-increase">GPI History</a>
+                <a class="btn btn-lg brightBlue hover-color-opacity uppercase" rel="nofollow" href="/general-price-increase">GPI History</a>
                 </div>
                     <br/>
                 <br/>
             </div>
             <div class="col-sm-4 text-center">
-                <a href="/fuel-surcharge">
+                <a rel="nofollow" href="/fuel-surcharge">
                     <img src="/images/UPS-Fedex-Fuel-Surcharge-History.png" alt="UPS and FedEx Fuel Surcharges Report"/>
                 </a>
                 <br/>
                 <div class="col-sm-10 col-sm-offset-1">
-                <a class="btn btn-lg brightBlue hover-color-opacity uppercase" href="/fuel-surcharge">FUEL SURCHARGE REPORT</a>
+                <a class="btn btn-lg brightBlue hover-color-opacity uppercase" rel="nofollow" href="/fuel-surcharge">FUEL SURCHARGE REPORT</a>
                 </div>
                     <br/>
             </div>
@@ -55,7 +55,7 @@
     <section class="silver">
         <div class="container">
             <div class="col-sm-3">
-                <a href="/5-secrets-ups-and-fedex-dont-want-you-to-know">
+                <a rel="nofollow" href="/5-secrets-ups-and-fedex-dont-want-you-to-know">
                     <img  src="/images/UPS-FedEx-5Secrets.png" alt="5 Secrets UPS &amp; FedEx Don't Want You To Know"/>
                 </a>
             </div>
@@ -92,7 +92,7 @@
                     This logistic solutions report is available for download immediately at no cost.
                 </p>
 
-                <a class="btn btn-success pull-right" href="/5-secrets-ups-and-fedex-dont-want-you-to-know">
+                <a class="btn btn-success pull-right" rel="nofollow" href="/5-secrets-ups-and-fedex-dont-want-you-to-know">
                     GET THE 5 SECRETS REPORT
                 </a>
             </div>
@@ -135,12 +135,12 @@
                     This quality logistics report is available for download immediately at no cost.
                 </p>
 
-                <a href="/general-price-increase" class="btn btn-primary">
+                <a rel="nofollow" href="/general-price-increase" class="btn btn-primary">
                     GET THE UPS &amp; FEDEX GENERAL PRICE INCREASE HISTORY
                 </a>
             </div>
             <div class="col-sm-3">
-                <a href="/general-price-increase">
+                <a rel="nofollow" href="/general-price-increase">
                     <img src="/images/GPI.png" alt="UPS & FedEx General Price Increases"/>
                 </a>
             </div>
@@ -150,7 +150,7 @@
     <section class="silver">
         <div class="container">
             <div class="col-sm-3">
-                <a href="/fuel-surcharge">
+                <a rel="nofollow" href="/fuel-surcharge">
                     <img src="/images/Fuel_Surcharge.png" alt="UPS & FedEx General Price Increases"/>
                 </a>
             </div>
@@ -192,7 +192,7 @@
                     library is available for download immediately at no cost.
                 </p>
 
-                <a class="btn btn-primary" href="/fuel-surcharge">
+                <a class="btn btn-primary" rel="nofollow" href="/fuel-surcharge">
                     Get the UPS &amp; FedExFuel Surcharge History
                 </a>
             </div>

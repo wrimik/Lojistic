@@ -20,7 +20,7 @@
                     <div class="col-sm-4 col-xs-12">
                         <br>
                         <a download
-                           href="/pdf/5-Secrets-UPS-&-FedEx-Dont-Want-You-to-Know.pdf"
+                           rel="nofollow" href="/pdf/5-Secrets-UPS-&-FedEx-Dont-Want-You-to-Know.pdf"
                            data-anal="SRG|5S-Download">
                             <img class="" alt="5 Secrets UPS &amp; FedEx Don't Want You To Know"
                                  src="/images/UPS-FedEx-5Secrets.png"
@@ -41,7 +41,7 @@
 
                         <p class="text-center">
                             <a download class="btn btn-success btn-md"
-                               href="/pdf/5-Secrets-UPS-&-FedEx-Dont-Want-You-to-Know.pdf"
+                               rel="nofollow" href="/pdf/5-Secrets-UPS-&-FedEx-Dont-Want-You-to-Know.pdf"
                                data-anal="SRG|5S-Download">
                                 <i class="fa fa-download"></i>
                                 DOWNLOAD THE 5 SECRETS REPORT
@@ -58,7 +58,7 @@
                 <div class="white container p-30  text-center">
                     <div class="col-sm-4 col-xs-12">
                         <br>
-                        <a download href="/pdf/UPS-Fedex-General-Price-Increase-History.pdf"
+                        <a download rel="nofollow" href="/pdf/UPS-Fedex-General-Price-Increase-History.pdf"
                            data-anal="SRG|GPI-Download">
                             <img alt="UPS &amp; FedEx General Price Increases" src="/images/GPI.png">
                         </a>
@@ -76,7 +76,7 @@
 
                         <p class="text-center">
                             <a download class="btn btn-success btn-md"
-                               href="/pdf/UPS-Fedex-General-Price-Increase-History.pdf"
+                               rel="nofollow" href="/pdf/UPS-Fedex-General-Price-Increase-History.pdf"
                                data-anal="SRG|GPI-Download">
                                 <i class="fa fa-download"></i>
                                 DOWNLOAD THE GPI HISTORY
@@ -94,7 +94,7 @@
                     <div class="col-sm-4 col-xs-12">
                         <br>
                         <a download
-                           href="/pdf/UPS-Fedex-Fuel-Surcharge-History.pdf"
+                           rel="nofollow" href="/pdf/UPS-Fedex-Fuel-Surcharge-History.pdf"
                            data-anal="SRG|FS-Download">
                             <img alt="UPS and FedEx Fuel Surcharges Report" src="/images/Fuel_Surcharge.png">
                         </a>
@@ -111,7 +111,7 @@
 
                         <p class="text-center">
                             <a download class="btn btn-success btn-md"
-                               href="/pdf/UPS-Fedex-Fuel-Surcharge-History.pdf"
+                               rel="nofollow" href="/pdf/UPS-Fedex-Fuel-Surcharge-History.pdf"
                                data-anal="SRG|FS-Download">
                                 <i class="fa fa-download"></i>
                                 DOWNLOAD THE FUEL SURCHARGE HISTORY

@@ -48,7 +48,7 @@
                 </div>
             </div>
             <div class="col-centered col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12">
-                <a href="/parcel-freight-bill-audit/sign-up-form" class="btn btn-thick orange text-center hover-color-opacity">
+                <a rel="nofollow" href="/parcel-freight-bill-audit/sign-up-form" class="btn btn-thick orange text-center hover-color-opacity">
                     START SAVING NOW
                 </a>
             </div>
@@ -91,7 +91,7 @@
         </div>
         <div class="container tan-spacing-one">
             <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12">
-                <a href="/parcel-freight-bill-audit/sign-up-form" class="btn btn-thick orange text-center hover-color-opacity">
+                <a rel="nofollow" href="/parcel-freight-bill-audit/sign-up-form" class="btn btn-thick orange text-center hover-color-opacity">
                     START SAVING NOW
                 </a>
             </div>
@@ -121,7 +121,7 @@
                 <div class="huge-card">
                     <div class="huge-card-header brightBlue text-center">
                         <img width="500" src="/images/audisee-full-logo.png" alt="audisee audit logo">
-                        <a class="btn btn-primary btn-lg" href="/audisee/instant-parcel-audit"
+                        <a class="btn btn-primary btn-lg" rel="nofollow" href="/audisee/instant-parcel-audit"
                            style="position:relative; z-index: 10; width:250px; top:13px; margin: 0 auto -70px auto; border: #f4f4f4 1px solid;">
                             AUDIT NOW
                         </a>
@@ -148,7 +148,7 @@
                             <div class="huge-card-item">Your Results Are Available & Shareable For 30 Days</div>
                         </div>
                         <div class="col-xs-12 brightBlue text-center">
-                            <a href="/audisee" style="text-decoration:none;">
+                            <a rel="nofollow" href="/audisee" style="text-decoration:none;">
                                 <div class="huge-card-item nb">
                                     <span class="white">CLICK HERE TO LEARN MORE ABOUT AUDISEE</span>
                                 </div>
@@ -171,7 +171,7 @@
                     <div class="col-sm-10 col-sm-offset-1">
                         <div class="col-sm-3 col-xs-6 text-center">
                             <div class="social-spacing">
-                                <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//lojistic.com/parcel-freight-bill-audit&title=Parcel%20Freight%20Bill%20Audit%20by%20Lojistic&summary=&source=">
+                                <a rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//lojistic.com/parcel-freight-bill-audit&title=Parcel%20Freight%20Bill%20Audit%20by%20Lojistic&summary=&source=">
                                     <div class="circ circ-75 white hover-color-flatBlue text-center">
                                         <i class="eloji-linkedin text-vc fs-36 navy"></i>
                                     </div>
@@ -180,7 +180,7 @@
                         </div>
                         <div class="col-sm-3 col-xs-6 text-center">
                             <div class="social-spacing">
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//lojistic.com/parcel-freight-bill-audit">
+                                <a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//lojistic.com/parcel-freight-bill-audit">
                                     <div class="circ circ-75 white hover-color-flatBlue text-center">
                                         <i class="eloji-facebook text-vc fs-36 navy"></i>
                                     </div>
@@ -189,7 +189,7 @@
                         </div>
                         <div class="col-sm-3 col-xs-6 text-center">
                             <div class="social-spacing">
-                                <a href="https://twitter.com/home?status=Check%20out%20Lojistic's%20Parcel%20freight%20bill%20audit%3A%20http%3A//lojistic.com/parcel-freight-bill-audit">
+                                <a rel="nofollow" href="https://twitter.com/home?status=Check%20out%20Lojistic's%20Parcel%20freight%20bill%20audit%3A%20http%3A//lojistic.com/parcel-freight-bill-audit">
                                     <div class="circ circ-75 white hover-color-flatBlue text-center">
                                         <i class="eloji-twitter text-vc fs-36 navy"></i>
                                     </div>
@@ -198,7 +198,7 @@
                         </div>
                         <div class="col-sm-3 col-xs-6 text-center">
                             <div class="social-spacing">
-                                <a href="mailto:info@lojistic.com">
+                                <a rel="nofollow" href="mailto:info@lojistic.com">
                                     <div class="circ circ-75 white hover-color-flatBlue text-center">
                                         <i class="eloji-email text-vc fs-36 navy"></i>
                                     </div>
@@ -321,7 +321,7 @@
                     What’s All This Gonna Cost Me? <br>
                     <small><span class="white">Learn more about our pricing options</span></small>
                 </h2>
-               <div class="button-wrap"><a href="/lojistic-pricing"><div class="btn btn-ghost-blue btn-thick">LEARN MORE</div></a></div>
+               <div class="button-wrap"><a rel="nofollow" href="/lojistic-pricing"><div class="btn btn-ghost-blue btn-thick">LEARN MORE</div></a></div>
             </div>
         </div>
     </section>
@@ -336,7 +336,7 @@
                     and erroneous accessorial charges that occur on each shipping invoice.
                     These can be detected and recovered with a quality shipping audit.
                     Lojistic guarantees to reduce transportation costs with our freight and
-                    <a class="brightBlue" href="parcel-audit">parcel audit</a> solutions, which include: UPS auditing, FedEx auditing,
+                    <a class="brightBlue" rel="nofollow" href="parcel-audit">parcel audit</a> solutions, which include: UPS auditing, FedEx auditing,
                     truck (TL & LTL) auditing, ocean freight auditing, rail freight auditing,
                     and air freight auditing.
                 </p>
@@ -365,7 +365,7 @@
             <div class="col-md-4 col-md-offset-4 col-xs-12">
                 <br>
                 <br>
-                <a href="/parcel-freight-bill-audit/sign-up-form"><div class="btn btn-primary btn-thick" >SIGN UP NOW</div></a>
+                <a rel="nofollow" href="/parcel-freight-bill-audit/sign-up-form"><div class="btn btn-primary btn-thick" >SIGN UP NOW</div></a>
             </div>
         </div>
     </section>
@@ -481,7 +481,7 @@
                 <br>
                 <div class="row np">
                     <div class="col-centered col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12">
-                        <a href="/pdf/Lojistic-Ad-Hoc-Report-Guide.pdf" class="btn btn-thick brightBlue text-center hover-color-opacity">
+                        <a rel="nofollow" href="/pdf/Lojistic-Ad-Hoc-Report-Guide.pdf" class="btn btn-thick brightBlue text-center hover-color-opacity">
                             GIMME MY REPORTS REPORT
                         </a>
                     </div>
@@ -563,7 +563,7 @@
                 </p>
 
                 <p>
-                    We are happy to <a href="/parcel-freight-audit-demo">provide a demo</a> that gives complete
+                    We are happy to <a rel="nofollow" href="/parcel-freight-audit-demo">provide a demo</a> that gives complete
                     information on how to reduce
                     shipping costs with our freight management services. Just complete the form on
                     this page to view an online demonstration of Lojistic's advanced services. Your

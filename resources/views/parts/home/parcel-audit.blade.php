@@ -7,7 +7,7 @@
             <i class="eloji eloji-audit navy fs-200"></i>
             <br/>
             <br/>
-            <a class="btn btn-success btn-lg visible-xs" href="/parcel-freight-bill-audit">
+            <a class="btn btn-success btn-lg visible-xs" rel="nofollow" href="/parcel-freight-bill-audit">
                 FIX CARRIER BILLING ERRORS
             </a>
         </div>
@@ -24,7 +24,7 @@
                     ...Show More
                 </a>
             </p>
-            <a class="btn btn-success btn-lg-xs" href="/parcel-freight-bill-audit">
+            <a class="btn btn-success btn-lg-xs" rel="nofollow" href="/parcel-freight-bill-audit">
                 FIX CARRIER BILLING ERRORS
             </a>
         </div>
@@ -70,7 +70,7 @@
             </p>
             <p>
 
-                <a class="btn btn-success" href="/parcel-freight-bill-audit">
+                <a class="btn btn-success" rel="nofollow" href="/parcel-freight-bill-audit">
                     CONTINUE
                 </a>
             </p>

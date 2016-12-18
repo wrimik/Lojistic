@@ -6,17 +6,17 @@
         <meta name="description" content="Lojistic" />
         <meta name="keywords" content="Lojistic" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> 
-        <link rel="icon" type="image/png" href="/favicon.png" />
-        <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+        <link rel="icon" type="image/png" rel="nofollow" href="/favicon.png" />
+        <link rel="shortcut icon" type="image/png" rel="nofollow" href="/favicon.png" />
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js" ></script>
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" rel="nofollow" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" rel="nofollow" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="/css/fonts.css" />
-        <link rel="stylesheet" type="text/css" href="/css/splash.css" />
-        <link rel="stylesheet" type="text/css" href="/css/slider.css" />
+        <link rel="stylesheet" type="text/css" rel="nofollow" href="/css/fonts.css" />
+        <link rel="stylesheet" type="text/css" rel="nofollow" href="/css/splash.css" />
+        <link rel="stylesheet" type="text/css" rel="nofollow" href="/css/slider.css" />
 <!--        <script type='text/javascript' src='js/controllers.js'></script>-->
         <script type='text/javascript' src='/js/splash.js'></script>
     </head>

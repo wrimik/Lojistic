@@ -6,5 +6,5 @@
     <hr class="white slim"/>
     <div class="btn btn-info show-image-viewer">VIEW SAMPLE RESULTS</div>
     <br><br>
-    <a href="/audisee" class="btn btn-info show-image-viewer">ABOUT AUDISEE</a>
+    <a rel="nofollow" href="/audisee" class="btn btn-info show-image-viewer">ABOUT AUDISEE</a>
 </div>

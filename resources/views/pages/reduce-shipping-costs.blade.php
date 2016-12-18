@@ -12,8 +12,8 @@
             <article class="text-center">
                 <h2>Reduce Parcel &amp; Freight Shipping Costs</h2>
                 <p class="text-center">
-                    <a class="btn btn-primary" href="#small-parcel">Parcel & Freight Bill Audit</a>
-                    <a class="btn btn-primary" href="#rate-negotiation">Carrier Rate Negotiation</a>
+                    <a class="btn btn-primary" rel="nofollow" href="#small-parcel">Parcel & Freight Bill Audit</a>
+                    <a class="btn btn-primary" rel="nofollow" href="#rate-negotiation">Carrier Rate Negotiation</a>
                 </p>
             </article>
         </div>
@@ -93,13 +93,13 @@
                     We can work with your logistics team to set up a system that makes
                     it easy to monitor your costs. We can work with you to negotiate
                     better shipping contracts with the major shipping companies. Try
-                    our services with no obligation. <a href="/parcel-freight-audit-demo">Contact us</a>
+                    our services with no obligation. <a rel="nofollow" href="/parcel-freight-audit-demo">Contact us</a>
                     for a consultation today.
                 </p>
 
                 <p class="text-center">
-                    <a class="btn btn-primary" href="/parcel-freight-bill-audit">Learn More</a>
-                    <a class="btn btn-primary" href="/parcel-freight-audit-demo">Talk To Someone Who Knows A Lot Of Ship </a>
+                    <a class="btn btn-primary" rel="nofollow" href="/parcel-freight-bill-audit">Learn More</a>
+                    <a class="btn btn-primary" rel="nofollow" href="/parcel-freight-audit-demo">Talk To Someone Who Knows A Lot Of Ship </a>
                 </p>
             </article>
         </div>
@@ -150,8 +150,8 @@
                     determine cost saving opportunities.
                 </p>
                 <p class="text-center">
-                    <a class="btn btn-primary" href="/carrier-contract-negotiation">Learn More</a>
-                    <a class="btn btn-primary" href="/parcel-freight-audit-demo">View Online Savings Demo</a>
+                    <a class="btn btn-primary" rel="nofollow" href="/carrier-contract-negotiation">Learn More</a>
+                    <a class="btn btn-primary" rel="nofollow" href="/parcel-freight-audit-demo">View Online Savings Demo</a>
                 </p>
             </article>
         </div>

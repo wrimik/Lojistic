@@ -233,9 +233,9 @@
     </section>
     <section class="brightBlue">
         <div class="container text-center">
-            <a class="btn btn-lg inline btn-info" href="/">BACK TO HOME PAGE</a>
+            <a class="btn btn-lg inline btn-info" rel="nofollow" href="/">BACK TO HOME PAGE</a>
             <br class="visible-xs-inline"/><br class="visible-xs-inline"/>
-            <a class="btn btn-lg inline btn-info" href="/contact-lojistic">GET IN TOUCH</a>
+            <a class="btn btn-lg inline btn-info" rel="nofollow" href="/contact-lojistic">GET IN TOUCH</a>
         </div>
     </section>
 @stop

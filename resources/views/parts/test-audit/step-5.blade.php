@@ -59,7 +59,7 @@
                     <div id="tracking-numbers" class="details">
                         <div v-for="finding in selected_findings" class="detail">
                             <div>@{{ finding.charge_amount | currency}}</div>
-                            <div><a target="_blank" href="@{{ tracking_url + finding.tracking_id }}">@{{ finding.tracking_id }}</a></div>
+                            <div><a target="_blank" rel="nofollow" href="@{{ tracking_url + finding.tracking_id }}">@{{ finding.tracking_id }}</a></div>
                         </div>
                     </div>
                 </div>

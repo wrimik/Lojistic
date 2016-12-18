@@ -14,12 +14,12 @@
             <p>The Panama Canal is probably the most popular and captivating tourist attraction
                 of Panama that significantly accelerated and improved trading among several nations
                 around the world. It is a waterway across the
-                <a href="http://en.wikipedia.org/wiki/Isthmus" target="_blank">Isthmus</a> of
+                <a rel="nofollow" href="http://en.wikipedia.org/wiki/Isthmus" target="_blank">Isthmus</a> of
                 Panama used by ships to sail from the Atlantic Ocean to the Pacific Ocean.
-                The <a href="http://www.thefreedictionary.com/canal" target="_blank">canal</a>
+                The <a rel="nofollow" href="http://www.thefreedictionary.com/canal" target="_blank">canal</a>
                 is around 50 miles (80.47 km) long and extends from the Limon Bay of Colon on the
                 Atlantic side to Balboa&rsquo;s Panama Bay on the Pacific side.
-                <a href="http://terrax.org/sailing/locks/canallock.aspx" target="_blank">Locks</a>
+                <a rel="nofollow" href="http://terrax.org/sailing/locks/canallock.aspx" target="_blank">Locks</a>
                 are installed at the Atlantic and Pacific ends to either raise ships to the canal or
                 lower them to sea level. The construction of the canal cost the lives of thousands of
                 people who died mostly from diseases such as malaria and yellow fever. The Americans
@@ -45,15 +45,15 @@
             <p>The interest of the U.S. on the Panama Canal was motivated by the gold rush in California
                 in 1848. This was further heightened by the desire of the U.S. to have a powerful naval
                 force that will dominate the Atlantic and Pacific Oceans. U.S. President
-                <a href="http://www.whitehouse.gov/about/presidents/theodoreroosevelt" target="_blank">Theodore Roosevelt</a>
+                <a rel="nofollow" href="http://www.whitehouse.gov/about/presidents/theodoreroosevelt" target="_blank">Theodore Roosevelt</a>
                 promised in 1901 to work on the Panama Canal project. The U.S. made endeavored to get
                 the nod of the Colombian government to build the Panama Canal through a
-                <a href="http://www.treatylaw.org/whatisatreaty.asp" target="_blank">treaty</a>.
+                <a rel="nofollow" href="http://www.treatylaw.org/whatisatreaty.asp" target="_blank">treaty</a>.
                 All efforts failed leading President Roosevelt to resort to an unusual strategy and get
                 the green light for the canal project. He wooed the rebels supporting the independence
                 movement of Panama from Colombia by promising them military assistance in return for U.S.
                 rights to develop the Panama Canal. President Roosevelt’s initiative paid-off and the
-                <a href="http://library.thinkquest.org/TQ0312134/palindromes.html" target="_blank">palindrome</a>
+                <a rel="nofollow" href="http://library.thinkquest.org/TQ0312134/palindromes.html" target="_blank">palindrome</a>
                 “A man, a plan, a canal: Panama” was coined for him to be remembered for his contribution to
                 giving the U.S. rights to build the Panama Canal. The newly-formed government of Panama
                 immediate went into negotiations with the U.S. for the development of the Panama Canal
@@ -66,13 +66,13 @@
                 granted the U.S. the right to establish a territory called the Canal Zone in Panama. The
                 Panamanians also complained of discrimination in the zone by the U.S. This led to riots
                 against the Americans. Consequently, U.S. President
-                <a href="http://www.whitehouse.gov/about/presidents/jimmycarter" target="_blank">Jimmy Carter</a>
+                <a rel="nofollow" href="http://www.whitehouse.gov/about/presidents/jimmycarter" target="_blank">Jimmy Carter</a>
                 and Panama&rsquo;s <em>de facto</em> leader
-                <a href="http://www.sccs.swarthmore.edu/users/08/ajb/tmve/wiki100k/docs/Omar_Torrijos.html" target="_blank">Omar Torrijos</a>
+                <a rel="nofollow" href="http://www.sccs.swarthmore.edu/users/08/ajb/tmve/wiki100k/docs/Omar_Torrijos.html" target="_blank">Omar Torrijos</a>
                 signed in 1977 the Torrijos-Carter Treaties to end the tensions. One of the treaties is
                 called the Panama Canal Treaty which calls for the turnover of the Canal Zone to Panama
                 noontime (Panama local time) of December 31, 1999. This was done and on January 1, 2000, the
-                <a href="http://www.pancanal.com/eng/acp/acp-overview.html" target="_blank">Panama Canal Authority (ACP)</a>
+                <a rel="nofollow" href="http://www.pancanal.com/eng/acp/acp-overview.html" target="_blank">Panama Canal Authority (ACP)</a>
                 took over the management of the Panama Canal. The other treaty called the Treaty Concerning
                 the Permanent Neutrality and Operation of the Panama Canal or the Neutrality Treaty gave the
                 U.S. the permanent right to defend the canal from any harm. The 1977 treaties led to the status
@@ -82,7 +82,7 @@
 
             <p>Modern shipping has progressed so much since the Panama Canal started operating almost a
                 century ago. Ships have increased in size and tonnage that exceed the capacity that the
-                Panama Canal can handle - the <a href="http://stats.oecd.org/glossary/detail.asp?ID=6642"target="_blank">Panamax</a>.
+                Panama Canal can handle - the <a rel="nofollow" href="http://stats.oecd.org/glossary/detail.asp?ID=6642"target="_blank">Panamax</a>.
                 ACP must continue to find ways to make the Panama Canal indispensible amid the
                 existence of other sites where a new canal can be built to address the changing
                 configuration of ships. Thousands of Panamanians will lose their jobs if the canal fails
@@ -95,14 +95,14 @@
 
             <p>Related Links About Panama Canal</p>
             <ul class="accessorial-charges checkmarks">
-                <li><a href="http://rainforest.montclair.edu/pwebrf/rainforest/Region/panama.html" target="_blank">Background on the Panama Canal</a></li>
-                <li><a href="http://www.cotf.edu/earthinfo/camerica/panama/PCtopic2.html" target="_blank">Pre-Canal History</a></li>
-                <li><a href="http://www.cotf.edu/earthinfo/camerica/panama/PCtopic4.html" target="_blank">The Panama Canal – Economic Importance</a></li>
-                <li><a href="http://www1.american.edu/ted/canal.htm" target="_blank">The Panama Canal – Ecological Issues</a></li>
-                <li><a href="http://www.cotf.edu/earthinfo/camerica/panama/PCtopic5.html" target="_blank">Current Issues on the Panama Canal</a></li>
+                <li><a rel="nofollow" href="http://rainforest.montclair.edu/pwebrf/rainforest/Region/panama.html" target="_blank">Background on the Panama Canal</a></li>
+                <li><a rel="nofollow" href="http://www.cotf.edu/earthinfo/camerica/panama/PCtopic2.html" target="_blank">Pre-Canal History</a></li>
+                <li><a rel="nofollow" href="http://www.cotf.edu/earthinfo/camerica/panama/PCtopic4.html" target="_blank">The Panama Canal – Economic Importance</a></li>
+                <li><a rel="nofollow" href="http://www1.american.edu/ted/canal.htm" target="_blank">The Panama Canal – Ecological Issues</a></li>
+                <li><a rel="nofollow" href="http://www.cotf.edu/earthinfo/camerica/panama/PCtopic5.html" target="_blank">Current Issues on the Panama Canal</a></li>
             </ul>
             <p>
-            <p>Written by <a href="/about-the-author-tyler-glassman" rel="author">Tyler Glassman</a></p>
+            <p>Written by <a rel="nofollow" href="/about-the-author-tyler-glassman" rel="author">Tyler Glassman</a></p>
             </article>
         </div>
     </section>

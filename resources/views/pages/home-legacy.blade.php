@@ -29,7 +29,7 @@
                         <span class="orange_check">RECOVER UP TO 6% SAVINGS</span>
                     </div>
 
-                    <a href="parcel-freight-bill-audit" class="arrow">
+                    <a rel="nofollow" href="parcel-freight-bill-audit" class="arrow">
                         <img src="{{ URL::asset('images/orange-arrow.png') }}"/>
                         Start A Trial Audit Now<span class="rightarrow">
 </span>
@@ -71,7 +71,7 @@
                         <span class="orange_check">SEE HOW DIM CHARGES WILL IMPACT YOUR BUSINESS</span>
                     </div>
 
-                    <a href="{{ URL::route('dim-calculator') }}" class="orange_button">
+                    <a rel="nofollow" href="{{ URL::route('dim-calculator') }}" class="orange_button">
                         CALCULATE DIM CHARGES NOW<span class="rightarrow">
 </span>
                     </a>
@@ -93,7 +93,7 @@
                         REDUCE SHIPPING COSTS 7%-40%
                     </span>
                     </div>
-                    <a href="carrier-contract-negotiation" class="orange_button">
+                    <a rel="nofollow" href="carrier-contract-negotiation" class="orange_button">
                         Sign Up For A Custom Analysis<span class="rightarrow">
 </span>
                     </a>
@@ -135,7 +135,7 @@
                         <span class="orange_check">FIND OUT HOW MUCH YOU CAN SAVE</span>
                     </div>
 
-                    <a href="parcel-freight-audit-demo" class="orange_button">
+                    <a rel="nofollow" href="parcel-freight-audit-demo" class="orange_button">
                         View The Demo <span class="rightarrow">
 </span>
                     </a>
@@ -183,7 +183,7 @@
                     </span>
                     </div>
 
-                    <a href="shipping-costs-calculators" class="orange_button">
+                    <a rel="nofollow" href="shipping-costs-calculators" class="orange_button">
                         Calculate Rates <span class="rightarrow">
 </span>
                     </a>
@@ -244,13 +244,13 @@
         <div class="row">
             <div class="col-sm-4 col-xs-12 icon">
                 <div class="col-xs-12">
-                    <a href="/parcel-freight-bill-audit">
+                    <a rel="nofollow" href="/parcel-freight-bill-audit">
                         <img src="{{ URL::asset('images/grey-products-audit.png') }}"/>
                     </a>
                 </div>
                 <div class="col-sm-12 col-xs-10 col-xs-offset-1 col-sm-offset-0">
                     <b>
-                        <a href="/parcel-freight-bill-audit">
+                        <a rel="nofollow" href="/parcel-freight-bill-audit">
                             Parcel &amp; Freight Audit
                         </a>
                     </b>
@@ -264,13 +264,13 @@
 
             <div class="col-sm-4 col-xs-12 icon">
                 <div class="col-xs-12">
-                    <a href="/carrier-contract-negotiation">
+                    <a rel="nofollow" href="/carrier-contract-negotiation">
                         <img src="{{ URL::asset('images/grey-products-neg.png') }}"/>
                     </a>
                 </div>
                 <div class="col-sm-12 col-xs-10 col-xs-offset-1 col-sm-offset-0">
                     <b>
-                        <a href="/carrier-contract-negotiation">
+                        <a rel="nofollow" href="/carrier-contract-negotiation">
                             Carrier Negotiation</b>
                     </a>
                     <br/>
@@ -283,13 +283,13 @@
 
             <div class="col-sm-4 col-xs-12 icon">
                 <div class="col-xs-12">
-                    <a href="/freight-management/">
+                    <a rel="nofollow" href="/freight-management/">
                         <img src="{{ URL::asset('images/grey-products-freight.png') }}"/>
                     </a>
                 </div>
                 <div class="col-sm-12 col-xs-10 col-xs-offset-1 col-sm-offset-0">
                     <b>
-                        <a href="/freight-management/">
+                        <a rel="nofollow" href="/freight-management/">
                             Freight Management</b>
                     </a>
                     <br/>
@@ -304,13 +304,13 @@
         <div class="row">
             <div class="col-sm-4 col-xs-12 icon">
                 <div class="col-xs-12">
-                    <a href="/shipping-insurance">
+                    <a rel="nofollow" href="/shipping-insurance">
                         <img src="{{ URL::asset('images/grey-products-ins.png') }}"/>
                     </a>
                 </div>
                 <div class="col-sm-12 col-xs-10 col-xs-offset-1 col-sm-offset-0">
                     <b>
-                        <a href="/shipping-insurance">
+                        <a rel="nofollow" href="/shipping-insurance">
                             Shipping Insurance
                         </a>
                     </b>
@@ -324,13 +324,13 @@
 
             <div class="col-sm-4 col-xs-12 icon">
                 <div class="col-xs-12">
-                    <a href="/shipping-software/">
+                    <a rel="nofollow" href="/shipping-software/">
                         <img src="{{ URL::asset('images/grey-products-intelliship.png') }}"/>
                     </a>
                 </div>
                 <div class="col-sm-12 col-xs-10 col-xs-offset-1 col-sm-offset-0">
                     <b>
-                        <a href="/shipping-software/">
+                        <a rel="nofollow" href="/shipping-software/">
                             Shipping Software
                         </a>
                     </b>
@@ -343,13 +343,13 @@
             </div>
             <div class="col-sm-4 col-xs-12 icon">
                 <div class="col-xs-12">
-                    <a href="/halo/">
+                    <a rel="nofollow" href="/halo/">
                         <img src="{{ URL::asset('images/grey-products-halo.png') }}"/>
                     </a>
                 </div>
                 <div class="col-sm-12 col-xs-10 col-xs-offset-1 col-sm-offset-0">
                     <b>
-                        <a href="/halo/">
+                        <a rel="nofollow" href="/halo/">
                             Tracking Software
                         </a>
                     </b>
@@ -373,7 +373,7 @@
                 <p>Let us show you how to significantly reduce your shipping costs</p>
             </div>
             <div class="col-md-3 col-sm-8 col-sm-offset-2 col-md-offset-0">
-                <a href="/say-hi/" class="btn btn-primary">SEE US IN ACTION</a>
+                <a rel="nofollow" href="/say-hi/" class="btn btn-primary">SEE US IN ACTION</a>
             </div>
         </div>
     </div>
@@ -415,7 +415,7 @@
                     </tr>
                     </tbody>
                 </table>
-                <a href="/20-20/" class="btn btn-primary btn-2020">
+                <a rel="nofollow" href="/20-20/" class="btn btn-primary btn-2020">
                     LEARN MORE
                 </a>
             </div>
@@ -436,7 +436,7 @@
                     </div>
                     <div class="flag-content">
                         <b>
-                            <a href="/about-lojistic">
+                            <a rel="nofollow" href="/about-lojistic">
                                 Just Browsing and<br/>
                                 More Information?
                             </a>
@@ -461,7 +461,7 @@
                     </div>
                     <div class="flag-content">
                         <b>
-                            <a href="/reduce-shipping-costs">
+                            <a rel="nofollow" href="/reduce-shipping-costs">
                                 Looking For<br/>
                                 Something Specific?
                             </a>
@@ -488,7 +488,7 @@
                     </div>
                     <div class="flag-content">
                         <b>
-                            <a href="/say-hi">
+                            <a rel="nofollow" href="/say-hi">
                                 I&rsquo;m a lookin&rsquo;, <br/>
                                 and I&rsquo;m a likin&rsquo;!
                             </a>
@@ -525,12 +525,12 @@
                     </div>
                     <div class="flag-content">
                         <div class="flag-emblum">
-                            <a href="/shipping-costs-calculators/fedex-ups-rates-calculator/">
+                            <a rel="nofollow" href="/shipping-costs-calculators/fedex-ups-rates-calculator/">
                                 <img src="{{ URL::asset('images/calc-rate-sheet.jpg') }}"/>
                             </a>
                         </div>
                         <b>
-                            <a href="/shipping-costs-calculators/fedex-ups-rates-calculator/">
+                            <a rel="nofollow" href="/shipping-costs-calculators/fedex-ups-rates-calculator/">
                                 Generate a Custom<br/>
                                 FedEx or UPS Rate Sheet
                             </a>
@@ -542,12 +542,12 @@
                     </div>
                     <div class="flag-content">
                         <div class="flag-emblum">
-                            <a href="/shipping-costs-calculators/fedex-ups-rate-comparison-tool">
+                            <a rel="nofollow" href="/shipping-costs-calculators/fedex-ups-rate-comparison-tool">
                                 <img src="{{ URL::asset('images/calc-compare.jpg') }}"/>
                             </a>
                         </div>
                         <b>
-                            <a href="/shipping-costs-calculators/fedex-ups-rate-comparison-tool">
+                            <a rel="nofollow" href="/shipping-costs-calculators/fedex-ups-rate-comparison-tool">
                                 Compare UPS<br/>
                                 vs FedEx Costs
                             </a>
@@ -561,12 +561,12 @@
                     </div>
                     <div class="flag-content">
                         <div class="flag-emblum">
-                            <a href="{{ URL::route('dim-calculator') }}">
+                            <a rel="nofollow" href="{{ URL::route('dim-calculator') }}">
                                 <img src="{{ URL::asset('images/calc-dim.jpg') }}"/>
                             </a>
                         </div>
                         <b>
-                            <a href="{{ URL::route('dim-calculator') }}">
+                            <a rel="nofollow" href="{{ URL::route('dim-calculator') }}">
                                 Dimensional Weight<br/>
                                 Pricing (DIM) Calculator</a>
                         </b>
@@ -577,12 +577,12 @@
                     </div>
                     <div class="flag-content">
                         <div class="flag-emblum">
-                            <a href="/shipping-insurance/">
+                            <a rel="nofollow" href="/shipping-insurance/">
                                 <img src="{{ URL::asset('images/calc-insurance.jpg') }}"/>
                             </a>
                         </div>
                         <b>
-                            <a href="/shipping-insurance/">
+                            <a rel="nofollow" href="/shipping-insurance/">
                                 Shipping Insurance<br/>
                                 Savings Calculator
                             </a>
@@ -606,7 +606,7 @@
                     </div>
                     <div class="flag-content">
                         <b>
-                            <a href="/5-secrets-ups-and-fedex-dont-want-you-to-know/">
+                            <a rel="nofollow" href="/5-secrets-ups-and-fedex-dont-want-you-to-know/">
                                 5 Secrets UPS & FedEx<br/>
                                 Don&rsquo;t Want You to Know
                             </a>
@@ -618,7 +618,7 @@
                         </p>
 
                         <div class="flag-emblum">
-                            <a href="/5-secrets-ups-and-fedex-dont-want-you-to-know/">
+                            <a rel="nofollow" href="/5-secrets-ups-and-fedex-dont-want-you-to-know/">
                                 <img src="{{ URL::asset('images/library-5secrets.jpg') }}"/>
                             </a>
                         </div>
@@ -629,7 +629,7 @@
                     </div>
                     <div class="flag-content">
                         <b>
-                            <a href="/general-price-increase/">
+                            <a rel="nofollow" href="/general-price-increase/">
                                 UPS &amp; FedEx<br/>
                                 Price Increase History
                             </a>
@@ -641,7 +641,7 @@
                         </p>
 
                         <div class="flag-emblum">
-                            <a href="/general-price-increase/">
+                            <a rel="nofollow" href="/general-price-increase/">
                                 <img src="{{ URL::asset('images/library-gpi.jpg') }}"/>
                             </a>
                         </div>
@@ -652,7 +652,7 @@
                     </div>
                     <div class="flag-content">
                         <b>
-                            <a href="/fuel-surcharge/">
+                            <a rel="nofollow" href="/fuel-surcharge/">
                                 UPS and FedEx<br/>
                                 Fuel Surcharge History
                             </a>
@@ -665,7 +665,7 @@
                         </p>
 
                         <div class="flag-emblum">
-                            <a href="/fuel-surcharge/">
+                            <a rel="nofollow" href="/fuel-surcharge/">
                                 <img src="{{ URL::asset('images/library-fuel.jpg') }}"/>
                             </a>
                         </div>
@@ -685,7 +685,7 @@
                     <p>Learn more with these valuable white paper downloads</p>
                 </div>
                 <div class="col-md-4 col-sm-8 col-sm-offset-2 col-md-offset-0">
-                    <a href="/white-papers" class="btn btn-primary">VIEW MORE PAPERS</a>
+                    <a rel="nofollow" href="/white-papers" class="btn btn-primary">VIEW MORE PAPERS</a>
                 </div>
             </div>
         </div>
@@ -695,7 +695,7 @@
     <div class="white">
         <div class="container split-img">
             <h2 class="light-blue">
-                <a href="/parcel-freight-bill-audit">
+                <a rel="nofollow" href="/parcel-freight-bill-audit">
                     Parcel Audit &amp; Freight Bill Audit
                 </a>
             </h2>
@@ -715,7 +715,7 @@
                     Your carrier shipping invoices contain errors
                     Parcel audit services can produce as much as 6% savings
                 </p>
-                <a href="parcel-freight-bill-audit" class="arrow">
+                <a rel="nofollow" href="parcel-freight-bill-audit" class="arrow">
                     <img src="images/orange-arrow.png"/>
                     SAVE NOW
                 </a>
@@ -725,7 +725,7 @@
     <div class="silver">
         <div class="container split-img">
             <h2 class="light-blue">
-                <a href="/carrier-contract-negotiation">
+                <a rel="nofollow" href="/carrier-contract-negotiation">
                     Shipping Contract Negotiation &amp; Analysis
                 </a>
             </h2>
@@ -747,7 +747,7 @@
                     How much can your carrier rates be improved? Our free analysis
                     will identify potential savings.
                 </p>
-                <a href="carrier-contract-negotiation" class="arrow">
+                <a rel="nofollow" href="carrier-contract-negotiation" class="arrow">
                     <img src="images/orange-arrow.png"/>
                     IMPROVE CARRIER RATES
                 </a>
@@ -759,7 +759,7 @@
     <div class="white">
         <div class="container split-img">
             <h2 class="light-blue">
-                <a href="/freight-management/">
+                <a rel="nofollow" href="/freight-management/">
                     Comprehensive Freight Management
                 </a>
             </h2>
@@ -779,7 +779,7 @@
                     UPS &amp; FedEx declared value insurance is limited and expensive. Our
                     shipping insurance is easy to use and offers huge savings.
                 </p>
-                <a href="/freight-management/" class="arrow">
+                <a rel="nofollow" href="/freight-management/" class="arrow">
                     <img src="images/orange-arrow.png"/>
                     REDUCE FREIGHT COSTS
                 </a>
@@ -790,7 +790,7 @@
     <div class="silver">
         <div class="container split-img">
             <h2 class="light-blue">
-                <a href="/shipping-insurance">
+                <a rel="nofollow" href="/shipping-insurance">
                     Discount Parcel Shipping Insurance Coverage
                 </a>
             </h2>
@@ -809,7 +809,7 @@
                     UPS &amp; FedEx declared value insurance is limited and expensive. Our
                     shipping insurance is easy to use and offers huge savings.
                 </p>
-                <a href="/shipping-insurance" class="arrow">
+                <a rel="nofollow" href="/shipping-insurance" class="arrow">
                     <img src="images/orange-arrow.png"/>
                     REDUCE INSURANCE COSTS
                 </a>
@@ -821,7 +821,7 @@
     <div class="white">
         <div class="container split-img">
             <h2 class="light-blue">
-                <a href="/shipping-software">
+                <a rel="nofollow" href="/shipping-software">
                     Affordable &amp; Integrated TMS Shipping Software
                 </a>
             </h2>
@@ -845,7 +845,7 @@
                     Your shipping processes needs smart TMS technology. One system.
                     All shipments. Complete control. Reduced cost.
                 </p>
-                <a href="/shipping-software" class="arrow">
+                <a rel="nofollow" href="/shipping-software" class="arrow">
                     <img src="{{ URL::asset('images/orange-arrow.png') }}"/>
                     OPTIMIZE YOUR SHIPPING
                 </a>
@@ -856,7 +856,7 @@
     <div class="silver">
         <div class="container split-img">
             <h2 class="light-blue">
-                <a href="/halo/">
+                <a rel="nofollow" href="/halo/">
                     Package Tracking &amp; Visibility Software
                 </a>
             </h2>
@@ -878,7 +878,7 @@
                     It&rsquo;s tough to actively manage freight without real&minus;time visibility.
                     View all shipments moving with all carriers via a single interface.
                 </p>
-                <a href="/halo/" class="arrow">
+                <a rel="nofollow" href="/halo/" class="arrow">
                     <img src="{{ URL::asset('images/orange-arrow.png') }}"/>
                     GET VISIBILITY
                 </a>

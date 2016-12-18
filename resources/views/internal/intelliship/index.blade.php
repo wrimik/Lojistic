@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-sm-offset-3">
-                    <a class="product-card" href="/internal/intelliship/users">
+                    <a class="product-card" rel="nofollow" href="/internal/intelliship/users">
                         <i class="eloji eloji-xl eloji-hi"></i>
                         <div class="card-content">
                             <h2 class="card-header">Intelliship <br> Users</h2>

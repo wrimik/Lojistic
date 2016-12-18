@@ -8,19 +8,19 @@
         <meta name="keywords" content="" />
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
         <script src="/portal-login-resources/js/login.js"></script>
-        <link rel="icon" type="image/favicon" href="/favicon.png" />
-        <link rel="icon" type="image/shortcut icon" href="/favicon.png" />
-        <link rel="icon" type="image/vnd.microsoft.icon" href="/images/favicon.png" />
-        <link rel="stylesheet" type="text/css" href="/portal-login-resources/css/login.css" />
-        <link rel="stylesheet" type="text/css" href="/portal-login-resources/css/forms.css" />
-        <link rel="stylesheet" type="text/css" href="/portal-login-resources/css/common.css" />
+        <link rel="icon" type="image/favicon" rel="nofollow" href="/favicon.png" />
+        <link rel="icon" type="image/shortcut icon" rel="nofollow" href="/favicon.png" />
+        <link rel="icon" type="image/vnd.microsoft.icon" rel="nofollow" href="/images/favicon.png" />
+        <link rel="stylesheet" type="text/css" rel="nofollow" href="/portal-login-resources/css/login.css" />
+        <link rel="stylesheet" type="text/css" rel="nofollow" href="/portal-login-resources/css/forms.css" />
+        <link rel="stylesheet" type="text/css" rel="nofollow" href="/portal-login-resources/css/common.css" />
     </head>
     <body>
         @include('parts.tracking')
         <div id="header">
             <div id="header_content">
                 <img src="/portal-login-resources/images/lojistic-cloud_small.png"/>WELCOME TO <b>LOJISTIC CLOUD</b>
-                <a href="/portal/">Log Out</a>
+                <a rel="nofollow" href="/portal/">Log Out</a>
             </div>
         </div>
         <div id="content">

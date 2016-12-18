@@ -34,53 +34,53 @@
 
                     <div class='row'>
                         <div class="col-xs-4">
-                            <a id="Pricing1" href="#"><span>Contingency Based Fees</span></a>
+                            <a id="Pricing1" rel="nofollow" href="#"><span>Contingency Based Fees</span></a>
                         </div>
                         <div class="col-xs-4">
-                            <a id="Pricing2" href="#"><span>Substantial Cost Savings</span></a>
+                            <a id="Pricing2" rel="nofollow" href="#"><span>Substantial Cost Savings</span></a>
                         </div>
                         <div class="col-xs-4">
-                            <a id="Pricing3" href="#"><span>Easy Set Up & Implementation</span></a>
-                        </div>
-                    </div>
-                    <div class='row'>
-                        <div class="col-xs-4">
-                            <a id="Pricing4" href="#"><span>Multi-Point Audit</span></a>
-                        </div>
-                        <div class="col-xs-4">
-                            <a id="Pricing5" href="#"><span>Carrier Rate Analysis</span></a>
-                        </div>
-                        <div class="col-xs-4">
-                            <a id="Pricing6" href="#"><span>Optimization Consultation</span></a>
+                            <a id="Pricing3" rel="nofollow" href="#"><span>Easy Set Up & Implementation</span></a>
                         </div>
                     </div>
                     <div class='row'>
                         <div class="col-xs-4">
-                            <a id="Pricing7" href="#"><span>No Long Term Contract</span></a>
+                            <a id="Pricing4" rel="nofollow" href="#"><span>Multi-Point Audit</span></a>
                         </div>
                         <div class="col-xs-4">
-                            <a id="Pricing8" href="#"><span>Best In Class Support</span></a>
+                            <a id="Pricing5" rel="nofollow" href="#"><span>Carrier Rate Analysis</span></a>
                         </div>
                         <div class="col-xs-4">
-                            <a id="Pricing9" href="#"><span>Safe & Secure Data Centers</span></a>
+                            <a id="Pricing6" rel="nofollow" href="#"><span>Optimization Consultation</span></a>
                         </div>
                     </div>
                     <div class='row'>
                         <div class="col-xs-4">
-                            <a id="Pricing10" href="#"><span>Reporting Dashboards</span></a>
+                            <a id="Pricing7" rel="nofollow" href="#"><span>No Long Term Contract</span></a>
                         </div>
                         <div class="col-xs-4">
-                            <a id="Pricing11" href="#"><span>Reduced Admin Costs</span></a>
+                            <a id="Pricing8" rel="nofollow" href="#"><span>Best In Class Support</span></a>
                         </div>
                         <div class="col-xs-4">
-                            <a id="Pricing12" href="#"><span>Custom GL Coding</span></a>
+                            <a id="Pricing9" rel="nofollow" href="#"><span>Safe & Secure Data Centers</span></a>
+                        </div>
+                    </div>
+                    <div class='row'>
+                        <div class="col-xs-4">
+                            <a id="Pricing10" rel="nofollow" href="#"><span>Reporting Dashboards</span></a>
+                        </div>
+                        <div class="col-xs-4">
+                            <a id="Pricing11" rel="nofollow" href="#"><span>Reduced Admin Costs</span></a>
+                        </div>
+                        <div class="col-xs-4">
+                            <a id="Pricing12" rel="nofollow" href="#"><span>Custom GL Coding</span></a>
                         </div>
                     </div>
                     <hr/>
                 </div>
                 <p>
                     When it comes to your cost, audit services for shipping will never exceed the
-                    savings you receive from freight shipping price reductions. <a href="/parcel-audit">Parcel audit</a> charges
+                    savings you receive from freight shipping price reductions. <a rel="nofollow" href="/parcel-audit">Parcel audit</a> charges
                     are only a percentage of the shipping pricing savings that your freight audit
                     services company is able to achieve. In other words, our payment is tied to the
                     reduction we are able to achieve for you in freight shipping prices. Cost audit

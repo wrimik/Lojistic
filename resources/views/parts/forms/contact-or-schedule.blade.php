@@ -15,7 +15,7 @@
             </div>
             <div>
                 <h2>
-                    <a href="mailto:info@lojistic.com?subject={{ urlencode($formVars['intent']) }}">
+                    <a rel="nofollow" href="mailto:info@lojistic.com?subject={{ urlencode($formVars['intent']) }}">
                     <img id="letter" src='/images/orange-letter.png'/>EMAIL US</a>
                 </h2>
             </div>

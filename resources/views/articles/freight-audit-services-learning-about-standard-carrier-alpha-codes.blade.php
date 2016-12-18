@@ -65,56 +65,56 @@
                 <h3>Follow these links to learn more about Standard Carrier Alpha Codes:</h3>
                 <p></p>
                 <ul class="ul">
-                    <li><a href="http://www.nmfta.org/pages/Scac.aspx" target="_blank">Standard Carrier Alpha Codes</a>:
+                    <li><a rel="nofollow" href="http://www.nmfta.org/pages/Scac.aspx" target="_blank">Standard Carrier Alpha Codes</a>:
                         The National Motor Freight Traffic Association explains the intricate computerization process of
                         the Standard Carrier Alpha Code (SCAC) system.
                     </li>
-                    <li><a href="http://www.gsa.gov/graphics/fas/FreightHandbook2012.pdf" target="_blank">The United
+                    <li><a rel="nofollow" href="http://www.gsa.gov/graphics/fas/FreightHandbook2012.pdf" target="_blank">The United
                             States Freight Transportation Handbook (PDF)</a>: A sixteen chapter handbook that describes
                         how freight carriers conduct business within the United States.
                     </li>
                     <li>
-                        <a href="http://www.fmcsa.dot.gov/rules-regulations/administration/rulemakings/final/Requirements-for-Intermodal-Equipment.aspx"
+                        <a rel="nofollow" href="http://www.fmcsa.dot.gov/rules-regulations/administration/rulemakings/final/Requirements-for-Intermodal-Equipment.aspx"
                            target="_blank">Requirements for Intermodal Equipment Providers</a>: The United States
                         Department of Transportation provides a list of rules and regulations for intermodal equipment
                         providers and the freight carriers who operate the equipment.
                     </li>
                     <li>
-                        <a href="http://www.cbp.gov/xp/cgov/trade/cargo_security/ctpat/ctpat_application_material/ctpat_security_guidelines/sea_carriers/"
+                        <a rel="nofollow" href="http://www.cbp.gov/xp/cgov/trade/cargo_security/ctpat/ctpat_application_material/ctpat_security_guidelines/sea_carriers/"
                            target="_blank">Sea Carriers</a>: The United States Department of Customs and Border Patrol
                         offers a series of documents that help sea carriers become SCAC compliant.
                     </li>
-                    <li><a href="http://www.uiia.org/" target="_blank">The Uniform Intermodal interchange</a>: The
+                    <li><a rel="nofollow" href="http://www.uiia.org/" target="_blank">The Uniform Intermodal interchange</a>: The
                         official organization that ensures freight carriers comply with the standards outlined in the
                         Uniform Intermodal Interchange Agreement.
                     </li>
-                    <li><a href="http://www.intermodal.org/about_files/about_uiia.shtml" target="_blank">About UIIA</a>:
+                    <li><a rel="nofollow" href="http://www.intermodal.org/about_files/about_uiia.shtml" target="_blank">About UIIA</a>:
                         The Intermodal Association of North American further explains the requirements meant to become
                         SCAC compliant in accordance to the Uniform Intermodal Interchange Agreement.
                     </li>
-                    <li><a href="http://www.vics.org/guidelines/bol/" target="_blank">VICS Standard Bill of Lading</a>:
+                    <li><a rel="nofollow" href="http://www.vics.org/guidelines/bol/" target="_blank">VICS Standard Bill of Lading</a>:
                         Voluntary Inter-industry Commerce Solutions provides an educational summary of the Bill of
                         Lading, a shipping document that helps freight carriers pinpoint the data items as they pass
                         through various channels and companies.
                     </li>
                     <li>
-                        <a href="http://www.comitemaritime.org/Rules-for-Electronic-Bills-of-Lading/0,2728,12832,00.html"
+                        <a rel="nofollow" href="http://www.comitemaritime.org/Rules-for-Electronic-Bills-of-Lading/0,2728,12832,00.html"
                            target="_blank">Rules and Regulations for Electronic Bills of Lading</a>: The International
                         Maritime organization provides further explanation of the rules and regulations for the
                         electronic format of the Bill of Lading.
                     </li>
-                    <li><a href="http://www.tradecomplianceinstitute.org/p_regulatory_database.php?SortLetter=S"
+                    <li><a rel="nofollow" href="http://www.tradecomplianceinstitute.org/p_regulatory_database.php?SortLetter=S"
                            target="_blank">The International Trade Compliance Institute: Regulatory Database</a>: The
                         ITCI provides an extensive database of rules and regulations related to the trade and
                         transportation industries.
                     </li>
-                    <li><a href="http://www.library.unt.edu/digitalprojects/partners/portal-partners/pack-and-ship"
+                    <li><a rel="nofollow" href="http://www.library.unt.edu/digitalprojects/partners/portal-partners/pack-and-ship"
                            target="_blank">Purchase Order</a>: Oracle defines and explains the main function of a
                         purchase order in the transportation and shipping industry.
                     </li>
                 </ul>
                 <p>
-                <p>Written by <a href="/about-the-author-tyler-glassman" rel="author">Tyler Glassman</a></p>
+                <p>Written by <a rel="nofollow" href="/about-the-author-tyler-glassman" rel="author">Tyler Glassman</a></p>
             </article>
         </div>
     </section>

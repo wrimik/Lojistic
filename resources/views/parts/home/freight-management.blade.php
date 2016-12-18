@@ -7,7 +7,7 @@
             <i class="eloji eloji-freight orange fs-200"></i>
             <br/>
             <br/>
-            <a class="btn btn-success btn-lg visible-xs" href="/freight-management">
+            <a class="btn btn-success btn-lg visible-xs" rel="nofollow" href="/freight-management">
                 IMPROVE CARRIER RATES
             </a>
         </div>
@@ -23,7 +23,7 @@
                 and offers huge savings.
             </p>
 
-            <a class="btn btn-success" href="/freight-management">
+            <a class="btn btn-success" rel="nofollow" href="/freight-management">
                 IMPROVE CARRIER RATES
             </a>
         </div>

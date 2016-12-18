@@ -11,11 +11,11 @@
             ...that feeling you get when you save on shipping costs!
         </p>
 
-        <a class="btn btn-md btn-info" href="/lojistic">OUR STORY</a>
-        <a class="btn btn-md btn-info" href="/videos">SWEET VIDEOS</a>
-        {{--<a class="btn btn-md btn-info" href="/parcel">PARCÈL LEBOX</a>--}}
-        <a class="btn btn-md btn-info" href="/blog">OUR BLOG</a><br>
-        <a class="btn btn-md btn-info" href="/free-shipping-resources">FREE SHIPPING RESOURCES</a>
+        <a class="btn btn-md btn-info" rel="nofollow" href="/lojistic">OUR STORY</a>
+        <a class="btn btn-md btn-info" rel="nofollow" href="/videos">SWEET VIDEOS</a>
+        {{--<a class="btn btn-md btn-info" rel="nofollow" href="/parcel">PARCÈL LEBOX</a>--}}
+        <a class="btn btn-md btn-info" rel="nofollow" href="/blog">OUR BLOG</a><br>
+        <a class="btn btn-md btn-info" rel="nofollow" href="/free-shipping-resources">FREE SHIPPING RESOURCES</a>
     </div>
 </section>
 <!--  End Intro  -->

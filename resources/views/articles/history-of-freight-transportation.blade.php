@@ -37,12 +37,12 @@
                 </p>
                 <ul class="ul">
                     <li>
-                        <a href="http://www.whoi.edu/science/MPC/dept/meetings/Luce_presentations/shipping%20and%20ports.pdf"
+                        <a rel="nofollow" href="http://www.whoi.edu/science/MPC/dept/meetings/Luce_presentations/shipping%20and%20ports.pdf"
                            target="_blank">Information on Maritime Shipping and Related Issues</a> (PDF)
                     </li>
-                    <li><a href="http://www.aqua.wisc.edu/WaterLibrary/Default.aspx?tabid=156" target="_blank">The
+                    <li><a rel="nofollow" href="http://www.aqua.wisc.edu/WaterLibrary/Default.aspx?tabid=156" target="_blank">The
                             History of Shipping on the Great Lakes</a></li>
-                    <li><a href="http://www.physics.ohio-state.edu/%7Ewilkins/energy/history-moving-good"
+                    <li><a rel="nofollow" href="http://www.physics.ohio-state.edu/%7Ewilkins/energy/history-moving-good"
                            target="_blank">A Timeline of Moving Goods by Ship, Train, Truck, and Plane</a></li>
                 </ul>
                 <hr/>
@@ -66,13 +66,13 @@
                     the road. It has its own set path all the way through to its destination!
                 </p>
                 <ul class="ul">
-                    <li><a href="http://my.ilstu.edu/%7Ejabraun/students/geiseman/facts.htm" target="_blank">Questions
+                    <li><a rel="nofollow" href="http://my.ilstu.edu/%7Ejabraun/students/geiseman/facts.htm" target="_blank">Questions
                             and Answers about the Transcontinental Railroad</a></li>
-                    <li><a href="http://xroads.virginia.edu/%7EHYPER/DETOC/transport/railroad.html" target="_blank">Some
+                    <li><a rel="nofollow" href="http://xroads.virginia.edu/%7EHYPER/DETOC/transport/railroad.html" target="_blank">Some
                             of the First Shipping Trains</a></li>
-                    <li><a href="http://www.clemson.edu/caah/history/FacultyPages/PamMack/lec122/amtran.htm"
+                    <li><a rel="nofollow" href="http://www.clemson.edu/caah/history/FacultyPages/PamMack/lec122/amtran.htm"
                            target="_blank">History of Delivering Cargo by Railroad and More</a></li>
-                    <li><a href="http://www.maine.gov/mdot/freight/railroading-history.php" target="_blank">Railroad
+                    <li><a rel="nofollow" href="http://www.maine.gov/mdot/freight/railroading-history.php" target="_blank">Railroad
                             History in Maine</a></li>
                 </ul>
                 <hr/>
@@ -88,9 +88,9 @@
                     for a large percentage of the commercial shipping activity that occurs in the United States.
                 </p>
                 <ul class="ul">
-                    <li><a href="http://www.randomhistory.com/2008/07/14_truck.html" target="_blank">History of the
+                    <li><a rel="nofollow" href="http://www.randomhistory.com/2008/07/14_truck.html" target="_blank">History of the
                             Trucking Industry</a></li>
-                    <li><a href="http://amhistory.si.edu/onthemove/exhibition/exhibition_16_5.html" target="_blank">Commercial
+                    <li><a rel="nofollow" href="http://amhistory.si.edu/onthemove/exhibition/exhibition_16_5.html" target="_blank">Commercial
                             Trucking History</a></li>
                 </ul>
                 <hr/>
@@ -108,11 +108,11 @@
                     the fastest way possible opt for delivery by air.
                 </p>
                 <ul class="ul">
-                    <li><a href="http://digitalcollections.fiu.edu/tequesta/files/1941/41_1_08.pdf" target="_blank">A
+                    <li><a rel="nofollow" href="http://digitalcollections.fiu.edu/tequesta/files/1941/41_1_08.pdf" target="_blank">A
                             Look at Moving Freight by Air in Florida</a> (PDF)
                     </li>
                 </ul>
-                <p>Written by <a href="/about-the-author-tyler-glassman" rel="author">Tyler Glassman</a></p>
+                <p>Written by <a rel="nofollow" href="/about-the-author-tyler-glassman" rel="author">Tyler Glassman</a></p>
             </article>
         </div>
     </section>

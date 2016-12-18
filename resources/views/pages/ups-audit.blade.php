@@ -61,13 +61,13 @@
             </h2>
 
             <div class="row">
-                <a href="/parcel-freight-bill-audit" class="btn btn-info btn-inline">
+                <a rel="nofollow" href="/parcel-freight-bill-audit" class="btn btn-info btn-inline">
                     PARCEL &amp; FREIGHT AUDIT
                 </a>
-                <a href="/parcel-audit" class="btn btn-info btn-inline">
+                <a rel="nofollow" href="/parcel-audit" class="btn btn-info btn-inline">
                     PARCEL AUDIT
                 </a>
-                <a href="/parcel-audit/fedex-audit" class="btn btn-info btn-inline">
+                <a rel="nofollow" href="/parcel-audit/fedex-audit" class="btn btn-info btn-inline">
                     FEDEX AUDIT
                 </a>
             </div>

@@ -95,7 +95,7 @@
                 <p>
                     Our team thoroughly understands today's complex carrier pricing
                     environment and are experts at providing freight audit services. With
-                    our transportation analysis and <a href="/parcel-audit">parcel audit</a>
+                    our transportation analysis and <a rel="nofollow" href="/parcel-audit">parcel audit</a>
                     we have helped hundreds
                     of companies reduce shipping costs. Contact Lojistic today
                     to review the freight cost analysis services and other solutions we
@@ -107,7 +107,7 @@
     <section class="flatBlue">
         <div class="container same-height-parent">
             <div class="col-sm-4 same-height">
-                <a href="/white-papers/general-price-increase">
+                <a rel="nofollow" href="/white-papers/general-price-increase">
                     <img class="wp-img" src="/images/GPI.png" alt="UPS &amp; FedEx General Price Increases">
                 </a>
             </div>
@@ -116,7 +116,7 @@
                     Have You Seen The <i>General Price Increase</i> Whitepaper?
                 </span><br/>
                 <hr class="slim white"/>
-                <a class="btn btn-info btn-lg inline" href="/white-papers/general-price-increase">CHECK IT OUT</a>
+                <a class="btn btn-info btn-lg inline" rel="nofollow" href="/white-papers/general-price-increase">CHECK IT OUT</a>
             </div>
         </div>
     </section>

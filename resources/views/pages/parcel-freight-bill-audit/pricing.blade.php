@@ -64,7 +64,7 @@
                     </div>
                     <div class="huge-card-header brightBlue text-center">
                         <h3 class="text-center white">% Of Audit Savings</h3>
-                        <a class="btn btn-primary btn-lg uppercase" href="/audisee/instant-parcel-audit" style="position:relative; z-index: 10; width:250px; top:13px; margin: 0 auto -70px auto; border: #f4f4f4 1px solid;">Sign up</a>
+                        <a class="btn btn-primary btn-lg uppercase" rel="nofollow" href="/audisee/instant-parcel-audit" style="position:relative; z-index: 10; width:250px; top:13px; margin: 0 auto -70px auto; border: #f4f4f4 1px solid;">Sign up</a>
                     </div>
                     <div class="huge-card-content silver">
                         <div class="col-xs-12 silver text-center">
@@ -89,7 +89,7 @@
                             </div>
                         </div>
                         <div class="col-xs-12 darkSilver text-center">
-                            <a href="/audisee" style="text-decoration:none;">
+                            <a rel="nofollow" href="/audisee" style="text-decoration:none;">
                                 <div class="huge-card-item nb">
                                     <span class="white uppercase">CLICK HERE TO Sign up</span>
                                 </div>
@@ -105,7 +105,7 @@
                     </div>
                     <div class="huge-card-header brightBlue text-center">
                         <h3 class="text-center white uppercase">zero fees (Zilch, Nada, 0!)</h3>
-                        <a class="btn btn-primary btn-lg uppercase" href="/audisee/instant-parcel-audit" style="position:relative; z-index: 10; width:250px; top:13px; margin: 0 auto -70px auto; border: #f4f4f4 1px solid;">Sign up</a>
+                        <a class="btn btn-primary btn-lg uppercase" rel="nofollow" href="/audisee/instant-parcel-audit" style="position:relative; z-index: 10; width:250px; top:13px; margin: 0 auto -70px auto; border: #f4f4f4 1px solid;">Sign up</a>
                     </div>
                     <div class="huge-card-content silver">
                         <div class="col-xs-12 silver text-center">
@@ -194,7 +194,7 @@
                     </div>
                     <div class="huge-card-header brightBlue text-center">
                         <h3 class="text-center white uppercase">% Of Annual Freight Spend or ¢/Per Bill Of Lading</h3>
-                        <a class="btn btn-primary btn-lg uppercase" href="/audisee/instant-parcel-audit"
+                        <a class="btn btn-primary btn-lg uppercase" rel="nofollow" href="/audisee/instant-parcel-audit"
                            style="position:relative; z-index: 10; width:250px; top:13px; margin: 0 auto -70px auto; border: #white 1px solid;">
                             Sign up
                         </a>
@@ -336,7 +336,7 @@
                 <div class="huge-card">
                     <div class="huge-card-header brightBlue text-center">
                         <img width="500" src="/images/audisee-full-logo.png" alt="audisee audit logo">
-                        <a class="btn btn-primary btn-lg" href="/audisee/instant-parcel-audit"
+                        <a class="btn btn-primary btn-lg" rel="nofollow" href="/audisee/instant-parcel-audit"
                            style="position:relative; z-index: 10; width:250px; top:13px; margin: 0 auto -70px auto; border: #f4f4f4 1px solid;">
                             AUDIT NOW
                         </a>
@@ -363,7 +363,7 @@
                             <div class="huge-card-item" style="border-bottom: #f4f4f4 4px solid;">Your Results Are Available & Shareable For 30 Days</div>
                         </div>
                         <div class="col-xs-12 brightBlue text-center">
-                            <a href="/audisee" style="text-decoration:none;">
+                            <a rel="nofollow" href="/audisee" style="text-decoration:none;">
                                 <div class="huge-card-item nb">
                                     <span class="white">CLICK HERE TO LEARN MORE ABOUT AUDISEE</span>
                                 </div>

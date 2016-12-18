@@ -7,21 +7,21 @@
                 <br/>
                 <span class="fs-16 navy fw-thin">Worrying about freight? We have the answers.</span>
                 <br/>
-                <a href="/freight-management" class="orange fw-bold fs-12">LEARN MORE &gt;</a>
+                <a rel="nofollow" href="/freight-management" class="orange fw-bold fs-12">LEARN MORE &gt;</a>
             </div>
             <div class="col-sm-4 text-center b-list-highlight navy-border-sides">
                 <b class="fs-18 navy">SHIPPING INSURANCE</b>
                 <br/>
                 <span class="fs-16 navy fw-thin">Overpaying for insurance? We have you covered.</span>
                 <br/>
-                <a href="/shipping-insurance" class="orange fw-bold fs-12">LEARN MORE &gt;</a>
+                <a rel="nofollow" href="/shipping-insurance" class="orange fw-bold fs-12">LEARN MORE &gt;</a>
             </div>
             <div class="col-sm-4 b-list-highlight text-center">
                 <b class="fs-18 navy">LOJISTIC WHITEPAPERS</b>
                 <br/>
                 <span class="fs-16 navy fw-thin">Need insightful advice? Get informed.</span>
                 <br/>
-                <a href="/white-papers" class="orange fw-bold fs-12">DOWNLOAD NOW ></a>
+                <a rel="nofollow" href="/white-papers" class="orange fw-bold fs-12">DOWNLOAD NOW ></a>
             </div>
         </div>
         <div class="container">
@@ -38,7 +38,7 @@
                     UPS &amp; FEDEX <br/>
                     RATES CALCULATOR
                 </b>
-                <a href="/shipping-costs-calculators/fedex-ups-rates-calculator" class="btn btn-primary">
+                <a rel="nofollow" href="/shipping-costs-calculators/fedex-ups-rates-calculator" class="btn btn-primary">
                     GET A CUSTOM RATE SHEET
                 </a>
             </div>
@@ -48,7 +48,7 @@
                     UPS &amp; FEDEX <br/>
                     RATES COMPARISON
                 </b>
-                <a href="/fedex-ups-rate-comparison-tool" class="btn btn-primary">
+                <a rel="nofollow" href="/fedex-ups-rate-comparison-tool" class="btn btn-primary">
                     COMPARE CARRIER RATES
                 </a>
             </div>

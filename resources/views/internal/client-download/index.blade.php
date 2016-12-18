@@ -21,7 +21,7 @@
                             @foreach($files as $file)
                                 <tr>
                                     <td>
-                                        <a href="{{ $file->webContentLink }}" class="btn btn-sm btn-success">
+                                        <a rel="nofollow" href="{{ $file->webContentLink }}" class="btn btn-sm btn-success">
                                             <i class="fa fa-download"></i> Download
                                         </a>
                                     </td>

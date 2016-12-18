@@ -30,38 +30,38 @@
                     <div class="col-sm-6 col-sm-offset-3">
                         <table>
                             <tr>
-                                <td><a href="http://www.fh.org" target="_blank"><img src="images/Food_Logo.jpg"
+                                <td><a rel="nofollow" href="http://www.fh.org" target="_blank"><img src="images/Food_Logo.jpg"
                                                                                      width="165"
                                                                                      height="45"/></a></td>
                                 <td>
                                     <ul class="ul">
                                         <li>Food for the Hungry - Helping to End Hunger Around the World: <a
-                                                    href="http://www.fh.org " target="_blank">www.fh.org </a></li>
+                                                    rel="nofollow" href="http://www.fh.org " target="_blank">www.fh.org </a></li>
                                     </ul>
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="http://www.handsofmercy.com" target="_blank"><img src="images/Hom_Logo.jpg"
+                                <td><a rel="nofollow" href="http://www.handsofmercy.com" target="_blank"><img src="images/Hom_Logo.jpg"
                                                                                                width="165" height="45"/></a>
                                 </td>
                                 <td>
                                     <ul class="ul">
                                         <li>Hands of Mercy - Helping to Build Homes in Poverty Stricken Areas: <a
-                                                    href="http://www.handsofmercy.com"
+                                                    rel="nofollow" href="http://www.handsofmercy.com"
                                                     target="_blank">www.handsofmercy.com</a>
                                         </li>
                                     </ul>
                                 </td>
                             </tr>
                             <tr>
-                                <td><a href="http://www.exoduscry.com" target="_blank"><img src="images/Exodus_Logo.jpg"
+                                <td><a rel="nofollow" href="http://www.exoduscry.com" target="_blank"><img src="images/Exodus_Logo.jpg"
                                                                                             width="165"
                                                                                             height="45"/></a>
                                 </td>
                                 <td>
                                     <ul class="ul">
                                         <li>Exodus Cry - Helping to End Human Trafficking and Modern-day Slavery: <a
-                                                    href="http://www.exoduscry.com"
+                                                    rel="nofollow" href="http://www.exoduscry.com"
                                                     target="_blank">www.exoduscry.com</a>
                                         </li>
                                     </ul>

@@ -6,7 +6,7 @@
         <ul class="ul">
             @foreach ($recentPosts as $post)
             <li>
-                <a href="/blog/{{ $post->post_name }}" title="Permalink to {{ $post->post_title }}" rel="bookmark">
+                <a rel="nofollow" href="/blog/{{ $post->post_name }}" title="Permalink to {{ $post->post_title }}" rel="bookmark">
                     {!! $post->post_title !!}
                 </a>
             </li>
@@ -18,62 +18,62 @@
         <span class="widget-title fs-36">Categories</span>
         <ul class="ul">
             <li>
-                <a href="/blog/category/compare-ups-and-fedex">
+                <a rel="nofollow" href="/blog/category/compare-ups-and-fedex">
                     Compare UPS and FedEx
                 </a>
             </li>
             <li>
-                <a href="/blog/category/corporate-responsibility"
+                <a rel="nofollow" href="/blog/category/corporate-responsibility"
                    >Corporate Responsibility
                 </a>
             </li>
             <li>
-                <a href="/blog/category/fedex-and-ups-rates">
+                <a rel="nofollow" href="/blog/category/fedex-and-ups-rates">
                     FedEx and UPS Rates
                 </a>
             </li>
             <li>
-                <a href="/blog/category/fedex-and-ups-service">
+                <a rel="nofollow" href="/blog/category/fedex-and-ups-service">
                     FedEx and UPS Service
                 </a>
             </li>
             <li>
-                <a href="/blog/category/freight-management-solutions">
+                <a rel="nofollow" href="/blog/category/freight-management-solutions">
                     Freight Management Solutions
                 </a>
             </li>
             <li>
-                <a href="/blog/category/freight-shipping">
+                <a rel="nofollow" href="/blog/category/freight-shipping">
                     Freight Shipping
                 </a>
             </li>
             <li>
-                <a href="/blog/category/how-to-reduce-shipping-costs">
+                <a rel="nofollow" href="/blog/category/how-to-reduce-shipping-costs">
                     How to Reduce Shipping Costs
                 </a>
             </li>
             <li>
-                <a href="/blog/category/parcel-and-freight-discounts">
+                <a rel="nofollow" href="/blog/category/parcel-and-freight-discounts">
                     Parcel and Freight Discounts
                 </a>
             </li>
             <li>
-                <a href="/blog/category/small-parcel-information">
+                <a rel="nofollow" href="/blog/category/small-parcel-information">
                     Small Parcel Information
                 </a>
             </li>
             <li>
-                <a href="/blog/category/uncategorized">
+                <a rel="nofollow" href="/blog/category/uncategorized">
                     Uncategorized
                 </a>
             </li>
             <li>
-                <a href="/blog/category/ups-and-fedex">
+                <a rel="nofollow" href="/blog/category/ups-and-fedex">
                     UPS and FedEx
                 </a>
             </li>
             <li>
-                <a href="/blog/category/ups-and-fedex-discounts">
+                <a rel="nofollow" href="/blog/category/ups-and-fedex-discounts">
                     UPS and FedEx Discounts
                 </a>
             </li>

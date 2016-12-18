@@ -16,7 +16,7 @@
                                     <img width="200" height="47" src="http://lojistic.com/images/lojistic-logo.png" alt="Lojistic">
                                 </td>
                                 <td width="50%">
-                                    <a style="font-size:24px;color:#353535;text-decoration:none;float:right;padding-top:5px;" href="tel:18007835753">
+                                    <a style="font-size:24px;color:#353535;text-decoration:none;float:right;padding-top:5px;" rel="nofollow" href="tel:18007835753">
                                         (800) 783-5753
                                     </a>
                                 </td>
@@ -45,9 +45,9 @@
                 <tr>
                     <td style="font-size:16px;line-height:24px;color:#353535;padding-top:20px;">
                         In the mean time, feel free to dig a little deeper into how Lojistic can help with
-                        your <a href="{{ url('carrier-contract-negotiation') }}">Carrier Contract Negotiation</a>.
+                        your <a rel="nofollow" href="{{ url('carrier-contract-negotiation') }}">Carrier Contract Negotiation</a>.
                         Or, if you’re in the mood for more analyses, take a look at our other free
-                        <a href="{{ url('shipping-costs-calculators') }}">Shipping Cost Calculators</a>.
+                        <a rel="nofollow" href="{{ url('shipping-costs-calculators') }}">Shipping Cost Calculators</a>.
                     </td>
                 </tr>
                 <tr>
@@ -60,7 +60,7 @@
                         <table cellspacing="0" cellpadding="20px" border="0">
                             <tr>
                                 <td align="center" style="background-color:#F6921E;">
-                                    <a style="padding-top:20px;padding-left:20px;padding-right:20px;padding-bottom:20px;color:#fff;font-size:20px;text-transform:uppercase;text-decoration:none;" href="{{ route('comparison-calculator') }}">
+                                    <a style="padding-top:20px;padding-left:20px;padding-right:20px;padding-bottom:20px;color:#fff;font-size:20px;text-transform:uppercase;text-decoration:none;" rel="nofollow" href="{{ route('comparison-calculator') }}">
                                         Bookmark The Comparison Calculator
                                     </a>
                                 </td>
@@ -73,14 +73,14 @@
                         <table cellpadding="0" cellspacing="0" border="0" width="100%">
                             <tr>
                                 <td align="center" style="padding-top:45px;">
-                                    <a href="http://www.Lojistic.com">
+                                    <a rel="nofollow" href="http://www.Lojistic.com">
                                         <img width="121" height="28" src="http://lojistic.com/images/lojistic-logo.png" alt="Lojistic">
                                     </a>
                                 </td>
                             </tr>
                             <tr>
                                 <td align="center" style="font-size:13px;color:#6F6F6F;padding-top:5px;padding-bottom:40px;">
-                                    <a style="color:#6F6F6F;text-decoration:none;" href="http://www.lojistic.com">
+                                    <a style="color:#6F6F6F;text-decoration:none;" rel="nofollow" href="http://www.lojistic.com">
                                         Lojistic | 3200 Park Center Drive | Suite 500 | Costa Mesa, CA 92626
                                     </a>
                                 </td>

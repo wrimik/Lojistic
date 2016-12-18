@@ -9,20 +9,20 @@
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
         <meta name="google-site-verification" content="eBYNXDV6ZHulQJJkGqz9w_aSKqu1zgBreW7OqiTGU9Y" />
         <meta name="msvalidate.01" content="151CF70A3ADC6AE6546B13B38C93FE5C" />
-        <link rel="icon" type="image/png" href="{{ URL::asset('favicon.png') }}" />
-        <link rel="shortcut icon" type="image/png" href="{{ URL::asset('favicon.png') }}" />
+        <link rel="icon" type="image/png" rel="nofollow" href="{{ URL::asset('favicon.png') }}" />
+        <link rel="shortcut icon" type="image/png" rel="nofollow" href="{{ URL::asset('favicon.png') }}" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" rel="nofollow" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" rel="nofollow" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" rel="nofollow" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         @if( $legacy == true )
-            <link rel="stylesheet" type="text/css" href="/css/minify.css" />
+            <link rel="stylesheet" type="text/css" rel="nofollow" href="/css/minify.css" />
         @endif
         {!! Html::style('/css/common.css?v='.v())  !!}
-        <link href="https://plus.google.com/104242186661397386656" rel="publisher" />
+        <link rel="nofollow" href="https://plus.google.com/104242186661397386656" rel="publisher" />
         {{--<script src="//js.hsforms.net/forms/current.js"></script>--}}
         {!! Html::script('//www.google.com/jsapi')  !!}
         {!! Html::script('/js/2016/app.min.js')  !!}
@@ -35,25 +35,25 @@
             <div>
                 <div><span></span> SOLUTIONS</div>
                 <div class="sn-links">
-                    <a href="/parcel-freight-bill-audit">
+                    <a rel="nofollow" href="/parcel-freight-bill-audit">
                         Parcel &amp; Freight Audit
                     </a>
-                    <a href="/carrier-contract-negotiation">
+                    <a rel="nofollow" href="/carrier-contract-negotiation">
                         Carrier  Negotiation
                     </a>
-                    <a href="/freight-management">
+                    <a rel="nofollow" href="/freight-management">
                         Freight Management
                     </a>
-                    <a href="/shipping-insurance">
+                    <a rel="nofollow" href="/shipping-insurance">
                         Shipping Insurance
                     </a>
-                    <a class='nav_r2' href="/shipping-software">
+                    <a class='nav_r2' rel="nofollow" href="/shipping-software">
                         Shipping Software
                     </a>
-                    <a class='nav_r2' href="/halo">
+                    <a class='nav_r2' rel="nofollow" href="/halo">
                         Tracking Software
                     </a>
-                    <a class='nav_r2' href="/savings-checklist">
+                    <a class='nav_r2' rel="nofollow" href="/savings-checklist">
                         Savings Checklist
                     </a>
                 </div>
@@ -61,41 +61,41 @@
             <div>
                 <div><span></span> ABOUT LOJISTIC</div>
                 <div class="sn-links">
-                    <a href="/about-lojistic">Meet Lojistic</a>
-                    <a href="/reduce-shipping-costs">Cost Reduction Services</a>
-                    <a href="/lojistic-pricing">Pricing</a>
-                    <a href="/lojistic-referral-program">Referral Partner Program</a>
-                    <a href="/freight-news-events">News &amp; Events</a>
-                    <a href="/lojistic-careers">Careers</a>
+                    <a rel="nofollow" href="/about-lojistic">Meet Lojistic</a>
+                    <a rel="nofollow" href="/reduce-shipping-costs">Cost Reduction Services</a>
+                    <a rel="nofollow" href="/lojistic-pricing">Pricing</a>
+                    <a rel="nofollow" href="/lojistic-referral-program">Referral Partner Program</a>
+                    <a rel="nofollow" href="/freight-news-events">News &amp; Events</a>
+                    <a rel="nofollow" href="/lojistic-careers">Careers</a>
                 </div>
             </div>
             <div>
                 <div><span></span> RESOURCES</div>
                 <div class="sn-links">
-                    <a href="/shipping-insurance">Insurance Cost Calculator</a>
-                    <a href="/shipping-costs-calculators/fedex-ups-rates-calculator">FedEx &amp; UPS Rates Calculator</a>
-                    <a href="/shipping-costs-calculators/fedex-ups-rate-comparison-tool">FedEx &amp; UPS Rates Comparison Tool</a>
-                    <a href="/reduce-shipping-costs">Cost Reduction Services</a>
-                    <a href="/white-papers">White Papers</a>
+                    <a rel="nofollow" href="/shipping-insurance">Insurance Cost Calculator</a>
+                    <a rel="nofollow" href="/shipping-costs-calculators/fedex-ups-rates-calculator">FedEx &amp; UPS Rates Calculator</a>
+                    <a rel="nofollow" href="/shipping-costs-calculators/fedex-ups-rate-comparison-tool">FedEx &amp; UPS Rates Comparison Tool</a>
+                    <a rel="nofollow" href="/reduce-shipping-costs">Cost Reduction Services</a>
+                    <a rel="nofollow" href="/white-papers">White Papers</a>
                     <a target="_blank" href='https://data.lojistic.com'>Data.Lojistic</a>
                 </div>
             </div>
             <div>
                 <div><span></span> CONTACT</div>
                 <div class="sn-links">
-                    <a href="tel:8007835753">(800) 783-5753</a>
-                    <a href="mailto:info@lojistic.com">Email Us</a>
-                    <a href="/contact-lojistic">Contact Info</a>
+                    <a rel="nofollow" href="tel:8007835753">(800) 783-5753</a>
+                    <a rel="nofollow" href="mailto:info@lojistic.com">Email Us</a>
+                    <a rel="nofollow" href="/contact-lojistic">Contact Info</a>
                 </div>
             </div>
             <div>
                 <div><span></span> SOCIAL</div>
                 <div class="sn-links">
-                    <a target="_blank" href="https://plus.google.com/104242186661397386656/posts">Google+</a>
-                    <a target="_blank" href="http://www.linkedin.com/company/lojistic">LinkedIn</a>
-                    <a target="_blank" href="https://www.twitter.com/LojisticUSA">Twitter</a>
-                    <a target="_blank" href="https://www.facebook.com/LojisticUSA">Facebook</a>
-                    <a target="_blank" href="https://www.lojistic.com/blog">Blog</a>
+                    <a target="_blank" rel="nofollow" href="https://plus.google.com/104242186661397386656/posts">Google+</a>
+                    <a target="_blank" rel="nofollow" href="http://www.linkedin.com/company/lojistic">LinkedIn</a>
+                    <a target="_blank" rel="nofollow" href="https://www.twitter.com/LojisticUSA">Twitter</a>
+                    <a target="_blank" rel="nofollow" href="https://www.facebook.com/LojisticUSA">Facebook</a>
+                    <a target="_blank" rel="nofollow" href="https://www.lojistic.com/blog">Blog</a>
                 </div>
             </div>
         </div>
@@ -105,50 +105,50 @@
                     <div>
                         <span>Call Us: (800) 783-5753</span>
                         <div>
-                            <a alt="Google+" id="google_plus" href="https://plus.google.com/104242186661397386656/posts" target="_blank"></a>
-                            <a alt="LinkedIn" id="linked_in" href="http://www.linkedin.com/company/lojistic" target="_blank"></a>
-                            <a alt="Twitter" id="twitter" href="https://www.twitter.com/LojisticUSA" target="_blank"></a>
-                            <a alt="Facebok" id="facebook" href="https://www.facebook.com/LojisticUSA" target="_blank"></a>
-                            <a alt="Blog" id="sc_blog" href="http://www.lojistic.com/blog" ></a>
-                            <a alt="Data.Lojistic" id="source_reports" href="https://data.lojistic.com" target="_blank"></a>
+                            <a alt="Google+" id="google_plus" rel="nofollow" href="https://plus.google.com/104242186661397386656/posts" target="_blank"></a>
+                            <a alt="LinkedIn" id="linked_in" rel="nofollow" href="http://www.linkedin.com/company/lojistic" target="_blank"></a>
+                            <a alt="Twitter" id="twitter" rel="nofollow" href="https://www.twitter.com/LojisticUSA" target="_blank"></a>
+                            <a alt="Facebok" id="facebook" rel="nofollow" href="https://www.facebook.com/LojisticUSA" target="_blank"></a>
+                            <a alt="Blog" id="sc_blog" rel="nofollow" href="http://www.lojistic.com/blog" ></a>
+                            <a alt="Data.Lojistic" id="source_reports" rel="nofollow" href="https://data.lojistic.com" target="_blank"></a>
                         </div>
                     </div>
                 </div>
                 <div id="company-nav">
                     <div>
-                        <a id="lojistic-logo" href="http://www.lojistic.com">
+                        <a id="lojistic-logo" rel="nofollow" href="http://www.lojistic.com">
                             <img src="{{ URL::asset('images/lojistic-logo.png') }}"/>
                         </a>
                         <div id='nav_expand_button'></div>
                         <div id="company-links">
                             <div class="nav_parent">
-                                <a href="/about-lojistic">About Us</a>
+                                <a rel="nofollow" href="/about-lojistic">About Us</a>
                                 <div class="nav_child">
-                                    <a href="/about-lojistic">Meet Lojistic</a> <br/>
-                                    <a href="/reduce-shipping-costs">Cost Reduction Services</a> <br/>
-                                    <a href="/lojistic-pricing">Pricing</a> <br/>
-                                    <a href="/lojistic-referral-program">Referral Partner Program</a> <br/>
-                                    <a href="/freight-news-events">News &amp; Events</a> <br/>
-                                    <a href="/lojistic-careers">Careers</a> <br/>
+                                    <a rel="nofollow" href="/about-lojistic">Meet Lojistic</a> <br/>
+                                    <a rel="nofollow" href="/reduce-shipping-costs">Cost Reduction Services</a> <br/>
+                                    <a rel="nofollow" href="/lojistic-pricing">Pricing</a> <br/>
+                                    <a rel="nofollow" href="/lojistic-referral-program">Referral Partner Program</a> <br/>
+                                    <a rel="nofollow" href="/freight-news-events">News &amp; Events</a> <br/>
+                                    <a rel="nofollow" href="/lojistic-careers">Careers</a> <br/>
                                 </div>
                             </div>
                             <div class="nav_parent">
-                                <a href="/shipping-costs-calculators">Shipping Cost Calculators</a>
+                                <a rel="nofollow" href="/shipping-costs-calculators">Shipping Cost Calculators</a>
                                 <div class="nav_child">
-                                    <a href="{{ URL::route('dim-calculator') }}">Dimensional Weight Calculator</a> <br/>
-                                    <a href="/shipping-insurance">Insurance Cost Calculator</a> <br/>
-                                    <a href="/shipping-costs-calculators/fedex-ups-rates-calculator">FedEx &amp; UPS Rates Calculator</a> <br/>
-                                    <a href="/shipping-costs-calculators/fedex-ups-rate-comparison-tool">FedEx &amp; UPS Rates Comparison Tool</a> <br/>
+                                    <a rel="nofollow" href="{{ URL::route('dim-calculator') }}">Dimensional Weight Calculator</a> <br/>
+                                    <a rel="nofollow" href="/shipping-insurance">Insurance Cost Calculator</a> <br/>
+                                    <a rel="nofollow" href="/shipping-costs-calculators/fedex-ups-rates-calculator">FedEx &amp; UPS Rates Calculator</a> <br/>
+                                    <a rel="nofollow" href="/shipping-costs-calculators/fedex-ups-rate-comparison-tool">FedEx &amp; UPS Rates Comparison Tool</a> <br/>
                                 </div>
                             </div>
                             <div class="nav_parent">
-                                <a href="/reduce-shipping-costs">Cost Reduction Services</a>
+                                <a rel="nofollow" href="/reduce-shipping-costs">Cost Reduction Services</a>
                             </div>
                             <div class="nav_parent">
-                                <a href="/white-papers">White Papers</a>
+                                <a rel="nofollow" href="/white-papers">White Papers</a>
                             </div>
                             <div class="nav_parent">
-                                <a href="/contact-lojistic">Contact</a>
+                                <a rel="nofollow" href="/contact-lojistic">Contact</a>
                             </div>
                         </div>
                     </div>
@@ -156,7 +156,7 @@
                 <div id="product-nav">
                     <div>
                         <div>
-                            <a href="http://www.lojistic.com" id="logo-small">
+                            <a rel="nofollow" href="http://www.lojistic.com" id="logo-small">
                                 <img src="{{ URL::asset('images/lojistic-logo.png') }}"/>
                                 <b>
                                     <img src="/images/phone-small.png" />
@@ -167,31 +167,31 @@
                                 <img src="/images/menu.png"/>
                             </div>
                             <div id="product-links">
-                                <a href="/parcel-freight-bill-audit" id="nav_parcel">
+                                <a rel="nofollow" href="/parcel-freight-bill-audit" id="nav_parcel">
                                     Parcel &amp;<br/>Freight Audit
                                     <span></span>
                                 </a>
-                                <a href="/carrier-contract-negotiation" id="nav_neg">
+                                <a rel="nofollow" href="/carrier-contract-negotiation" id="nav_neg">
                                     Carrier<br/> Negotiation
                                     <span></span>
                                 </a>
-                                <a href="/freight-management" id="nav_fmi">
+                                <a rel="nofollow" href="/freight-management" id="nav_fmi">
                                     Freight<br/> Management
                                     <span></span>
                                 </a>
-                                <a href="/shipping-insurance" id="nav_ins">
+                                <a rel="nofollow" href="/shipping-insurance" id="nav_ins">
                                     Shipping<br/> Insurance
                                     <span></span>
                                 </a>
-                                <a class='nav_r2' href="/shipping-software" id="nav_ship">
+                                <a class='nav_r2' rel="nofollow" href="/shipping-software" id="nav_ship">
                                     Shipping<br/> Software
                                     <span></span>
                                 </a>
-                                <a class='nav_r2' href="/halo" id="nav_trac">
+                                <a class='nav_r2' rel="nofollow" href="/halo" id="nav_trac">
                                     Tracking<br/> Software
                                     <span></span>
                                 </a>
-                                <a class='nav_r2' href="/savings-checklist" id="nav_checklist">
+                                <a class='nav_r2' rel="nofollow" href="/savings-checklist" id="nav_checklist">
                                     Savings<br/> Checklist
                                     <span></span>
                                 </a>
@@ -207,33 +207,33 @@
     <div id="footer_content">
         <div>
             <b>About Lojistic</b>
-            <a href="/about-lojistic">Meet Lojistic</a>
-            <a href="/reduce-shipping-costs">Cost Reduction Services</a>
-            <a href="/lojistic-pricing">Pricing</a>
-            <a href="/lojistic-referral-program">Referral Partners</a>
-            <a href="/freight-news-events">News &amp; Events</a>
-            <a href="/lojistic-careers">Careers</a>
-            <a href="/customer-testimonials">Testimonials</a>
+            <a rel="nofollow" href="/about-lojistic">Meet Lojistic</a>
+            <a rel="nofollow" href="/reduce-shipping-costs">Cost Reduction Services</a>
+            <a rel="nofollow" href="/lojistic-pricing">Pricing</a>
+            <a rel="nofollow" href="/lojistic-referral-program">Referral Partners</a>
+            <a rel="nofollow" href="/freight-news-events">News &amp; Events</a>
+            <a rel="nofollow" href="/lojistic-careers">Careers</a>
+            <a rel="nofollow" href="/customer-testimonials">Testimonials</a>
         </div>
 
         <div>
             <b>Solutions</b>
-            <a href="/parcel-freight-bill-audit">Parcel &amp; Freight Audit</a>
-            <a href="/carrier-contract-negotiation">Carrier Rate Negotiation</a>
-            <a href="/freight-management">Freight Management</a>
-            <a href="/shipping-insurance">Shipping Insurance</a>
-            <a href="/shipping-software">Shipping Software</a>
-            <a href="/halo/">Tracking Software</a>
-            <a href="/savings-checklist">Savings Checklist</a>
+            <a rel="nofollow" href="/parcel-freight-bill-audit">Parcel &amp; Freight Audit</a>
+            <a rel="nofollow" href="/carrier-contract-negotiation">Carrier Rate Negotiation</a>
+            <a rel="nofollow" href="/freight-management">Freight Management</a>
+            <a rel="nofollow" href="/shipping-insurance">Shipping Insurance</a>
+            <a rel="nofollow" href="/shipping-software">Shipping Software</a>
+            <a rel="nofollow" href="/halo/">Tracking Software</a>
+            <a rel="nofollow" href="/savings-checklist">Savings Checklist</a>
         </div>
         <div>
             <b>Resources</b>
-            <a href="/shipping-costs-calculators">Calculators</a>
-            <a href="/reduce-shipping-costs">Cost Reduction Services</a>
-            <a href="/white-papers">White Papers</a>
-            <a href="/blog/">Blog</a>
-            <a href="/freight-shipping-faqs">FAQ</a>
-            <a href="/sitemap">Articles</a>
+            <a rel="nofollow" href="/shipping-costs-calculators">Calculators</a>
+            <a rel="nofollow" href="/reduce-shipping-costs">Cost Reduction Services</a>
+            <a rel="nofollow" href="/white-papers">White Papers</a>
+            <a rel="nofollow" href="/blog/">Blog</a>
+            <a rel="nofollow" href="/freight-shipping-faqs">FAQ</a>
+            <a rel="nofollow" href="/sitemap">Articles</a>
         </div>
         <div id="footer_form">
             <b>Talk to Us</b>
@@ -256,8 +256,8 @@
         <br>
         <img src="/images/inc500_footer.png">
         <br>
-        <a href="/privacy-policy">Privacy Policy</a>
-        <a href="/sitemap">Site Map</a>
+        <a rel="nofollow" href="/privacy-policy">Privacy Policy</a>
+        <a rel="nofollow" href="/sitemap">Site Map</a>
     </div>
 </div>
 </div>

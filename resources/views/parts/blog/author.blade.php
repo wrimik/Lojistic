@@ -2,13 +2,13 @@
     <span class="meta-prep meta-prep-author">Author:</span>
     <span class="author vcard">
         @if($post->post_author == 10)
-            <a class="url fn n" href="/about-the-author-steve-minard"
+            <a class="url fn n" rel="nofollow" href="/about-the-author-steve-minard"
                title="View all posts by Steve Minard"
                rel="nofollow">
                 Steve M.
             </a>
         @elseif($post->post_author == 5)
-            <a class="url fn n" href="/blog/author/tylerg/" title="View all posts by tylerg"
+            <a class="url fn n" rel="nofollow" href="/blog/author/tylerg/" title="View all posts by tylerg"
                rel="nofollow">
                TylerG
             </a>

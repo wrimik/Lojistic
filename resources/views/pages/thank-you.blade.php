@@ -37,7 +37,7 @@
             </div>
             <div class="col-md-6 col-md-offset-3 col-xs-12">
                 <br>
-                <a href="/20-20">
+                <a rel="nofollow" href="/20-20">
                     <div class="btn btn-ghost-yellow btn-thick uppercase">
                         Learn More About the 20/20 Campaign
                     </div>
@@ -66,7 +66,7 @@
                     <h3>Email Us:</h3>
                     <p>
                     <strong>
-                        <a href="mailto:info@lojistic.com">info@lojistic.com</a>
+                        <a rel="nofollow" href="mailto:info@lojistic.com">info@lojistic.com</a>
                     </strong>
                     </p>
                 </div>

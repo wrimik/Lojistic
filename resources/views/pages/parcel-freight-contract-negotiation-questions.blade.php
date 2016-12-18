@@ -89,7 +89,7 @@
 
                 <p>
                     Expert negotiating abilities constitute a small part of Lojistic's toolset when reducing freight
-                    costs via freight and small parcel contract negotiations. Many shippers and <a href="/parcel-freight-bill-audit">freight parcel audit</a>
+                    costs via freight and small parcel contract negotiations. Many shippers and <a rel="nofollow" href="/parcel-freight-bill-audit">freight parcel audit</a>
                     companies try to compare FedEx and UPS freight contracts without using analytic software or the
                     inside knowledge of former high-level carrier employees. An effective analysis of any small parcel
                     carrier contract involves many variables. Lojistic has a proven track record of negotiating UPS

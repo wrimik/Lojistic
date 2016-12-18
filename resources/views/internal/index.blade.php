@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6">
-                        <a class="product-card" href="/internal/calculators/">
+                        <a class="product-card" rel="nofollow" href="/internal/calculators/">
                             <i class="eloji eloji-xl eloji-calc"></i>
 
                             <div class="card-content">
@@ -16,7 +16,7 @@
                         </a>
                     </div>
                     <div class="col-sm-6">
-                        <a class="product-card" href="/internal/components">
+                        <a class="product-card" rel="nofollow" href="/internal/components">
                             <i class="eloji eloji-xl eloji-data-management"></i>
 
                             <div class="card-content">

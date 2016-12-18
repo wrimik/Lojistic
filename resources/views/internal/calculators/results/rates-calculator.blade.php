@@ -1,5 +1,5 @@
 <div class="row text-right">
-    {{--<a class="btn-download excel-download" target="_blank" href="{{ route('download-excel', ['function'=>'carrierRatesToExcel','q'=>Input::except('_token')]) }}">--}}
+    {{--<a class="btn-download excel-download" target="_blank" rel="nofollow" href="{{ route('download-excel', ['function'=>'carrierRatesToExcel','q'=>Input::except('_token')]) }}">--}}
         {{--<i class="eloji eloji-excel"></i> DOWNLOAD EXCEL--}}
     {{--</a>--}}
 </div>

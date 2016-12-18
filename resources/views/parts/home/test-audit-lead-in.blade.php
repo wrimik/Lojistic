@@ -30,8 +30,8 @@
             </div>
             <div class="col-xs-12 text-center">
                 <br/>
-                <a href="/audisee/" class="btn btn-md btn-lightBlue">LEARN MORE</a>
-                <a href="/audisee/instant-parcel-audit" class="btn btn-md btn-white">INSTANTLY AUDIT YOUR PARCEL INVOICES</a>
+                <a rel="nofollow" href="/audisee/" class="btn btn-md btn-lightBlue">LEARN MORE</a>
+                <a rel="nofollow" href="/audisee/instant-parcel-audit" class="btn btn-md btn-white">INSTANTLY AUDIT YOUR PARCEL INVOICES</a>
             </div>
         </div>
     </div>

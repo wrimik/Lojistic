@@ -8,8 +8,8 @@
         <p class="fw-thin fs-24">
             Your Centralized Resource For All Things Logistics
         </p>
-        <a class="btn btn-success" href="/lojistic">GET TO KNOW US</a>
-        <a class="btn btn-success" href="/parcel">MEET PARCÈL - LOJISTIC MASCOT</a>
+        <a class="btn btn-success" rel="nofollow" href="/lojistic">GET TO KNOW US</a>
+        <a class="btn btn-success" rel="nofollow" href="/parcel">MEET PARCÈL - LOJISTIC MASCOT</a>
     </div>
 </section>
 <!--  End Intro  -->

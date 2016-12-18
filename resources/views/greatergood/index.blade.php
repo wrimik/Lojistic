@@ -6,8 +6,8 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <meta name="format-detection" content="telephone=no"/>
-        <link rel="icon" type="image/vnd.microsoft.icon" href="//www.lojistic.com/favicon.ico" />
-        <link rel="shortcut icon" type="image/x-icon" href="//www.lojistic.com/favicon.ico" />
+        <link rel="icon" type="image/vnd.microsoft.icon" rel="nofollow" href="//www.lojistic.com/favicon.ico" />
+        <link rel="shortcut icon" type="image/x-icon" rel="nofollow" href="//www.lojistic.com/favicon.ico" />
         {!! Html::style('css/fonts.cs?v='.v()) !!}
         {!! Html::style('css/gg.css?v='.v()) !!}
 
@@ -172,8 +172,8 @@
 <div class='scontent' id="contactus">
     <p>
         <b>CALL US:</b><br/> (800) 783-5753<br/><br/>
-        <b>EMAIL US:</b><br/> <a href="mailto:info@lojistic.com">info@lojistic.com</a><br/><br/>
-        <b>VISIT OUR WEBSITE:</b><br/> <a href="http://www.lojistic.com">Lojistic.com</a>
+        <b>EMAIL US:</b><br/> <a rel="nofollow" href="mailto:info@lojistic.com">info@lojistic.com</a><br/><br/>
+        <b>VISIT OUR WEBSITE:</b><br/> <a rel="nofollow" href="http://www.lojistic.com">Lojistic.com</a>
     </p>
 </div>            </div>
         </div>

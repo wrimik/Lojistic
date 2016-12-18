@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="col-centered col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12">
-                <a href="wholesale-ltl-rate-marketplace/sign-up"
+                <a rel="nofollow" href="wholesale-ltl-rate-marketplace/sign-up"
                    class="btn btn-thick flatSeafoam text-center hover-color-opacity">
                     SIGN UP NOW
                 </a>
@@ -73,7 +73,7 @@
         </div>
         <div class="text-center">
             <br>
-            <a href="/wholesale-ltl-rate-marketplace/sign-up">
+            <a rel="nofollow" href="/wholesale-ltl-rate-marketplace/sign-up">
                 <div class="btn btn-primary btn-lg" style="max-width: 300px">START SHOPPING LTL RATES</div>
             </a>
         </div>
@@ -155,7 +155,7 @@
                     <div class="col-sm-10 col-sm-offset-1">
                         <div class="col-sm-3 col-xs-6 text-center">
                             <div class="social-spacing">
-                                <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//lojistic.com/audisee&title=Free%20Parcel%20Audit%20Web%20Tool&summary=Instantly%20audit%20your%20UPS%20and%20FedEx%20Invoice">
+                                <a rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//lojistic.com/audisee&title=Free%20Parcel%20Audit%20Web%20Tool&summary=Instantly%20audit%20your%20UPS%20and%20FedEx%20Invoice">
                                     <div class="circ circ-75 flatSeafoam calc-hover text-center">
                                         <i class="eloji-linkedin text-vc fs-36 white"></i>
                                     </div>
@@ -164,7 +164,7 @@
                         </div>
                         <div class="col-sm-3  col-xs-6 text-center">
                             <div class="social-spacing">
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//lojistic.com/audisee">
+                                <a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//lojistic.com/audisee">
                                     <div class="circ circ-75 flatSeafoam calc-hover text-center">
                                         <i class="eloji-facebook text-vc fs-36 white"></i>
                                     </div>
@@ -173,7 +173,7 @@
                         </div>
                         <div class="col-sm-3 col-xs-6 text-center">
                             <div class="social-spacing">
-                                <a href="https://twitter.com/home?status=Check%20out%20our%20free%20audit%20tool%3A%20http%3A//lojistic.com/audisee%20">
+                                <a rel="nofollow" href="https://twitter.com/home?status=Check%20out%20our%20free%20audit%20tool%3A%20http%3A//lojistic.com/audisee%20">
                                     <div class="circ circ-75 flatSeafoam calc-hover text-center">
                                         <i class="eloji-twitter text-vc fs-36 white"></i>
                                     </div>
@@ -182,7 +182,7 @@
                         </div>
                         <div class="col-sm-3  col-xs-6 text-center">
                             <div class="social-spacing">
-                                <a href="mailto:info@lojistic.com">
+                                <a rel="nofollow" href="mailto:info@lojistic.com">
                                     <div class="circ circ-75 flatSeafoam calc-hover text-center">
                                         <i class="eloji-email text-vc fs-36 white"></i>
                                     </div>
@@ -241,7 +241,7 @@
                         </p>
 
                         <div class="text-center">
-                            <a href="/pdf/Shipping-Resource-Guide.pdf" target="_blank" class="btn btn-info btn-md">
+                            <a rel="nofollow" href="/pdf/Shipping-Resource-Guide.pdf" target="_blank" class="btn btn-info btn-md">
                                 GIMME MY GUIDE
                             </a>
                         </div>
@@ -257,7 +257,7 @@
 
             <div class="" style="margin-top:25px;">
                 <div class="col-md-3 col-sm-6 col-xs-12">
-                    <a class="" href="/shipping-costs-calculators/fedex-ups-rates-calculator">
+                    <a class="" rel="nofollow" href="/shipping-costs-calculators/fedex-ups-rates-calculator">
                         <div class="circ circ-120 flatSeafoam text-center calc-hover">
                             <i class="eloji eloji-calc text-vc fs-60"></i>
                         </div>
@@ -267,7 +267,7 @@
                     <br>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
-                    <a class="" href="/shipping-costs-calculators/fedex-ups-rate-comparison-tool">
+                    <a class="" rel="nofollow" href="/shipping-costs-calculators/fedex-ups-rate-comparison-tool">
                         <div class="circ circ-120 flatSeafoam text-center calc-hover">
                             <i class="eloji eloji-calc-rates text-vc fs-60 white"></i>
                         </div>
@@ -277,7 +277,7 @@
                     <br>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
-                    <a href="/shipping-costs-calculators/fedex-ups-ground-dim-calculator">
+                    <a rel="nofollow" href="/shipping-costs-calculators/fedex-ups-ground-dim-calculator">
                         <div class="circ circ-120 flatSeafoam text-center calc-hover">
                             <i class="eloji eloji-dim text-vc fs-60 white"></i>
                         </div>
@@ -287,7 +287,7 @@
                     <br>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
-                    <a href="/shipping-insurance#insurance-calculator">
+                    <a rel="nofollow" href="/shipping-insurance#insurance-calculator">
                         <div class="circ circ-120 flatSeafoam text-center calc-hover">
                             <i class="eloji eloji-calc-insurance text-vc fs-60 white"></i>
                         </div>

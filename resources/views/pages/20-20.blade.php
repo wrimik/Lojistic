@@ -37,13 +37,13 @@
             <span class="fs-24">total:</span><br/><br/>
             <span class="fs-28">$14,740</span><span class="fs-20">.00</span><br/><br/>
             See The Donations: <br>
-            <a href="https://my.charitywater.org/lojistic/20-20-q12014" class="fs-20 text-ul">One</a> |
-            <a href="https://my.charitywater.org/lojistic/2020-campaign-q1-2014-extra" class="fs-20  text-ul">Two</a> |
-            <a href="https://my.charitywater.org/lojistic/2020-campaign-q2-2014" class="fs-20  text-ul">Three</a> |
-            <a href="https://my.charitywater.org/lojistic/2020-campaign-q3-2014" class="fs-20  text-ul">Four</a> |
-            <a href="https://my.charitywater.org/lojistic/2020-campaign-q4-2014" class="fs-20  text-ul">Five</a>
+            <a rel="nofollow" href="https://my.charitywater.org/lojistic/20-20-q12014" class="fs-20 text-ul">One</a> |
+            <a rel="nofollow" href="https://my.charitywater.org/lojistic/2020-campaign-q1-2014-extra" class="fs-20  text-ul">Two</a> |
+            <a rel="nofollow" href="https://my.charitywater.org/lojistic/2020-campaign-q2-2014" class="fs-20  text-ul">Three</a> |
+            <a rel="nofollow" href="https://my.charitywater.org/lojistic/2020-campaign-q3-2014" class="fs-20  text-ul">Four</a> |
+            <a rel="nofollow" href="https://my.charitywater.org/lojistic/2020-campaign-q4-2014" class="fs-20  text-ul">Five</a>
             <br/>
-            <a href="https://mycw.charitywater.org/p/myprojects?member_id=180362" class="fs-20 btn text-ul">See The
+            <a rel="nofollow" href="https://mycw.charitywater.org/p/myprojects?member_id=180362" class="fs-20 btn text-ul">See The
                 Impact</a><br/>
             <br/>
         </div>
@@ -64,13 +64,13 @@
             <span class="fs-24">total:</span><br/><br/>
             <span class="fs-28">$2,720</span><span class="fs-20">.00</span><br/><br/>
             See The Donations: <br>
-            <a target="_blank" href="https://my.charitywater.org/lojistic/2020-campaign-q1-2015" class="fs-20 text-ul">One</a>
+            <a target="_blank" rel="nofollow" href="https://my.charitywater.org/lojistic/2020-campaign-q1-2015" class="fs-20 text-ul">One</a>
             |
-            <a target="_blank" href="https://my.charitywater.org/lojistic/2020-campaign-q2-2015" class="fs-20 text-ul">Two</a>
+            <a target="_blank" rel="nofollow" href="https://my.charitywater.org/lojistic/2020-campaign-q2-2015" class="fs-20 text-ul">Two</a>
             |
-            <a target="_blank" href="https://my.charitywater.org/lojistic/20-20-campaign-q3-2015" class="fs-20 text-ul">Three</a>
+            <a target="_blank" rel="nofollow" href="https://my.charitywater.org/lojistic/20-20-campaign-q3-2015" class="fs-20 text-ul">Three</a>
             <br>
-            <a target="_blank" href="https://mycw.charitywater.org/p/myprojects?member_id=180362" class="fs-20 text-ul">See
+            <a target="_blank" rel="nofollow" href="https://mycw.charitywater.org/p/myprojects?member_id=180362" class="fs-20 text-ul">See
                 The Impact</a>
         </div>
     </section>
@@ -114,7 +114,7 @@
             </p>
 
             <p>
-                <a target="_blank" href="https://my.charitywater.org/lojistic" class="btn btn-info fs-36 fw-bold">
+                <a target="_blank" rel="nofollow" href="https://my.charitywater.org/lojistic" class="btn btn-info fs-36 fw-bold">
                     <span>$17,460</span><span>.00</span><br/>
                 </a>
             </p>

@@ -19,7 +19,7 @@
                         Find invoice errors. <br class="visible-xs">
                         Start saving.
                     </p>
-                    <a href="/parcel-freight-bill-audit" class="btn btn-lg-xs btn-primary">SAVE NOW</a>
+                    <a rel="nofollow" href="/parcel-freight-bill-audit" class="btn btn-lg-xs btn-primary">SAVE NOW</a>
                 </div>
                 <div class="col-xs-12 col-sm-6 showcase-highlight">
                     <h3>CARRIER NEGOTIATION</h3>
@@ -27,7 +27,7 @@
                         Stop wondering. <br class="visible-xs">
                         Get better rates.
                     </p>
-                    <a href="/carrier-contract-negotiation" class="btn btn-lg-xs btn-primary">SAVE NOW</a>
+                    <a rel="nofollow" href="/carrier-contract-negotiation" class="btn btn-lg-xs btn-primary">SAVE NOW</a>
                 </div>
             </div>
             <div class="row">
@@ -37,7 +37,7 @@
                         Shop our marketplace. <br class="visible-xs">
                         Ship with confidence.
                     </p>
-                    <a href="/wholesale-ltl-rate-marketplace" class="btn btn-lg-xs btn-primary">SHOP LTL RATES</a>
+                    <a rel="nofollow" href="/wholesale-ltl-rate-marketplace" class="btn btn-lg-xs btn-primary">SHOP LTL RATES</a>
                 </div>
                 <div class="col-xs-12 col-sm-6 showcase-highlight">
                     <h3>SHIPPING SOFTWARE</h3>
@@ -45,7 +45,7 @@
                         All your carriers &amp; rates. <br class="visible-xs">
                         One system.
                     </p>
-                    <a href="/shipping-software" class="btn btn-lg-xs btn-primary">SHIP FOR FREE</a>
+                    <a rel="nofollow" href="/shipping-software" class="btn btn-lg-xs btn-primary">SHIP FOR FREE</a>
                 </div>
             </div>
         </div>

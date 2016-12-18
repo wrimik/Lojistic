@@ -1,6 +1,6 @@
 <div id="billing-center" class="instructions">
     <p class="fs-16 flatGrey fakeOl fw-thin">
-        <span>1 )</span> Sign in to <a href="https://www.ups.com/one-to-one/login?returnto=https%3a//www.apps.ups.com/ebilling/invoice/companysummarySearch.do"
+        <span>1 )</span> Sign in to <a rel="nofollow" href="https://www.ups.com/one-to-one/login?returnto=https%3a//www.apps.ups.com/ebilling/invoice/companysummarySearch.do"
                                        target="_blank">UPS.com</a><br/>
         <span>2 )</span> Find an invoice with a large dollar amount that's
         at least a week old, and click its Invoice Number<br/>

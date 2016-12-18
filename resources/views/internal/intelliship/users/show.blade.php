@@ -17,13 +17,13 @@
                         </div>
                         <ul class="nav nav-tabs nav-justified" role="tablist">
                             <li role="presentation" class="active">
-                                <a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a>
+                                <a rel="nofollow" href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact</a>
                             </li>
                             <li role="presentation">
-                                <a href="#billing" aria-controls="billing" role="tab" data-toggle="tab">Billing</a>
+                                <a rel="nofollow" href="#billing" aria-controls="billing" role="tab" data-toggle="tab">Billing</a>
                             </li>
                             <li role="presentation">
-                                <a href="#accounts" aria-controls="accounts" role="tab" data-toggle="tab">Accounts</a>
+                                <a rel="nofollow" href="#accounts" aria-controls="accounts" role="tab" data-toggle="tab">Accounts</a>
                             </li>
                         </ul>
                         <div class="panel-body">
@@ -33,7 +33,7 @@
                                         <div class="row">
                                             <div class="col-sm-5">
                                                 <strong class="fs-36">{{ $user->name }}</strong> <br>
-                                                <a href="mailto:{{ $user->contact_email }}">{{ $user->contact_email }}</a>
+                                                <a rel="nofollow" href="mailto:{{ $user->contact_email }}">{{ $user->contact_email }}</a>
                                                 <br>
                                                 {{ $user->phonebusiness }}
                                             </div>

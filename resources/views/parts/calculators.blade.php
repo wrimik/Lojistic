@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-sm-6">
-        <a class="product-card" href="{{ route('rate-calculator') }}">
+        <a class="product-card" rel="nofollow" href="{{ route('rate-calculator') }}">
             <i class="eloji eloji-xl eloji-calc"></i>
             <span class="card-content">
                 <span class="fs-32 card-header">UPS &amp; FedEx <br/>Rates Calculator</span>
@@ -10,7 +10,7 @@
         </a>
     </div>
     <div class="col-sm-6">
-        <a class="product-card" href="{{ route('comparison-calculator') }}">
+        <a class="product-card" rel="nofollow" href="{{ route('comparison-calculator') }}">
             <i class="eloji eloji-xl eloji-calc-rates"></i>
             <span class="card-content">
                 <span class="fs-32 card-header">UPS &amp; FedEx Rates Comparison</span>
@@ -22,7 +22,7 @@
 </div>
 <div class="row">
     <div class="col-sm-6">
-        <a class="product-card" href="{{ route('dim-calculator') }}">
+        <a class="product-card" rel="nofollow" href="{{ route('dim-calculator') }}">
             <i class="eloji eloji-xl eloji-dim"></i>
             <span class="card-content">
                 <span class="fs-32 card-header">Dimensional Weight Charge Calculator</span>
@@ -32,7 +32,7 @@
         </a>
     </div>
     <div class="col-sm-6">
-        <a class="product-card" href="{{ route('insurance-calculator') }}#insurance-calculator">
+        <a class="product-card" rel="nofollow" href="{{ route('insurance-calculator') }}#insurance-calculator">
             <i class="eloji eloji-xl eloji-calc-insurance"></i>
             <span class="card-content">
                 <span class="fs-32  card-header">Annual Insurance Cost Calculator</span>

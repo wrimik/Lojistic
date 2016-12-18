@@ -22,7 +22,7 @@
 
                 <p>
                     Interested in a position at Lojistic? Send your resumé to
-                    <a href="mailto:careers@lojistic.com">careers@lojistic.com</a>
+                    <a rel="nofollow" href="mailto:careers@lojistic.com">careers@lojistic.com</a>
                 </p>
 
                 <p>

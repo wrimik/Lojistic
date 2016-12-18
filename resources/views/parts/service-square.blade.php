@@ -11,7 +11,7 @@
                 {!! $quote  !!}
             </p>
             @if($url)
-                <a class="btn btn-info" href="{{ $url }}">CHECK IT OUT</a>
+                <a class="btn btn-info" rel="nofollow" href="{{ $url }}">CHECK IT OUT</a>
             @endif
         </div>
     </div>

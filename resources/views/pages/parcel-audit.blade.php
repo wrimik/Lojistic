@@ -25,8 +25,8 @@
                     Implementing a parcel audit will help reduce your transportation costs and give you better insight
                     into your overall transportation operations. A parcel audit works by deep scanning your shipping
                     invoices and identifying errors. Our parcel audit team then reaches back out to the carriers and
-                    secure credits on your behalf. With a <a href="/parcel-audit/fedex-audit">FedEx audit</a>, your credits will be reflected on the audited
-                    invoice. But with a <a href="/parcel-audit/ups-audit">UPS audit</a>, your credits will post on a future invoice.
+                    secure credits on your behalf. With a <a rel="nofollow" href="/parcel-audit/fedex-audit">FedEx audit</a>, your credits will be reflected on the audited
+                    invoice. But with a <a rel="nofollow" href="/parcel-audit/ups-audit">UPS audit</a>, your credits will post on a future invoice.
                 </p>
 
                 <p>
@@ -61,13 +61,13 @@
                    <i>Related Stuff</i>
                 </h2>
             <div class="row">
-                <a href="/parcel-freight-bill-audit" class="btn btn-info btn-inline">
+                <a rel="nofollow" href="/parcel-freight-bill-audit" class="btn btn-info btn-inline">
                     PARCEL &amp; FREIGHT AUDIT
                 </a>
-                <a href="/parcel-audit/ups-audit" class="btn btn-info btn-inline">
+                <a rel="nofollow" href="/parcel-audit/ups-audit" class="btn btn-info btn-inline">
                     UPS AUDIT
                 </a>
-                <a href="/parcel-audit/fedex-audit" class="btn btn-info btn-inline">
+                <a rel="nofollow" href="/parcel-audit/fedex-audit" class="btn btn-info btn-inline">
                     FEDEX AUDIT
                 </a>
             </div>

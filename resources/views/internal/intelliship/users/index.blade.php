@@ -25,7 +25,7 @@
                         @forelse($users as $user)
                             <tr>
                                 <td>
-                                    <a href="{{ url('internal/intelliship/users/'.$user->id) }}">
+                                    <a rel="nofollow" href="{{ url('internal/intelliship/users/'.$user->id) }}">
                                         {{ $user->contact_company }}
                                     </a>
                                 </td>

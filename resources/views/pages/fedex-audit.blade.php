@@ -28,7 +28,7 @@
                 <p>
                     A FedEx audit will no doubt lower your transportation costs and can help identify other potential
                     saving opportunities. And while most parcel audits are very similar, there are some subtle
-                    differences between a <a href="/parcel-audit/ups-audit">UPS audit</a> and a FedEx audit.
+                    differences between a <a rel="nofollow" href="/parcel-audit/ups-audit">UPS audit</a> and a FedEx audit.
                     Thankfully, no matter what carrier you employ, Lojistic has you covered.
                 </p>
 
@@ -42,7 +42,7 @@
                 <p>
                     Another difference between a FedEx audit and a UPS audit is that Lojistic is only able to post audit
                     UPS invoices. With a UPS audit, we are able to post-audit up to 6 months of data. Regardless of this
-                    difference, implementing a <a href="/parcel-audit">small parcel audit</a> is a great way to reduce costs and streamline your
+                    difference, implementing a <a rel="nofollow" href="/parcel-audit">small parcel audit</a> is a great way to reduce costs and streamline your
                     overall transportation operations.
                 </p>
 
@@ -63,13 +63,13 @@
                    <i>Related Stuff</i>
                 </h2>
             <div class="row">
-                <a href="/parcel-freight-bill-audit" class="btn btn-info btn-inline">
+                <a rel="nofollow" href="/parcel-freight-bill-audit" class="btn btn-info btn-inline">
                     PARCEL &amp; FREIGHT AUDIT
                 </a>
-                <a href="/parcel-audit" class="btn btn-info btn-inline">
+                <a rel="nofollow" href="/parcel-audit" class="btn btn-info btn-inline">
                     PARCEL AUDIT
                 </a>
-                <a href="/parcel-audit/ups-audit" class="btn btn-info btn-inline">
+                <a rel="nofollow" href="/parcel-audit/ups-audit" class="btn btn-info btn-inline">
                     UPS AUDIT
                 </a>
             </div>

@@ -37,7 +37,7 @@
                 </div>
                 <div class=" col-lg-4 col-md-4 hidden-xs hidden-sm">
                     <div class="banner-button">
-                        <a href="/audisee/instant-parcel-audit">
+                        <a rel="nofollow" href="/audisee/instant-parcel-audit">
                             <div class="btn btn-white btn-lg pull-right">AUDIT NOW</div>
                         </a>
                     </div>
@@ -131,7 +131,7 @@
                 <hr class="slim visible-xs"/>
             </div>
             <div class="col-sm-6 col-xs-12 text-center">
-                <a href="/audisee/instant-parcel-audit">
+                <a rel="nofollow" href="/audisee/instant-parcel-audit">
                     <div class="btn btn-lg btn-white">AUDIT FEDEX & UPS NOW</div>
                 </a>
             </div>
@@ -148,28 +148,28 @@
                 <div class="col-sm-10 col-sm-offset-1 ">
                     <div class="col-sm-10 col-sm-offset-1">
                         <div class="col-sm-3 col-xs-3 text-center">
-                            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//lojistic.com/audisee&title=Free%20Parcel%20Audit%20Web%20Tool&summary=Instantly%20audit%20your%20UPS%20and%20FedEx%20Invoice">
+                            <a rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//lojistic.com/audisee&title=Free%20Parcel%20Audit%20Web%20Tool&summary=Instantly%20audit%20your%20UPS%20and%20FedEx%20Invoice">
                                 <div class="social-circle brightBlue">
                                     <i class="eloji-linkedin fs-32 text-vc white"></i>
                                 </div>
                             </a>
                         </div>
                         <div class="col-sm-3  col-xs-3 text-center">
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//lojistic.com/audisee">
+                            <a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//lojistic.com/audisee">
                                 <div class="social-circle brightBlue">
                                     <i class="eloji-facebook fs-32 text-vc white"></i>
                                 </div>
                             </a>
                         </div>
                         <div class="col-sm-3 col-xs-3 text-center">
-                            <a href="https://twitter.com/home?status=Check%20out%20our%20free%20audit%20tool%3A%20http%3A//lojistic.com/audisee%20">
+                            <a rel="nofollow" href="https://twitter.com/home?status=Check%20out%20our%20free%20audit%20tool%3A%20http%3A//lojistic.com/audisee%20">
                                 <div class="social-circle brightBlue">
                                     <i class="eloji-twitter fs-32 text-vc white"></i>
                                 </div>
                             </a>
                         </div>
                         <div class="col-sm-3  col-xs-3 text-center">
-                            <a href="mailto:info@lojistic.com">
+                            <a rel="nofollow" href="mailto:info@lojistic.com">
                                 <div class="social-circle brightBlue">
                                     <i class="eloji-email fs-32 text-vc white"></i>
                                 </div>
@@ -212,7 +212,7 @@
                     <div class="huge-card">
                         <div class="huge-card-header brightBlue text-center">
                             <img width="500" src="/images/audisee-full-logo.png" alt="audisee audit logo">
-                            <a class="btn btn-primary btn-lg" href="/audisee/instant-parcel-audit"
+                            <a class="btn btn-primary btn-lg" rel="nofollow" href="/audisee/instant-parcel-audit"
                                style="position:relative; z-index: 10; width:250px; top:13px; margin: 0 auto -70px auto; border: #f4f4f4 1px solid;">
                                 AUDIT NOW
                             </a>
@@ -481,7 +481,7 @@
 
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-3 text-center">
-                            <a href="/audisee/instant-parcel-audit">
+                            <a rel="nofollow" href="/audisee/instant-parcel-audit">
                                 <div class="btn btn-primary btn-lg">GET YOUR PARCEL AUDIT RESULTS</div>
                             </a>
                         </div>

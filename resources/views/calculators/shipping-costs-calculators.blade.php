@@ -39,7 +39,7 @@
                 <br>
                 <br>
                 <br>
-                <a href="{{ route('rate-calculator') }}" class="btn btn-primary">
+                <a rel="nofollow" href="{{ route('rate-calculator') }}" class="btn btn-primary">
                     CALCULATE UPS &amp; FEDEX RATES
                 </a>
             </div>
@@ -89,7 +89,7 @@
                 <br>
                 <br>
                 <br>
-                <a href="{{ route('comparison-calculator') }}" class="btn btn-primary">
+                <a rel="nofollow" href="{{ route('comparison-calculator') }}" class="btn btn-primary">
                     COMPARE UPS &amp; FEDEX RATES
                 </a>
             </div>
@@ -104,7 +104,7 @@
                 <br>
                 <br>
                 <br>
-                <a href="{{ route('dim-calculator') }}" class="btn btn-primary">
+                <a rel="nofollow" href="{{ route('dim-calculator') }}" class="btn btn-primary">
                     DIMENSIONAL WEIGHT CALCULATOR
                 </a>
             </div>
@@ -149,7 +149,7 @@
                 <br>
                 <br>
                 <br>
-                <a href="{{ route('insurance-calculator') }}#insurance-calculator" class="btn btn-primary">
+                <a rel="nofollow" href="{{ route('insurance-calculator') }}#insurance-calculator" class="btn btn-primary">
                     SHIPPING INSURANCE CALCULATOR
                 </a>
             </div>

@@ -3,35 +3,35 @@
         <!-- the links -->
         <div class="col-lg-4 col-lg-offset-0 col-md-6 col-sm-6 col-xs-offset-0 col-xs-10 col-xs-offset-4">
             <h4 class="uppercase pull-left blog-categories flatGrey hidden-md hidden-sm hidden-xs">
-                <a href="/blog"><span class="flatGrey">Recent</span></a>
+                <a rel="nofollow" href="/blog"><span class="flatGrey">Recent</span></a>
                 &nbsp; | &nbsp;
-                <a href="/blog/categories"><span class="flatGrey">Categories</span>
+                <a rel="nofollow" href="/blog/categories"><span class="flatGrey">Categories</span>
                 </a>
             </h4>
             <div class="blog-social-footer">
                 <div class="col-xs-3 text-center">
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flojistic.com">
+                    <a rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flojistic.com">
                         <div class="circ circ-30 hover-color-opacity text-center" style="border:#898989 1px solid;">
                             <i class="eloji-linkedin text-vc fs-13 flatGrey"></i>
                         </div>
                     </a>
                 </div>
                 <div class="col-xs-3 text-center">
-                    <a  href="https://www.facebook.com/sharer/sharer.php?u=http%3A//lojistic.com" >
+                    <a  rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//lojistic.com" >
                         <div class="circ circ-30  hover-color-opacity text-center" style="border:#898989 1px solid;">
                             <i class="eloji-facebook text-vc fs-13 flatGrey"></i>
                         </div>
                     </a>
                 </div>
                 <div class="col-xs-3 text-center">
-                    <a href="https://twitter.com/home?status=Check%20out%3A%20http%3A//lojistic.com/" >
+                    <a rel="nofollow" href="https://twitter.com/home?status=Check%20out%3A%20http%3A//lojistic.com/" >
                         <div class="circ circ-30  hover-color-opacity text-center" style="border:#898989 1px solid;">
                             <i class="eloji-twitter text-vc fs-13 flatGrey"></i>
                         </div>
                     </a>
                 </div>
                 <div class="col-xs-3 text-center">
-                    <a href="mailto:info@lojistic.com" >
+                    <a rel="nofollow" href="mailto:info@lojistic.com" >
                         <div class="circ circ-30  hover-color-opacity text-center" style="border:#898989 1px solid;">
                             <i class="eloji-email text-vc fs-13 flatGrey"></i>
                         </div>
@@ -47,7 +47,7 @@
                    <h4 class="blog-categories flatGrey pull-right">Get the Latest Blog Updates...</h4>
                </div>
             <h4 class="blog-categories flatGrey pull-right hidden-lg">
-                <a href="/blog/newsletter"> Get the Latest Blog Updates.</a>
+                <a rel="nofollow" href="/blog/newsletter"> Get the Latest Blog Updates.</a>
             </h4>
 
         </div>

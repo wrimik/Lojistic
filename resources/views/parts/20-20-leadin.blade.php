@@ -13,7 +13,7 @@
                     donation to <br/>
                     <span class="flatCoral">CHARITY:<i>WATER</i></span>
                 </p>
-                <a href="/20-20" class="btn btn-primary btn-lg">FIND OUT MORE</a>
+                <a rel="nofollow" href="/20-20" class="btn btn-primary btn-lg">FIND OUT MORE</a>
             </article>
         </div>
     </div>

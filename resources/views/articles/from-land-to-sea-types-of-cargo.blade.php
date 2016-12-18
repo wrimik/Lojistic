@@ -31,7 +31,7 @@
                     follow regulations imposed onto them by federal, state, and local agencies.
                 </p>
                 <ul class="accessorial-charges checkmarks ul">
-                    <li><a href="http://www.fmcsa.dot.gov/safety-security/safety-initiatives/cargo/cs-manual-chap10.htm"
+                    <li><a rel="nofollow" href="http://www.fmcsa.dot.gov/safety-security/safety-initiatives/cargo/cs-manual-chap10.htm"
                            rel="nofollow">Driver's Handbook on Cargo Securement - Chapter 10: Heavy Vehicles, Equipment,
                             and Machinery</a></li>
                     <br/>
@@ -46,7 +46,7 @@
                         chemicals, oil, asbestos, petrol, diesel, and other undisclosed agents. Carriers and handlers
                         must exercise extreme caution when transporting these items to avoid accidents and potential
                         fatalities.</p>
-                    <li><a href="http://library.enlisted.info/field-manuals/series-2/FM21_305/CH19.PDF" rel="nofollow">Dangerous
+                    <li><a rel="nofollow" href="http://library.enlisted.info/field-manuals/series-2/FM21_305/CH19.PDF" rel="nofollow">Dangerous
                             and Hazardous Cargo and Materials (PDF)</a></li>
                     <br/>
 
@@ -61,7 +61,7 @@
                         of cargo as it may pose a risk of serious injury and fatality. Inflammable and combustible cargo
                         may include goods, such as oil seeds, diesel, cotton, oil, and jute.</p>
                     <li>
-                        <a href="http://www.gpo.gov/fdsys/search/pagedetails.action?browsePath=Title+46/Chapter+I/Subchapter+H/Part+70/Subpart+70.05/Section+70.05-30&granuleId=CFR-2011-title46-vol3-sec70-05-30&packageId=CFR-2011-title46-vol3&collapse=true&fromBrowse=true&bread=true"
+                        <a rel="nofollow" href="http://www.gpo.gov/fdsys/search/pagedetails.action?browsePath=Title+46/Chapter+I/Subchapter+H/Part+70/Subpart+70.05/Section+70.05-30&granuleId=CFR-2011-title46-vol3-sec70-05-30&packageId=CFR-2011-title46-vol3&collapse=true&fromBrowse=true&bread=true"
                            rel="nofollow">U.S. Government Printing Office: Combustible and Flammable Liquid</a></li>
                     <br/>
 
@@ -74,7 +74,7 @@
                         ores. Carriers and handlers must enact preventative measures to ensure that the concentrates and
                         ores do not absorb excessive moisture.</p>
                     <li>
-                        <a href="http://www.ukpandi.com/fileadmin/uploads/uk-pi/LP%20Documents/Carefully_to_Carry/Mineral%20ore%20concentrates%20and%20other%20materials%20which%20may%20liquefy.pdf"
+                        <a rel="nofollow" href="http://www.ukpandi.com/fileadmin/uploads/uk-pi/LP%20Documents/Carefully_to_Carry/Mineral%20ore%20concentrates%20and%20other%20materials%20which%20may%20liquefy.pdf"
                            rel="nofollow">Mineral Ore Concentrates and Other Materials That May Liquefy</a></li>
                     <br/>
 
@@ -87,7 +87,7 @@
                         exercise safety precautions when preparing bulk items, especially heavy metals with sharp and
                         rigged edges. Most transportation and distribution centers administer theirown safety protocol
                         in accordance with federal, state, and local regulations.</p>
-                    <li><a href="http://www.standard-club.com/docs/15056CargoJan2011Bulletinv06.pdf" rel="nofollow">Bulk
+                    <li><a rel="nofollow" href="http://www.standard-club.com/docs/15056CargoJan2011Bulletinv06.pdf" rel="nofollow">Bulk
                             Cargoes: Hold Preparation and Cleaning (PDF)</a></li>
                     <br/>
 
@@ -101,7 +101,7 @@
                         adhere to federal, state, and local regulations. In addition, the food products stored within
                         the refrigerated unit must not exceed its maximum capacity. Carriers and handlers who follow
                         these regulatory standards will minimize any potential loss.</p>
-                    <li><a href="http://blog.udot.utah.gov/wp-content/uploads/2011/09/refrigerated-freight-6_6_11.pdf"
+                    <li><a rel="nofollow" href="http://blog.udot.utah.gov/wp-content/uploads/2011/09/refrigerated-freight-6_6_11.pdf"
                            rel="nofollow">Refrigerated Freight in Utah (PDF)</a></li>
                     <br/>
 
@@ -113,7 +113,7 @@
                         personnel administering the shipment. Due to the size of these items, carriers and handlers
                         should restrain the equipment with the proper tools and materials. In addition, carriers and
                         handlers should wear the proper safety equipment to prevent potential injuries</p>
-                    <li><a href="http://www.hnsa.org/doc/pdf/fm55_17_army_cargo.pdf" rel="nofollow">Cargo Specialists'
+                    <li><a rel="nofollow" href="http://www.hnsa.org/doc/pdf/fm55_17_army_cargo.pdf" rel="nofollow">Cargo Specialists'
                             Handbook (PDF)</a></li>
                     <br/>
 
@@ -124,7 +124,7 @@
                         odors. This requires the transportation carrier to keep the freight in isolation, especially
                         when handlers have prepared the leather hides with salt. Carriers and handlers should wear
                         respirators when handling leather hides as they tend to emit noxious fumes.</p>
-                    <li><a href="http://www.tis-gdv.de/tis_e/ware/textil/textilien/textilien.htm" rel="nofollow">Textiles,
+                    <li><a rel="nofollow" href="http://www.tis-gdv.de/tis_e/ware/textil/textilien/textilien.htm" rel="nofollow">Textiles,
                             Fabric, and Cloth</a></li>
                     <br/>
 
@@ -137,11 +137,11 @@
                         care. In addition, the transportation vessel should have added protection to prevent incurring
                         damage. Carriers and handlers should wear safety equipment in the event these items shatter,
                         tear, burst, or otherwise become ruined.</p>
-                    <li><a href="http://www.worldshipping.org/pdf/industry_guidance_shippers_container_stuffers.pdf"
+                    <li><a rel="nofollow" href="http://www.worldshipping.org/pdf/industry_guidance_shippers_container_stuffers.pdf"
                            rel="nofollow">Safe Transport of Containers by Sea (PDF)</a></li>
                     <br/>
                 </ul>
-                <p>Written by <a href="/about-the-author-tyler-glassman" rel="author">Tyler Glassman</a></p>
+                <p>Written by <a rel="nofollow" href="/about-the-author-tyler-glassman" rel="author">Tyler Glassman</a></p>
             </article>
         </div>
     </section>

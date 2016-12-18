@@ -8,38 +8,38 @@
                 Calculators
             </h2>
             <div class="col-md-3 col-sm-6 col-xs-12">
-                <a href="/shipping-costs-calculators/fedex-ups-rates-calculator" >
+                <a rel="nofollow" href="/shipping-costs-calculators/fedex-ups-rates-calculator" >
                     <i class="navy fs-120 eloji eloji-calc"></i>
                 </a>
                 <br><br>
-                <a href="/shipping-costs-calculators/fedex-ups-rates-calculator" class="btn btn-primary">
+                <a rel="nofollow" href="/shipping-costs-calculators/fedex-ups-rates-calculator" class="btn btn-primary">
                     CUSTOM PARCEL RATES
                 </a>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12">
-                <a href="/shipping-costs-calculators/fedex-ups-rate-comparison-tool">
+                <a rel="nofollow" href="/shipping-costs-calculators/fedex-ups-rate-comparison-tool">
                     <i class="navy fs-120 eloji eloji-calc-rates"></i>
                 </a>
                 <br><br>
-                <a href="/shipping-costs-calculators/fedex-ups-rate-comparison-tool" class="btn btn-primary">
+                <a rel="nofollow" href="/shipping-costs-calculators/fedex-ups-rate-comparison-tool" class="btn btn-primary">
                     COMPARE UPS &amp; FEDEX
                 </a>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12">
-                <a href="/shipping-costs-calculators/fedex-ups-ground-dim-calculator" >
+                <a rel="nofollow" href="/shipping-costs-calculators/fedex-ups-ground-dim-calculator" >
                     <i class="navy fs-120 eloji eloji-dim"></i>
                 </a>
                 <br><br>
-                <a href="/shipping-costs-calculators/fedex-ups-ground-dim-calculator" class="btn btn-primary">
+                <a rel="nofollow" href="/shipping-costs-calculators/fedex-ups-ground-dim-calculator" class="btn btn-primary">
                     DIM WEIGHT CALCULATOR
                 </a>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12">
-                <a href="/shipping-insurance#insurance-calculator">
+                <a rel="nofollow" href="/shipping-insurance#insurance-calculator">
                     <i class="navy fs-120 eloji eloji-calc-insurance"></i>
                 </a>
                 <br><br>
-                <a href="/shipping-insurance#insurance-calculator" class="btn btn-primary">
+                <a rel="nofollow" href="/shipping-insurance#insurance-calculator" class="btn btn-primary">
                     INSURANCE COST CALCULATOR
                 </a>
             </div>

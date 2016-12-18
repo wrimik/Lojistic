@@ -3,10 +3,10 @@
 
 <?php
 $social_links = <<<EOT
-    <a target="_blank" href="mailto:%20?subject=&body=Hey...%0A%0ACheck%20out%20this%20awesome%20charitable%20campaign%20hosted%20by%20Lojistic.%0A%0AGreat%20idea...%20Great%20cause...%20and%20Lojistic%20Consulting%20is%20a%20pretty%20cool%20company.%0A%0AMight%20be%20worth%20checking%20out%20their%20services%20if%20your%20company%20spends%20a%20lot%20of%20money%20on%20shipping.%20%0A%0Awww.lojistic.com/20-20" class="social email">EMAIL</a>
-    <a target="_blank" href="http://twitter.com/home?status=AWESOME%20charitable%20campaign%20hosted%20by%20Lojistic.%20%20Great%20idea.%20%20Great%20cause.%20Lojistic%20is%20a%20pretty%20groovy%20company!%20http%3A%2F%2Ftinyurl.com%2Fnejjp79" class="social twitter">TWITTER</a>
-    <a target="_blank" href="https://www.facebook.com/sharer.php?s=2&appid=2305272732&p%5B0%5D=158284777562318&p%5B1%5D=1073741848&share_source_type=unknown" class="social facebook">FACEBOOK</a>
-    <a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.lojistic.com/20-20&title=20%20Minutes%20%3D%2020%20Dollars%20%3D%20Clean%20Water&summary=Check%20out%20this%20AWESOME%20charitable%20campaign%20hosted%20by%20Lojistic.%20Lojistic%20to%20Donate%20100k%20to%20charity%3A%20water%20Great%20idea.%20Great%20cause.%20Lojistic%20is%20a%20pretty%20groovy%20company!%20www.lojistic.com%2F20-20&source=" class="social linkedin">LINKEDIN</a>
+    <a target="_blank" rel="nofollow" href="mailto:%20?subject=&body=Hey...%0A%0ACheck%20out%20this%20awesome%20charitable%20campaign%20hosted%20by%20Lojistic.%0A%0AGreat%20idea...%20Great%20cause...%20and%20Lojistic%20Consulting%20is%20a%20pretty%20cool%20company.%0A%0AMight%20be%20worth%20checking%20out%20their%20services%20if%20your%20company%20spends%20a%20lot%20of%20money%20on%20shipping.%20%0A%0Awww.lojistic.com/20-20" class="social email">EMAIL</a>
+    <a target="_blank" rel="nofollow" href="http://twitter.com/home?status=AWESOME%20charitable%20campaign%20hosted%20by%20Lojistic.%20%20Great%20idea.%20%20Great%20cause.%20Lojistic%20is%20a%20pretty%20groovy%20company!%20http%3A%2F%2Ftinyurl.com%2Fnejjp79" class="social twitter">TWITTER</a>
+    <a target="_blank" rel="nofollow" href="https://www.facebook.com/sharer.php?s=2&appid=2305272732&p%5B0%5D=158284777562318&p%5B1%5D=1073741848&share_source_type=unknown" class="social facebook">FACEBOOK</a>
+    <a target="_blank" rel="nofollow" href="http://www.linkedin.com/shareArticle?mini=true&url=http://www.lojistic.com/20-20&title=20%20Minutes%20%3D%2020%20Dollars%20%3D%20Clean%20Water&summary=Check%20out%20this%20AWESOME%20charitable%20campaign%20hosted%20by%20Lojistic.%20Lojistic%20to%20Donate%20100k%20to%20charity%3A%20water%20Great%20idea.%20Great%20cause.%20Lojistic%20is%20a%20pretty%20groovy%20company!%20www.lojistic.com%2F20-20&source=" class="social linkedin">LINKEDIN</a>
 EOT;
 $social = <<<EOT
     <div class="social_links">
@@ -26,9 +26,9 @@ EOT;
 <div class="section yellow" id="contact_header">
     <div class="center">
         <div>
-            <span>CALL: </span>(800) 783-5753  |  <span>EMAIL: </span><a id='header_email' href="mailto:info@lojistic.com">info@lojistic.com</a>
+            <span>CALL: </span>(800) 783-5753  |  <span>EMAIL: </span><a id='header_email' rel="nofollow" href="mailto:info@lojistic.com">info@lojistic.com</a>
         </div>
-        <a id="headerlogo" href="http://www.lojistic.com/"><img src="/images/2020/logosmall.png" border="0"/></a>
+        <a id="headerlogo" rel="nofollow" href="http://www.lojistic.com/"><img src="/images/2020/logosmall.png" border="0"/></a>
     </div>
 </div>
 <div class="section navy">
@@ -257,9 +257,9 @@ www.Lojistic.com/20-20</textarea>
     </div>
 
     <div id="full_arrow">
-        <a target="_blank" href="http://www.lojistic.com/">LEARN MORE ABOUT Lojistic</a>
-        <a target="_blank" href="https://my.charitywater.org/Lojistic">TRACK 20/20 CAMPAIGN GIVING</a>
-        <a target="_blank" href="http://www.charitywater.com/">LEARN MORE ABOUT <span class="rt">charity:&nbsp;water</span></a>
+        <a target="_blank" rel="nofollow" href="http://www.lojistic.com/">LEARN MORE ABOUT Lojistic</a>
+        <a target="_blank" rel="nofollow" href="https://my.charitywater.org/Lojistic">TRACK 20/20 CAMPAIGN GIVING</a>
+        <a target="_blank" rel="nofollow" href="http://www.charitywater.com/">LEARN MORE ABOUT <span class="rt">charity:&nbsp;water</span></a>
     </div>
     <a href='www.lojistic.com/20-20'></a>
 </div>
@@ -341,8 +341,8 @@ www.Lojistic.com/20-20</textarea>
                     We would love to introduce ourselves.
                 </div>
                 <img src="/images/lojistic-logo.png">
-                <a target="_blank" href="mailto:info@lojistic.com">info@lojistic.com</a><br>
-                <a target="_blank" href="http://www.lojistic.com/">www.lojistic.com</a><br>
+                <a target="_blank" rel="nofollow" href="mailto:info@lojistic.com">info@lojistic.com</a><br>
+                <a target="_blank" rel="nofollow" href="http://www.lojistic.com/">www.lojistic.com</a><br>
                 <span>Phone: (800) 783-5753</span>
             </div>
         </div>

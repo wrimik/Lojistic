@@ -14,10 +14,10 @@
             </p>
             <hr class="slim"/>
             <p>
-                <a class="btn btn-info" href="/shipping-costs-calculators/fedex-ups-rate-comparison-tool/">
+                <a class="btn btn-info" rel="nofollow" href="/shipping-costs-calculators/fedex-ups-rate-comparison-tool/">
                     COMPARE RATES
                 </a>
-                <a class="btn btn-info" href="/shipping-costs-calculators/fedex-ups-rates-calculator/">
+                <a class="btn btn-info" rel="nofollow" href="/shipping-costs-calculators/fedex-ups-rates-calculator/">
                     CUSTOM RATES
                 </a>
             </p>

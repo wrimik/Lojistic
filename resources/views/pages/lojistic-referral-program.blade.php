@@ -74,7 +74,7 @@
                 <div class="col-xs-12">
                     <hr/>
                     <p class="text-center">
-                        Or email us at: <a href="mailto:referrals@lojistic.com">referrals@lojistic.com</a>
+                        Or email us at: <a rel="nofollow" href="mailto:referrals@lojistic.com">referrals@lojistic.com</a>
                     </p>
                 </div>
         </div>

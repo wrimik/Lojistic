@@ -16,7 +16,7 @@
                                     <img width="200" height="47" src="http://lojistic.com/images/lojistic-logo.png" alt="Lojistic">
                                 </td>
                                 <td width="50%">
-                                    <a style="font-size:24px;color:#353535;text-decoration:none;float:right;padding-top:5px;" href="tel:18007835753">
+                                    <a style="font-size:24px;color:#353535;text-decoration:none;float:right;padding-top:5px;" rel="nofollow" href="tel:18007835753">
                                         (800) 783-5753
                                     </a>
                                 </td>
@@ -50,11 +50,11 @@
                             <tr>
                                 <td align="center" style="display:block;border-bottom:4px solid #CF7E21;background-color:#F6921E">
                                     @if($calculator == 'Carrier Rates Calculator')
-                                        <a href="{{ url('shipping-costs-calculators/fedex-ups-rates-calculator') }}" style="text-decoration:none;color:#ffffff;font-size:24px;">
+                                        <a rel="nofollow" href="{{ url('shipping-costs-calculators/fedex-ups-rates-calculator') }}" style="text-decoration:none;color:#ffffff;font-size:24px;">
                                             Click Here To Run Another Custom Rate Calculation
                                         </a>
                                     @else
-                                        <a href="{{ url('shipping-costs-calculators/fedex-ups-rate-comparison-tool') }}" style="text-decoration:none;color:#ffffff;font-size:24px;">
+                                        <a rel="nofollow" href="{{ url('shipping-costs-calculators/fedex-ups-rate-comparison-tool') }}" style="text-decoration:none;color:#ffffff;font-size:24px;">
                                             Click Here To Run Another Rate Comparison
                                         </a>
                                     @endif
@@ -71,24 +71,24 @@
                 </tr>
                 <tr>
                     <td style="font-size:18px;line-height:20px;color:#02334D;padding-top:5px;font-weight:bold;">
-                        Call Us: <a style="color:#02334D;text-decoration:none;" href="tel:18007835753">(800) 783-5753</a>
+                        Call Us: <a style="color:#02334D;text-decoration:none;" rel="nofollow" href="tel:18007835753">(800) 783-5753</a>
                     </td>
                 </tr>
                 <tr>
                     <td style="font-size:18px;line-height:20px;color:#02334D;padding-top:5px;font-weight:bold;">
-                        <a href="http://www.lojistic.com" style="color:#02334D">www.Lojistic.com </a></td>
+                        <a rel="nofollow" href="http://www.lojistic.com" style="color:#02334D">www.Lojistic.com </a></td>
                 </tr>
                 <tr>
                     <td>
                         <table cellpadding="0" cellspacing="0" border="0" width="100%">
                             <tr>
-                                <td align="center" style="padding-top:45px;"><a href="http://www.Lojistic.com"><img width="121" height="28" src="http://lojistic.com/images/lojistic-logo.png" alt="Lojistic">
+                                <td align="center" style="padding-top:45px;"><a rel="nofollow" href="http://www.Lojistic.com"><img width="121" height="28" src="http://lojistic.com/images/lojistic-logo.png" alt="Lojistic">
                                     </a>
                                 </td>
                             </tr>
                             <tr>
                                 <td align="center" style="font-size:13px;color:#6F6F6F;padding-top:5px;padding-bottom:40px;">
-                                    <a style="color:#6F6F6F;text-decoration:none;" href="http://www.lojistic.com">Lojistic | 3200 Park Center Drive | Suite 500 | Costa Mesa, CA 92626
+                                    <a style="color:#6F6F6F;text-decoration:none;" rel="nofollow" href="http://www.lojistic.com">Lojistic | 3200 Park Center Drive | Suite 500 | Costa Mesa, CA 92626
                                     </a>
                                 </td>
                             </tr>

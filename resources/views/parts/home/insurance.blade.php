@@ -15,7 +15,7 @@
                 and offers huge savings.
             </p>
 
-            <a class="btn btn-success" href="/shipping-insurance">
+            <a class="btn btn-success" rel="nofollow" href="/shipping-insurance">
                 REDUCE INSURANCE COSTS
             </a>
         </div>
@@ -25,7 +25,7 @@
             <i class="eloji eloji-insurance flatBlue fs-200"></i>
             <br/>
             <br/>
-            <a class="btn btn-success btn-lg visible-xs" href="/shipping-insurance">
+            <a class="btn btn-success btn-lg visible-xs" rel="nofollow" href="/shipping-insurance">
                 REDUCE INSURANCE COSTS
             </a>
         </div>

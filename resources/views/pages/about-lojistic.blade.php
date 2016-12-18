@@ -31,7 +31,7 @@
                     Cloud based multi-carrier rate shopping and shipment routing software.
                 </p>
                 <p>
-                    <a class="btn btn-primary pull-right" href="/shipping-software">A Better Shipping Solution</a>
+                    <a class="btn btn-primary pull-right" rel="nofollow" href="/shipping-software">A Better Shipping Solution</a>
                 </p>
                 <hr/>
                 <h3>Package Tracking Software:</h3>
@@ -39,18 +39,18 @@
                     Cloud-based multi-carrier transportation visibility and management software.
                 </p>
                 <p>
-                    <a class="btn btn-primary pull-right" href="/halo">Get Visibility</a>
+                    <a class="btn btn-primary pull-right" rel="nofollow" href="/halo">Get Visibility</a>
                 </p>
                 <hr/>
                 <h3>Parcel Audit Services:</h3>
                 <p>
                     Recover carrier billing errors and service failures with Lojistic's
-                    <a href="/parcel-audit">parcel audit</a> services, ensuring every UPS
+                    <a rel="nofollow" href="/parcel-audit">parcel audit</a> services, ensuring every UPS
                     and FedEx invoice is correct and that
                     shipping contract rates are billed accurately.
                 </p>
                 <p>
-                    <a class="btn btn-primary pull-right" href="/parcel-freight-bill-audit">See How Much you Can Save</a>
+                    <a class="btn btn-primary pull-right" rel="nofollow" href="/parcel-freight-bill-audit">See How Much you Can Save</a>
                 </p>
                 <hr/>
                 <h3>Carrier Negotiation:</h3>
@@ -59,7 +59,7 @@
                     to identify cost saving opportunities.
                 </p>
                 <p>
-                    <a class="btn btn-primary pull-right" href="/carrier-contract-negotiation">Get The Best Rates</a>
+                    <a class="btn btn-primary pull-right" rel="nofollow" href="/carrier-contract-negotiation">Get The Best Rates</a>
                 </p>
                 <hr/>
                 <h3>Shipping Insurance:</h3>
@@ -69,7 +69,7 @@
                     process.
                 </p>
                 <p>
-                    <a class="btn btn-primary pull-right" href="/shipping-insurance">Compare Our Prices</a>
+                    <a class="btn btn-primary pull-right" rel="nofollow" href="/shipping-insurance">Compare Our Prices</a>
                 </p>
                 <hr/>
                 <h3>Freight Management:</h3>
@@ -90,7 +90,7 @@
                     spite of heightened industry challenges and emerging competitor freight auditing companies.
                 </p>
                 <p>
-                    <a class="btn btn-primary pull-right" href="/freight-management">See How We Can Help</a>
+                    <a class="btn btn-primary pull-right" rel="nofollow" href="/freight-management">See How We Can Help</a>
                 </p>
             </article>
         </div>

@@ -13,7 +13,7 @@
         <h4 class="fs-20 flatBlue" class="flatBlue">{!! $title !!}</h4>
         <p>
             <br>
-            <a href="{{ $url }}">
+            <a rel="nofollow" href="{{ $url }}">
                 @if(isset($eloji))
                     <i class="eloji {{ $eloji }} fs-96 flatBlue"></i>
                 @elseif($imgSrc)
@@ -23,7 +23,7 @@
         </p>
 
         <div class="row">
-            <a href="{{ $url }}" class="btn btn-primary">
+            <a rel="nofollow" href="{{ $url }}" class="btn btn-primary">
                 {!! $btnText !!}
             </a>
         </div>

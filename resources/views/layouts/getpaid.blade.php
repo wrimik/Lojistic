@@ -26,10 +26,10 @@
     <meta name="google-site-verification" content="eBYNXDV6ZHulQJJkGqz9w_aSKqu1zgBreW7OqiTGU9Y" />
     <meta name="msvalidate.01" content="151CF70A3ADC6AE6546B13B38C93FE5C" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-    <link href="https://plus.google.com/104242186661397386656" rel="publisher" />
+    <link rel="nofollow" href="https://plus.google.com/104242186661397386656" rel="publisher" />
 <!--  favicons  -->
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" rel="nofollow" href="/favicon.png" />
+    <link rel="shortcut icon" type="image/png" rel="nofollow" href="/favicon.png" />
 <!--  libraries  -->
     {!! Html::style('https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css') !!}
     {!! Html::style('/css/fonts.css?v='.v()) !!}

@@ -10,7 +10,7 @@
             </div>
             <div class="col-md-6 col-md-offset-3 col-xs-12 text-center">
                 <br>
-                <a  class="btn btn-thick christmasRed uppercase" href="/give">
+                <a  class="btn btn-thick christmasRed uppercase" rel="nofollow" href="/give">
                     Learn more
                 </a>
             </div>

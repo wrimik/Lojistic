@@ -69,17 +69,17 @@
             <td class="year">2015</td>
             <td></td>
             <td class="rates">
-                <a href="#">UPS Daily Rates</a>
-                <a href="#">UPS Standard Rates</a>
-                <a href="#">FedEx Rates</a>
+                <a rel="nofollow" href="#">UPS Daily Rates</a>
+                <a rel="nofollow" href="#">UPS Standard Rates</a>
+                <a rel="nofollow" href="#">FedEx Rates</a>
             </td>
             <td class="break"></td>
             <td class="year">2012</td>
             <td></td>
             <td class="rates">
-                <a href="#">UPS Daily Rates</a>
-                <a href="#">UPS Standard Rates</a>
-                <a href="#">FedEx Rates</a>
+                <a rel="nofollow" href="#">UPS Daily Rates</a>
+                <a rel="nofollow" href="#">UPS Standard Rates</a>
+                <a rel="nofollow" href="#">FedEx Rates</a>
             </td>
         </tr>
         <tr><td class="row-break" colspan="7"></td></tr>
@@ -87,17 +87,17 @@
             <td class="year">2014</td>
             <td></td>
             <td class="rates">
-                <a href="#">UPS Daily Rates</a>
-                <a href="#">UPS Standard Rates</a>
-                <a href="#">FedEx Rates</a>
+                <a rel="nofollow" href="#">UPS Daily Rates</a>
+                <a rel="nofollow" href="#">UPS Standard Rates</a>
+                <a rel="nofollow" href="#">FedEx Rates</a>
             </td>
             <td class="break"></td>
             <td class="year">2011</td>
             <td></td>
             <td class="rates">
-                <a href="#">UPS Daily Rates</a>
-                <a href="#">UPS Standard Rates</a>
-                <a href="#">FedEx Rates</a>
+                <a rel="nofollow" href="#">UPS Daily Rates</a>
+                <a rel="nofollow" href="#">UPS Standard Rates</a>
+                <a rel="nofollow" href="#">FedEx Rates</a>
             </td>
         </tr>
         <tr><td class="row-break" colspan="7"></td></tr>
@@ -105,17 +105,17 @@
             <td class="year">2013</td>
             <td></td>
             <td class="rates">
-                <a href="#">UPS Daily Rates</a>
-                <a href="#">UPS Standard Rates</a>
-                <a href="#">FedEx Rates</a>
+                <a rel="nofollow" href="#">UPS Daily Rates</a>
+                <a rel="nofollow" href="#">UPS Standard Rates</a>
+                <a rel="nofollow" href="#">FedEx Rates</a>
             </td>
             <td class="break"></td>
             <td class="year">2010</td>
             <td></td>
             <td class="rates">
-                <a href="#">UPS Daily Rates</a>
-                <a href="#">UPS Standard Rates</a>
-                <a href="#">FedEx Rates</a>
+                <a rel="nofollow" href="#">UPS Daily Rates</a>
+                <a rel="nofollow" href="#">UPS Standard Rates</a>
+                <a rel="nofollow" href="#">FedEx Rates</a>
             </td>
         </tr>
     </table>

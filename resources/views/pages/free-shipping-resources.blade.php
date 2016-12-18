@@ -27,10 +27,10 @@
         <div class="container">
             <h2>Up Next!</h2>
             <div class="col-xs-6 text-right">
-                <a href="/videos" class="btn btn-md btn-info">SWEET VIDEOS</a>
+                <a rel="nofollow" href="/videos" class="btn btn-md btn-info">SWEET VIDEOS</a>
             </div>
             <div class="col-xs-6">
-                <a href="/contact-lojistic" class="btn btn-md  btn-info">CONTACT US</a>
+                <a rel="nofollow" href="/contact-lojistic" class="btn btn-md  btn-info">CONTACT US</a>
             </div>
         </div>
     </section>

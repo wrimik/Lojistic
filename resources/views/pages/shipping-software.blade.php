@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class="col-centered col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12">
-                <a href="/shipping-software/sign-up/" class="btn btn-thick green text-center hover-color-opacity uppercase">
+                <a rel="nofollow" href="/shipping-software/sign-up/" class="btn btn-thick green text-center hover-color-opacity uppercase">
                     try it out
                 </a>
             </div>
@@ -99,7 +99,7 @@
             <!-- end checklist -->
             <div class="text-center">
                 <div class="col-sm-6 col-sm-offset-3"><br>
-                    <a href="/shipping-software/sign-up" class="btn btn-lg green">
+                    <a rel="nofollow" href="/shipping-software/sign-up" class="btn btn-lg green">
                         <span class="white">CREATE YOUR ACCOUNT</span>
                     </a>
                 </div>
@@ -166,7 +166,7 @@
                 Go Sign Up, It's Free!</h1>
             <br>
             <br>
-            <a href="/shipping-software/sign-up" class="btn btn-lg white">
+            <a rel="nofollow" href="/shipping-software/sign-up" class="btn btn-lg white">
                 <span class="green">CREATE YOUR ACCOUNT</span>
             </a>
         </div>
@@ -185,7 +185,7 @@
                     <div class="col-sm-10 col-sm-offset-1">
                         <div class="col-sm-3 col-xs-3 text-center">
 
-                            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.lojistic.com/shipping-software&title=Free%20Online%20Shipping%20Software&summary=&source=Lojistic.com">
+                            <a rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//www.lojistic.com/shipping-software&title=Free%20Online%20Shipping%20Software&summary=&source=Lojistic.com">
                              @include('parts.snippets.social-circles', array(
                                'circleSize'=>'circ-75',
                                'hover'=> 'social-hover',
@@ -195,7 +195,7 @@
                             </a>
                         </div>
                         <div class="col-sm-3  col-xs-3 text-center">
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.lojistic.com/shipping-software">
+                            <a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.lojistic.com/shipping-software">
                                 @include('parts.snippets.social-circles', array(
                                   'circleSize'=>'circ-75',
                                    'hover'=> 'social-hover',
@@ -205,7 +205,7 @@
                             </a>
                         </div>
                         <div class="col-sm-3 col-xs-3 text-center">
-                            <a href="https://twitter.com/home?status=Check%20out%20an%20awesome%20free%20shipping%20tool!%20https%3A//www.facebook.com/sharer/sharer.php?u=https%253A//www.lojistic.com/shipping-software">
+                            <a rel="nofollow" href="https://twitter.com/home?status=Check%20out%20an%20awesome%20free%20shipping%20tool!%20https%3A//www.facebook.com/sharer/sharer.php?u=https%253A//www.lojistic.com/shipping-software">
                                 @include('parts.snippets.social-circles', array(
                                   'circleSize'=>'circ-75',
                                    'hover'=> 'social-hover',
@@ -216,7 +216,7 @@
 
                         </div>
                         <div class="col-sm-3  col-xs-3 text-center">
-                            <a class="green-hover" href="mailto:info@lojistic.com">
+                            <a class="green-hover" rel="nofollow" href="mailto:info@lojistic.com">
                                 @include('parts.snippets.social-circles', array(
                                   'circleSize'=>'circ-75',
                                    'hover'=> 'social-hover',
@@ -430,7 +430,7 @@
                 </p>
             </div>
             <div class="col-sm-5 col-sm col-xs-12 text-vc">
-                <a href="/shipping-software/sign-up" class="btn btn-info btn-lg">
+                <a rel="nofollow" href="/shipping-software/sign-up" class="btn btn-info btn-lg">
                     <span class="green">CREATE YOUR ACCOUNT</span>
                 </a>
             </div>

@@ -26,7 +26,7 @@ include('parts.snippets.flag', array(
         </p>
         @if(isset($btnText))
             <br/>
-            <a class="btn btn-primary" href="{{ $url }}">
+            <a class="btn btn-primary" rel="nofollow" href="{{ $url }}">
                 <i class="eloji {{ $btnEloji or '' }} {{ $btnElojiColor or 'white' }}"></i>
                 {!! $btnText !!}
             </a>

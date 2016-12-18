@@ -100,16 +100,16 @@
             </p>
 
             <ul class="accessorial-charges checkmarks ul">
-                <li><a href="http://www.auburn.edu/~johnspm/gloss/barter" target="blank"> A Glossary of Political Terms: Bartering </a></li>
-                <li><a href="http://library.thinkquest.org/28718/history.html#Barter" target="blank"> The History of Money: Barter </a></li>
-                <li><a href="http://www.livinghistoryfarm.org/farminginthe30s/money_12.html" target="blank"> Barter Economies: The Depression </a></li>
-                <li><a href="http://dspace.mit.edu/bitstream/handle/1721.1/48253/internationalbar00tsch.pdf" target="blank"> International Barter </a></li>
-                <li><a href="http://pubs.iied.org/pdfs/14518IIED.pdf" target="blank"> Barter Markets: Sustaining Tribal Peoples in the Andes </a></li>
-                <li><a href="http://anthro.palomar.edu/economy/econ_2.htm" rel="nofollow">Non-Market Economies</a></li>
-                <li><a href="http://www-bcf.usc.edu/~lharris/Trading/Book/Book-extract.pdf" rel="nofollow"> Trading and Exchanges </a></li>
-                <li><a href="http://ecedweb.unomaha.edu/ve/library/bfte.pdf" target="blank"> The Basics of Foreign Trade Exchanges </a></li>
+                <li><a rel="nofollow" href="http://www.auburn.edu/~johnspm/gloss/barter" target="blank"> A Glossary of Political Terms: Bartering </a></li>
+                <li><a rel="nofollow" href="http://library.thinkquest.org/28718/history.html#Barter" target="blank"> The History of Money: Barter </a></li>
+                <li><a rel="nofollow" href="http://www.livinghistoryfarm.org/farminginthe30s/money_12.html" target="blank"> Barter Economies: The Depression </a></li>
+                <li><a rel="nofollow" href="http://dspace.mit.edu/bitstream/handle/1721.1/48253/internationalbar00tsch.pdf" target="blank"> International Barter </a></li>
+                <li><a rel="nofollow" href="http://pubs.iied.org/pdfs/14518IIED.pdf" target="blank"> Barter Markets: Sustaining Tribal Peoples in the Andes </a></li>
+                <li><a rel="nofollow" href="http://anthro.palomar.edu/economy/econ_2.htm" rel="nofollow">Non-Market Economies</a></li>
+                <li><a rel="nofollow" href="http://www-bcf.usc.edu/~lharris/Trading/Book/Book-extract.pdf" rel="nofollow"> Trading and Exchanges </a></li>
+                <li><a rel="nofollow" href="http://ecedweb.unomaha.edu/ve/library/bfte.pdf" target="blank"> The Basics of Foreign Trade Exchanges </a></li>
             </ul>
-            <p>Written by <a href="/about-the-author-tyler-glassman" rel="author">Tyler Glassman</a></p>
+            <p>Written by <a rel="nofollow" href="/about-the-author-tyler-glassman" rel="author">Tyler Glassman</a></p>
         </article>
     </div>
 </section>

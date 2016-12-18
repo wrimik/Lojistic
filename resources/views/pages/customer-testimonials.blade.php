@@ -138,7 +138,7 @@
 
 
             <p>Customer references are available upon request to help you further research our solutions: <strong><a
-                            href="mailto:info@lojistic.com">info@lojistic.com</a></strong></p>
+                            rel="nofollow" href="mailto:info@lojistic.com">info@lojistic.com</a></strong></p>
         </div>
     </section>
 

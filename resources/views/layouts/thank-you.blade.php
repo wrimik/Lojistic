@@ -26,7 +26,7 @@
                 @endif
                 <div class="row">
                     <div class="col-sm-4 col-sm-offset-4 col-xs-12">
-                        <a href="{{ $btnUrl }}" class="btn {{ $btnType or 'btn-success' }} btn-thick" {{ $btnAttr or ''}}>
+                        <a rel="nofollow" href="{{ $btnUrl }}" class="btn {{ $btnType or 'btn-success' }} btn-thick" {{ $btnAttr or ''}}>
                             @if(isset($btnFaIconClass))
                                 <i class="fa {{ $btnFaIconClass }}"></i>
                             @endif
@@ -37,7 +37,7 @@
                 <hr/>
                 <p class="text-center">
                     To reach a member of our team immediately, call us: (800) 783-5753  or email us:
-                    <a href="mailto:info@lojistic.com">info@lojistic.com</a>
+                    <a rel="nofollow" href="mailto:info@lojistic.com">info@lojistic.com</a>
                 </p>
             </article>
         </div>

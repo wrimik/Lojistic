@@ -9,7 +9,7 @@
  */
 ?>
 <div class="pog-container flip-container text-center" ontouchstart="this.classList.toggle('hover');">
-    <a href="{{ $url }}" {{ $linkAttr or '' }}>
+    <a rel="nofollow" href="{{ $url }}" {{ $linkAttr or '' }}>
         <span class="pog flipper">
             @if(isset($eloji))
                 <div class="pog-img flip-front fs-76 text-center {{ $color }}">

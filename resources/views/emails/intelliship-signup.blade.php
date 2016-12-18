@@ -19,7 +19,7 @@
                                 </td>
                                 <td width="50%">
                                     <a style="font-size:24px;color:#353535;text-decoration:none;float:right;padding-top:5px;"
-                                       href="tel:18007835753">
+                                       rel="nofollow" href="tel:18007835753">
                                         (800) 783-5753
                                     </a>
                                 </td>
@@ -45,7 +45,7 @@
                                 <td align="center" style="background-color:#F6921E;">
                                     GO LOG IN HERE:
                                     <a style="padding-top:20px;padding-left:20px;padding-right:20px;padding-bottom:20px;color:#fff;font-size:20px;text-decoration:none;"
-                                       href="https://shipping.lojistic.com/">
+                                       rel="nofollow" href="https://shipping.lojistic.com/">
                                         https://shipping.lojistic.com/
                                     </a>
                                 </td>
@@ -70,7 +70,7 @@
                         <table cellpadding="0" cellspacing="0" border="0" width="100%">
                             <tr>
                                 <td align="center" style="padding-top:45px;">
-                                    <a href="http://www.Lojistic.com">
+                                    <a rel="nofollow" href="http://www.Lojistic.com">
                                         <img width="121" height="28" src="http://lojistic.com/images/lojistic-logo.png"
                                              alt="Lojistic">
                                     </a>
@@ -79,7 +79,7 @@
                             <tr>
                                 <td align="center"
                                     style="font-size:13px;color:#6F6F6F;padding-top:5px;padding-bottom:40px;">
-                                    <a style="color:#6F6F6F;text-decoration:none;" href="http://www.lojistic.com">
+                                    <a style="color:#6F6F6F;text-decoration:none;" rel="nofollow" href="http://www.lojistic.com">
                                         Lojistic | 3200 Park Center Drive | Suite 500 | Costa Mesa, CA 92626
                                     </a>
                                 </td>

@@ -4,7 +4,7 @@
     </h3>
     <p class="fs-16 flatGrey fakeOl fw-thin">
         <span>1 )</span> Sign in to <a
-                href="https://www.fedex.com/fedexbillingonline/applications.jsp"
+                rel="nofollow" href="https://www.fedex.com/fedexbillingonline/applications.jsp"
                 target="_blank">FedEx.com</a><br/>
         <span>2 )</span> Find a large invoice that is older than 1 week, and click the Invoice Number<br/>
         <span>&nbsp;&nbsp;</span> <a class="btn btn-info no-invoices">No Invoices?</a><br/>

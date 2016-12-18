@@ -43,7 +43,7 @@
     </div>
     <div class="col-sm-8 text-right">
         {{--<a class="btn-download excel-download" target="_blank"--}}
-           {{--href="{{ route('download-excel', ['function'=>'compareRatesToExcel','q'=>Input::only('c.1','c.2')]) }}">--}}
+           {{--rel="nofollow" href="{{ route('download-excel', ['function'=>'compareRatesToExcel','q'=>Input::only('c.1','c.2')]) }}">--}}
             {{--<i class="eloji eloji-excel"></i> DOWNLOAD EXCEL--}}
         {{--</a>--}}
     </div>

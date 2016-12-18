@@ -157,8 +157,8 @@
                 that's the kind of thing a person would have to determine after looking at your account.
             </p>
             <p class="text-center">
-                <a class="btn btn-info" href="signup-insurance.php">RESET THE CALCULATOR</a>
-                <a class="btn btn-info" href="signup-insurance.php">GET A CUSTOM QUOTE</a>
+                <a class="btn btn-info" rel="nofollow" href="signup-insurance.php">RESET THE CALCULATOR</a>
+                <a class="btn btn-info" rel="nofollow" href="signup-insurance.php">GET A CUSTOM QUOTE</a>
             </p>
         </div>
     </section>

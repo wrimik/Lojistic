@@ -15,7 +15,7 @@
                     Source Consulting Proudly Announces the Greater Good Initiative
                 </h3>
                 <p>
-                    <a href="http://www.lojistic.com/blog/greater-good-initiative-announcement/">
+                    <a rel="nofollow" href="http://www.lojistic.com/blog/greater-good-initiative-announcement/">
                     The Greater Good Initiative</a> dedicates an entire work day for our employees
                     to volunteer and help out charitable organizations, all for the &lsquo;Greater Good&rsquo;.
                 </p>
@@ -25,7 +25,7 @@
                 </h3>
                 <p>
                     Luke Kupersmith, President of
-                    <a href="http://www.3plnews.com/3pl/new-3pl-news-video-luke-kupersmith-president-of-source-consulting.html" rel="nofollow external" target="_blank">
+                    <a rel="nofollow" href="http://www.3plnews.com/3pl/new-3pl-news-video-luke-kupersmith-president-of-source-consulting.html" rel="nofollow external" target="_blank">
                     Source Consulting, speaks with 3PL News</a> about the benefits of parcel
                     and freight auditing, and discusses various strategies employed by Source
                     Consulting to reduce shipping cost.
@@ -36,7 +36,7 @@
                 </h3>
                 <p>
                     Source Consulting is proud to announce a
-                    <a href="http://www.lojistic.com/blog/source-consulting-and-global-logistics-media-partnership/">
+                    <a rel="nofollow" href="http://www.lojistic.com/blog/source-consulting-and-global-logistics-media-partnership/">
                     partnership with Global Logistics Media (GLM)</a> in providing blog posts on cost-saving
                     shipping advice along with discussionson the freight and transportation industry.
                 </p>
@@ -46,7 +46,7 @@
                 </h3>
                 <p>
                     Source Consulting is
-                    <a href="http://www.supplychaindigital.com/global_logistics/source-consultings-supply-chain-success-story" rel="nofollow external" target="_blank">
+                    <a rel="nofollow" href="http://www.supplychaindigital.com/global_logistics/source-consultings-supply-chain-success-story" rel="nofollow external" target="_blank">
                         Making Waves in the Supply Chain Industry
                     </a>
                 </p>
@@ -56,7 +56,7 @@
                 </h3>
                 <p>
                     Source Consulting CEO Luke Kupersmith shares his entrepreneurial insight in
-                    a <a href="http://ceoworld.biz/ceo/2011/11/06/entrepreneur-luke-kupersmith-has-always-liked-a-challenge" rel="nofollow external" target="_blank">
+                    a <a rel="nofollow" href="http://ceoworld.biz/ceo/2011/11/06/entrepreneur-luke-kupersmith-has-always-liked-a-challenge" rel="nofollow external" target="_blank">
                         CEO World Magazine feature.</a>
                 </p>
                 <hr/>
@@ -65,7 +65,7 @@
                 </h3>
                 <p>
                     Source Consulting is proud to make
-                    <a href="http://www.prweb.com/releases/2011/9/prweb8778267.htm" rel="nofollow external" target="_blank">
+                    <a rel="nofollow" href="http://www.prweb.com/releases/2011/9/prweb8778267.htm" rel="nofollow external" target="_blank">
                         Inc Mag's 500 Fastest Growing Private Companies. We&rsquo;re ranked #469</a>
                 </p>
             </article>
@@ -80,7 +80,7 @@
                 </h3>
                 <p>
                     Download a PDF report of the
-                    <a href="http://www.lojistic.com/pdf/UPS%20Fedex%20General%20Price%20Increase%20History.pdf" rel="nofollow external">
+                    <a rel="nofollow" href="http://www.lojistic.com/pdf/UPS%20Fedex%20General%20Price%20Increase%20History.pdf" rel="nofollow external">
                         2014 General Price Increase
                     </a>
                 </p>
@@ -89,13 +89,13 @@
                     Fuel Surcharge - UPS and FedEx Fuel Surcharges
                 </h3>
                 <p>
-                    Current <strong><a href="http://www.ups.com/content/us/en/shipping/cost/zones/fuel_surcharge.html" rel="nofollow external">UPS Fuel Surcharge</a></strong>
+                    Current <strong><a rel="nofollow" href="http://www.ups.com/content/us/en/shipping/cost/zones/fuel_surcharge.html" rel="nofollow external">UPS Fuel Surcharge</a></strong>
                 </p>
                 <p>
-                    Current <strong><a href="http://www.fedex.com/us/services/fuelsurcharge.html" rel="nofollow external">FedEx Fuel Surcharge</a></strong>
+                    Current <strong><a rel="nofollow" href="http://www.fedex.com/us/services/fuelsurcharge.html" rel="nofollow external">FedEx Fuel Surcharge</a></strong>
                 </p>
                 <p>
-                    Download a PDF report of the <strong><a href="http://www.lojistic.com/pdf/UPS%20Fedex%20Fuel%20Surcharge%20History.pdf" rel="nofollow external">Carrier Fuel Surcharge History</a></strong>
+                    Download a PDF report of the <strong><a rel="nofollow" href="http://www.lojistic.com/pdf/UPS%20Fedex%20Fuel%20Surcharge%20History.pdf" rel="nofollow external">Carrier Fuel Surcharge History</a></strong>
                 </p>
                 <hr/>
                 <h3>

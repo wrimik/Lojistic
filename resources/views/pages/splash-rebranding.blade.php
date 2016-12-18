@@ -246,7 +246,7 @@
                 <div>
                     <img src="/images/splash/t-rates.png"/>
                 </div>
-                <a oldhref="http://sourceconsulting.com/fedex-ups-ground-dim-calculator">
+                <a oldrel="nofollow" href="http://sourceconsulting.com/fedex-ups-ground-dim-calculator">
                     Generate a Custom<br/>
                     FedEx or UPS Rate Sheet
                 </a>
@@ -255,7 +255,7 @@
                 <div>
                     <img src="/images/splash/t-compare.png"/>
                 </div>
-                <a oldhref="http://sourceconsulting.com/shipping-costs-calculators/fedex-ups-rate-comparison-tool">
+                <a oldrel="nofollow" href="http://sourceconsulting.com/shipping-costs-calculators/fedex-ups-rate-comparison-tool">
                     Compare UPS<br/>
                     vs FedEx Costs
                 </a>
@@ -264,7 +264,7 @@
                 <div>
                     <img src="/images/splash/t-dim.png"/>
                 </div>
-                <a oldhref="http://sourceconsulting.com/fedex-ups-ground-dim-calculator">
+                <a oldrel="nofollow" href="http://sourceconsulting.com/fedex-ups-ground-dim-calculator">
                     Dimensional Weight<br/>
                     Pricing (DIM) Calculator
                 </a>
@@ -273,7 +273,7 @@
                 <div>
                     <img src="/images/splash/t-ins.png"/>
                 </div>
-                <a oldhref="http://sourceconsulting.com/shipping-insurance">
+                <a oldrel="nofollow" href="http://sourceconsulting.com/shipping-insurance">
                     Shipping Insurance<br/>
                     Savings Calculator
                 </a>
@@ -282,7 +282,7 @@
                 <div>
                     <img src="/images/splash/t-savings.png"/>
                 </div>
-                <a oldhref="http://sourceconsulting.com/savings-checklist">
+                <a oldrel="nofollow" href="http://sourceconsulting.com/savings-checklist">
                     Savings<br/>
                     Checklist
                 </a>

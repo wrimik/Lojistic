@@ -25,8 +25,8 @@
     <section class="flatCream">
         <div class="container text-center">
             <h2>Continue Exploring:</h2>
-            <a href="/" class="btn btn-primary">RETURN HOME</a>
-            <a href="/parcel-freight-bill-audit" class="btn btn-primary">LEARN MORE ABOUT AUDIT</a>
+            <a rel="nofollow" href="/" class="btn btn-primary">RETURN HOME</a>
+            <a rel="nofollow" href="/parcel-freight-bill-audit" class="btn btn-primary">LEARN MORE ABOUT AUDIT</a>
         </div>
     </section>
 @stop

@@ -23,7 +23,7 @@
                 </p>
                 <hr class="slim">
             </div>
-            <a target="_blank" href="https://shipping.lojistic.com" class="btn btn-lg green">
+            <a target="_blank" rel="nofollow" href="https://shipping.lojistic.com" class="btn btn-lg green">
                 LOG IN &amp; START SHIPPING!
             </a>
         </div>

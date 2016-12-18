@@ -46,7 +46,7 @@
                                 <div class="social-bar">
                                     <div class="col-xs-3 np">
                                         <a class="btn btn-lg social-share-button brightBlue "
-                                           href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flojisic.com/videos"
+                                           rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flojisic.com/videos"
                                            target="_blank"
                                            style="border-radius:0px;">
                                             <i class="eloji-facebook"></i> <span class="hidden-xs"> facebook</span>
@@ -54,7 +54,7 @@
                                     </div>
                                     <div class="col-xs-3 np">
                                         <a class="btn btn-lg social-share-button accentLightBlue"
-                                           href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.lojistic.com%2Fvideos&via=LojisticUSA"
+                                           rel="nofollow" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.lojistic.com%2Fvideos&via=LojisticUSA"
                                            target="_blank"
                                            style="border-radius:0px;">
                                             <i class="eloji-twitter white"></i><span
@@ -63,7 +63,7 @@
                                     </div>
                                     <div class="col-xs-3 np">
                                         <a class="btn btn-lg social-share-button red"
-                                           href="https://plus.google.com/share?url=https%3A%2F%2Fwww.lojistic.com%2Fvideos"
+                                           rel="nofollow" href="https://plus.google.com/share?url=https%3A%2F%2Fwww.lojistic.com%2Fvideos"
                                            target="_blank"
                                            style="border-radius:0px;">
                                             <i class="eloji-google-plus"></i><span class="hidden-xs"> Google+</span>
@@ -71,7 +71,7 @@
                                     </div>
                                     <div class="col-xs-3 np">
                                         <a class="btn btn-lg social-share-button brightBlue"
-                                           href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.lojistic.com%2Fvideos"
+                                           rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.lojistic.com%2Fvideos"
                                            target="_blank"
                                            style="border-radius:0px;">
                                             <i class="eloji-linkedin"></i><span class="hidden-xs"> linked In</span>
@@ -92,7 +92,7 @@
                             </div>
                             </p>
                             <div class="col-xs-12 col-sm-8">
-                                <a href="/parcel-freight-bill-audit" class="btn btn-primary pull-right">Learn More About
+                                <a rel="nofollow" href="/parcel-freight-bill-audit" class="btn btn-primary pull-right">Learn More About
                                     Parcel Audit</a>
                             </div>
                         </div>
@@ -118,7 +118,7 @@
                     <div class="col-xs-12 col-sm-6 col-md-4 overlay col-centered" v-for="item in items">
                         <div class="video-spacing video-card text-center card-shadow" v-cloak>
                             <h4 class="card-title brightBlue">@{{ item.text }}</h4>
-                            <a class="various fancybox fancybox.iframe" v-bind:href="item.video">
+                            <a class="various fancybox fancybox.iframe" v-bind:rel="nofollow" href="item.video">
                                 <img v-bind:src="item.img">
                             </a>
                         </div>

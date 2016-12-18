@@ -209,7 +209,7 @@
             <br>
 
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//lojistic.com/give" target="_blank">
+                <a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//lojistic.com/give" target="_blank">
                     @include('parts.snippets.social-circles', array(
                       'circleSize'=>'circ-100',
                       'elojiSize' => 'fs-36',
@@ -221,7 +221,7 @@
                 </a>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <a href="https://twitter.com/home?status='Tis%20The%20Season%20To%20Give!%20Pony%20up%20some%20%23holiday%20cheer.%20Lojistic%20is%20matching%20donations!%20goo.gl/1D9ag7" target="_blank">
+                <a rel="nofollow" href="https://twitter.com/home?status='Tis%20The%20Season%20To%20Give!%20Pony%20up%20some%20%23holiday%20cheer.%20Lojistic%20is%20matching%20donations!%20goo.gl/1D9ag7" target="_blank">
                     @include('parts.snippets.social-circles', array(
                            'circleSize'=>'circ-100',
                            'elojiSize' => 'fs-36',
@@ -233,7 +233,7 @@
                 </a>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//lojistic.com/give&title='Tis%20The%20Season%20To%20Give&summary=Tis%20The%20Season%20To%20Give!%20Pony%20up%20some%20%23holiday%20cheer.%20Lojistic%20is%20matching%20donations!&source=" target="_blank">
+                <a rel="nofollow" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//lojistic.com/give&title='Tis%20The%20Season%20To%20Give&summary=Tis%20The%20Season%20To%20Give!%20Pony%20up%20some%20%23holiday%20cheer.%20Lojistic%20is%20matching%20donations!&source=" target="_blank">
                     @include('parts.snippets.social-circles', array(
                           'circleSize'=>'circ-100',
                           'elojiSize' => 'fs-36',
@@ -245,7 +245,7 @@
                 </a>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <a href="mailto:ChangeMe%40gmail.com?subject=Check%20Out%20This%20Awesome%20Holiday%20Giving%20Campaign&body='Tis%20The%20Season%20To%20Give!%20Pony%20Up%20Some%20Holiday%20Cheer.%20Lojistic%20Is%20Matching%20Donations.%20Lojistic.com%2Fgive" target="_blank">
+                <a rel="nofollow" href="mailto:ChangeMe%40gmail.com?subject=Check%20Out%20This%20Awesome%20Holiday%20Giving%20Campaign&body='Tis%20The%20Season%20To%20Give!%20Pony%20Up%20Some%20Holiday%20Cheer.%20Lojistic%20Is%20Matching%20Donations.%20Lojistic.com%2Fgive" target="_blank">
                     @include('parts.snippets.social-circles', array(
                           'circleSize'=>'circ-100',
                           'elojiSize' => 'fs-36',
@@ -510,7 +510,7 @@
             </small>
         </p>
         <h3 class="text-center">
-            <a class="christmas christmasRed" href="http://lojistic.com/lojistic-corporate-citizenship">
+            <a class="christmas christmasRed" rel="nofollow" href="http://lojistic.com/lojistic-corporate-citizenship">
                 www.lojistic.com/lojistic-corporate-citizenship
             </a>
         </h3>

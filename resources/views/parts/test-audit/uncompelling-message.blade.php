@@ -15,7 +15,7 @@
                     Well... don’t we look like jerks?! <br/>
                     I guess your carrier did alright on <i>this</i> invoice. <br/>
                 </p>
-                <a class="btn btn-success" href="/audisee/instant-parcel-audit">TRY AGAIN</a>
+                <a class="btn btn-success" rel="nofollow" href="/audisee/instant-parcel-audit">TRY AGAIN</a>
                 <br/>
                 <br/>
             </div>

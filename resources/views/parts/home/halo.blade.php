@@ -16,7 +16,7 @@
                 all carriers via a single interface.
             </p>
 
-            <a class="btn btn-success" href="/halo">
+            <a class="btn btn-success" rel="nofollow" href="/halo">
                 GET VISIBILITY
             </a>
         </div>
@@ -25,7 +25,7 @@
             <i class="eloji eloji-halo flatGrey fs-200"></i>
             <br/>
             <br/>
-            <a class="btn btn-success btn-lg visible-xs" href="/halo">
+            <a class="btn btn-success btn-lg visible-xs" rel="nofollow" href="/halo">
                 GET VISIBILITY
             </a>
         </div>

@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="col-centered col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12">
-                <a href="carrier-contract-negotiation/sign-up"
+                <a rel="nofollow" href="carrier-contract-negotiation/sign-up"
                    class="btn btn-thick orange text-center hover-color-opacity">
                     LETS DO THIS!</a>
             </div>
@@ -69,7 +69,7 @@
                 <div class="seesaw">
                 <img class="text-center" src="/images/seesaw.png">
                 </div>
-                <a href="carrier-contract-negotiation/sign-up" class="text-center btn btn-thick lightGrey hover-color-opacity">LEVEL THE FIELD NOW</a>
+                <a rel="nofollow" href="carrier-contract-negotiation/sign-up" class="text-center btn btn-thick lightGrey hover-color-opacity">LEVEL THE FIELD NOW</a>
                <div class="hidden-lg hidden-md"> <br> &nbsp;</div>
             </div>
 

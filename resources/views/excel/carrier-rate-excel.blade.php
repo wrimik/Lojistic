@@ -11,7 +11,7 @@
             Run Another Calculation At:
         </td>
         <td colspan="2" valign="middle" align="left" style="background-color:#f4f4f4;font-size:14px;font-weight:bold;">
-            <a href="http://www.Lojistic.com">Lojistic.com</a>
+            <a rel="nofollow" href="http://www.Lojistic.com">Lojistic.com</a>
         </td>
     </tr>
     <tr>
@@ -31,7 +31,7 @@
             Wanna Chat With Us?
         </td>
         <td colspan="2" align="left" style="background-color:#f4f4f4;font-size:14px;font-weight:bold;">
-            <a href="mailto:info@lojistic.com">Info@Lojistic.com</a>
+            <a rel="nofollow" href="mailto:info@lojistic.com">Info@Lojistic.com</a>
         </td>
         <td colspan="2" style="background-color:#f4f4f4;font-size:14px;font-weight:bold;" align="left">(800) 783-5753</td>
         <td style="background-color:#f4f4f4;" colspan="4"></td>

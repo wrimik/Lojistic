@@ -13,7 +13,7 @@
             Costa Mesa, CA 92626
         </div>
         <div class="col-sm-6">
-            <a href="mailto:info@lojistic.com">info@lojistic.com</a>
+            <a rel="nofollow" href="mailto:info@lojistic.com">info@lojistic.com</a>
             <br/>
             <br/>
             <b class="navy">Lojistic's Digits</b>

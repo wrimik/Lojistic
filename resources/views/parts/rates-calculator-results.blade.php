@@ -2,7 +2,7 @@
 <div class="row">
     <h2>{{ ucwords($service['carrier']).' '.urldecode($service['year']).' '.$service['name'] }}</h2>
     <h3>
-        <a href="#" id="show-all-rows" class="font-bold pull-right">
+        <a rel="nofollow" href="#" id="show-all-rows" class="font-bold pull-right">
             <strong>+ Show All Rows</strong>
         </a>
     </h3>
@@ -58,7 +58,7 @@
                     Show All Rows
                     <i class="fa fa-chevron-down"></i>
                 </div>
-                {{--<a class="btn-download excel-download" target="_blank" href="/ajax/rates-calculator/download/?{{  http_build_query( Input::all() ) }}">--}}
+                {{--<a class="btn-download excel-download" target="_blank" rel="nofollow" href="/ajax/rates-calculator/download/?{{  http_build_query( Input::all() ) }}">--}}
                     {{--<i class="eloji eloji-excel"></i> DOWNLOAD EXCEL--}}
                 {{--</a>--}}
             </div>

@@ -1,7 +1,7 @@
 <div id="billing-center-paper" class="instructions">
     <p class="fs-16 flatGrey fakeOl fw-thin">
         <span><i class="eloji eloji-check green fs-12"></i> )</span>
-            Sign in to <a href="https://www.ups.com/one-to-one/login"
+            Sign in to <a rel="nofollow" href="https://www.ups.com/one-to-one/login"
                                        target="_blank">UPS.com</a><br/>
         <span>2 )</span> Navigate to Reporting > Standard > Invoice Detail<br/>
         <span>3 )</span> Press "Search".<br/>

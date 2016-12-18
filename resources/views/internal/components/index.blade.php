@@ -60,7 +60,7 @@
         </div>
         <div class="row">
             <div class="col-centered col-xs-4 col-xs-offset-4">
-                <a href="/shipping-software/sign-up" class="btn btn-lg green text-center">
+                <a rel="nofollow" href="/shipping-software/sign-up" class="btn btn-lg green text-center">
                     FREE SIGN UP
                 </a>
             </div>
@@ -261,7 +261,7 @@
             <p>Inline Stuff</p>
         </div>
         <div>
-            <a href="#adf" class="circ circ-100 brightBlue text-center">
+            <a rel="nofollow" href="#adf" class="circ circ-100 brightBlue text-center">
                 <i class="eloji eloji-box-open-alt fs-56 text-vc white"></i>
             </a>
             <p>Links</p>
@@ -390,9 +390,9 @@
         <span class="fs-28">2014</span><br/>
         <span class="fs-24">donations</span><br/><br/>
         <span class="fs-28">$7,840</span><span class="fs-20">.00</span><br/>
-        <a href="https://my.charitywater.org/20-20-Q12014" class="fs-20">Campaign 1</a><br/>
-        <a href="https://my.charitywater.org/2020-campaign-q1-2014-extra" class="fs-20">Campaign 2</a><br/>
-        <a href="http://www.charitywater.org/projects/countries/rwanda/" class="fs-20">See The Impact</a><br/>
+        <a rel="nofollow" href="https://my.charitywater.org/20-20-Q12014" class="fs-20">Campaign 1</a><br/>
+        <a rel="nofollow" href="https://my.charitywater.org/2020-campaign-q1-2014-extra" class="fs-20">Campaign 2</a><br/>
+        <a rel="nofollow" href="http://www.charitywater.org/projects/countries/rwanda/" class="fs-20">See The Impact</a><br/>
         <br/>
     </div>
     <div class="col-sm-9 hidden-xs np">
@@ -431,7 +431,7 @@
             </h3>
         </div>
         <div class="col-sm-4 text-vc">
-            <a class="btn btn-info btn-lg" href="/pdf/Lojistic-Ad-Hoc-Report-Guide.pdf" download>
+            <a class="btn btn-info btn-lg" rel="nofollow" href="/pdf/Lojistic-Ad-Hoc-Report-Guide.pdf" download>
                 <i class="eloji-download"></i>
                 TRY IT NOW
             </a>
@@ -463,7 +463,7 @@
             </p>
 
             <p class="fs-16 fw-bold">
-                <a class="btn btn-success" href="/freight-management">
+                <a class="btn btn-success" rel="nofollow" href="/freight-management">
                     IMPROVE CARRIER RATES
                 </a>
             </p>
@@ -491,7 +491,7 @@
             </p>
 
             <p class="fs-16 fw-bold">
-                <a class="btn btn-success" href="/shipping-insurance">
+                <a class="btn btn-success" rel="nofollow" href="/shipping-insurance">
                     REDUCE INSURANCE COSTS
                 </a>
             </p>
@@ -613,10 +613,10 @@
         </div>
 
         <!-- Controls -->
-        <a class="left text-left carousel-control" href="#roles" role="button" data-slide="prev">
+        <a class="left text-left carousel-control" rel="nofollow" href="#roles" role="button" data-slide="prev">
             <i class="tri tri-50 flatBlack pull-left" style="border-right-color:#898989"></i>
         </a>
-        <a class="right carousel-control" href="#roles" role="button" data-slide="next">
+        <a class="right carousel-control" rel="nofollow" href="#roles" role="button" data-slide="next">
             <i class="tri tri-50 flatBlack pull-right" style="border-left-color:#898989"></i>
         </a>
     </div>

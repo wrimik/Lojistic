@@ -27,7 +27,7 @@
                     <a class="btn flatBlue scrollTo" data-target="#convert">
                         SCHEDULE TO GET YOURS
                     </a>
-                    <a id='pdf_link' class="btn flatBlue" download href="pdf/savings-checklist.pdf">
+                    <a id='pdf_link' class="btn flatBlue" download rel="nofollow" href="pdf/savings-checklist.pdf">
                         <i class="eloji eloji-download"></i>
                         View PDF Directly
                     </a>
@@ -37,15 +37,15 @@
             <img class='boximg' src='/images/savings_1.jpg' usemap='#s1'/>
             <map name="s1">
                 <area shape="rect" coords="57,201,902,236" alt="Download"
-                      href="http://www.sourcelogin.com/checklist/Savings_Checklist_Data.xlsx">
+                      rel="nofollow" href="http://www.sourcelogin.com/checklist/Savings_Checklist_Data.xlsx">
             </map>
             <img class='boximg' src='/images/savings_2.jpg'/>
             <img class='boximg' src='/images/savings_3.jpg' usemap='#s3'/>
             <map name="s3">
                 <area target='_blank' shape="rect" coords="57,389,902,744" alt="Download"
-                      href="https://mapsengine.google.com/map/edit?mid=zVb1m3OC9LL4.kAmoWRPJu9_8">
+                      rel="nofollow" href="https://mapsengine.google.com/map/edit?mid=zVb1m3OC9LL4.kAmoWRPJu9_8">
                 <area target='_blank' shape="rect" coords="57,790,902,1144" alt="Download"
-                      href="https://mapsengine.google.com/map/edit?mid=zVb1m3OC9LL4.k0jOImXEBYhM">
+                      rel="nofollow" href="https://mapsengine.google.com/map/edit?mid=zVb1m3OC9LL4.k0jOImXEBYhM">
             </map>
             <img class='boximg' class='pdfpage' src='/images/savings_4.jpg'/>
         </div>

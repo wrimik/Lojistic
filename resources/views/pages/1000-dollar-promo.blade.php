@@ -33,9 +33,9 @@
             </div>
             <div class="col-sm-6">
                 <span class="white fs-24">Ready To Give It A Shot?</span><br/>
-                <a class="btn btn-info btn-lg" href="/parcel-freight-audit-demo">Start Your Trial Now</a>
+                <a class="btn btn-info btn-lg" rel="nofollow" href="/parcel-freight-audit-demo">Start Your Trial Now</a>
                 <hr class="slim"/>
-                <a href="mailto:info@lojistic.com">or email info@lojistic.com</a>
+                <a rel="nofollow" href="mailto:info@lojistic.com">or email info@lojistic.com</a>
             </div>
         </div>
     </section>
@@ -62,7 +62,7 @@
 
                     <p class="or-email">or email</p>
 
-                    <p class="email"><strong><a href="mailto:info@lojistic.com">info@lojistic.com</a></strong></p>
+                    <p class="email"><strong><a rel="nofollow" href="mailto:info@lojistic.com">info@lojistic.com</a></strong></p>
                 </li>
             </ul>
             <hr/>

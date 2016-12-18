@@ -33,16 +33,16 @@
         </div>
         <div class="col-xs-12 text-center">
             <hr/>
-            <a class="btn btn-primary btn-lg-xs" href="/shipping-costs-calculators/fedex-ups-rate-comparison-tool/">
+            <a class="btn btn-primary btn-lg-xs" rel="nofollow" href="/shipping-costs-calculators/fedex-ups-rate-comparison-tool/">
                 COMPARE RATES
             </a>
-            <a class="btn btn-primary btn-lg-xs" href="/shipping-costs-calculators/fedex-ups-rates-calculator/">
+            <a class="btn btn-primary btn-lg-xs" rel="nofollow" href="/shipping-costs-calculators/fedex-ups-rates-calculator/">
                 CALCULATE RATES
             </a>
-            <a class="btn btn-primary btn-lg-xs" href="/shipping-insurance/#insurance-calculator">
+            <a class="btn btn-primary btn-lg-xs" rel="nofollow" href="/shipping-insurance/#insurance-calculator">
                 INSURANCE COSTS
             </a>
-            <a class="btn btn-primary btn-lg-xs" href="/shipping-costs-calculators/fedex-ups-ground-dim-calculator">
+            <a class="btn btn-primary btn-lg-xs" rel="nofollow" href="/shipping-costs-calculators/fedex-ups-ground-dim-calculator">
                 DIM CALCULATOR
             </a>
         </div>

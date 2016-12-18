@@ -6,10 +6,10 @@
     <meta name="theme-color" content="#164260"/>
     <meta name="msapplication-navbutton-color" content="#164260" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-    <link href="https://plus.google.com/104242186661397386656" rel="publisher" />
+    <link rel="nofollow" href="https://plus.google.com/104242186661397386656" rel="publisher" />
     <!--  favicons  -->
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" rel="nofollow" href="/favicon.png" />
+    <link rel="shortcut icon" type="image/png" rel="nofollow" href="/favicon.png" />
     <!--  libraries  -->
     {!! Html::style('/css/fonts.css?v='.v()) !!}
     {!! Html::style('/css/lojistic.css?v='.v()) !!}
@@ -36,7 +36,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="#">
+                    <a rel="nofollow" href="#">
                     @section('page-title')
                         Internal Pages
                     @show
@@ -44,21 +44,21 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/internal/audisee">Audisee</a> </li>
-                <li><a href="/internal/intelliship">Intelliship</a></li>
+                <li><a rel="nofollow" href="/internal/audisee">Audisee</a> </li>
+                <li><a rel="nofollow" href="/internal/intelliship">Intelliship</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Calculators <span class="caret"></span></a>
+                    <a rel="nofollow" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Calculators <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/internal/calculators">All</a></li>
-                        <li><a href="/internal/calculators/rate-calculator">Rate Calculator</a></li>
-                        <li><a href="/internal/calculators/rate-comparison-calculator">Rate Comparison Calculator</a></li>
+                        <li><a rel="nofollow" href="/internal/calculators">All</a></li>
+                        <li><a rel="nofollow" href="/internal/calculators/rate-calculator">Rate Calculator</a></li>
+                        <li><a rel="nofollow" href="/internal/calculators/rate-comparison-calculator">Rate Comparison Calculator</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Web Components <span class="caret"></span></a>
+                    <a rel="nofollow" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Web Components <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/internal/components">Modular Components</a></li>
-                        <li><a href="/internal/components/elojis">Eloji Icons</a></li>
+                        <li><a rel="nofollow" href="/internal/components">Modular Components</a></li>
+                        <li><a rel="nofollow" href="/internal/components/elojis">Eloji Icons</a></li>
                     </ul>
                 </li>
             </ul>

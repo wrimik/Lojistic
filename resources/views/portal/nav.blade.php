@@ -24,7 +24,7 @@ $selected[$app] = 'selected';
             });
             
         </script>
-        <link rel="stylesheet" type="text/css" href="/portal-login-resources/css/navigation.css"/>
+        <link rel="stylesheet" type="text/css" rel="nofollow" href="/portal-login-resources/css/navigation.css"/>
     </head>
     <body>
         <div>

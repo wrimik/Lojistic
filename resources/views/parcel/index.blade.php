@@ -18,7 +18,7 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h1 class="white">
-                        <a class="no-decoration js-parcel-video" data-load="/video-files/parcel/box-low" href="#">
+                        <a class="no-decoration js-parcel-video" data-load="/video-files/parcel/box-low" rel="nofollow" href="#">
                         Meet Parcèl Lebox <i class="fa fa-play-circle-o"></i>
                         </a>
                     </h1>
@@ -163,7 +163,7 @@
                 <div class="parcel-footer">
                     <img src="{{ asset('/images/parcel/parcel_footer.jpg') }}" alt="Join Parcèl" height="250"
                          width="1030">
-                    <a class="no-decoration js-parcel-video" data-load="/video-files/parcel/pov-lojistic" href="#">
+                    <a class="no-decoration js-parcel-video" data-load="/video-files/parcel/pov-lojistic" rel="nofollow" href="#">
                         <h1 class="white text-center">Join Me On My Adventure
                             <i class="fa fa-play-circle-o"></i>
                         </h1>
@@ -171,28 +171,28 @@
                 </div>
             </div>
             <div class="grid-item text-center">
-                <a href="https://youtube.com/lojistic" target="_blank" class="no-decoration">
+                <a rel="nofollow" href="https://youtube.com/lojistic" target="_blank" class="no-decoration">
                     <div class="social youtube">
                         <i class="fa fa-youtube"></i>
                     </div>
                 </a>
             </div>
             <div class="grid-item text-center">
-                <a href="https://twitter.com/parcellebox" target="_blank" class="no-decoration">
+                <a rel="nofollow" href="https://twitter.com/parcellebox" target="_blank" class="no-decoration">
                     <div class="social twitter">
                         <i class="fa fa-twitter"></i>
                     </div>
                 </a>
             </div>
             <div class="grid-item text-center">
-                <a href="https://www.facebook.com/ParcelLebox" target="_blank" class="no-decoration">
+                <a rel="nofollow" href="https://www.facebook.com/ParcelLebox" target="_blank" class="no-decoration">
                     <div class="social facebook">
                         <i class="fa fa-facebook"></i>
                     </div>
                 </a>
             </div>
             <div class="grid-item text-center">
-                <a href="https://instagram.com/parcellebox" target="_blank" class="no-decoration">
+                <a rel="nofollow" href="https://instagram.com/parcellebox" target="_blank" class="no-decoration">
                     <div class="social instagram">
                         <i class="fa fa-instagram"></i>
                     </div>

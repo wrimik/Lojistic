@@ -51,7 +51,7 @@
     </div>
     <div class="col-sm-8 text-right">
         <h3>
-            <a href="#" id="show-all-rows" class="font-bolder">
+            <a rel="nofollow" href="#" id="show-all-rows" class="font-bolder">
                 <strong>
                 + Show All Rows
                 </strong>
@@ -138,7 +138,7 @@
             Show All Rows
             <i class="fa fa-chevron-down"></i>
         </div>
-        {{--<a class="btn-download excel-download" target="_blank" href="{{ route('download-excel', ['function'=>'compareRatesToExcel','q'=>Input::only('c.1','c.2')]) }}">--}}
+        {{--<a class="btn-download excel-download" target="_blank" rel="nofollow" href="{{ route('download-excel', ['function'=>'compareRatesToExcel','q'=>Input::only('c.1','c.2')]) }}">--}}
             {{--<i class="eloji eloji-excel"></i> DOWNLOAD EXCEL--}}
         {{--</a>--}}
     </div>

@@ -20,7 +20,7 @@
                                 </td>
                                 <td width="50%" style="vertical-align: top;">
                                     <a style="font-size:18px;color:#353535;text-decoration:none;float:right;padding-top:5px;"
-                                       href="tel:18007835753">
+                                       rel="nofollow" href="tel:18007835753">
                                         (800)&nbsp;783-5753
                                     </a>
                                 </td>
@@ -53,7 +53,7 @@
                             <tr>
                                 <td align="center" style="background-color:#19e; border-radius:4px;">
                                     <a style="padding-top:20px;padding-left:20px;padding-right:20px;padding-bottom:20px;color:#fff;font-size:20px;text-decoration:none;"
-                                       href="http://www.lojistic.com/audit/{{ $audit_id }}">
+                                       rel="nofollow" href="http://www.lojistic.com/audit/{{ $audit_id }}">
                                         http://www.lojistic.com/audit/{{ $audit_id }}
                                     </a>
                                 </td>
@@ -66,7 +66,7 @@
                         <br>
                         Now that you have your list of potential credits, it’s time to tackle the real meat and potatoes
                         of the process:
-                        <a style="color:#19e" href="https://www.lojistic.com/parcel-freight-bill-audit">recovering your credits</a>
+                        <a style="color:#19e" rel="nofollow" href="https://www.lojistic.com/parcel-freight-bill-audit">recovering your credits</a>
                     </td>
                 </tr>
                 <tr>
@@ -74,7 +74,7 @@
                         <table cellpadding="0" cellspacing="0" border="0" width="100%">
                             <tr>
                                 <td align="center" style="padding-top:45px;">
-                                    <a style="width:200px; display: block; height: 20px" href="https://www.Lojistic.com">
+                                    <a style="width:200px; display: block; height: 20px" rel="nofollow" href="https://www.Lojistic.com">
                                         @include('parts.email.logo')
                                     </a>
                                     <br>
@@ -85,7 +85,7 @@
                                 <td align="center"
                                     style="font-size:13px;color:#6F6F6F;padding-top:5px;padding-bottom:40px;">
                                     <br>
-                                    <a style="color:#6F6F6F;text-decoration:none;" href="https://www.lojistic.com">
+                                    <a style="color:#6F6F6F;text-decoration:none;" rel="nofollow" href="https://www.lojistic.com">
                                         Lojistic | 3200 Park Center Drive | Suite 500 | Costa Mesa, CA 92626
                                     </a>
                                 </td>

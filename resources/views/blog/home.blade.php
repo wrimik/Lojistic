@@ -12,10 +12,10 @@
         {{--<meta name="robots" content="noindex, follow" />--}}
     @endif
     @if($pagination['prev'] != '#')
-        <link rel="prev" href="{{ $pagination['prev'] }}"/>
+        <link rel="prev" rel="nofollow" href="{{ $pagination['prev'] }}"/>
     @endif
     @if($pagination['next'] != '#')
-        <link rel="next" href="{{ $pagination['next'] }}"/>
+        <link rel="next" rel="nofollow" href="{{ $pagination['next'] }}"/>
     @endif
 @stop
 @section('scripts')
@@ -49,7 +49,7 @@
                     <div class="col-lg-9">
                         <div id="post-{{ $post->ID }}" class="post type-post status-publish format-standard hentry">
                             <h3 class="entry-title ">
-                                <a href="/blog/{{ $post->post_name }}" title="Permalink to {{ $post->post_title }}"
+                                <a rel="nofollow" href="/blog/{{ $post->post_name }}" title="Permalink to {{ $post->post_title }}"
                                    rel="bookmark" class="entry-title">
                                     {!! $post->post_title !!}
                                 </a>
@@ -62,15 +62,15 @@
                                 <p class="continue-reading">
                                          <span class="author vcard">
 
-                                                 <a class="pull-right" href="/blog/{{ $post->post_name }}">Continue Reading...</a>
+                                                 <a class="pull-right" rel="nofollow" href="/blog/{{ $post->post_name }}">Continue Reading...</a>
                                             @if($post->post_author == 10)
-                                                 <a class="url fn n" href="/about-the-author-steve-minard"
+                                                 <a class="url fn n" rel="nofollow" href="/about-the-author-steve-minard"
                                                    title="View all posts by Steve Minard"
                                                    rel="nofollow">
                                                     By: Steve M.
                                                 </a>
                                             @elseif($post->post_author == 5)
-                                                 <a class="url fn n" href="/blog/author/tylerg/" title="View all posts by tylerg"
+                                                 <a class="url fn n" rel="nofollow" href="/blog/author/tylerg/" title="View all posts by tylerg"
                                                    rel="nofollow">
                                                     By: TylerG
                                                 </a>
@@ -101,78 +101,78 @@
                         <nav>
                             <ul class="pagination pagination-lg">
                                 <li {{$pagination['prev'] == '#' ? 'class="disabled"':''}}>
-                                    <a href="{{ $pagination['prev'] }}" aria-label="Previous">
+                                    <a rel="nofollow" href="{{ $pagination['prev'] }}" aria-label="Previous">
                                         <span aria-hidden="true">Prev</span>
                                     </a>
                                 </li>
                                 @if($pagination['page'] > 5)
-                                    <li><a href="{{ url('blog/page/1') }}">1</a></li>
-                                    <li class="disabled"><a href="#">...</a></li>
+                                    <li><a rel="nofollow" href="{{ url('blog/page/1') }}">1</a></li>
+                                    <li class="disabled"><a rel="nofollow" href="#">...</a></li>
                                 @endif
                                 @if($pagination['page'] > 3)
                                     <li>
-                                        <a href="{{ url('blog/page/'.($pagination['page']-3) ) }}">{{$pagination['page']-3}}</a>
+                                        <a rel="nofollow" href="{{ url('blog/page/'.($pagination['page']-3) ) }}">{{$pagination['page']-3}}</a>
                                     </li>
                                     <li>
-                                        <a href="{{ url('blog/page/'.($pagination['page']-2) ) }}">{{$pagination['page']-2}}</a>
+                                        <a rel="nofollow" href="{{ url('blog/page/'.($pagination['page']-2) ) }}">{{$pagination['page']-2}}</a>
                                     </li>
                                     <li>
-                                        <a href="{{ url('blog/page/'.($pagination['page']-1) ) }}">{{$pagination['page']-1}}</a>
+                                        <a rel="nofollow" href="{{ url('blog/page/'.($pagination['page']-1) ) }}">{{$pagination['page']-1}}</a>
                                     </li>
                                 @elseif($pagination['page'] > 2)
                                     <li>
-                                        <a href="{{ url('blog/page/'.($pagination['page']-2) ) }}">{{$pagination['page']-2}}</a>
+                                        <a rel="nofollow" href="{{ url('blog/page/'.($pagination['page']-2) ) }}">{{$pagination['page']-2}}</a>
                                     </li>
                                     <li>
-                                        <a href="{{ url('blog/page/'.($pagination['page']-1) ) }}">{{$pagination['page']-1}}</a>
+                                        <a rel="nofollow" href="{{ url('blog/page/'.($pagination['page']-1) ) }}">{{$pagination['page']-1}}</a>
                                     </li>
                                 @elseif($pagination['page'] > 1)
                                     <li>
-                                        <a href="{{ url('blog/page/'.($pagination['page']-1) ) }}">{{$pagination['page']-1}}</a>
+                                        <a rel="nofollow" href="{{ url('blog/page/'.($pagination['page']-1) ) }}">{{$pagination['page']-1}}</a>
                                     </li>
                                 @endif
-                                <li><a href="#">{{$pagination['page']}}</a></li>
+                                <li><a rel="nofollow" href="#">{{$pagination['page']}}</a></li>
                                 <!-- was class="active" -->
                                 @if($pagination['pagesLeft'] > 3)
                                     <li>
-                                        <a href="{{ url('blog/page/'.($pagination['page']+1) ) }}">{{$pagination['page']+1}}</a>
+                                        <a rel="nofollow" href="{{ url('blog/page/'.($pagination['page']+1) ) }}">{{$pagination['page']+1}}</a>
                                     </li>
                                     <li>
-                                        <a href="{{ url('blog/page/'.($pagination['page']+2) ) }}">{{$pagination['page']+2}}</a>
+                                        <a rel="nofollow" href="{{ url('blog/page/'.($pagination['page']+2) ) }}">{{$pagination['page']+2}}</a>
                                     </li>
                                     <li>
-                                        <a href="{{ url('blog/page/'.($pagination['page']+3) ) }}">{{$pagination['page']+3}}</a>
+                                        <a rel="nofollow" href="{{ url('blog/page/'.($pagination['page']+3) ) }}">{{$pagination['page']+3}}</a>
                                     </li>
                                 @elseif($pagination['pagesLeft'] > 2)
                                     <li>
-                                        <a href="{{ url('blog/page/'.($pagination['page']+1) ) }}">{{$pagination['page']+1}}</a>
+                                        <a rel="nofollow" href="{{ url('blog/page/'.($pagination['page']+1) ) }}">{{$pagination['page']+1}}</a>
                                     </li>
                                     <li>
-                                        <a href="{{ url('blog/page/'.($pagination['page']+2) ) }}">{{$pagination['page']+2}}</a>
+                                        <a rel="nofollow" href="{{ url('blog/page/'.($pagination['page']+2) ) }}">{{$pagination['page']+2}}</a>
                                     </li>
                                     <li>
-                                        <a href="{{ url('blog/page/'.($pagination['page']+3) ) }}">{{$pagination['page']+3}}</a>
+                                        <a rel="nofollow" href="{{ url('blog/page/'.($pagination['page']+3) ) }}">{{$pagination['page']+3}}</a>
                                     </li>
                                 @elseif($pagination['pagesLeft'] > 1)
                                     <li>
-                                        <a href="{{ url('blog/page/'.($pagination['page']+1) ) }}">{{$pagination['page']+1}}</a>
+                                        <a rel="nofollow" href="{{ url('blog/page/'.($pagination['page']+1) ) }}">{{$pagination['page']+1}}</a>
                                     </li>
                                     <li>
-                                        <a href="{{ url('blog/page/'.($pagination['page']+2) ) }}">{{$pagination['page']+2}}</a>
+                                        <a rel="nofollow" href="{{ url('blog/page/'.($pagination['page']+2) ) }}">{{$pagination['page']+2}}</a>
                                     </li>
                                 @elseif($pagination['pagesLeft'] > 0)
                                     <li>
-                                        <a href="{{ url('blog/page/'.($pagination['page']+1) ) }}">{{$pagination['page']+1}}</a>
+                                        <a rel="nofollow" href="{{ url('blog/page/'.($pagination['page']+1) ) }}">{{$pagination['page']+1}}</a>
                                     </li>
                                 @endif
                                 @if($pagination['pagesLeft'] > 4)
-                                    <li class="disabled"><a href="#">...</a></li>
+                                    <li class="disabled"><a rel="nofollow" href="#">...</a></li>
                                     <li>
-                                        <a href="{{ url('blog/page/'.($pagination['totalPages']) ) }}">{{$pagination['totalPages']}}</a>
+                                        <a rel="nofollow" href="{{ url('blog/page/'.($pagination['totalPages']) ) }}">{{$pagination['totalPages']}}</a>
                                     </li>
                                 @endif
                                 <li {{ $pagination['next'] == '#' ? 'class="disabled"' : '' }}>
-                                    <a href="{{ $pagination['next'] }}" aria-label="Next">
+                                    <a rel="nofollow" href="{{ $pagination['next'] }}" aria-label="Next">
                                         <span aria-hidden="true">Next</span>
                                     </a>
                                 </li>

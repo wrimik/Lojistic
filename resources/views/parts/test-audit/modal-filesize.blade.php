@@ -44,8 +44,8 @@
                         <i>properly spelled</i> info.
                         <hr/>
                     </p>
-                    <a href="/" class="btn btn-primary btn-inline">RETURN HOME</a>
-                    <a href="/parcel-freight-bill-audit" class="btn btn-primary btn-inline">LEARN MORE ABOUT AUDIT</a>
+                    <a rel="nofollow" href="/" class="btn btn-primary btn-inline">RETURN HOME</a>
+                    <a rel="nofollow" href="/parcel-freight-bill-audit" class="btn btn-primary btn-inline">LEARN MORE ABOUT AUDIT</a>
                     <div class="btn btn-primary btn-inline upload-btn close-modal">
                         TRY AGAIN WITH LESS DATA
                     </div>

@@ -27,7 +27,7 @@
                 <br/>
 
                 <p>
-                    <a href="https://plus.google.com/107151318666195398103" rel="me" target="blank">Google+</a>
+                    <a rel="nofollow" href="https://plus.google.com/107151318666195398103" rel="me" target="blank">Google+</a>
                 </p>
             </article>
         </div>
