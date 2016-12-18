@@ -8,9 +8,7 @@
     <meta name="keywords" content="{{ App\Helpers\Swiss::titleFromPath(true) }}" />
     @show
 
-    @if(!env('APP_PRODUCTION'))
-        <meta name="robots" content="noindex, nofollow"/>
-    @endif
+    <meta name="robots" content="noindex, nofollow"/>
             <!--
                              _______   _           _ _     _   _
                             |  ___  | | |         (_|_)   | | (_)
